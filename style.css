@@ -138,3 +138,32 @@ footer { padding: 2rem 0 3rem; color: var(--muted); }
   h1 { font-size: 2.35rem; }
   .hero { padding-top: 3rem; }
 }
+.logo-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.site-logo {
+  height: 68px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.brand-text {
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+@media (max-width: 720px) {
+  .site-logo {
+    height: 54px;
+  }
+
+  .brand-text {
+    font-size: 0.95rem;
+  }
+}
