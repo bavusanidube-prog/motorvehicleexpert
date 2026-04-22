@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://motorvehicleexpert.co.uk/sitemap.xml
