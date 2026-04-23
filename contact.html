@@ -4,14 +4,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us | Motor Vehicle Expert</title>
-  <meta name="description" content="Contact Motor Vehicle Expert for website feedback, guide suggestions and general automotive information requests." />
+  <meta name="description" content="Contact Motor Vehicle Expert for website feedback, guide suggestions, business enquiries and general automotive information requests." />
   <meta name="robots" content="index,follow" />
   <meta name="author" content="Motor Vehicle Expert" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="canonical" href="https://motorvehicleexpert.co.uk/contact.html" />
   <link rel="icon" type="image/png" href="favicon.png" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Contact Us | Motor Vehicle Expert" />
+  <meta property="og:description" content="Contact Motor Vehicle Expert for website feedback, guide suggestions, business enquiries and general automotive information requests." />
+  <meta property="og:url" content="https://motorvehicleexpert.co.uk/contact.html" />
+  <meta property="og:image" content="https://motorvehicleexpert.co.uk/og-image.jpg" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Contact Us | Motor Vehicle Expert" />
+  <meta name="twitter:description" content="Contact Motor Vehicle Expert for website feedback, guide suggestions, business enquiries and general automotive information requests." />
+  <meta name="twitter:image" content="https://motorvehicleexpert.co.uk/og-image.jpg" />
+
   <link rel="stylesheet" href="style.css" />
-  <link rel="canonical" href="https://motorvehicleexpert.co.uk/page-name.html">
 </head>
 <body>
 
@@ -72,21 +83,33 @@
           <span class="pill">Send a message</span>
           <h2>Contact form</h2>
           <p class="muted">
-            Fill in the form below and your message will be sent directly for review.
+            Fill in the form below and your message will be sent for review.
           </p>
 
           <form action="https://formspree.io/f/xyklbgrj" method="POST">
-  <label for="name">Your Name</label>
-  <input id="name" type="text" name="name" required>
+            <input type="hidden" name="_subject" value="New message from Motor Vehicle Expert" />
 
-  <label for="email">Email Address</label>
-  <input id="email" type="email" name="email" required>
+            <label for="name">Your Name</label>
+            <input id="name" type="text" name="name" placeholder="Your name" required>
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
+            <label for="email">Email Address</label>
+            <input id="email" type="email" name="email" placeholder="you@example.com" required>
 
-  <button type="submit">Send Message</button>
-</form>
+            <label for="topic">Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Select a topic</option>
+              <option>General enquiry</option>
+              <option>Guide suggestion</option>
+              <option>Report an issue</option>
+              <option>Business enquiry</option>
+              <option>Collaboration enquiry</option>
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" placeholder="Write your message here" required></textarea>
+
+            <button class="cta cta-primary" type="submit">Send Message</button>
+          </form>
 
           <p class="muted" style="margin-top: 1rem;">
             We aim to review genuine enquiries as soon as possible.
@@ -97,24 +120,22 @@
   </main>
 
   <footer>
-  <div class="container footer-grid">
+    <div class="container footer-grid">
+      <div>
+        <strong>Motor Vehicle Expert</strong>
+        <div>Practical car advice and maintenance information for UK drivers</div>
+      </div>
 
-    <div>
-      <strong>Motor Vehicle Expert</strong>
-      <div>Practical car advice and maintenance information for UK drivers</div>
+      <div>
+        © 2026 Motor Vehicle Expert. All rights reserved.
+      </div>
+
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="disclaimer.html">Disclaimer</a>
+        <a href="contact.html">Contact</a>
+      </div>
     </div>
-
-    <div>
-      © 2026 Motor Vehicle Expert. All rights reserved.
-    </div>
-
-    <div class="footer-links">
-      <a href="privacy-policy.html">Privacy Policy</a>
-      <a href="disclaimer.html">Disclaimer</a>
-      <a href="contact.html">Contact</a>
-    </div>
-
-  </div>
-</footer>
+  </footer>
 </body>
 </html>
