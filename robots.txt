@@ -2,4 +2,3 @@ User-agent: *
 Allow: /
 
 Sitemap: https://motorvehicleexpert.co.uk/sitemap.xml
-Host: motorvehicleexpert.co.uk
