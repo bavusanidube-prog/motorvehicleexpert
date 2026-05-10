@@ -180,6 +180,11 @@
   <url><loc>https://motorvehicleexpert.co.uk/common-used-car-scams.html</loc></url>
   <url><loc>https://motorvehicleexpert.co.uk/used-diesel-buying-guide.html</loc></url>
   <url><loc>https://motorvehicleexpert.co.uk/best-first-used-car-uk.html</loc></url>
+  <url>
+  <loc>https://motorvehicleexpert.co.uk/diagnostic-app.html</loc>
+  <changefreq>monthly</changefreq>
+  <priority>0.9</priority>
+</url>
   
   
 </urlset>
