@@ -98,25 +98,32 @@
 
 <main>
 
-<section class="hero">
-  <div class="container hero-grid">
+<section class="hero premium-hero">
+  <div class="container hero-grid premium-hero-grid">
 
-    <div>
+    <div class="hero-copy">
       <span class="eyebrow">UK Automotive Diagnostics Platform</span>
 
       <h1>Find Out What’s Wrong With Your Car</h1>
 
       <p class="lead">
-        Check warning lights, engine problems, MOT issues and repair costs in plain English before spending money on repairs.
+        Check warning lights, engine problems, MOT risks and repair costs in plain English before spending money on repairs.
       </p>
 
       <div class="hero-actions">
         <a class="cta cta-primary" href="diagnostic-app.html">Diagnose My Car</a>
-        <a class="cta cta-ghost" href="warning-lights.html">Browse Warning Lights</a>
+        <a class="cta cta-ghost" href="warning-lights.html">Check Warning Lights</a>
         <a class="cta cta-ghost" href="car-repair-costs-guide-uk.html">Check Repair Costs</a>
       </div>
 
-      <div class="quick-links">
+      <div class="hero-trust-row">
+        <span>✓ UK-focused</span>
+        <span>✓ MOT-aware</span>
+        <span>✓ Symptom-based</span>
+        <span>✓ Repair cost guidance</span>
+      </div>
+
+      <div class="hero-quick-chips">
         <a href="engine-management-light-guide.html">Engine Light</a>
         <a href="car-wont-start-diagnosis-guide.html">Won’t Start</a>
         <a href="car-overheating-causes-explained.html">Overheating</a>
@@ -124,56 +131,55 @@
         <a href="common-mot-failure-reasons-uk.html">MOT Problems</a>
         <a href="battery-warning-light-meaning.html">Battery Issues</a>
       </div>
-
-      <div class="stats">
-        <div class="stat">
-          <strong>UK-focused</strong>
-          <span class="muted">MOT, repair and road advice</span>
-        </div>
-
-        <div class="stat">
-          <strong>MOT-aware</strong>
-          <span class="muted">Understand failure risks</span>
-        </div>
-
-        <div class="stat">
-          <strong>Symptom-first</strong>
-          <span class="muted">Start with what the car is doing</span>
-        </div>
-      </div>
     </div>
 
-    <aside class="hero-card">
-      <div class="hero-panel">
-        <div class="hero-panel-content">
-          <span class="alt-pill">Vehicle diagnostic snapshot</span>
-          <h2>Check symptoms before spending money</h2>
+    <aside class="premium-diagnostic-visual" aria-label="Vehicle diagnostic preview">
+      <div class="visual-top">
+        <span class="live-dot"></span>
+        <span>Vehicle Health Check</span>
+        <strong>Live Preview</strong>
+      </div>
 
-          <div class="diagnostic-stack">
-            <div class="diagnostic-row">
-              <span>Engine management light</span>
-              <strong class="status amber">Check soon</strong>
-            </div>
+      <div class="health-score">
+        <div>
+          <span class="score-label">Diagnostic confidence</span>
+          <strong>82%</strong>
+        </div>
+        <div class="score-ring">82</div>
+      </div>
 
-            <div class="diagnostic-row">
-              <span>Car shaking at speed</span>
-              <strong class="status blue">Inspect tyres</strong>
-            </div>
+      <div class="diagnostic-stack">
+        <div class="diagnostic-row">
+          <span>Engine management light</span>
+          <strong class="status amber">Check soon</strong>
+        </div>
 
-            <div class="diagnostic-row">
-              <span>Overheating warning</span>
-              <strong class="status red">Stop safely</strong>
-            </div>
+        <div class="diagnostic-row">
+          <span>OBD code detected</span>
+          <strong class="status blue">P0300</strong>
+        </div>
 
-            <div class="diagnostic-row">
-              <span>MOT failure risk</span>
-              <strong class="status amber">Review guide</strong>
-            </div>
-          </div>
+        <div class="diagnostic-row">
+          <span>Safe to drive?</span>
+          <strong class="status amber">Limited</strong>
+        </div>
 
-          <a class="text-link" href="diagnostic-app.html">Open diagnostic app page →</a>
+        <div class="diagnostic-row">
+          <span>MOT risk</span>
+          <strong class="status red">Possible fail</strong>
         </div>
       </div>
+
+      <div class="repair-preview">
+        <span>Likely areas to inspect</span>
+        <div>
+          <small>Ignition</small>
+          <small>Emissions</small>
+          <small>Misfire</small>
+        </div>
+      </div>
+
+      <a class="visual-link" href="diagnostic-app.html">Open diagnostic app →</a>
     </aside>
 
   </div>
@@ -212,16 +218,12 @@
       <div>
         <span class="pill">Warning lights</span>
         <h2>Dashboard Warning Lights Explained</h2>
-        <p>
-          Understand what your warning light means, whether it may be safe to drive, and what to check next.
-        </p>
+        <p>Understand what your warning light means, whether it may be safe to drive, and what to check next.</p>
       </div>
-
       <a class="text-link" href="warning-lights.html">View all warning lights →</a>
     </div>
 
     <div class="grid-4">
-
       <article class="mini-card premium-card">
         <span class="status amber">Amber warning</span>
         <h3>Engine Management Light</h3>
@@ -277,7 +279,6 @@
         <p class="muted">Brake fluid, handbrake faults, worn pads and urgent brake safety checks.</p>
         <a class="text-link" href="brake-warning-light-on-while-driving.html">Check brake light →</a>
       </article>
-
     </div>
   </div>
 </section>
@@ -288,14 +289,11 @@
       <div>
         <span class="pill">Symptom diagnostics</span>
         <h2>What Is Your Car Doing?</h2>
-        <p>
-          Start with the symptom you notice and follow a practical diagnostic path.
-        </p>
+        <p>Start with the symptom you notice and follow a practical diagnostic path.</p>
       </div>
     </div>
 
     <div class="grid-3">
-
       <article class="feature-card">
         <h3>Car Won’t Start</h3>
         <p class="muted">Battery, starter motor, immobiliser, fuel delivery and crank/no-start checks.</p>
@@ -331,7 +329,6 @@
         <p class="muted">Acceleration jerks, low-speed juddering, gear change problems and fuel delivery issues.</p>
         <a class="text-link" href="car-jerks-when-accelerating.html">Diagnose jerking →</a>
       </article>
-
     </div>
   </div>
 </section>
@@ -342,16 +339,12 @@
       <div>
         <span class="pill">Repair costs</span>
         <h2>Average UK Repair Cost Guides</h2>
-        <p>
-          Understand common repair areas before agreeing to expensive work.
-        </p>
+        <p>Understand common repair areas before agreeing to expensive work.</p>
       </div>
-
       <a class="text-link" href="car-repair-costs-guide-uk.html">View repair cost hub →</a>
     </div>
 
     <div class="grid-3">
-
       <article class="mini-card">
         <h3>Clutch Replacement Cost</h3>
         <p class="muted">Clutch kit, flywheel, labour time and common clutch symptoms explained.</p>
@@ -387,18 +380,15 @@
         <p class="muted">Leaks, overheating, water pumps, radiators and hose repair areas.</p>
         <a class="text-link" href="coolant-leak-repair-cost-uk.html">View cost guide →</a>
       </article>
-
     </div>
   </div>
 </section>
 
 <section>
   <div class="container split">
-
     <article class="feature-card">
       <span class="pill">MOT advice</span>
       <h2>MOT Failures & Legal Questions</h2>
-
       <p class="muted">
         Check common MOT failure areas, advisories, legal questions and safety-related faults before your test.
       </p>
@@ -426,7 +416,6 @@
         <a href="mot-retest-rules-uk.html">MOT retest rules UK</a>
       </div>
     </article>
-
   </div>
 </section>
 
@@ -436,14 +425,11 @@
       <div>
         <span class="pill">Why drivers use Motor Vehicle Expert</span>
         <h2>Built Around Real UK Car Problems</h2>
-        <p>
-          Instead of confusing technical jargon, the site is organised around the way drivers actually describe faults.
-        </p>
+        <p>Instead of confusing technical jargon, the site is organised around the way drivers actually describe faults.</p>
       </div>
     </div>
 
     <div class="grid-4">
-
       <article class="stat-card">
         <strong>100+</strong>
         <span>Diagnostic and car advice pages</span>
@@ -463,7 +449,6 @@
         <strong>Plain English</strong>
         <span>Clear advice before spending money</span>
       </article>
-
     </div>
   </div>
 </section>
@@ -474,14 +459,11 @@
       <div>
         <span class="pill">Used car buying</span>
         <h2>Buying A Used Car?</h2>
-        <p>
-          Check MOT history, service history, accident signs, mileage risks and used car red flags.
-        </p>
+        <p>Check MOT history, service history, accident signs, mileage risks and used car red flags.</p>
       </div>
     </div>
 
     <div class="grid-3">
-
       <article class="mini-card">
         <h3>Used Car Inspection Checklist</h3>
         <p class="muted">A practical checklist before viewing or buying a used car.</p>
@@ -517,7 +499,6 @@
         <p class="muted">Avoid common tricks, fake listings and risky private sale mistakes.</p>
         <a class="text-link" href="common-used-car-scams.html">Read guide →</a>
       </article>
-
     </div>
   </div>
 </section>
@@ -552,7 +533,6 @@
 
 <footer>
   <div class="container footer-grid">
-
     <div>
       <strong>Motor Vehicle Expert</strong>
       <div>Premium UK car diagnostics, MOT advice and repair guidance for everyday drivers.</div>
@@ -572,7 +552,6 @@
     <div>
       © 2026 Motor Vehicle Expert. All rights reserved.
     </div>
-
   </div>
 </footer>
 
