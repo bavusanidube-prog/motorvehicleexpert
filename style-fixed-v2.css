@@ -1881,16 +1881,16 @@ footer::after {
 }
 
 /* =========================================================
-   FINAL PROFESSIONAL ARTICLE SIDEBAR SYSTEM
-   Keep this block near the bottom of the file.
-
-   This fixes the article "On this page" sidebar across all guide pages:
-   - Desktop/laptop: sticky sidebar inside the article layout.
-   - Tablet/phone: sidebar stays visible above the article content.
-   - No fixed positioning, so it will not cover content or break other pages.
+   FINAL SAFE ARTICLE SIDEBAR SYSTEM — SITE-WIDE FIX V2
+   Use this at the very bottom of style.css.
+   It removes fixed-sidebar behaviour and makes every .article-layout page stable.
 ========================================================= */
 
-/* Shared article safety */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 115px;
+}
+
 .article-layout,
 .article-layout *,
 .article-content,
@@ -1900,59 +1900,89 @@ footer::after {
 
 .article-layout {
   display: grid !important;
-  grid-template-columns: 280px minmax(0, 1fr) !important;
-  gap: 1.7rem !important;
+  grid-template-columns: minmax(230px, 280px) minmax(0, 1fr) !important;
+  gap: 1.5rem !important;
   align-items: start !important;
+  width: min(var(--max), calc(100% - 2rem)) !important;
+  max-width: var(--max) !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
   overflow: visible !important;
-  isolation: isolate;
+  position: relative !important;
 }
 
-.article-content {
+.article-layout > aside.toc,
+.article-layout > .toc {
+  display: block !important;
+  grid-column: 1 !important;
+  position: sticky !important;
+  top: 105px !important;
+  left: auto !important;
+  right: auto !important;
+  width: auto !important;
+  max-width: 100% !important;
+  max-height: calc(100vh - 125px) !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  align-self: start !important;
+  z-index: 2 !important;
+  transform: none !important;
+}
+
+.article-layout > .article-content {
+  display: block !important;
+  grid-column: 2 !important;
   width: 100% !important;
   max-width: 100% !important;
-}
-
-/* Desktop and laptop: normal sticky sidebar */
-.article-layout > aside.toc,
-.article-layout > .toc,
-aside.toc {
-  position: sticky !important;
-  top: 106px !important;
-  align-self: start !important;
-  max-height: calc(100vh - 128px) !important;
-  overflow-y: auto !important;
-  overscroll-behavior: contain !important;
-  z-index: 5 !important;
+  position: relative !important;
+  z-index: 1 !important;
 }
 
 .toc h2,
 aside.toc h2 {
-  font-size: 1rem;
-  margin-bottom: 0.9rem;
+  font-size: 1rem !important;
+  margin: 0 0 0.9rem !important;
 }
 
 .toc ul,
 aside.toc ul {
-  display: grid;
-  gap: 0.45rem;
+  list-style: none !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 0.45rem !important;
+}
+
+.toc li,
+aside.toc li {
+  margin: 0 !important;
 }
 
 .toc a,
 aside.toc a {
-  display: block;
-  padding: 0.55rem 0.65rem;
-  border-radius: 12px;
-  color: #d8e6f8;
-  line-height: 1.35;
-  text-decoration: none;
+  display: block !important;
+  width: 100% !important;
+  padding: 0.55rem 0.7rem !important;
+  border-radius: 12px !important;
+  color: #d8e6f8 !important;
+  font-weight: 800 !important;
+  font-size: 0.9rem !important;
+  line-height: 1.35 !important;
+  text-decoration: none !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  cursor: pointer !important;
+  pointer-events: auto !important;
 }
 
 .toc a:hover,
 .toc a:focus-visible,
 aside.toc a:hover,
 aside.toc a:focus-visible {
-  background: rgba(255,255,255,0.075);
-  color: #ffffff;
+  background: rgba(255,255,255,0.075) !important;
+  border-color: rgba(255,255,255,0.1) !important;
+  color: #ffffff !important;
 }
 
 .toc::-webkit-scrollbar,
@@ -1966,7 +1996,6 @@ aside.toc::-webkit-scrollbar-thumb {
   border-radius: 999px;
 }
 
-/* Tablet: sidebar appears above the article instead of disappearing */
 @media (max-width: 1080px) {
   html {
     scroll-padding-top: 100px;
@@ -1974,45 +2003,57 @@ aside.toc::-webkit-scrollbar-thumb {
 
   .article-layout {
     display: block !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
+    width: min(var(--max), calc(100% - 1rem)) !important;
+    max-width: var(--max) !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .article-layout > aside.toc,
-  .article-layout > .toc,
-  aside.toc {
+  .article-layout > .toc {
     display: block !important;
     position: relative !important;
     top: auto !important;
+    left: auto !important;
     width: 100% !important;
     max-width: 100% !important;
     max-height: none !important;
     overflow: visible !important;
     margin-bottom: 1rem !important;
+    z-index: 1 !important;
+  }
+
+  .article-layout > .article-content {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
   }
 
   .toc ul,
   aside.toc ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 0.55rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 0.55rem !important;
   }
 
   .toc a,
   aside.toc a {
-    background: rgba(15, 23, 42, 0.48);
-    border: 1px solid rgba(255,255,255,0.09);
+    background: rgba(15, 23, 42, 0.48) !important;
+    border: 1px solid rgba(255,255,255,0.09) !important;
   }
 }
 
-/* Phone: single-column contents list */
 @media (max-width: 560px) {
   html {
     scroll-padding-top: 90px;
   }
 
+  .article-layout {
+    width: calc(100% - 0.8rem) !important;
+  }
+
   .toc ul,
   aside.toc ul {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
   }
 }
 
