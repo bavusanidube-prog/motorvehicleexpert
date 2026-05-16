@@ -832,9 +832,9 @@ p {
 }
 
 /* =========================================================
-   TOC / ARTICLE SIDEBAR — FINAL PROFESSIONAL BEHAVIOUR
-   Desktop/laptop: fixed left navigation inside article pages.
-   Tablet/phone: hidden to avoid overlap, jumping and flicker.
+   TOC / ARTICLE SIDEBAR BASE STYLING
+   Behaviour is controlled in the final article sidebar system
+   at the end of this file.
 ========================================================= */
 
 .toc,
@@ -875,54 +875,6 @@ aside.toc a {
 .toc a:hover,
 aside.toc a:hover {
   color: #ffffff;
-}
-
-/* Laptop/desktop only */
-@media (min-width: 1081px) {
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 280px minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
-    align-items: start !important;
-    overflow: visible !important;
-  }
-
-  .article-content {
-    min-width: 0 !important;
-  }
-
-  .toc,
-  aside.toc {
-    display: block !important;
-    position: sticky !important;
-    top: 115px !important;
-    align-self: start !important;
-    width: 280px !important;
-    max-width: 280px !important;
-    height: fit-content !important;
-    max-height: calc(100vh - 135px) !important;
-    overflow-y: auto !important;
-    z-index: 20 !important;
-  }
-}
-
-/* Tablet and phone: hide table of contents completely */
-@media (max-width: 1080px) {
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
-  }
-
-  .toc,
-  aside.toc {
-    display: none !important;
-  }
-
-  .article-content {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
 }
 
 
@@ -1928,33 +1880,113 @@ footer::after {
   }
 }
 
-
 /* =========================================================
-   FINAL ARTICLE PAGE SAFETY
-   Keeps article pages smooth and prevents mobile TOC overlap.
+   FINAL PROFESSIONAL ARTICLE SIDEBAR SYSTEM
+   This block must remain at the very bottom of the file.
+
+   Phone/tablet:
+   - Hide "On this page" completely to prevent overlap, flicker and jump.
+
+   Laptop/desktop:
+   - Use fixed positioning, not sticky. This avoids every overflow/parent
+     conflict and keeps the sidebar visible while reading long guides.
 ========================================================= */
 
+/* Shared article safety */
 .article-layout,
+.article-layout *,
 .article-content,
-.article-content .card {
+.article-content * {
   min-width: 0;
 }
 
-@media (min-width: 1081px) {
-  .article-layout {
-    overflow: visible !important;
-  }
-
-  .toc,
-  aside.toc {
-    position: sticky !important;
-    top: 115px !important;
-  }
+.article-layout {
+  isolation: isolate;
 }
 
+/* Phone and tablet: no sidebar */
 @media (max-width: 1080px) {
+  html {
+    scroll-behavior: auto;
+    scroll-padding-top: 0;
+  }
+
+  .article-layout {
+    display: block !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .article-layout > aside,
   .toc,
   aside.toc {
     display: none !important;
+  }
+
+  .article-content {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+}
+
+/* Laptop and desktop: fixed left reading navigation */
+@media (min-width: 1081px) {
+  .article-layout {
+    display: grid !important;
+    grid-template-columns: 300px minmax(0, 1fr) !important;
+    gap: 1.7rem !important;
+    align-items: start !important;
+    overflow: visible !important;
+  }
+
+  .article-content {
+    grid-column: 2 !important;
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .article-layout > aside,
+  .toc,
+  aside.toc {
+    display: block !important;
+  }
+
+  aside.toc,
+  .article-layout > .toc {
+    position: fixed !important;
+    top: 118px !important;
+    left: max(1rem, calc((100vw - var(--max)) / 2)) !important;
+    width: 280px !important;
+    max-width: 280px !important;
+    max-height: calc(100vh - 140px) !important;
+    overflow-y: auto !important;
+    overscroll-behavior: contain !important;
+    z-index: 20 !important;
+  }
+
+  .toc::-webkit-scrollbar,
+  aside.toc::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .toc::-webkit-scrollbar-thumb,
+  aside.toc::-webkit-scrollbar-thumb {
+    background: rgba(255,255,255,0.18);
+    border-radius: 999px;
+  }
+}
+
+/* Medium laptops: give the content more room */
+@media (min-width: 1081px) and (max-width: 1240px) {
+  .article-layout {
+    grid-template-columns: 270px minmax(0, 1fr) !important;
+    gap: 1.25rem !important;
+  }
+
+  aside.toc,
+  .article-layout > .toc {
+    left: 1rem !important;
+    width: 250px !important;
+    max-width: 250px !important;
   }
 }
