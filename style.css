@@ -1884,6 +1884,13 @@ footer::after {
    FINAL SIDEBAR SYSTEM
 ========================================================= */
 
+main,
+section,
+.article-layout,
+.article-content {
+  overflow: visible !important;
+}
+
 @media (min-width: 1081px) {
   .article-layout {
     display: grid !important;
@@ -1910,48 +1917,35 @@ footer::after {
 }
 
 @media (max-width: 1080px) {
+  html {
+    scroll-behavior: auto !important;
+    scroll-padding-top: 0 !important;
+  }
+
+  body {
+    overflow-x: hidden !important;
+  }
+
+  .container {
+    overflow: hidden !important;
+  }
+
   .article-layout {
     display: block !important;
   }
 
+  .article-layout,
+  .article-content {
+    overflow: visible !important;
+  }
+
   aside.toc,
+  .article-layout > aside.toc,
   .article-layout > .toc {
-    position: relative !important;
+    position: static !important;
     top: auto !important;
     max-height: none !important;
     overflow: visible !important;
     margin-bottom: 1.5rem !important;
-  }
-}
-
-/* FORCE STICKY SIDEBAR FIX */
-
-html,
-body,
-main,
-section,
-.container,
-.article-layout,
-.article-content {
-  overflow: visible !important;
-}
-
-@media (min-width: 1081px) {
-
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 280px minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
-    align-items: start !important;
-  }
-
-  .article-layout > aside.toc {
-    position: sticky !important;
-    top: 120px !important;
-    align-self: start !important;
-    height: fit-content !important;
-    max-height: calc(100vh - 140px) !important;
-    overflow-y: auto !important;
-    z-index: 999 !important;
   }
 }
