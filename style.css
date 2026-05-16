@@ -1932,3 +1932,92 @@ footer {
   }
 
 }
+
+/* Symptom diagnostics section */
+.symptom-section {
+  background:
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.12), transparent 32%),
+    linear-gradient(135deg, rgba(255,255,255,0.035), rgba(255,255,255,0.015));
+}
+
+.symptom-head {
+  align-items: center;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.1rem;
+}
+
+.symptom-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  padding: 1.35rem;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.095), rgba(255,255,255,0.045));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: var(--shadow-soft);
+  transition: 0.2s ease;
+}
+
+.symptom-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(245, 158, 11, 0.42);
+  box-shadow: var(--shadow);
+}
+
+.symptom-card.priority {
+  background:
+    linear-gradient(135deg, rgba(245, 158, 11, 0.13), rgba(255,255,255,0.055));
+}
+
+.symptom-icon {
+  width: 48px;
+  height: 48px;
+  display: grid;
+  place-items: center;
+  border-radius: 16px;
+  background: rgba(15, 23, 42, 0.72);
+  border: 1px solid rgba(255,255,255,0.12);
+  font-size: 1.35rem;
+}
+
+.symptom-card h3 {
+  margin-top: 0.75rem;
+  margin-bottom: 0.45rem;
+}
+
+.symptom-card p {
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.symptom-card a {
+  color: var(--brand-light);
+  font-weight: 900;
+}
+
+@media (max-width: 1080px) {
+  .symptom-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .symptom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-card {
+    grid-template-columns: 1fr;
+  }
+
+  .symptom-icon {
+    width: 44px;
+    height: 44px;
+  }
+}
