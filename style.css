@@ -1865,3 +1865,26 @@ footer::after {
     animation: none !important;
   }
 }
+
+/* Restore sticky left article sidebar */
+@media (min-width: 1081px) {
+  .article-layout {
+    align-items: start;
+  }
+
+  .toc {
+    position: sticky;
+    top: 110px;
+    align-self: start;
+    max-height: calc(100vh - 130px);
+    overflow-y: auto;
+  }
+}
+
+@media (max-width: 1080px) {
+  .toc {
+    position: static;
+    max-height: none;
+    overflow: visible;
+  }
+}
