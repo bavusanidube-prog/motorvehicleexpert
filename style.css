@@ -1,9 +1,10 @@
 :root {
   --bg: #07111f;
   --bg-deep: #050b14;
-  --bg-soft: rgba(255, 255, 255, 0.055);
-  --card: rgba(255, 255, 255, 0.078);
-  --card-strong: rgba(255, 255, 255, 0.11);
+  --bg-mid: #0b1727;
+  --surface: rgba(255, 255, 255, 0.078);
+  --surface-strong: rgba(255, 255, 255, 0.11);
+  --surface-soft: rgba(255, 255, 255, 0.045);
   --line: rgba(255, 255, 255, 0.12);
 
   --text: #e5eefb;
@@ -16,7 +17,6 @@
   --brand-blue: #38bdf8;
   --brand-green: #22c55e;
   --danger: #fb7185;
-  --warning: #facc15;
 
   --shadow: 0 22px 54px rgba(0, 0, 0, 0.34);
   --shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.22);
@@ -32,7 +32,10 @@
   --font-main: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-* {
+/* Base */
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -44,17 +47,17 @@ html {
 body {
   margin: 0;
   font-family: var(--font-main);
-  background:
-    radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 30%),
-    radial-gradient(circle at left center, rgba(56, 189, 248, 0.12), transparent 25%),
-    linear-gradient(180deg, #08121f 0%, #0b1727 46%, #0d1321 100%);
   color: var(--text);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  background:
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 30%),
+    radial-gradient(circle at left center, rgba(56, 189, 248, 0.12), transparent 25%),
+    linear-gradient(180deg, #08121f 0%, #0b1727 46%, #0d1321 100%);
 }
 
-body::selection {
+::selection {
   background: rgba(245, 158, 11, 0.35);
 }
 
@@ -64,9 +67,9 @@ a {
 }
 
 img {
+  display: block;
   max-width: 100%;
   height: auto;
-  display: block;
 }
 
 .container {
@@ -101,8 +104,8 @@ select:focus-visible {
   position: sticky;
   top: 0;
   z-index: 1000;
+  background: rgba(7, 17, 31, 0.9);
   backdrop-filter: blur(18px);
-  background: rgba(7, 17, 31, 0.88);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -164,9 +167,9 @@ h1,
 h2,
 h3,
 h4 {
+  color: var(--text-strong);
   line-height: 1.08;
   margin: 0 0 1rem;
-  color: var(--text-strong);
 }
 
 h1 {
@@ -221,20 +224,15 @@ p {
   box-shadow: 0 20px 42px rgba(245, 158, 11, 0.32);
 }
 
-.cta-secondary {
-  color: var(--text);
-  background: rgba(255, 255, 255, 0.075);
-  border-color: rgba(255, 255, 255, 0.13);
-}
-
+.cta-secondary,
 .cta-ghost {
   color: #d8e6f8;
-  background: rgba(255, 255, 255, 0.035);
+  background: rgba(255, 255, 255, 0.045);
   border-color: rgba(255, 255, 255, 0.16);
 }
 
-.cta-ghost:hover,
-.cta-secondary:hover {
+.cta-secondary:hover,
+.cta-ghost:hover {
   background: rgba(255, 255, 255, 0.095);
   color: var(--text-strong);
 }
@@ -247,11 +245,11 @@ p {
 .premium-hero {
   position: relative;
   overflow: hidden;
+  color: #ffffff;
   background:
     radial-gradient(circle at top right, rgba(245, 158, 11, 0.18), transparent 35%),
     radial-gradient(circle at bottom left, rgba(56, 189, 248, 0.15), transparent 35%),
     linear-gradient(135deg, #07111f 0%, #111827 48%, #0f172a 100%);
-  color: #ffffff;
 }
 
 .premium-hero::before {
@@ -312,6 +310,7 @@ p {
   margin-top: 18px;
 }
 
+/* Shared chip links */
 .hero-quick-chips a,
 .quick-links a,
 .category-list a {
@@ -594,32 +593,29 @@ p {
   max-width: 62ch;
 }
 
-.grid-2 {
+.grid-2,
+.grid-3,
+.grid-4,
+.split,
+.article-layout {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
   gap: 1.2rem;
+}
+
+.grid-2,
+.split {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-3 {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1.2rem;
 }
 
 .grid-4 {
-  display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 1.2rem;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.2rem;
 }
 
 .article-layout {
-  display: grid;
   grid-template-columns: 280px 1fr;
   gap: 1.25rem;
   align-items: start;
@@ -902,10 +898,12 @@ textarea {
   font-weight: 800;
 }
 
-/* Footer - works with existing footer-grid HTML */
+/* Footer: works with your current footer-grid HTML across all pages */
 footer {
+  position: relative;
   background:
-    linear-gradient(180deg, rgba(7,17,31,0.2), rgba(5,11,20,0.96));
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(7,17,31,0.2), rgba(5,11,20,0.98) 72%);
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 3.5rem 0 5.5rem;
   color: var(--muted);
@@ -913,59 +911,98 @@ footer {
 
 .footer-grid {
   display: grid;
-  grid-template-columns: 1.35fr 1.2fr 0.8fr;
-  gap: 2.5rem;
-  align-items: start;
+  grid-template-columns: minmax(250px, 1.15fr) minmax(190px, auto) minmax(390px, 1.65fr);
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.footer-grid > div:first-child {
+  max-width: 430px;
 }
 
 .footer-grid strong {
   display: block;
   color: #ffffff;
-  font-size: 1.08rem;
-  margin-bottom: 0.6rem;
+  font-size: 1.15rem;
+  font-weight: 900;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.7rem;
 }
 
 .footer-grid div {
   color: var(--muted);
 }
 
+.footer-grid > div:first-child div {
+  color: #94a3b8;
+  line-height: 1.7;
+}
+
+.footer-grid > div:nth-child(2) {
+  color: #7f8fa8;
+  font-size: 0.9rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
 .footer-links {
-  display: grid;
-  gap: 0.65rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.75rem 1.15rem;
   margin: 0;
 }
 
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
   color: #cbd5e1;
   font-size: 0.94rem;
   font-weight: 800;
+  white-space: nowrap;
 }
 
 .footer-links a:hover {
   color: var(--brand-light);
 }
 
+footer::after {
+  content: "UK-focused diagnostics • Warning lights • MOT advice • Repair costs";
+  display: block;
+  width: min(var(--max), calc(100% - 2rem));
+  margin: 2rem auto 0;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #64748b;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
 /* Optional new footer HTML support */
 .site-footer {
   background:
-    linear-gradient(180deg, rgba(7,17,31,0.25), rgba(5,11,20,0.96));
+    radial-gradient(circle at top left, rgba(245, 158, 11, 0.10), transparent 28%),
+    linear-gradient(180deg, rgba(7,17,31,0.25), rgba(5,11,20,0.98) 75%);
   border-top: 1px solid rgba(255,255,255,0.08);
   padding: 3.5rem 0 5.5rem;
   color: var(--muted);
 }
 
+.footer-row,
+.footer-main,
 .site-footer-inner {
-  display: grid;
-  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   gap: 3rem;
-  align-items: start;
+  flex-wrap: wrap;
 }
 
-.footer-brand-block p {
+.footer-brand,
+.footer-brand-block {
   max-width: 430px;
-  margin: 1rem 0 0;
-  color: var(--muted);
-  font-size: 0.96rem;
 }
 
 .footer-logo {
@@ -975,6 +1012,7 @@ footer {
   color: #ffffff;
   font-weight: 900;
   font-size: 1.05rem;
+  margin-bottom: 0.9rem;
 }
 
 .footer-logo img {
@@ -984,6 +1022,33 @@ footer {
   border-radius: 12px;
 }
 
+.footer-brand p,
+.footer-brand-block p {
+  color: var(--muted);
+  line-height: 1.7;
+  margin: 0;
+}
+
+.footer-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.75rem 1.15rem;
+  max-width: 650px;
+}
+
+.footer-nav a,
+.footer-column a {
+  color: #cbd5e1;
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.footer-nav a:hover,
+.footer-column a:hover {
+  color: var(--brand-light);
+}
+
 .footer-column {
   display: grid;
   gap: 0.65rem;
@@ -991,31 +1056,29 @@ footer {
 
 .footer-column h3 {
   color: #ffffff;
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   margin: 0 0 0.4rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
 }
 
-.footer-column a {
-  color: #cbd5e1;
-  font-size: 0.94rem;
-  font-weight: 800;
-}
-
-.footer-column a:hover {
-  color: var(--brand-light);
-}
-
 .footer-bottom {
-  margin-top: 2.5rem;
-  padding-top: 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2.4rem;
+  padding-top: 1.15rem;
   border-top: 1px solid rgba(255,255,255,0.08);
   color: #7f8fa8;
   font-size: 0.9rem;
 }
 
-/* Homepage-only advanced platform blocks */
+/* Mobile bottom nav */
+.mobile-bottom-nav {
+  display: none;
+}
+
+/* Advanced homepage-only blocks */
 .mve-home {
   position: relative;
   overflow: hidden;
@@ -1422,6 +1485,28 @@ footer {
   .toc {
     position: static;
   }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 1.4rem;
+    align-items: start;
+  }
+
+  .footer-grid > div:nth-child(2) {
+    text-align: left;
+  }
+
+  .footer-links {
+    justify-content: flex-start;
+  }
+
+  .footer-row,
+  .footer-main,
+  .site-footer-inner,
+  .footer-bottom {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
 }
 
 @media (max-width: 760px) {
@@ -1556,326 +1641,56 @@ footer {
     height: 44px;
   }
 
-  .footer-grid,
-  .site-footer-inner {
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-  }
-
-/* Premium footer */
-footer {
-  position: relative;
-  padding: 4rem 0 5.5rem;
-  background:
-    radial-gradient(circle at top left, rgba(245, 158, 11, 0.10), transparent 28%),
-    linear-gradient(180deg, rgba(7,17,31,0.35), #050b14 72%);
-  border-top: 1px solid rgba(255,255,255,0.10);
-  color: var(--muted);
-}
-
-.footer-grid {
-  display: grid;
-  grid-template-columns: 1.4fr 1.6fr auto;
-  gap: 2.8rem;
-  align-items: start;
-}
-
-.footer-grid > div:first-child {
-  max-width: 420px;
-}
-
-.footer-grid strong {
-  display: block;
-  color: #ffffff;
-  font-size: 1.2rem;
-  font-weight: 900;
-  letter-spacing: -0.02em;
-  margin-bottom: 0.75rem;
-}
-
-.footer-grid > div:first-child div {
-  color: #94a3b8;
-  line-height: 1.7;
-}
-
-.footer-links {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(150px, 1fr));
-  gap: 0.75rem 1.5rem;
-  margin: 0;
-}
-
-.footer-links a {
-  position: relative;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  font-weight: 800;
-  padding-left: 1rem;
-  transition: color 0.2s ease;
-}
-
-.footer-links a::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0.65em;
-  width: 5px;
-  height: 5px;
-  border-radius: 999px;
-  background: rgba(245,158,11,0.75);
-}
-
-.footer-links a:hover {
-  color: var(--brand-light);
-}
-
-.footer-grid > div:last-child {
-  justify-self: end;
-  color: #64748b;
-  font-size: 0.9rem;
-  text-align: right;
-  white-space: nowrap;
-}
-
-footer::after {
-  content: "UK-focused diagnostics • Warning lights • MOT advice • Repair costs";
-  display: block;
-  width: min(var(--max), calc(100% - 2rem));
-  margin: 2.5rem auto 0;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  color: #64748b;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-/* Mobile footer */
-@media (max-width: 760px) {
-  footer {
+  footer,
+  .site-footer {
     padding: 3rem 0 6rem;
   }
 
-  .footer-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .footer-links {
-    grid-template-columns: 1fr;
-  }
-
-  .footer-grid > div:last-child {
-    justify-self: start;
-    text-align: left;
-    white-space: normal;
-  }
-
-  footer::after {
-    width: min(var(--max), calc(100% - 1.1rem));
-    margin-top: 2rem;
-  }
-}
-
-/* GLOBAL FOOTER UPGRADE */
-footer {
-  position: relative;
-  padding: 3.5rem 0 5rem !important;
-  background:
-    radial-gradient(circle at top left, rgba(245,158,11,0.10), transparent 28%),
-    linear-gradient(180deg, rgba(7,17,31,0.35), #050b14 75%) !important;
-  border-top: 1px solid rgba(255,255,255,0.08);
-}
-
-footer .footer-grid {
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  gap: 3rem;
-  flex-wrap: wrap;
-}
-
-footer .footer-grid > div:first-child {
-  max-width: 420px;
-}
-
-footer .footer-grid strong {
-  display: block;
-  color: #ffffff;
-  font-size: 1.12rem;
-  font-weight: 900;
-  margin-bottom: 0.8rem;
-}
-
-footer .footer-grid > div:first-child div {
-  color: #94a3b8;
-  line-height: 1.7;
-}
-
-footer .footer-links {
-  display: flex !important;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.85rem 1.4rem;
-  max-width: 620px;
-}
-
-footer .footer-links a {
-  color: #cbd5e1;
-  font-size: 0.94rem;
-  font-weight: 800;
-  transition: color 0.2s ease;
-}
-
-footer .footer-links a:hover {
-  color: var(--brand-light);
-}
-
-footer .footer-grid > div:last-child {
-  color: #64748b;
-  font-size: 0.9rem;
-  text-align: right;
-  white-space: nowrap;
-}
-
-footer::after {
-  content: "UK-focused diagnostics • Warning lights • MOT advice • Repair costs";
-  display: block;
-  width: min(var(--max), calc(100% - 2rem));
-  margin: 2rem auto 0;
-  padding-top: 1.2rem;
-  border-top: 1px solid rgba(255,255,255,0.08);
-  color: #64748b;
-  font-size: 0.9rem;
-  font-weight: 700;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-  footer .footer-grid {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer .footer-links {
+  .footer-links,
+  .footer-nav {
     justify-content: flex-start;
-    max-width: 100%;
+    gap: 0.75rem 1rem;
   }
 
-  footer .footer-grid > div:last-child {
-    text-align: left;
-    white-space: normal;
+  .footer-bottom {
+    display: grid;
+  }
+
+  .mobile-bottom-nav {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1200;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background: rgba(7, 17, 31, 0.96);
+    backdrop-filter: blur(16px);
+    border-top: 1px solid rgba(255,255,255,0.12);
+  }
+
+  .mobile-bottom-nav a {
+    padding: 0.75rem 0.35rem;
+    text-align: center;
+    color: #cbd5e1;
+    font-size: 0.78rem;
+    font-weight: 900;
+  }
+
+  .mobile-bottom-nav a:hover {
+    color: var(--brand-light);
   }
 }
 
-@media (max-width: 640px) {
-  footer {
-    padding: 3rem 0 6rem !important;
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
-  footer .footer-links {
-    gap: 0.7rem 1rem;
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
   }
-
-  footer::after {
-    width: min(var(--max), calc(100% - 1.1rem));
-  }
-}  
-
-/* FORCE FOOTER ITEMS HORIZONTAL */
-footer .footer-grid {
-  display: flex !important;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
-
-footer .footer-links {
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 0.7rem 1.3rem;
-}
-
-footer .footer-links a {
-  white-space: nowrap;
-}
-
-footer .footer-grid > div:last-child {
-  white-space: nowrap;
-}
-
-/* MOBILE */
-@media (max-width: 760px) {
-  footer .footer-grid {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  footer .footer-links {
-    justify-content: flex-start;
-  }
-
-  footer .footer-grid > div:last-child {
-    white-space: normal;
-  }
-} 
-
-/* HARD FIX: OLD FOOTER HORIZONTAL LAYOUT */
-footer .footer-grid {
-  display: grid !important;
-  grid-template-columns: minmax(260px, 1.2fr) minmax(220px, auto) minmax(420px, 1.6fr) !important;
-  align-items: center !important;
-  gap: 2rem !important;
-}
-
-footer .footer-grid > div:nth-child(1) {
-  grid-column: 1 !important;
-}
-
-footer .footer-grid > div:nth-child(2) {
-  grid-column: 2 !important;
-  white-space: nowrap !important;
-  text-align: center !important;
-}
-
-footer .footer-grid > div:nth-child(3),
-footer .footer-links {
-  grid-column: 3 !important;
-  display: flex !important;
-  flex-direction: row !important;
-  flex-wrap: wrap !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  gap: 0.75rem 1.2rem !important;
-  margin: 0 !important;
-}
-
-footer .footer-links a {
-  display: inline-flex !important;
-  width: auto !important;
-  white-space: nowrap !important;
-}
-
-/* MOBILE */
-@media (max-width: 900px) {
-  footer .footer-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  footer .footer-grid > div,
-  footer .footer-links {
-    grid-column: 1 !important;
-  }
-
-  footer .footer-grid > div:nth-child(2) {
-    text-align: left !important;
-    white-space: normal !important;
-  }
-
-  footer .footer-links {
-    justify-content: flex-start !important;
-  }
-}  
