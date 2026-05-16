@@ -1923,3 +1923,35 @@ footer::after {
     margin-bottom: 1.5rem !important;
   }
 }
+
+/* FORCE STICKY SIDEBAR FIX */
+
+html,
+body,
+main,
+section,
+.container,
+.article-layout,
+.article-content {
+  overflow: visible !important;
+}
+
+@media (min-width: 1081px) {
+
+  .article-layout {
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+    align-items: start !important;
+  }
+
+  .article-layout > aside.toc {
+    position: sticky !important;
+    top: 120px !important;
+    align-self: start !important;
+    height: fit-content !important;
+    max-height: calc(100vh - 140px) !important;
+    overflow-y: auto !important;
+    z-index: 999 !important;
+  }
+}
