@@ -1990,3 +1990,53 @@ footer::after {
     max-width: 250px !important;
   }
 }
+
+/* FINAL HEADER RESTORE — desktop + laptop */
+@media (min-width: 761px) {
+  .topbar .nav {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 1rem !important;
+  }
+
+  .brand,
+  .logo-brand {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+  }
+
+  .nav-links {
+    width: auto !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: flex-end !important;
+    gap: 0.5rem !important;
+  }
+
+  .nav-links a {
+    width: auto !important;
+    display: inline-flex !important;
+    white-space: nowrap !important;
+  }
+}
+
+/* Phone only: stacked header */
+@media (max-width: 760px) {
+  .topbar .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  .nav-links {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: flex-start !important;
+  }
+}
