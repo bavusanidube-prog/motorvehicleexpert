@@ -2106,3 +2106,44 @@ aside.toc::-webkit-scrollbar-thumb {
     justify-content: flex-start !important;
   }
 }
+
+/* FINAL FIX: sticky article sidebar */
+@media (min-width: 1081px) {
+  .article-layout {
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+    align-items: start !important;
+    overflow: visible !important;
+  }
+
+  .article-layout > .toc,
+  aside.toc {
+    position: sticky !important;
+    top: 110px !important;
+    align-self: start !important;
+    max-height: calc(100vh - 130px) !important;
+    overflow-y: auto !important;
+    z-index: 10 !important;
+  }
+
+  .article-content {
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 1080px) {
+  .article-layout {
+    display: block !important;
+  }
+
+  .article-layout > .toc,
+  aside.toc {
+    display: block !important;
+    position: relative !important;
+    top: auto !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1.5rem !important;
+  }
+}
