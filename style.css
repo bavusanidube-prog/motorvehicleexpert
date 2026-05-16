@@ -1824,3 +1824,111 @@ footer {
     margin-top: 1.8rem;
   }
 }
+
+/* FORCE NEW FOOTER */
+
+.site-footer {
+  width: 100%;
+  background: #050b14 !important;
+  border-top: 1px solid rgba(255,255,255,.08) !important;
+  padding: 70px 0 90px !important;
+  margin-top: 0 !important;
+}
+
+.site-footer-inner {
+  width: min(1180px, calc(100% - 32px));
+  margin: 0 auto;
+
+  display: grid !important;
+  grid-template-columns: 1.4fr .8fr .8fr !important;
+  gap: 60px !important;
+
+  align-items: start !important;
+}
+
+.footer-brand-block {
+  display: block !important;
+}
+
+.footer-logo {
+  display: flex !important;
+  align-items: center !important;
+  gap: 14px !important;
+
+  color: #ffffff !important;
+  font-size: 1.1rem !important;
+  font-weight: 900 !important;
+
+  margin-bottom: 18px !important;
+}
+
+.footer-logo img {
+  width: 48px !important;
+  height: 48px !important;
+  object-fit: contain !important;
+}
+
+.footer-brand-block p {
+  color: #94a3b8 !important;
+  line-height: 1.7 !important;
+  max-width: 420px !important;
+  margin: 0 !important;
+}
+
+.footer-column {
+  display: flex !important;
+  flex-direction: column !important;
+  gap: 14px !important;
+}
+
+.footer-column h3 {
+  margin: 0 0 8px !important;
+
+  color: #ffffff !important;
+  font-size: .9rem !important;
+  font-weight: 900 !important;
+
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+
+.footer-column a {
+  color: #cbd5e1 !important;
+  font-size: .95rem !important;
+  font-weight: 700 !important;
+}
+
+.footer-column a:hover {
+  color: #fbbf24 !important;
+}
+
+.footer-bottom {
+  width: min(1180px, calc(100% - 32px));
+  margin: 50px auto 0 !important;
+
+  padding-top: 20px !important;
+
+  border-top: 1px solid rgba(255,255,255,.08) !important;
+
+  color: #64748b !important;
+  font-size: .9rem !important;
+}
+
+/* MOBILE */
+
+@media (max-width: 760px) {
+
+  .site-footer {
+    padding: 50px 0 100px !important;
+  }
+
+  .site-footer-inner {
+    grid-template-columns: 1fr !important;
+    gap: 36px !important;
+  }
+
+  .footer-bottom {
+    margin-top: 36px !important;
+  }
+
+}
