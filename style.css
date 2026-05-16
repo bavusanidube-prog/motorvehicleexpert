@@ -1866,48 +1866,56 @@ footer::after {
   }
 }
 
-/* FINAL PROFESSIONAL STICKY SIDEBAR FIX */
-
-/* Critical: allow sticky positioning */
-.article-layout,
-.article-layout main,
-.article-layout article,
-.article-layout .article-content {
-  overflow: visible !important;
-}
-
-/* Desktop sticky sidebar */
-@media (min-width: 1081px) {
-
-  .article-layout {
-    display: grid;
-    grid-template-columns: 280px minmax(0, 1fr);
-    gap: 2rem;
-    align-items: start;
-  }
-
-  .toc,
-  aside.toc {
-    position: sticky !important;
-    top: 110px !important;
-    align-self: start;
-    height: fit-content;
-    max-height: calc(100vh - 130px);
-    overflow-y: auto;
-  }
-}
-
-/* Tablet + mobile */
+/* Phone/tablet: make TOC a clean scrollable quick-nav */
 @media (max-width: 1080px) {
-
   .article-layout {
-    grid-template-columns: 1fr;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
   }
 
   .toc,
   aside.toc {
     position: static !important;
-    max-height: none;
-    overflow: visible;
+    top: auto !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .toc h2 {
+    font-size: 1.05rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .toc ul {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 0.55rem !important;
+    overflow-x: auto !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .toc ul::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .toc li {
+    flex: 0 0 auto !important;
+  }
+
+  .toc a {
+    display: inline-flex !important;
+    white-space: nowrap !important;
+    padding: 0.55rem 0.75rem !important;
+    border-radius: 999px !important;
+    background: rgba(255,255,255,0.06) !important;
+    border: 1px solid rgba(255,255,255,0.12) !important;
+    color: #dbeafe !important;
+    font-size: 0.84rem !important;
+    font-weight: 800 !important;
   }
 }
