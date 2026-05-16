@@ -2095,3 +2095,265 @@ iframe {
     border-radius: 16px !important;
   }
 }
+
+/* =========================================================
+   EMERGENCY MOBILE FIX — HEADER + HOMEPAGE DIAGNOSTIC CARD
+   Paste at VERY BOTTOM of style.css
+========================================================= */
+
+@media (max-width: 820px) {
+  html,
+  body {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    max-width: 100%;
+  }
+
+  .container {
+    width: calc(100% - 24px) !important;
+    max-width: calc(100% - 24px) !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  /* HEADER FIX */
+  .topbar {
+    position: relative !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+
+  .nav {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 12px !important;
+    align-items: start !important;
+  }
+
+  .brand,
+  .logo-brand {
+    width: 100% !important;
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .brand-text {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    font-size: 0.95rem !important;
+    line-height: 1.2 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .site-logo {
+    width: auto !important;
+    height: 42px !important;
+    max-height: 42px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    max-width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: flex-start !important;
+    gap: 8px !important;
+    padding: 0 0 8px !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    font-size: 0.82rem !important;
+    padding: 8px 10px !important;
+  }
+
+  /* HERO FULL WIDTH FIX */
+  .hero,
+  .premium-hero,
+  .mve-home .platform-hero {
+    width: 100% !important;
+    overflow: hidden !important;
+    padding: 40px 0 30px !important;
+  }
+
+  .hero-grid,
+  .premium-hero-grid,
+  .mve-home .hero-shell {
+    display: grid !important;
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    gap: 22px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-copy,
+  .hero-content,
+  .mve-home .hero-content {
+    min-width: 0 !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  h1,
+  .hero-copy h1,
+  .mve-home .hero-content h1 {
+    font-size: clamp(2rem, 10vw, 2.55rem) !important;
+    line-height: 1.05 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .lead,
+  .hero p,
+  .mve-home .hero-content p {
+    max-width: 100% !important;
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .hero-actions,
+  .mve-home .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    gap: 10px !important;
+  }
+
+  .cta,
+  .cta-primary,
+  .cta-secondary,
+  .cta-ghost {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* DIAGNOSTIC CARD HARD RESET */
+  .premium-diagnostic-visual,
+  .mve-home .diagnostic-console {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    margin: 0 !important;
+    padding: 14px !important;
+    border-radius: 20px !important;
+    overflow: hidden !important;
+  }
+
+  .premium-diagnostic-visual *,
+  .mve-home .diagnostic-console * {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .visual-top,
+  .health-score,
+  .diagnostic-row,
+  .repair-preview,
+  .mve-home .console-top,
+  .mve-home .scan-status,
+  .mve-home .system-row,
+  .mve-home .live-feed,
+  .mve-home .assessment-card,
+  .mve-home .console-footer {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    padding: 13px !important;
+    border-radius: 16px !important;
+    overflow: hidden !important;
+  }
+
+  .visual-top,
+  .health-score,
+  .diagnostic-row,
+  .mve-home .console-top,
+  .mve-home .system-row,
+  .mve-home .console-footer,
+  .mve-home .scan-label,
+  .mve-home .feed-header {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    align-items: start !important;
+    gap: 7px !important;
+  }
+
+  .visual-top strong {
+    margin-left: 0 !important;
+  }
+
+  .score-ring {
+    width: 64px !important;
+    height: 64px !important;
+  }
+
+  .status,
+  .mve-home .connection-tag,
+  .mve-home .status-normal,
+  .mve-home .status-warning,
+  .mve-home .status-processing {
+    width: fit-content !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+
+  .diagnostic-stack,
+  .mve-home .system-grid,
+  .mve-home .feed-log {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+  }
+
+  .mve-home .assessment-grid {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+
+  .mve-home .feed-item {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 3px !important;
+    font-size: 0.76rem !important;
+  }
+
+  .repair-preview div {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 7px !important;
+  }
+
+  .repair-preview small {
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+
+  .visual-link,
+  .mve-home .console-link {
+    display: inline-block !important;
+    max-width: 100% !important;
+    white-space: normal !important;
+  }
+}
