@@ -2,6 +2,7 @@
   --bg: #07111f;
   --bg-deep: #050b14;
   --bg-mid: #0b1727;
+
   --surface: rgba(255, 255, 255, 0.078);
   --surface-strong: rgba(255, 255, 255, 0.11);
   --surface-soft: rgba(255, 255, 255, 0.045);
@@ -32,7 +33,7 @@
   --font-main: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
 }
 
-/* Base */
+/* RESET */
 *,
 *::before,
 *::after {
@@ -42,15 +43,20 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 110px;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
   margin: 0;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
   font-family: var(--font-main);
   color: var(--text);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
-  overflow-x: hidden;
   background:
     radial-gradient(circle at top right, rgba(245, 158, 11, 0.14), transparent 30%),
     radial-gradient(circle at left center, rgba(56, 189, 248, 0.12), transparent 25%),
@@ -66,10 +72,19 @@ a {
   text-decoration: none;
 }
 
-img {
+img,
+svg,
+video,
+iframe {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+table,
+pre {
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 .container {
@@ -99,12 +114,12 @@ select:focus-visible {
   outline-offset: 3px;
 }
 
-/* Header */
+/* HEADER */
 .topbar {
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(7, 17, 31, 0.9);
+  background: rgba(7, 17, 31, 0.92);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -122,6 +137,7 @@ select:focus-visible {
   display: flex;
   align-items: center;
   gap: 0.85rem;
+  min-width: 0;
   font-weight: 900;
 }
 
@@ -130,6 +146,7 @@ select:focus-visible {
   width: auto;
   object-fit: contain;
   border-radius: 12px;
+  flex: 0 0 auto;
 }
 
 .brand-text {
@@ -137,6 +154,7 @@ select:focus-visible {
   font-size: 1.05rem;
   font-weight: 900;
   letter-spacing: -0.01em;
+  line-height: 1.2;
 }
 
 .nav-links {
@@ -152,7 +170,7 @@ select:focus-visible {
   font-weight: 800;
   padding: 0.55rem 0.78rem;
   border-radius: 999px;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .nav-links a:hover,
@@ -162,7 +180,7 @@ select:focus-visible {
   color: var(--text-strong);
 }
 
-/* Typography */
+/* TYPOGRAPHY */
 h1,
 h2,
 h3,
@@ -199,7 +217,7 @@ p {
   max-width: 68ch;
 }
 
-/* Buttons */
+/* BUTTONS */
 .cta {
   display: inline-flex;
   align-items: center;
@@ -211,7 +229,7 @@ p {
   border: 1px solid transparent;
   font-weight: 900;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .cta-primary {
@@ -237,7 +255,7 @@ p {
   color: var(--text-strong);
 }
 
-/* Hero */
+/* HERO */
 .hero {
   padding: 5rem 0 3.5rem;
 }
@@ -252,7 +270,8 @@ p {
     linear-gradient(135deg, #07111f 0%, #111827 48%, #0f172a 100%);
 }
 
-.premium-hero::before {
+.premium-hero::before,
+.mve-home .platform-hero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -272,6 +291,11 @@ p {
   grid-template-columns: minmax(0, 1.08fr) minmax(340px, 0.92fr);
   gap: 2.4rem;
   align-items: center;
+}
+
+.hero-copy,
+.hero-content {
+  min-width: 0;
 }
 
 .hero-copy h1 {
@@ -310,7 +334,6 @@ p {
   margin-top: 18px;
 }
 
-/* Shared chip links */
 .hero-quick-chips a,
 .quick-links a,
 .category-list a {
@@ -321,7 +344,7 @@ p {
   border-radius: 999px;
   font-weight: 800;
   font-size: 0.9rem;
-  transition: background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+  transition: 0.2s ease;
 }
 
 .hero-quick-chips a:hover,
@@ -332,20 +355,24 @@ p {
   background: rgba(245, 158, 11, 0.08);
 }
 
-/* Diagnostic visual */
+/* HOMEPAGE DIAGNOSTIC VISUAL */
 .premium-diagnostic-visual {
+  min-width: 0;
+  width: 100%;
   background:
     linear-gradient(180deg, rgba(255,255,255,0.12), rgba(255,255,255,0.045));
   border: 1px solid rgba(255,255,255,0.16);
   box-shadow: 0 32px 90px rgba(0,0,0,0.4);
   border-radius: var(--radius-lg);
   padding: 26px;
+  overflow: hidden;
 }
 
 .visual-top,
 .health-score,
 .diagnostic-row,
 .repair-preview {
+  min-width: 0;
   background: rgba(15, 23, 42, 0.84);
   border: 1px solid rgba(148, 163, 184, 0.16);
   border-radius: 20px;
@@ -372,6 +399,7 @@ p {
   background: var(--brand-green);
   border-radius: 999px;
   box-shadow: 0 0 0 6px rgba(34,197,94,0.14);
+  flex: 0 0 auto;
 }
 
 .health-score {
@@ -380,6 +408,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .score-label {
@@ -405,6 +434,7 @@ p {
     conic-gradient(var(--brand) 0 82%, rgba(255,255,255,0.14) 82% 100%);
   color: var(--brand-light);
   font-weight: 900;
+  flex: 0 0 auto;
 }
 
 .diagnostic-stack {
@@ -428,6 +458,7 @@ p {
   padding: 6px 10px;
   font-size: 0.76rem;
   font-weight: 900;
+  flex: 0 0 auto;
 }
 
 .status.amber {
@@ -470,7 +501,7 @@ p {
   font-weight: 800;
 }
 
-/* Links */
+/* LINKS */
 .visual-link,
 .text-link,
 .article-link {
@@ -488,14 +519,7 @@ p {
   text-decoration: none;
 }
 
-.text-link:hover,
-.article-link:hover,
-.visual-link:hover {
-  color: #ffffff;
-  text-decoration-color: #ffffff;
-}
-
-/* Pills */
+/* PILLS */
 .eyebrow,
 .pill,
 .alt-pill {
@@ -531,7 +555,7 @@ p {
   margin-bottom: 0.8rem;
 }
 
-/* Cards */
+/* CARDS */
 .hero-card,
 .card,
 .article,
@@ -572,12 +596,7 @@ p {
   border-color: rgba(245, 158, 11, 0.35);
 }
 
-.premium-card {
-  background:
-    linear-gradient(180deg, rgba(255,255,255,0.105), rgba(255,255,255,0.05));
-}
-
-/* Layout */
+/* LAYOUT */
 .section-head {
   display: flex;
   justify-content: space-between;
@@ -604,19 +623,19 @@ p {
 
 .grid-2,
 .split {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .grid-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .grid-4 {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .article-layout {
-  grid-template-columns: 280px 1fr;
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 1.25rem;
   align-items: start;
 }
@@ -641,7 +660,7 @@ p {
   padding: 1.2rem;
 }
 
-/* Quick diagnosis */
+/* QUICK DIAGNOSIS */
 .quick-diagnosis {
   padding-top: 2rem;
 }
@@ -675,7 +694,7 @@ p {
   margin-top: 1rem;
 }
 
-/* Symptom section */
+/* SYMPTOMS */
 .symptom-section {
   background:
     radial-gradient(circle at top left, rgba(245, 158, 11, 0.12), transparent 32%),
@@ -688,13 +707,13 @@ p {
 
 .symptom-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.1rem;
 }
 
 .symptom-card {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: auto minmax(0, 1fr);
   gap: 1rem;
   padding: 1.35rem;
   border-radius: var(--radius);
@@ -724,22 +743,7 @@ p {
   font-size: 1.35rem;
 }
 
-.symptom-card h3 {
-  margin-top: 0.75rem;
-  margin-bottom: 0.45rem;
-}
-
-.symptom-card p {
-  color: var(--muted);
-  margin-bottom: 1rem;
-}
-
-.symptom-card a {
-  color: var(--brand-light);
-  font-weight: 900;
-}
-
-/* Lists */
+/* LISTS */
 .checklist {
   display: grid;
   gap: 0.75rem;
@@ -770,10 +774,10 @@ p {
   margin-top: 2px;
 }
 
-/* Stats */
+/* STATS */
 .stats {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -797,12 +801,7 @@ p {
   color: #ffffff;
 }
 
-.stat-card span {
-  color: var(--muted);
-  font-weight: 700;
-}
-
-/* Supporting sections */
+/* SUPPORTING SECTIONS */
 .dark-section,
 .authority-section,
 .final-cta {
@@ -833,11 +832,7 @@ p {
   font-weight: 800;
 }
 
-.toc a:hover {
-  color: #ffffff;
-}
-
-/* Forms */
+/* FORMS */
 .contact-wrap {
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
@@ -879,7 +874,7 @@ textarea {
   resize: vertical;
 }
 
-/* Trust strip */
+/* TRUST STRIP */
 .trust-strip {
   padding: 1.6rem 0;
 }
@@ -898,8 +893,9 @@ textarea {
   font-weight: 800;
 }
 
-/* Footer: works with your current footer-grid HTML across all pages */
-footer {
+/* FOOTER */
+footer,
+.site-footer {
   position: relative;
   background:
     radial-gradient(circle at top left, rgba(245, 158, 11, 0.10), transparent 28%),
@@ -945,7 +941,8 @@ footer {
   text-align: center;
 }
 
-.footer-links {
+.footer-links,
+.footer-nav {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -955,7 +952,9 @@ footer {
   margin: 0;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-nav a,
+.footer-column a {
   display: inline-flex;
   align-items: center;
   color: #cbd5e1;
@@ -964,7 +963,9 @@ footer {
   white-space: nowrap;
 }
 
-.footer-links a:hover {
+.footer-links a:hover,
+.footer-nav a:hover,
+.footer-column a:hover {
   color: var(--brand-light);
 }
 
@@ -978,16 +979,6 @@ footer::after {
   color: #64748b;
   font-size: 0.9rem;
   font-weight: 700;
-}
-
-/* Optional new footer HTML support */
-.site-footer {
-  background:
-    radial-gradient(circle at top left, rgba(245, 158, 11, 0.10), transparent 28%),
-    linear-gradient(180deg, rgba(7,17,31,0.25), rgba(5,11,20,0.98) 75%);
-  border-top: 1px solid rgba(255,255,255,0.08);
-  padding: 3.5rem 0 5.5rem;
-  color: var(--muted);
 }
 
 .footer-row,
@@ -1029,26 +1020,6 @@ footer::after {
   margin: 0;
 }
 
-.footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 0.75rem 1.15rem;
-  max-width: 650px;
-}
-
-.footer-nav a,
-.footer-column a {
-  color: #cbd5e1;
-  font-size: 0.94rem;
-  font-weight: 800;
-}
-
-.footer-nav a:hover,
-.footer-column a:hover {
-  color: var(--brand-light);
-}
-
 .footer-column {
   display: grid;
   gap: 0.65rem;
@@ -1073,12 +1044,7 @@ footer::after {
   font-size: 0.9rem;
 }
 
-/* Mobile bottom nav */
-.mobile-bottom-nav {
-  display: none;
-}
-
-/* Advanced homepage-only blocks */
+/* ADVANCED HOMEPAGE */
 .mve-home {
   position: relative;
   overflow: hidden;
@@ -1094,18 +1060,6 @@ footer::after {
     linear-gradient(135deg, #07111f 0%, #111827 50%, #0f172a 100%);
 }
 
-.mve-home .platform-hero::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(255,255,255,0.032) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.032) 1px, transparent 1px);
-  background-size: 42px 42px;
-  opacity: 0.22;
-  pointer-events: none;
-}
-
 .mve-home .hero-shell {
   position: relative;
   z-index: 1;
@@ -1113,6 +1067,10 @@ footer::after {
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
   gap: 42px;
   align-items: center;
+}
+
+.mve-home .hero-content {
+  min-width: 0;
 }
 
 .mve-home .hero-content h1 {
@@ -1141,6 +1099,8 @@ footer::after {
 
 .mve-home .diagnostic-console {
   position: relative;
+  width: 100%;
+  min-width: 0;
   overflow: hidden;
   padding: 26px;
   border-radius: 30px;
@@ -1156,6 +1116,7 @@ footer::after {
 .mve-home .system-row,
 .mve-home .live-feed,
 .mve-home .assessment-card {
+  min-width: 0;
   background: rgba(15, 23, 42, 0.82);
   border: 1px solid rgba(148, 163, 184, 0.18);
   border-radius: 20px;
@@ -1195,6 +1156,7 @@ footer::after {
   background: var(--brand-green);
   border-radius: 50%;
   box-shadow: 0 0 0 6px rgba(34,197,94,0.14);
+  flex: 0 0 auto;
 }
 
 .mve-home .connection-tag,
@@ -1261,6 +1223,10 @@ footer::after {
   padding: 14px 16px;
 }
 
+.mve-home .system-meta {
+  min-width: 0;
+}
+
 .mve-home .system-meta strong {
   display: block;
   color: #ffffff;
@@ -1291,7 +1257,7 @@ footer::after {
 
 .mve-home .assessment-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
   margin: 16px 0 18px;
 }
@@ -1349,7 +1315,7 @@ footer::after {
 .mve-home .platform-grid,
 .mve-home .journey-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 20px;
 }
 
@@ -1369,13 +1335,9 @@ footer::after {
   padding: 22px;
 }
 
-.mve-home .platform-card:hover,
-.mve-home .journey-card:hover {
-  border-color: rgba(245,158,11,0.34);
-}
-
 .mve-home .platform-card p,
-.mve-home .journey-card p {
+.mve-home .journey-card p,
+.mve-home .authority-shell p {
   color: var(--muted);
 }
 
@@ -1402,29 +1364,11 @@ footer::after {
   padding: 32px;
 }
 
-.mve-home .step-number {
-  display: inline-flex;
-  width: 42px;
-  height: 42px;
-  align-items: center;
-  justify-content: center;
-  border-radius: 14px;
-  background: rgba(56,189,248,0.14);
-  border: 1px solid rgba(56,189,248,0.22);
-  color: #bae6fd;
-  font-weight: 900;
-  margin-bottom: 16px;
-}
-
 .mve-home .authority-shell {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: minmax(0, 1fr) auto;
   gap: 28px;
   align-items: center;
-}
-
-.mve-home .authority-shell p {
-  color: var(--muted);
 }
 
 .mve-home .metrics {
@@ -1451,12 +1395,12 @@ footer::after {
   color: var(--muted);
 }
 
-/* Mobile bottom nav */
+/* MOBILE BOTTOM NAV */
 .mobile-bottom-nav {
   display: none;
 }
 
-/* Responsive */
+/* TABLET */
 @media (max-width: 1080px) {
   .hero-grid,
   .premium-hero-grid,
@@ -1478,8 +1422,14 @@ footer::after {
     grid-template-columns: 1fr;
   }
 
+  .premium-diagnostic-visual,
+  .mve-home .diagnostic-console {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+
   .symptom-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .toc {
@@ -1496,7 +1446,8 @@ footer::after {
     text-align: left;
   }
 
-  .footer-links {
+  .footer-links,
+  .footer-nav {
     justify-content: flex-start;
   }
 
@@ -1509,6 +1460,7 @@ footer::after {
   }
 }
 
+/* PHONE */
 @media (max-width: 760px) {
   html {
     scroll-padding-top: 90px;
@@ -1519,60 +1471,106 @@ footer::after {
   }
 
   .container {
-    width: min(var(--max), calc(100% - 1.1rem));
+    width: calc(100% - 1rem);
   }
 
   section {
     padding: var(--section-y-mobile) 0;
   }
 
+  /* Header */
+  .topbar {
+    overflow: hidden;
+  }
+
   .nav {
-    align-items: flex-start;
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
     padding: 0.8rem 0;
+  }
+
+  .brand,
+  .logo-brand {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .site-logo {
+    height: 44px;
+  }
+
+  .brand-text {
+    font-size: 0.94rem;
+    line-height: 1.2;
+    overflow-wrap: anywhere;
   }
 
   .nav-links {
     width: 100%;
-    justify-content: flex-start;
-    gap: 0.45rem;
-    overflow-x: auto;
+    display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 0.3rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.45rem;
+    padding-bottom: 0.35rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none;
   }
 
   .nav-links a {
-    padding: 0.5rem 0.7rem;
-    font-size: 0.92rem;
+    flex: 0 0 auto;
     white-space: nowrap;
+    font-size: 0.82rem;
+    padding: 0.48rem 0.68rem;
   }
 
-  .site-logo {
-    height: 52px;
-  }
-
-  .brand-text {
-    font-size: 0.95rem;
-  }
-
-  h1,
-  .mve-home .hero-content h1 {
-    font-size: 2.45rem;
-  }
-
-  h2 {
-    font-size: 1.8rem;
-  }
-
+  /* Hero */
   .hero,
   .premium-hero,
   .mve-home .platform-hero {
-    padding: 3rem 0 2.2rem;
+    padding: 3rem 0 2rem;
+    overflow: hidden;
+  }
+
+  .hero-grid,
+  .premium-hero-grid,
+  .mve-home .hero-shell {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  h1,
+  .hero-copy h1,
+  .mve-home .hero-content h1 {
+    max-width: 100%;
+    font-size: clamp(2rem, 10vw, 2.6rem);
+    line-height: 1.05;
+    letter-spacing: -0.055em;
+    overflow-wrap: anywhere;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .lead,
+  .hero p,
+  .mve-home .hero-content p {
+    max-width: 100%;
+    font-size: 1rem;
+    line-height: 1.65;
   }
 
   .hero-actions,
   .mve-home .hero-actions {
     display: grid;
+    grid-template-columns: 1fr;
     gap: 0.75rem;
   }
 
@@ -1581,54 +1579,120 @@ footer::after {
     min-height: 52px;
   }
 
-  .hero-trust-row {
-    gap: 8px;
-  }
-
-  .hero-trust-row span {
-    font-size: 0.8rem;
-    padding: 8px 10px;
+  .hero-trust-row span,
+  .mve-home .platform-trust-row span {
+    font-size: 0.78rem;
+    padding: 0.45rem 0.65rem;
   }
 
   .hero-quick-chips,
   .quick-links {
+    width: 100%;
     overflow-x: auto;
     flex-wrap: nowrap;
-    padding-bottom: 8px;
+    padding-bottom: 0.5rem;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .hero-quick-chips::-webkit-scrollbar,
+  .quick-links::-webkit-scrollbar {
+    display: none;
   }
 
   .hero-quick-chips a,
   .quick-links a {
+    flex: 0 0 auto;
     white-space: nowrap;
   }
 
+  /* Diagnostic tool */
   .premium-diagnostic-visual,
-  .mve-home .diagnostic-console,
-  .mve-home .journey-shell,
-  .mve-home .authority-shell {
-    border-radius: 24px;
-    padding: 18px;
+  .mve-home .diagnostic-console {
+    width: 100%;
+    max-width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    padding: 16px;
+    border-radius: 22px;
+    margin: 0;
   }
 
+  .visual-top,
+  .health-score,
   .diagnostic-row,
+  .repair-preview,
   .mve-home .console-top,
   .mve-home .system-row,
   .mve-home .console-footer,
-  .mve-home .section-header,
-  .mve-home .scan-label {
+  .mve-home .scan-label,
+  .mve-home .feed-header {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
     align-items: flex-start;
-    flex-direction: column;
   }
 
-  .search-style-box {
-    border-radius: 18px;
+  .visual-top strong {
+    margin-left: 0;
   }
 
-  .category-list a {
-    width: 100%;
+  .health-score {
+    gap: 1rem;
   }
 
-  .symptom-grid {
+  .score-ring {
+    width: 66px;
+    height: 66px;
+  }
+
+  .status,
+  .mve-home .connection-tag,
+  .mve-home .status-normal,
+  .mve-home .status-warning,
+  .mve-home .status-processing {
+    white-space: normal;
+    width: fit-content;
+  }
+
+  .diagnostic-row span,
+  .diagnostic-row strong,
+  .mve-home .system-meta,
+  .mve-home .system-meta strong,
+  .mve-home .system-meta small,
+  .mve-home .feed-item,
+  .mve-home .console-footer p {
+    overflow-wrap: anywhere;
+  }
+
+  .mve-home .feed-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    font-size: 0.78rem;
+  }
+
+  .repair-preview div,
+  .mve-home .metrics {
+    flex-wrap: wrap;
+  }
+
+  .mve-home .assessment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* Content */
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .split,
+  .article-layout,
+  .contact-wrap,
+  .symptom-grid,
+  .stats,
+  .mve-home .platform-grid,
+  .mve-home .journey-grid,
+  .mve-home .authority-shell {
     grid-template-columns: 1fr;
   }
 
@@ -1636,26 +1700,38 @@ footer::after {
     grid-template-columns: 1fr;
   }
 
-  .symptom-icon {
-    width: 44px;
-    height: 44px;
+  .category-list a {
+    width: 100%;
   }
 
+  .search-style-box {
+    border-radius: 18px;
+  }
+
+  /* Footer */
   footer,
   .site-footer {
     padding: 3rem 0 6rem;
   }
 
+  .footer-grid,
+  .footer-row,
+  .footer-main,
+  .site-footer-inner,
+  .footer-bottom {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+    align-items: flex-start;
+  }
+
   .footer-links,
   .footer-nav {
     justify-content: flex-start;
-    gap: 0.75rem 1rem;
+    gap: 0.7rem 1rem;
   }
 
-  .footer-bottom {
-    display: grid;
-  }
-
+  /* Mobile bottom nav */
   .mobile-bottom-nav {
     position: fixed;
     left: 0;
@@ -1673,414 +1749,40 @@ footer::after {
     padding: 0.75rem 0.35rem;
     text-align: center;
     color: #cbd5e1;
-    font-size: 0.78rem;
+    font-size: 0.76rem;
     font-weight: 900;
   }
-
-  .mobile-bottom-nav a:hover {
-    color: var(--brand-light);
-  }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
-  }
-
-  *,
-  *::before,
-  *::after {
-    transition: none !important;
-    animation: none !important;
-  }
-}
-
-/* Mobile fix: homepage diagnostic tool overlap */
-@media (max-width: 760px) {
-  .premium-hero-grid,
-  .hero-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.6rem !important;
-  }
-
-  .premium-diagnostic-visual {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    padding: 18px !important;
-    border-radius: 22px !important;
-  }
-
-  .health-score {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 1rem !important;
-  }
-
-  .score-ring {
-    width: 68px !important;
-    height: 68px !important;
-  }
-
-  .diagnostic-row {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.45rem !important;
-  }
-
-  .diagnostic-row span,
-  .diagnostic-row strong {
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .repair-preview div {
-    flex-wrap: wrap !important;
-  }
-
-  .visual-top {
-    flex-wrap: wrap !important;
-  }
-
-  .visual-top strong {
-    margin-left: 0 !important;
-  }
-}
-
-/* =========================================================
-   FINAL RESPONSIVE FIX — LAPTOP + TABLET + SMARTPHONE
-   Motor Vehicle Expert
-========================================================= */
-
-/* Prevent horizontal overflow globally */
-html,
-body {
-  max-width: 100%;
-  overflow-x: hidden;
-}
-
-img,
-svg,
-video,
-iframe {
-  max-width: 100%;
-}
-
-/* Laptop/tablet layout safety */
-@media (max-width: 1180px) {
-  .hero-grid,
-  .premium-hero-grid,
-  .mve-home .hero-shell {
-    grid-template-columns: 1fr !important;
-    gap: 2rem !important;
-  }
-
-  .premium-diagnostic-visual,
-  .mve-home .diagnostic-console {
-    width: 100% !important;
-    max-width: 760px !important;
-    margin: 0 auto !important;
-  }
-
-  .nav {
-    gap: 1rem !important;
-  }
-
-  .nav-links {
-    gap: 0.35rem !important;
-  }
-
-  .nav-links a {
-    font-size: 0.9rem !important;
-    padding: 0.48rem 0.62rem !important;
-  }
-}
-
-/* Tablet and large phone header */
-@media (max-width: 900px) {
-  .topbar {
-    position: sticky !important;
-    top: 0 !important;
-    z-index: 9999 !important;
-  }
-
-  .nav {
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.75rem !important;
-  }
-
-  .brand,
-  .logo-brand {
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .brand-text {
-    font-size: 1rem !important;
-    line-height: 1.2 !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .site-logo {
-    height: 48px !important;
-    width: auto !important;
-    flex: 0 0 auto !important;
-  }
-
-  .nav-links {
-    width: 100% !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    justify-content: flex-start !important;
-    gap: 0.45rem !important;
-    padding: 0.15rem 0 0.5rem !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: none !important;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .nav-links a {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-    font-size: 0.86rem !important;
-    padding: 0.48rem 0.7rem !important;
-  }
-}
-
-/* Smartphone hero + diagnostic visual */
-@media (max-width: 760px) {
-  html {
-    scroll-padding-top: 92px !important;
-  }
-
-  body {
-    padding-bottom: 76px !important;
-  }
-
-  .container {
-    width: min(var(--max), calc(100% - 1rem)) !important;
-  }
-
-  section {
-    padding: var(--section-y-mobile) 0 !important;
-  }
-
-  .hero,
-  .premium-hero,
-  .mve-home .platform-hero {
-    padding: 2.75rem 0 2rem !important;
-  }
-
-  h1,
-  .mve-home .hero-content h1 {
-    font-size: clamp(2.05rem, 11vw, 2.65rem) !important;
-    line-height: 1.04 !important;
-    letter-spacing: -0.055em !important;
-  }
-
-  h2 {
-    font-size: clamp(1.65rem, 8vw, 2rem) !important;
-  }
-
-  .lead,
-  .hero p,
-  .mve-home .hero-content p {
-    font-size: 1rem !important;
-    line-height: 1.65 !important;
-  }
-
-  .hero-grid,
-  .premium-hero-grid,
-  .mve-home .hero-shell {
-    grid-template-columns: 1fr !important;
-    gap: 1.45rem !important;
-    align-items: start !important;
-  }
-
-  .hero-actions,
-  .mve-home .hero-actions {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 0.75rem !important;
-  }
-
-  .cta,
-  .cta-primary,
-  .cta-secondary,
-  .cta-ghost {
-    width: 100% !important;
-    min-height: 52px !important;
-    justify-content: center !important;
-  }
-
-  .hero-trust-row,
-  .platform-trust-row,
-  .mve-home .platform-trust-row {
-    gap: 0.5rem !important;
-  }
-
-  .hero-trust-row span,
-  .platform-trust-row span,
-  .mve-home .platform-trust-row span {
-    font-size: 0.78rem !important;
-    padding: 0.45rem 0.65rem !important;
-  }
-
-  .hero-quick-chips,
-  .quick-links {
-    width: 100% !important;
-    overflow-x: auto !important;
-    flex-wrap: nowrap !important;
-    padding-bottom: 0.5rem !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: none !important;
-  }
-
-  .hero-quick-chips::-webkit-scrollbar,
-  .quick-links::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .hero-quick-chips a,
-  .quick-links a {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-  }
-
-  /* Fix diagnostic card overlap */
-  .premium-diagnostic-visual,
-  .mve-home .diagnostic-console {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    overflow: hidden !important;
-    padding: 16px !important;
-    border-radius: 22px !important;
-  }
-
-  .visual-top,
-  .health-score,
-  .diagnostic-row,
-  .repair-preview,
-  .mve-home .console-top,
-  .mve-home .scan-status,
-  .mve-home .system-row,
-  .mve-home .live-feed,
-  .mve-home .assessment-card,
-  .mve-home .console-footer {
-    min-width: 0 !important;
-    max-width: 100% !important;
-  }
-
-  .visual-top,
-  .mve-home .console-top,
-  .mve-home .system-row,
-  .mve-home .console-footer,
-  .mve-home .scan-label,
-  .diagnostic-row {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 0.55rem !important;
-  }
-
-  .visual-top strong {
-    margin-left: 0 !important;
-  }
-
-  .health-score {
-    flex-direction: column !important;
-    align-items: flex-start !important;
-    gap: 1rem !important;
-  }
-
-  .score-ring {
-    width: 68px !important;
-    height: 68px !important;
-    flex: 0 0 auto !important;
-  }
-
-  .status,
-  .mve-home .connection-tag,
-  .mve-home .status-normal,
-  .mve-home .status-warning,
-  .mve-home .status-processing {
-    white-space: normal !important;
-  }
-
-  .diagnostic-row span,
-  .diagnostic-row strong,
-  .mve-home .system-meta,
-  .mve-home .system-meta strong,
-  .mve-home .system-meta small,
-  .mve-home .feed-item,
-  .mve-home .console-footer p {
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-    word-break: normal !important;
-  }
-
-  .repair-preview div,
-  .mve-home .assessment-grid,
-  .mve-home .metrics {
-    grid-template-columns: 1fr !important;
-    flex-wrap: wrap !important;
-  }
-
-  .mve-home .feed-log {
-    font-size: 0.78rem !important;
-  }
-
-  .mve-home .feed-item {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 0.15rem !important;
-  }
-}
-
-/* Very small phones */
+/* SMALL PHONES */
 @media (max-width: 420px) {
   .container {
-    width: calc(100% - 0.85rem) !important;
-  }
-
-  .topbar {
-    padding: 0 !important;
-  }
-
-  .nav {
-    padding: 0.65rem 0 !important;
+    width: calc(100% - 0.8rem);
   }
 
   .site-logo {
-    height: 42px !important;
+    height: 40px;
   }
 
   .brand-text {
-    font-size: 0.92rem !important;
+    font-size: 0.9rem;
   }
 
   .nav-links a {
-    font-size: 0.8rem !important;
-    padding: 0.42rem 0.62rem !important;
+    font-size: 0.78rem;
+    padding: 0.42rem 0.6rem;
   }
 
   h1,
+  .hero-copy h1,
   .mve-home .hero-content h1 {
-    font-size: 2rem !important;
+    font-size: 2rem;
   }
 
   .premium-diagnostic-visual,
   .mve-home .diagnostic-console {
-    padding: 14px !important;
-    border-radius: 20px !important;
+    padding: 14px;
+    border-radius: 20px;
   }
 
   .visual-top,
@@ -2092,268 +1794,20 @@ iframe {
   .mve-home .system-row,
   .mve-home .live-feed,
   .mve-home .assessment-card {
-    border-radius: 16px !important;
+    border-radius: 16px;
   }
 }
 
-/* =========================================================
-   EMERGENCY MOBILE FIX — HEADER + HOMEPAGE DIAGNOSTIC CARD
-   Paste at VERY BOTTOM of style.css
-========================================================= */
-
-@media (max-width: 820px) {
-  html,
-  body {
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow-x: hidden !important;
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 
   *,
   *::before,
   *::after {
-    max-width: 100%;
-  }
-
-  .container {
-    width: calc(100% - 24px) !important;
-    max-width: calc(100% - 24px) !important;
-    padding-left: 0 !important;
-    padding-right: 0 !important;
-  }
-
-  /* HEADER FIX */
-  .topbar {
-    position: relative !important;
-    width: 100% !important;
-    overflow: hidden !important;
-  }
-
-  .nav {
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 12px !important;
-    align-items: start !important;
-  }
-
-  .brand,
-  .logo-brand {
-    width: 100% !important;
-    min-width: 0 !important;
-    display: flex !important;
-    align-items: center !important;
-  }
-
-  .brand-text {
-    min-width: 0 !important;
-    max-width: 100% !important;
-    font-size: 0.95rem !important;
-    line-height: 1.2 !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .site-logo {
-    width: auto !important;
-    height: 42px !important;
-    max-height: 42px !important;
-    flex: 0 0 auto !important;
-  }
-
-  .nav-links {
-    width: 100% !important;
-    max-width: 100% !important;
-    display: flex !important;
-    flex-wrap: nowrap !important;
-    overflow-x: auto !important;
-    overflow-y: hidden !important;
-    justify-content: flex-start !important;
-    gap: 8px !important;
-    padding: 0 0 8px !important;
-    -webkit-overflow-scrolling: touch !important;
-    scrollbar-width: none !important;
-  }
-
-  .nav-links::-webkit-scrollbar {
-    display: none !important;
-  }
-
-  .nav-links a {
-    flex: 0 0 auto !important;
-    white-space: nowrap !important;
-    font-size: 0.82rem !important;
-    padding: 8px 10px !important;
-  }
-
-  /* HERO FULL WIDTH FIX */
-  .hero,
-  .premium-hero,
-  .mve-home .platform-hero {
-    width: 100% !important;
-    overflow: hidden !important;
-    padding: 40px 0 30px !important;
-  }
-
-  .hero-grid,
-  .premium-hero-grid,
-  .mve-home .hero-shell {
-    display: grid !important;
-    grid-template-columns: minmax(0, 1fr) !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    gap: 22px !important;
-    overflow: hidden !important;
-  }
-
-  .hero-copy,
-  .hero-content,
-  .mve-home .hero-content {
-    min-width: 0 !important;
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  h1,
-  .hero-copy h1,
-  .mve-home .hero-content h1 {
-    font-size: clamp(2rem, 10vw, 2.55rem) !important;
-    line-height: 1.05 !important;
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .lead,
-  .hero p,
-  .mve-home .hero-content p {
-    max-width: 100% !important;
-    font-size: 1rem !important;
-    line-height: 1.65 !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .hero-actions,
-  .mve-home .hero-actions {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
-    gap: 10px !important;
-  }
-
-  .cta,
-  .cta-primary,
-  .cta-secondary,
-  .cta-ghost {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-
-  /* DIAGNOSTIC CARD HARD RESET */
-  .premium-diagnostic-visual,
-  .mve-home .diagnostic-console {
-    display: block !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    margin: 0 !important;
-    padding: 14px !important;
-    border-radius: 20px !important;
-    overflow: hidden !important;
-  }
-
-  .premium-diagnostic-visual *,
-  .mve-home .diagnostic-console * {
-    min-width: 0 !important;
-    max-width: 100% !important;
-    overflow-wrap: anywhere !important;
-  }
-
-  .visual-top,
-  .health-score,
-  .diagnostic-row,
-  .repair-preview,
-  .mve-home .console-top,
-  .mve-home .scan-status,
-  .mve-home .system-row,
-  .mve-home .live-feed,
-  .mve-home .assessment-card,
-  .mve-home .console-footer {
-    width: 100% !important;
-    max-width: 100% !important;
-    min-width: 0 !important;
-    padding: 13px !important;
-    border-radius: 16px !important;
-    overflow: hidden !important;
-  }
-
-  .visual-top,
-  .health-score,
-  .diagnostic-row,
-  .mve-home .console-top,
-  .mve-home .system-row,
-  .mve-home .console-footer,
-  .mve-home .scan-label,
-  .mve-home .feed-header {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    align-items: start !important;
-    gap: 7px !important;
-  }
-
-  .visual-top strong {
-    margin-left: 0 !important;
-  }
-
-  .score-ring {
-    width: 64px !important;
-    height: 64px !important;
-  }
-
-  .status,
-  .mve-home .connection-tag,
-  .mve-home .status-normal,
-  .mve-home .status-warning,
-  .mve-home .status-processing {
-    width: fit-content !important;
-    max-width: 100% !important;
-    white-space: normal !important;
-  }
-
-  .diagnostic-stack,
-  .mve-home .system-grid,
-  .mve-home .feed-log {
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-  }
-
-  .mve-home .assessment-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    width: 100% !important;
-  }
-
-  .mve-home .feed-item {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 3px !important;
-    font-size: 0.76rem !important;
-  }
-
-  .repair-preview div {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 7px !important;
-  }
-
-  .repair-preview small {
-    max-width: 100% !important;
-    white-space: normal !important;
-  }
-
-  .visual-link,
-  .mve-home .console-link {
-    display: inline-block !important;
-    max-width: 100% !important;
-    white-space: normal !important;
+    transition: none !important;
+    animation: none !important;
   }
 }
