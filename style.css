@@ -832,37 +832,99 @@ p {
 }
 
 /* =========================================================
-   TOC / ARTICLE SIDEBAR
+   TOC / ARTICLE SIDEBAR — FINAL PROFESSIONAL BEHAVIOUR
+   Desktop/laptop: fixed left navigation inside article pages.
+   Tablet/phone: hidden to avoid overlap, jumping and flicker.
 ========================================================= */
 
-.toc {
-  position: sticky;
-  top: 100px;
-  align-self: start;
-  max-height: calc(100vh - 120px);
-  overflow-y: auto;
+.toc,
+aside.toc {
+  background:
+    linear-gradient(180deg, rgba(255,255,255,0.085), rgba(255,255,255,0.045));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-soft);
+  padding: 1.2rem;
 }
 
-.toc h2 {
-  font-size: 1.35rem;
+.toc h2,
+aside.toc h2 {
+  font-size: 1.15rem;
+  margin-bottom: 0.95rem;
 }
 
-.toc ul {
+.toc ul,
+aside.toc ul {
   list-style: none;
   padding: 0;
   margin: 0;
   display: grid;
-  gap: 0.7rem;
+  gap: 0.55rem;
 }
 
-.toc a {
+.toc a,
+aside.toc a {
+  display: block;
   color: #d8e6f8;
   font-weight: 800;
+  font-size: 0.92rem;
+  line-height: 1.35;
+  padding: 0.35rem 0;
 }
 
-.toc a:hover {
+.toc a:hover,
+aside.toc a:hover {
   color: #ffffff;
 }
+
+/* Laptop/desktop only */
+@media (min-width: 1081px) {
+  .article-layout {
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+    align-items: start !important;
+    overflow: visible !important;
+  }
+
+  .article-content {
+    min-width: 0 !important;
+  }
+
+  .toc,
+  aside.toc {
+    display: block !important;
+    position: sticky !important;
+    top: 115px !important;
+    align-self: start !important;
+    width: 280px !important;
+    max-width: 280px !important;
+    height: fit-content !important;
+    max-height: calc(100vh - 135px) !important;
+    overflow-y: auto !important;
+    z-index: 20 !important;
+  }
+}
+
+/* Tablet and phone: hide table of contents completely */
+@media (max-width: 1080px) {
+  .article-layout {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+  }
+
+  .toc,
+  aside.toc {
+    display: none !important;
+  }
+
+  .article-content {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+}
+
 
 /* =========================================================
    FORMS
@@ -1866,37 +1928,33 @@ footer::after {
   }
 }
 
-/* FINAL TOC FIX */
 
-/* Phone/tablet: hide TOC completely to stop overlap */
+/* =========================================================
+   FINAL ARTICLE PAGE SAFETY
+   Keeps article pages smooth and prevents mobile TOC overlap.
+========================================================= */
+
+.article-layout,
+.article-content,
+.article-content .card {
+  min-width: 0;
+}
+
+@media (min-width: 1081px) {
+  .article-layout {
+    overflow: visible !important;
+  }
+
+  .toc,
+  aside.toc {
+    position: sticky !important;
+    top: 115px !important;
+  }
+}
+
 @media (max-width: 1080px) {
   .toc,
   aside.toc {
     display: none !important;
-  }
-
-  .article-layout {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-/* Laptop/desktop: keep TOC fixed/sticky */
-@media (min-width: 1081px) {
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 280px minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
-    align-items: start !important;
-  }
-
-  .toc,
-  aside.toc {
-    display: block !important;
-    position: sticky !important;
-    top: 115px !important;
-    align-self: start !important;
-    height: fit-content !important;
-    max-height: calc(100vh - 135px) !important;
-    overflow-y: auto !important;
   }
 }
