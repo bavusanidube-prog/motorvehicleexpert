@@ -1747,3 +1747,351 @@ footer::after {
     margin-left: 0 !important;
   }
 }
+
+/* =========================================================
+   FINAL RESPONSIVE FIX — LAPTOP + TABLET + SMARTPHONE
+   Motor Vehicle Expert
+========================================================= */
+
+/* Prevent horizontal overflow globally */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* Laptop/tablet layout safety */
+@media (max-width: 1180px) {
+  .hero-grid,
+  .premium-hero-grid,
+  .mve-home .hero-shell {
+    grid-template-columns: 1fr !important;
+    gap: 2rem !important;
+  }
+
+  .premium-diagnostic-visual,
+  .mve-home .diagnostic-console {
+    width: 100% !important;
+    max-width: 760px !important;
+    margin: 0 auto !important;
+  }
+
+  .nav {
+    gap: 1rem !important;
+  }
+
+  .nav-links {
+    gap: 0.35rem !important;
+  }
+
+  .nav-links a {
+    font-size: 0.9rem !important;
+    padding: 0.48rem 0.62rem !important;
+  }
+}
+
+/* Tablet and large phone header */
+@media (max-width: 900px) {
+  .topbar {
+    position: sticky !important;
+    top: 0 !important;
+    z-index: 9999 !important;
+  }
+
+  .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.75rem !important;
+  }
+
+  .brand,
+  .logo-brand {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+  .brand-text {
+    font-size: 1rem !important;
+    line-height: 1.2 !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .site-logo {
+    height: 48px !important;
+    width: auto !important;
+    flex: 0 0 auto !important;
+  }
+
+  .nav-links {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: flex-start !important;
+    gap: 0.45rem !important;
+    padding: 0.15rem 0 0.5rem !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .nav-links::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+    font-size: 0.86rem !important;
+    padding: 0.48rem 0.7rem !important;
+  }
+}
+
+/* Smartphone hero + diagnostic visual */
+@media (max-width: 760px) {
+  html {
+    scroll-padding-top: 92px !important;
+  }
+
+  body {
+    padding-bottom: 76px !important;
+  }
+
+  .container {
+    width: min(var(--max), calc(100% - 1rem)) !important;
+  }
+
+  section {
+    padding: var(--section-y-mobile) 0 !important;
+  }
+
+  .hero,
+  .premium-hero,
+  .mve-home .platform-hero {
+    padding: 2.75rem 0 2rem !important;
+  }
+
+  h1,
+  .mve-home .hero-content h1 {
+    font-size: clamp(2.05rem, 11vw, 2.65rem) !important;
+    line-height: 1.04 !important;
+    letter-spacing: -0.055em !important;
+  }
+
+  h2 {
+    font-size: clamp(1.65rem, 8vw, 2rem) !important;
+  }
+
+  .lead,
+  .hero p,
+  .mve-home .hero-content p {
+    font-size: 1rem !important;
+    line-height: 1.65 !important;
+  }
+
+  .hero-grid,
+  .premium-hero-grid,
+  .mve-home .hero-shell {
+    grid-template-columns: 1fr !important;
+    gap: 1.45rem !important;
+    align-items: start !important;
+  }
+
+  .hero-actions,
+  .mve-home .hero-actions {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+
+  .cta,
+  .cta-primary,
+  .cta-secondary,
+  .cta-ghost {
+    width: 100% !important;
+    min-height: 52px !important;
+    justify-content: center !important;
+  }
+
+  .hero-trust-row,
+  .platform-trust-row,
+  .mve-home .platform-trust-row {
+    gap: 0.5rem !important;
+  }
+
+  .hero-trust-row span,
+  .platform-trust-row span,
+  .mve-home .platform-trust-row span {
+    font-size: 0.78rem !important;
+    padding: 0.45rem 0.65rem !important;
+  }
+
+  .hero-quick-chips,
+  .quick-links {
+    width: 100% !important;
+    overflow-x: auto !important;
+    flex-wrap: nowrap !important;
+    padding-bottom: 0.5rem !important;
+    -webkit-overflow-scrolling: touch !important;
+    scrollbar-width: none !important;
+  }
+
+  .hero-quick-chips::-webkit-scrollbar,
+  .quick-links::-webkit-scrollbar {
+    display: none !important;
+  }
+
+  .hero-quick-chips a,
+  .quick-links a {
+    flex: 0 0 auto !important;
+    white-space: nowrap !important;
+  }
+
+  /* Fix diagnostic card overlap */
+  .premium-diagnostic-visual,
+  .mve-home .diagnostic-console {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    padding: 16px !important;
+    border-radius: 22px !important;
+  }
+
+  .visual-top,
+  .health-score,
+  .diagnostic-row,
+  .repair-preview,
+  .mve-home .console-top,
+  .mve-home .scan-status,
+  .mve-home .system-row,
+  .mve-home .live-feed,
+  .mve-home .assessment-card,
+  .mve-home .console-footer {
+    min-width: 0 !important;
+    max-width: 100% !important;
+  }
+
+  .visual-top,
+  .mve-home .console-top,
+  .mve-home .system-row,
+  .mve-home .console-footer,
+  .mve-home .scan-label,
+  .diagnostic-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.55rem !important;
+  }
+
+  .visual-top strong {
+    margin-left: 0 !important;
+  }
+
+  .health-score {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .score-ring {
+    width: 68px !important;
+    height: 68px !important;
+    flex: 0 0 auto !important;
+  }
+
+  .status,
+  .mve-home .connection-tag,
+  .mve-home .status-normal,
+  .mve-home .status-warning,
+  .mve-home .status-processing {
+    white-space: normal !important;
+  }
+
+  .diagnostic-row span,
+  .diagnostic-row strong,
+  .mve-home .system-meta,
+  .mve-home .system-meta strong,
+  .mve-home .system-meta small,
+  .mve-home .feed-item,
+  .mve-home .console-footer p {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+    word-break: normal !important;
+  }
+
+  .repair-preview div,
+  .mve-home .assessment-grid,
+  .mve-home .metrics {
+    grid-template-columns: 1fr !important;
+    flex-wrap: wrap !important;
+  }
+
+  .mve-home .feed-log {
+    font-size: 0.78rem !important;
+  }
+
+  .mve-home .feed-item {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 0.15rem !important;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 420px) {
+  .container {
+    width: calc(100% - 0.85rem) !important;
+  }
+
+  .topbar {
+    padding: 0 !important;
+  }
+
+  .nav {
+    padding: 0.65rem 0 !important;
+  }
+
+  .site-logo {
+    height: 42px !important;
+  }
+
+  .brand-text {
+    font-size: 0.92rem !important;
+  }
+
+  .nav-links a {
+    font-size: 0.8rem !important;
+    padding: 0.42rem 0.62rem !important;
+  }
+
+  h1,
+  .mve-home .hero-content h1 {
+    font-size: 2rem !important;
+  }
+
+  .premium-diagnostic-visual,
+  .mve-home .diagnostic-console {
+    padding: 14px !important;
+    border-radius: 20px !important;
+  }
+
+  .visual-top,
+  .health-score,
+  .diagnostic-row,
+  .repair-preview,
+  .mve-home .console-top,
+  .mve-home .scan-status,
+  .mve-home .system-row,
+  .mve-home .live-feed,
+  .mve-home .assessment-card {
+    border-radius: 16px !important;
+  }
+}
