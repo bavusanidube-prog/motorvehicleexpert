@@ -1735,3 +1735,92 @@ footer {
     gap: 0.55rem;
   }
 }
+
+/* =========================
+   CLEAN HOME FOOTER FIX
+========================= */
+
+.site-footer {
+  margin-top: 0;
+  padding: 3.5rem 0 5.5rem;
+  background:
+    linear-gradient(180deg, rgba(7,17,31,0.25), rgba(5,11,20,0.95));
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #a7b4c8;
+}
+
+.site-footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 0.8fr 0.8fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+.footer-brand-block p {
+  max-width: 430px;
+  margin: 1rem 0 0;
+  color: #a7b4c8;
+  font-size: 0.96rem;
+}
+
+.footer-logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.85rem;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 1.05rem;
+}
+
+.footer-logo img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  border-radius: 12px;
+}
+
+.footer-column {
+  display: grid;
+  gap: 0.65rem;
+}
+
+.footer-column h3 {
+  color: #ffffff;
+  font-size: 0.95rem;
+  margin: 0 0 0.4rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.footer-column a {
+  color: #cbd5e1;
+  font-size: 0.94rem;
+  font-weight: 800;
+}
+
+.footer-column a:hover {
+  color: #fbbf24;
+}
+
+.footer-bottom {
+  margin-top: 2.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  color: #7f8fa8;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 760px) {
+  .site-footer {
+    padding: 2.5rem 0 5.5rem;
+  }
+
+  .site-footer-inner {
+    grid-template-columns: 1fr;
+    gap: 1.8rem;
+  }
+
+  .footer-bottom {
+    margin-top: 1.8rem;
+  }
+}
