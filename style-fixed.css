@@ -1882,14 +1882,12 @@ footer::after {
 
 /* =========================================================
    FINAL PROFESSIONAL ARTICLE SIDEBAR SYSTEM
-   This block must remain at the very bottom of the file.
+   Keep this block near the bottom of the file.
 
-   Phone/tablet:
-   - Hide "On this page" completely to prevent overlap, flicker and jump.
-
-   Laptop/desktop:
-   - Use fixed positioning, not sticky. This avoids every overflow/parent
-     conflict and keeps the sidebar visible while reading long guides.
+   This fixes the article "On this page" sidebar across all guide pages:
+   - Desktop/laptop: sticky sidebar inside the article layout.
+   - Tablet/phone: sidebar stays visible above the article content.
+   - No fixed positioning, so it will not cover content or break other pages.
 ========================================================= */
 
 /* Shared article safety */
@@ -1901,14 +1899,77 @@ footer::after {
 }
 
 .article-layout {
+  display: grid !important;
+  grid-template-columns: 280px minmax(0, 1fr) !important;
+  gap: 1.7rem !important;
+  align-items: start !important;
+  overflow: visible !important;
   isolation: isolate;
 }
 
-/* Phone and tablet: no sidebar */
+.article-content {
+  width: 100% !important;
+  max-width: 100% !important;
+}
+
+/* Desktop and laptop: normal sticky sidebar */
+.article-layout > aside.toc,
+.article-layout > .toc,
+aside.toc {
+  position: sticky !important;
+  top: 106px !important;
+  align-self: start !important;
+  max-height: calc(100vh - 128px) !important;
+  overflow-y: auto !important;
+  overscroll-behavior: contain !important;
+  z-index: 5 !important;
+}
+
+.toc h2,
+aside.toc h2 {
+  font-size: 1rem;
+  margin-bottom: 0.9rem;
+}
+
+.toc ul,
+aside.toc ul {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.toc a,
+aside.toc a {
+  display: block;
+  padding: 0.55rem 0.65rem;
+  border-radius: 12px;
+  color: #d8e6f8;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.toc a:hover,
+.toc a:focus-visible,
+aside.toc a:hover,
+aside.toc a:focus-visible {
+  background: rgba(255,255,255,0.075);
+  color: #ffffff;
+}
+
+.toc::-webkit-scrollbar,
+aside.toc::-webkit-scrollbar {
+  width: 6px;
+}
+
+.toc::-webkit-scrollbar-thumb,
+aside.toc::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,0.18);
+  border-radius: 999px;
+}
+
+/* Tablet: sidebar appears above the article instead of disappearing */
 @media (max-width: 1080px) {
   html {
-    scroll-behavior: auto;
-    scroll-padding-top: 0;
+    scroll-padding-top: 100px;
   }
 
   .article-layout {
@@ -1917,77 +1978,41 @@ footer::after {
     width: 100% !important;
   }
 
-  .article-layout > aside,
-  .toc,
-  aside.toc {
-    display: none !important;
-  }
-
-  .article-content {
-    width: 100% !important;
-    max-width: 100% !important;
-  }
-}
-
-/* Laptop and desktop: fixed left reading navigation */
-@media (min-width: 1081px) {
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 300px minmax(0, 1fr) !important;
-    gap: 1.7rem !important;
-    align-items: start !important;
-    overflow: visible !important;
-  }
-
-  .article-content {
-    grid-column: 2 !important;
-    width: 100% !important;
-    min-width: 0 !important;
-  }
-
-  .article-layout > aside,
-  .toc,
+  .article-layout > aside.toc,
+  .article-layout > .toc,
   aside.toc {
     display: block !important;
+    position: relative !important;
+    top: auto !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1rem !important;
   }
 
-  aside.toc,
-  .article-layout > .toc {
-    position: fixed !important;
-    top: 118px !important;
-    left: max(1rem, calc((100vw - var(--max)) / 2)) !important;
-    width: 280px !important;
-    max-width: 280px !important;
-    max-height: calc(100vh - 140px) !important;
-    overflow-y: auto !important;
-    overscroll-behavior: contain !important;
-    z-index: 20 !important;
+  .toc ul,
+  aside.toc ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.55rem;
   }
 
-  .toc::-webkit-scrollbar,
-  aside.toc::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .toc::-webkit-scrollbar-thumb,
-  aside.toc::-webkit-scrollbar-thumb {
-    background: rgba(255,255,255,0.18);
-    border-radius: 999px;
+  .toc a,
+  aside.toc a {
+    background: rgba(15, 23, 42, 0.48);
+    border: 1px solid rgba(255,255,255,0.09);
   }
 }
 
-/* Medium laptops: give the content more room */
-@media (min-width: 1081px) and (max-width: 1240px) {
-  .article-layout {
-    grid-template-columns: 270px minmax(0, 1fr) !important;
-    gap: 1.25rem !important;
+/* Phone: single-column contents list */
+@media (max-width: 560px) {
+  html {
+    scroll-padding-top: 90px;
   }
 
-  aside.toc,
-  .article-layout > .toc {
-    left: 1rem !important;
-    width: 250px !important;
-    max-width: 250px !important;
+  .toc ul,
+  aside.toc ul {
+    grid-template-columns: 1fr;
   }
 }
 
