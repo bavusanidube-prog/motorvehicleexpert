@@ -1866,24 +1866,47 @@ footer::after {
   }
 }
 
-/* Restore sticky left article sidebar */
+/* FINAL PROFESSIONAL STICKY SIDEBAR FIX */
+
+/* Critical: allow sticky positioning */
+.article-layout,
+.article-layout main,
+.article-layout article,
+.article-layout .article-content {
+  overflow: visible !important;
+}
+
+/* Desktop sticky sidebar */
 @media (min-width: 1081px) {
+
   .article-layout {
+    display: grid;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 2rem;
     align-items: start;
   }
 
-  .toc {
-    position: sticky;
-    top: 110px;
+  .toc,
+  aside.toc {
+    position: sticky !important;
+    top: 110px !important;
     align-self: start;
+    height: fit-content;
     max-height: calc(100vh - 130px);
     overflow-y: auto;
   }
 }
 
+/* Tablet + mobile */
 @media (max-width: 1080px) {
-  .toc {
-    position: static;
+
+  .article-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .toc,
+  aside.toc {
+    position: static !important;
     max-height: none;
     overflow: visible;
   }
