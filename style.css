@@ -1694,3 +1694,56 @@ footer::after {
     animation: none !important;
   }
 }
+
+/* Mobile fix: homepage diagnostic tool overlap */
+@media (max-width: 760px) {
+  .premium-hero-grid,
+  .hero-grid {
+    grid-template-columns: 1fr !important;
+    gap: 1.6rem !important;
+  }
+
+  .premium-diagnostic-visual {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    overflow: hidden !important;
+    padding: 18px !important;
+    border-radius: 22px !important;
+  }
+
+  .health-score {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+  }
+
+  .score-ring {
+    width: 68px !important;
+    height: 68px !important;
+  }
+
+  .diagnostic-row {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 0.45rem !important;
+  }
+
+  .diagnostic-row span,
+  .diagnostic-row strong {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+  .repair-preview div {
+    flex-wrap: wrap !important;
+  }
+
+  .visual-top {
+    flex-wrap: wrap !important;
+  }
+
+  .visual-top strong {
+    margin-left: 0 !important;
+  }
+}
