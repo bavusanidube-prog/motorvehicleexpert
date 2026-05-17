@@ -2275,3 +2275,22 @@ body:has(.eyebrow) .premium-hero{
   }
 
 }
+
+/* Engine management page specific polish */
+
+.premium-hero .hero-actions{
+  flex-wrap:wrap;
+  gap:14px;
+}
+
+.premium-hero .hero-actions .cta{
+  width:auto !important;
+}
+
+.premium-hero-grid .hero-image{
+  max-width:720px;
+}
+
+.premium-hero .hero-copy{
+  justify-content:center;
+}
