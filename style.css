@@ -2254,3 +2254,24 @@ footer::after {
 body:has(.eyebrow) .premium-hero{
   padding-top:2.2rem !important;
 }
+
+/* Mobile hero image corner shadow fix */
+@media (max-width: 760px){
+
+  .hero-image{
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+  }
+
+  .hero-image img{
+    box-shadow: none !important;
+    border-radius: 18px !important;
+  }
+
+  .premium-diagnostic-visual{
+    box-shadow: 0 10px 28px rgba(15,23,42,.08) !important;
+    background: #ffffff !important;
+  }
+
+}
