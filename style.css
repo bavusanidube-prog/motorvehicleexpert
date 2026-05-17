@@ -1884,3 +1884,39 @@ footer::after {
   }
 
 }
+
+/* =========================================
+   FINAL HERO TYPOGRAPHY BALANCE
+========================================= */
+
+.hero h1,
+.premium-hero h1,
+.hero-copy h1{
+    font-size: clamp(3rem, 5vw, 5.2rem);
+    line-height: 0.98;
+    max-width: 10ch;
+}
+
+/* LAPTOP BALANCE */
+@media (max-width: 1450px){
+
+    .hero h1,
+    .premium-hero h1,
+    .hero-copy h1{
+        font-size: clamp(2.7rem, 4.8vw, 4.6rem);
+        max-width: 11ch;
+    }
+
+}
+
+/* STANDARD LAPTOP */
+@media (max-width: 1200px){
+
+    .hero h1,
+    .premium-hero h1,
+    .hero-copy h1{
+        font-size: clamp(2.5rem, 4.2vw, 4rem);
+        max-width: 12ch;
+    }
+
+}
