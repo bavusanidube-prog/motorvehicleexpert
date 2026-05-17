@@ -1656,3 +1656,43 @@ footer::after {
     animation: none !important;
   }
 }
+
+/* =========================================================
+   FINAL FIX: ARTICLE SIDE NAV / TOC
+   Keeps sidebar sticky without breaking page scroll
+========================================================= */
+
+@media (min-width: 1081px) {
+  .article-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 1.75rem;
+    align-items: start;
+    overflow: visible !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc,
+  aside.toc {
+    position: sticky !important;
+    top: 115px !important;
+    align-self: start !important;
+    max-height: calc(100vh - 135px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    scrollbar-width: thin;
+  }
+
+  .article-layout > .toc::-webkit-scrollbar,
+  .article-layout > aside.toc::-webkit-scrollbar,
+  aside.toc::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .article-layout > .toc::-webkit-scrollbar-thumb,
+  .article-layout > aside.toc::-webkit-scrollbar-thumb,
+  aside.toc::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 999px;
+  }
+}
