@@ -1824,3 +1824,38 @@ footer::after {
     }
 
 }
+
+/* =========================================
+   KEEP HERO SIDE-BY-SIDE LONGER
+========================================= */
+
+.premium-hero-grid{
+    display: grid;
+    grid-template-columns: 1.08fr 0.92fr;
+    gap: 48px;
+    align-items: center;
+}
+
+/* TABLET */
+@media (max-width: 1100px){
+
+    .premium-hero-grid{
+        grid-template-columns: 1fr 1fr;
+        gap: 32px;
+    }
+
+}
+
+/* ONLY STACK ON SMALLER PHONES */
+@media (max-width: 760px){
+
+    .premium-hero-grid{
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .premium-diagnostic-visual{
+        order: -1;
+    }
+
+}
