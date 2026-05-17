@@ -2249,3 +2249,8 @@ footer::after {
     padding:1.1rem 0 !important;
   }
 }
+
+/* Diagnostics page only - lift hero up slightly */
+body:has(.eyebrow) .premium-hero{
+  padding-top:2.2rem !important;
+}
