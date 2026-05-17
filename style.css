@@ -2006,3 +2006,103 @@ footer,
   backdrop-filter: none !important;
   -webkit-backdrop-filter: none !important;
 }
+
+/* =========================================================
+   PROFESSIONAL CONTRAST REBALANCE
+========================================================= */
+
+/* Main content background */
+body {
+  background:
+    radial-gradient(circle at top right, rgba(245, 158, 11, 0.08), transparent 30%),
+    radial-gradient(circle at left center, rgba(2, 132, 199, 0.06), transparent 26%),
+    linear-gradient(
+      180deg,
+      #07111f 0%,
+      #0b1727 280px,
+      #e9eef5 281px,
+      #e9eef5 100%
+    ) !important;
+}
+
+/* Article area */
+.card,
+.article-content .card,
+.mini-card,
+.step-card,
+.topic-card,
+.feature-card,
+.faq-item,
+.contact-card {
+  background: #f4f7fb !important;
+  border: 1px solid rgba(15, 23, 42, 0.12) !important;
+  box-shadow: 0 10px 24px rgba(15, 23, 42, 0.08) !important;
+}
+
+/* Sidebar slightly darker */
+.toc,
+aside.toc {
+  background: #dde6f0 !important;
+  border: 1px solid rgba(15, 23, 42, 0.14) !important;
+}
+
+/* Stronger readable text */
+.article-content p,
+.card p,
+.mini-card p,
+.step-card p,
+.muted {
+  color: #1e293b !important;
+  line-height: 1.78 !important;
+}
+
+/* Better heading contrast */
+.article-content h2,
+.article-content h3,
+.card h2,
+.card h3,
+.mini-card h3,
+.step-card h3 {
+  color: #020617 !important;
+}
+
+/* Sidebar links */
+.toc a,
+aside.toc a {
+  color: #0f172a !important;
+  font-weight: 850 !important;
+}
+
+.toc a:hover,
+aside.toc a:hover,
+.toc a.is-active,
+aside.toc a.is-active {
+  background: rgba(245, 158, 11, 0.16) !important;
+  color: #92400e !important;
+}
+
+/* Navigation sharper */
+.topbar {
+  background: #07111f !important;
+  backdrop-filter: none !important;
+}
+
+.nav-links a {
+  color: #f8fafc !important;
+  font-weight: 850 !important;
+}
+
+.nav-links a:hover {
+  background: rgba(255,255,255,0.10) !important;
+}
+
+/* Footer */
+footer,
+.site-footer {
+  background: #050b14 !important;
+}
+
+.footer-links a,
+.footer-nav a {
+  color: #f8fafc !important;
+}
