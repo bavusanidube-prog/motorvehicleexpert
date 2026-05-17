@@ -1973,3 +1973,36 @@ footer::after {
     animation: none !important;
   }
 }
+
+/* FINAL NAV + FOOTER SHARPNESS FIX */
+
+.topbar,
+.mobile-bottom-nav {
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+  background: #07111f !important;
+}
+
+.nav-links a {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.footer-links a,
+.footer-nav a {
+  color: #ffffff !important;
+  text-shadow: none !important;
+  filter: none !important;
+}
+
+.footer-grid > div:nth-child(2) {
+  color: #e5eefb !important;
+}
+
+footer,
+.site-footer {
+  background: #050b14 !important;
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
+}
