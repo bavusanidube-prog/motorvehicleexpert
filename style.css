@@ -1696,3 +1696,53 @@ footer::after {
     border-radius: 999px;
   }
 }
+
+/* =========================================================
+   FINAL HUB PAGE TOC FIX
+   Removes awkward sticky sidebar scrollbars on long hub pages
+========================================================= */
+
+@media (min-width: 1081px) {
+  .article-layout {
+    display: block !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc,
+  aside.toc {
+    position: static !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .toc ul,
+  aside.toc ul {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 0.6rem !important;
+  }
+
+  .toc li,
+  aside.toc li {
+    list-style: none !important;
+  }
+
+  .toc a,
+  aside.toc a {
+    display: inline-flex !important;
+    border: 1px solid var(--line) !important;
+    background: #ffffff !important;
+    border-radius: 999px !important;
+    padding: 0.65rem 0.9rem !important;
+    font-size: 0.9rem !important;
+    white-space: nowrap !important;
+  }
+
+  .toc a:hover,
+  aside.toc a:hover {
+    background: var(--brand-soft) !important;
+    color: var(--brand) !important;
+    border-color: rgba(215,25,32,0.35) !important;
+  }
+}
