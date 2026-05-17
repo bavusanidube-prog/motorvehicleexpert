@@ -1859,3 +1859,28 @@ footer::after {
     }
 
 }
+
+/* =========================================
+   LAPTOP HERO FIX
+========================================= */
+
+@media (min-width: 761px) {
+
+  .premium-hero-grid,
+  .hero-grid {
+    display: grid !important;
+    grid-template-columns: 1.15fr 0.85fr !important;
+    gap: 48px !important;
+    align-items: center !important;
+  }
+
+  .hero-copy {
+    order: 1 !important;
+  }
+
+  .premium-diagnostic-visual {
+    order: 2 !important;
+    width: 100% !important;
+  }
+
+}
