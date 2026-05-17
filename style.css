@@ -2152,3 +2152,100 @@ footer::after {
     width: fit-content;
   }
 }
+
+/* =========================================================
+   FINAL GLOBAL PREMIUM TIGHTENING
+========================================================= */
+
+.premium-hero{
+  padding:3.5rem 0 2.2rem !important;
+}
+
+.premium-hero-grid,
+.hero-grid{
+  grid-template-columns:minmax(0,1.02fr) minmax(420px,.98fr) !important;
+  gap:2.5rem !important;
+  align-items:center !important;
+}
+
+.hero-copy{
+  max-width:680px;
+}
+
+.hero-copy h1{
+  font-size:clamp(2.7rem,4.7vw,4.8rem) !important;
+  line-height:1 !important;
+}
+
+.hero-copy .lead,
+.hero .lead{
+  font-size:clamp(1rem,1.45vw,1.14rem) !important;
+  line-height:1.65 !important;
+}
+
+.hero-image img{
+  width:100%;
+  height:auto;
+  border-radius:28px;
+  box-shadow:0 20px 50px rgba(15,23,42,.14);
+}
+
+.premium-diagnostic-visual{
+  padding:20px !important;
+}
+
+.diagnostic-stack{
+  margin-top:14px !important;
+  gap:10px !important;
+}
+
+.diagnostic-row{
+  padding:12px 14px !important;
+}
+
+.trust-strip{
+  padding:1.5rem 0 !important;
+}
+
+/* ARTICLE SPACING */
+.article-content .card{
+  margin-bottom:1.15rem !important;
+}
+
+.article-content h2{
+  margin-bottom:.85rem !important;
+}
+
+.article-content p{
+  margin-bottom:1rem;
+}
+
+/* MOBILE */
+@media (max-width:760px){
+
+  .premium-hero{
+    padding:2.4rem 0 1.8rem !important;
+  }
+
+  .premium-hero-grid,
+  .hero-grid{
+    grid-template-columns:1fr !important;
+    gap:1.4rem !important;
+  }
+
+  .hero-copy{
+    max-width:100%;
+  }
+
+  .hero-copy h1{
+    font-size:clamp(2rem,9vw,2.65rem) !important;
+  }
+
+  .premium-diagnostic-visual{
+    padding:14px !important;
+  }
+
+  .trust-strip{
+    padding:1.1rem 0 !important;
+  }
+}
