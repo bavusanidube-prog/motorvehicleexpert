@@ -1746,3 +1746,47 @@ footer::after {
     border-color: rgba(215,25,32,0.35) !important;
   }
 }
+
+/* =========================================================
+   MOBILE FIX: HERO IMAGE NOT SHOWING
+========================================================= */
+
+.hero-image {
+  display: block !important;
+  width: 100% !important;
+  min-height: 220px !important;
+  border-radius: 24px;
+  overflow: hidden;
+  background: #f3f4f6;
+}
+
+.hero-image img {
+  display: block !important;
+  width: 100% !important;
+  height: auto !important;
+  min-height: 220px !important;
+  object-fit: cover !important;
+}
+
+@media (max-width: 760px) {
+  .premium-diagnostic-visual {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 1.5rem !important;
+  }
+
+  .hero-image {
+    display: block !important;
+    min-height: 230px !important;
+    margin-bottom: 1rem !important;
+  }
+
+  .hero-image img {
+    display: block !important;
+    width: 100% !important;
+    height: 230px !important;
+    object-fit: cover !important;
+    object-position: center !important;
+  }
+}
