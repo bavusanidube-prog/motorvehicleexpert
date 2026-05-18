@@ -2294,3 +2294,11 @@ body:has(.eyebrow) .premium-hero{
 .premium-hero .hero-copy{
   justify-content:center;
 }
+
+/* Hero image stability fix */
+.hero-image img{
+  display:block;
+  aspect-ratio:16 / 9;
+  object-fit:cover;
+  background:#0f172a;
+}
