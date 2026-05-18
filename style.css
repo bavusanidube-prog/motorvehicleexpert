@@ -1763,12 +1763,9 @@ footer::after {
 
 /* MAIN IMAGE */
 .hero-image img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    object-position: center;
-    border-radius: 28px;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 28px;
 }
 
 /* DESKTOP HERO SIZE */
