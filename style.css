@@ -1881,3 +1881,18 @@ footer::after {
   }
 
 }
+
+/* =========================================
+   HERO BALANCE IMPROVEMENTS
+========================================= */
+
+.premium-hero h1{
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 0.95;
+  letter-spacing: -0.04em;
+  max-width: 10ch;
+}
+
+.premium-hero-grid{
+  grid-template-columns: 1.15fr 1fr;
+}
