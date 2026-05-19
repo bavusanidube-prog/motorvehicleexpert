@@ -2102,17 +2102,38 @@ body {
 .mve-premium .hero-image{
   width: 100%;
   max-width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
+  overflow: visible;
   border-radius: 28px;
   background: #0f172a;
 }
 
 .mve-premium .hero-image img{
   width: 100% !important;
-  height: 100% !important;
+  height: auto !important;
   object-fit: contain !important;
   object-position: center center !important;
   display: block !important;
   border-radius: 28px;
+}
+
+/* FINAL FIX: stop hero images being cropped */
+.mve-premium .premium-hero .hero-image{
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  overflow: visible !important;
+  border-radius: 28px !important;
+  background: transparent !important;
+}
+
+.mve-premium .premium-hero .hero-image img{
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+  border-radius: 28px !important;
 }
