@@ -1761,13 +1761,11 @@ footer::after {
     box-shadow: 0 20px 60px rgba(0,0,0,0.18);
 }
 
-/* MAIN IMAGE */
-.hero-image img{
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
+.hero-image{
+  overflow: visible;
+  background: #0f172a;
   border-radius: 28px;
 }
-
 /* DESKTOP HERO SIZE */
 .premium-hero-grid{
     align-items: center;
