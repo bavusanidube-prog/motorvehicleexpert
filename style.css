@@ -2097,3 +2097,22 @@ body {
     display: grid !important;
   }
 }
+
+/* FIX: show full hero images without cutting/cropping */
+.mve-premium .hero-image{
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 28px;
+  background: #0f172a;
+}
+
+.mve-premium .hero-image img{
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+  object-position: center center !important;
+  display: block !important;
+  border-radius: 28px;
+}
