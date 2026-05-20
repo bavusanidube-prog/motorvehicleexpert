@@ -1,3 +1,8 @@
+/* =========================================================
+   MOTOR VEHICLE EXPERT — FULL CLEANED PRODUCTION CSS
+   Rebuilt from uploaded stylesheet. Duplicate final overrides removed.
+========================================================= */
+
 :root {
   --bg: #ffffff;
   --bg-soft: #f5f6f8;
@@ -1658,545 +1663,312 @@ footer::after {
 }
 
 /* =========================================================
-   FINAL FIX: ARTICLE SIDE NAV / TOC
-   Keeps sidebar sticky without breaking page scroll
+   PRODUCTION CLEAN-UP LAYER
+   Replaces the old duplicated FINAL FIX blocks.
+   Keep this section at the very bottom of style.css.
 ========================================================= */
 
-@media (min-width: 1081px) {
-  .article-layout {
-    display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
-    gap: 1.75rem;
-    align-items: start;
-    overflow: visible !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc {
-    position: sticky !important;
-    top: 115px !important;
-    align-self: start !important;
-    max-height: calc(100vh - 135px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    scrollbar-width: thin;
-  }
-
-  .article-layout > .toc::-webkit-scrollbar,
-  .article-layout > aside.toc::-webkit-scrollbar,
-  aside.toc::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .article-layout > .toc::-webkit-scrollbar-thumb,
-  .article-layout > aside.toc::-webkit-scrollbar-thumb,
-  aside.toc::-webkit-scrollbar-thumb {
-    background: #d1d5db;
-    border-radius: 999px;
-  }
-}
-
-/* =========================================================
-   FINAL HUB PAGE TOC FIX
-   Removes awkward sticky sidebar scrollbars on long hub pages
-========================================================= */
-
-@media (min-width: 1081px) {
-  .article-layout {
-    display: block !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc {
-    position: static !important;
-    max-height: none !important;
-    overflow: visible !important;
-    margin-bottom: 1.5rem !important;
-  }
-
-  .toc ul,
-  aside.toc ul {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: 0.6rem !important;
-  }
-
-  .toc li,
-  aside.toc li {
-    list-style: none !important;
-  }
-
-  .toc a,
-  aside.toc a {
-    display: inline-flex !important;
-    border: 1px solid var(--line) !important;
-    background: #ffffff !important;
-    border-radius: 999px !important;
-    padding: 0.65rem 0.9rem !important;
-    font-size: 0.9rem !important;
-    white-space: nowrap !important;
-  }
-
-  .toc a:hover,
-  aside.toc a:hover {
-    background: var(--brand-soft) !important;
-    color: var(--brand) !important;
-    border-color: rgba(215,25,32,0.35) !important;
-  }
-}
-
-/* =========================
-   HERO IMAGE SYSTEM
-========================= */
-
-.hero-image{
-    position: relative;
-    width: 100%;
-    border-radius: 28px;
-    overflow: hidden;
-    background: #111827;
-    border: 1px solid rgba(255,255,255,0.08);
-    box-shadow: 0 25px 60px rgba(0,0,0,.18);
-}
-
-.hero-image{
-  overflow: visible;
-  background: #0f172a;
-  border-radius: 28px;
-}
-/* DESKTOP HERO SIZE */
-.premium-hero-grid{
-    align-items: center;
-    gap: 48px;
-}
-
-/* REMOVE CROPPING */
-.premium-diagnostic-visual{
-    width: 100%;
-    min-width: 0;
-}
-
-/* MOBILE FIX */
-@media (max-width: 980px){
-
-    .premium-hero-grid{
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    .premium-diagnostic-visual{
-        order: -1;
-    }
-
-    .hero-image{
-        border-radius: 22px;
-    }
-
-    .hero-image img{
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 22px;
-    }
-
-}
-
-/* SMALL PHONE FIX */
-@media (max-width: 640px){
-
-    .hero{
-        padding-top: 28px;
-    }
-
-    .hero-image{
-        border-radius: 18px;
-    }
-
-    .hero-image img{
-        border-radius: 18px;
-    }
-
-}
-
-/* =========================================
-   KEEP HERO SIDE-BY-SIDE LONGER
-========================================= */
-
-.premium-hero-grid{
-    display: grid;
-    grid-template-columns: 1.08fr 0.92fr;
-    gap: 48px;
-    align-items: center;
-}
-
-/* TABLET */
-@media (max-width: 1100px){
-
-    .premium-hero-grid{
-        grid-template-columns: 1fr 1fr;
-        gap: 32px;
-    }
-
-}
-
-/* ONLY STACK ON SMALLER PHONES */
-@media (max-width: 760px){
-
-    .premium-hero-grid{
-        grid-template-columns: 1fr;
-        gap: 28px;
-    }
-
-    .premium-diagnostic-visual{
-        order: -1;
-    }
-
-}
-
-/* =========================================
-   LAPTOP HERO FIX
-========================================= */
-
-@media (min-width: 761px) {
-
-  .premium-hero-grid,
-  .hero-grid {
-    display: grid !important;
-    grid-template-columns: 1.15fr 0.85fr !important;
-    gap: 48px !important;
-    align-items: center !important;
-  }
-
-  .hero-copy {
-    order: 1 !important;
-  }
-
-  .premium-diagnostic-visual {
-    order: 2 !important;
-    width: 100% !important;
-  }
-
-}
-
-/* =========================================
-   HERO BALANCE IMPROVEMENTS
-========================================= */
-
-.premium-hero h1{
-  font-size: clamp(3rem, 5vw, 5.5rem);
-  line-height: 0.95;
-  letter-spacing: -0.04em;
-  max-width: 10ch;
-}
-
-.premium-hero-grid{
-  grid-template-columns: 1.15fr 1fr;
-}
-
-/* =========================================================
-   FINAL SITEWIDE SAFETY FIXES
-   Keep this at the VERY BOTTOM of style.css
-   Fixes mobile/tablet hero layout, image spacing, and conflicts
-========================================================= */
-
+/* ---------- Global safety ---------- */
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
 }
 
-.hero.premium-hero {
-  padding: clamp(2rem, 5vw, 4rem) 0 !important;
+.container,
+.hero-copy,
+.hero-content,
+.article-content,
+.card,
+.feature-card,
+.mini-card,
+.step-card,
+.topic-card,
+.symptom-card,
+.premium-diagnostic-visual,
+.hero-warning-panel {
+  min-width: 0;
 }
 
-.hero.premium-hero .premium-hero-grid,
-.hero.premium-hero .hero-grid {
-  display: grid !important;
-  grid-template-columns: minmax(0, 1fr) minmax(420px, 1fr) !important;
-  gap: clamp(1.5rem, 4vw, 3rem) !important;
-  align-items: center !important;
-}
-
-.hero.premium-hero .hero-copy {
-  order: 1 !important;
-  min-width: 0 !important;
-  max-width: 100% !important;
-}
-
-.hero.premium-hero .hero-image {
-  order: 2 !important;
-  width: 100% !important;
-  max-width: 100% !important;
-  border-radius: 28px !important;
-  overflow: hidden !important;
-  background: #111827 !important;
-  box-shadow: 0 20px 55px rgba(15,23,42,.16) !important;
-}
-
-.hero.premium-hero .hero-image img {
-  display: block !important;
-  width: 100% !important;
-  height: auto !important;
-  aspect-ratio: 16 / 9 !important;
-  object-fit: cover !important;
-  object-position: center !important;
-  border-radius: 28px !important;
-}
-
-.hero.premium-hero h1 {
-  font-size: clamp(2.6rem, 5vw, 5.2rem) !important;
-  line-height: .98 !important;
-  letter-spacing: -.05em !important;
-  max-width: 11ch !important;
-}
-
-@media (max-width: 980px) {
-  .hero.premium-hero {
-    padding: 2rem 0 2.5rem !important;
-  }
-
-  .hero.premium-hero .premium-hero-grid,
-  .hero.premium-hero .hero-grid {
-    grid-template-columns: 1fr !important;
-    gap: 1.5rem !important;
-  }
-
-  .hero.premium-hero .hero-image {
-    order: 1 !important;
-  }
-
-  .hero.premium-hero .hero-copy {
-    order: 2 !important;
-  }
-
-  .hero.premium-hero h1 {
-    font-size: clamp(2.1rem, 8vw, 3.4rem) !important;
-    line-height: 1.02 !important;
-    max-width: 100% !important;
-  }
-}
-
-@media (max-width: 640px) {
-  .hero.premium-hero {
-    padding: 1.25rem 0 2rem !important;
-  }
-
-  .hero.premium-hero .container {
-    width: calc(100% - 1rem) !important;
-  }
-
-  .hero.premium-hero .premium-hero-grid,
-  .hero.premium-hero .hero-grid {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 1rem !important;
-  }
-
-  .hero.premium-hero .hero-image {
-    order: 1 !important;
-    border-radius: 18px !important;
-    box-shadow: 0 10px 26px rgba(15,23,42,.12) !important;
-  }
-
-  .hero.premium-hero .hero-image img {
-    width: 100% !important;
-    height: auto !important;
-    aspect-ratio: 16 / 9 !important;
-    object-fit: cover !important;
-    object-position: center !important;
-    border-radius: 18px !important;
-  }
-
-  .hero.premium-hero .hero-copy {
-    order: 2 !important;
-  }
-
-  .hero.premium-hero h1 {
-    font-size: clamp(2rem, 11vw, 2.7rem) !important;
-    line-height: 1.03 !important;
-    letter-spacing: -0.05em !important;
-    max-width: 100% !important;
-    margin-top: 0.5rem !important;
-  }
-
-  .hero.premium-hero .lead {
-    font-size: 1rem !important;
-    line-height: 1.65 !important;
-  }
-
-  .hero.premium-hero .article-meta {
-    gap: 0.45rem !important;
-  }
-
-  .hero.premium-hero .article-meta span {
-    font-size: 0.78rem !important;
-    padding: 0.38rem 0.58rem !important;
-  }
-
-  .hero.premium-hero .hero-actions {
-    display: grid !important;
-    grid-template-columns: 1fr !important;
-    gap: 0.7rem !important;
-  }
-}
-
+/* ---------- Clean article / hub layout rules ---------- */
 @media (min-width: 1081px) {
-  body.mve-premium.article-page .article-layout {
-    display: grid !important;
-    grid-template-columns: 260px minmax(0, 1fr) !important;
-    gap: 1.75rem !important;
-    align-items: start !important;
+  body.mve-premium.article-page .article-layout,
+  body.article-page .article-layout {
+    display: grid;
+    grid-template-columns: 260px minmax(0, 1fr);
+    gap: 1.75rem;
+    align-items: start;
+    overflow: visible;
   }
 
   body.mve-premium.article-page .article-layout > .toc,
-  body.mve-premium.article-page .article-layout > aside.toc {
-    position: sticky !important;
-    top: 115px !important;
-    max-height: calc(100vh - 135px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
+  body.mve-premium.article-page .article-layout > aside.toc,
+  body.article-page .article-layout > .toc,
+  body.article-page .article-layout > aside.toc {
+    position: sticky;
+    top: 115px;
+    align-self: start;
+    max-height: calc(100vh - 135px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
   }
-}
 
-@media (min-width: 1081px) {
   body.mve-premium:not(.article-page) .article-layout {
-    display: block !important;
+    display: block;
   }
 
   body.mve-premium:not(.article-page) .article-layout > .toc,
   body.mve-premium:not(.article-page) .article-layout > aside.toc {
-    position: static !important;
-    max-height: none !important;
-    overflow: visible !important;
-    margin-bottom: 1.5rem !important;
+    position: static;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 1.5rem;
   }
 
   body.mve-premium:not(.article-page) .toc ul,
   body.mve-premium:not(.article-page) aside.toc ul {
-    display: flex !important;
-    flex-wrap: wrap !important;
-    gap: .6rem !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+  }
+
+  body.mve-premium:not(.article-page) .toc li,
+  body.mve-premium:not(.article-page) aside.toc li {
+    list-style: none;
   }
 
   body.mve-premium:not(.article-page) .toc a,
   body.mve-premium:not(.article-page) aside.toc a {
-    display: inline-flex !important;
-    border: 1px solid var(--line) !important;
-    background: #fff !important;
-    border-radius: 999px !important;
-    padding: .65rem .9rem !important;
-    font-size: .9rem !important;
-    white-space: nowrap !important;
+    display: inline-flex;
+    border: 1px solid var(--line);
+    background: #ffffff;
+    border-radius: 999px;
+    padding: 0.65rem 0.9rem;
+    font-size: 0.9rem;
+    white-space: nowrap;
   }
 }
 
-@media (max-width: 760px) {
-  .mobile-bottom-nav {
-    display: grid !important;
-  }
+/* ---------- Clean premium hero layout ---------- */
+.hero.premium-hero,
+.premium-hero {
+  padding: clamp(2rem, 5vw, 4.5rem) 0;
 }
 
-/* FIX: show full hero images without cutting/cropping */
-.mve-premium .hero-image{
+.hero.premium-hero .premium-hero-grid,
+.hero.premium-hero .hero-grid,
+.premium-hero .premium-hero-grid,
+.premium-hero .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero.premium-hero .hero-copy,
+.premium-hero .hero-copy,
+.hero.premium-hero .hero-content,
+.premium-hero .hero-content {
+  order: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero.premium-hero h1,
+.premium-hero h1 {
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  max-width: 12ch;
+}
+
+/* ---------- Clean hero image system ---------- */
+.hero-image {
+  position: relative;
+  order: 2;
   width: 100%;
   max-width: 100%;
-  overflow: visible;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   border-radius: 28px;
+  background: #0f172a;
+  border: 1px solid rgba(255,255,255,0.08);
+  box-shadow: 0 22px 55px rgba(15,23,42,0.16);
+}
+
+.hero-image img,
+.premium-hero .hero-image img,
+.hero.premium-hero .hero-image img {
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
+  border-radius: inherit;
+}
+
+/* Add class="hero-image contain-image" when an image must show fully without cropping. */
+.hero-image.contain-image img,
+.hero-image.image-contain img,
+.hero-image.full-image img,
+.hero-image.no-crop img {
+  object-fit: contain;
   background: #0f172a;
 }
 
-.mve-premium .hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  display: block !important;
-  border-radius: 28px;
+/* ---------- Normal article / card image frames ---------- */
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image,
+.image-frame {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(215,25,32,0.12), rgba(15,23,42,0.08));
 }
 
-/* FINAL FIX: stop hero images being cropped */
-.mve-premium .premium-hero .hero-image{
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  overflow: visible !important;
-  border-radius: 28px !important;
-  background: transparent !important;
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image {
+  aspect-ratio: 16 / 10;
 }
 
-.mve-premium .premium-hero .hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block !important;
-  border-radius: 28px !important;
+.article-image img,
+.card-image img,
+.feature-image img,
+.topic-image img,
+.guide-image img,
+.image-frame img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center center;
 }
 
-/* Premium hero image sizing fix */
-.hero-image{
-    width:100%;
+.article-image.contain-image img,
+.card-image.contain-image img,
+.feature-image.contain-image img,
+.topic-image.contain-image img,
+.guide-image.contain-image img,
+.image-frame.contain-image img {
+  object-fit: contain;
+  background: #0f172a;
 }
 
-.hero-image img{
-    width:100%;
-    height:auto;
-    display:block;
-    border-radius:28px;
-    object-fit:cover;
+/* ---------- Safer text wrapping ---------- */
+h1,
+h2,
+h3,
+h4,
+.brand-text,
+.card,
+.article-content {
+  overflow-wrap: anywhere;
 }
 
-/* Mobile premium hero layout: image first */
-@media (max-width: 760px){
-
-  .premium-hero-grid{
-    grid-template-columns: 1fr !important;
+/* ---------- Tablet ---------- */
+@media (max-width: 1080px) {
+  .hero.premium-hero .premium-hero-grid,
+  .hero.premium-hero .hero-grid,
+  .premium-hero .premium-hero-grid,
+  .premium-hero .hero-grid,
+  .hero-grid,
+  .premium-hero-grid {
+    grid-template-columns: 1fr;
   }
 
-  .hero-image{
+  .hero-image {
     order: 1;
-    width: 100%;
-    max-width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
   }
 
-  .hero-copy{
+  .hero-copy,
+  .hero-content,
+  .hero.premium-hero .hero-copy,
+  .premium-hero .hero-copy,
+  .hero.premium-hero .hero-content,
+  .premium-hero .hero-content {
     order: 2;
   }
 
-  .hero-image img{
-    width: 100%;
-    height: auto;
+  .hero.premium-hero h1,
+  .premium-hero h1 {
     max-width: 100%;
-    display: block;
+  }
+}
+
+/* ---------- Mobile ---------- */
+@media (max-width: 760px) {
+  .hero.premium-hero,
+  .premium-hero,
+  .hero {
+    padding: 1.75rem 0 2.25rem;
   }
 
+  .hero.premium-hero .premium-hero-grid,
+  .hero.premium-hero .hero-grid,
+  .premium-hero .premium-hero-grid,
+  .premium-hero .hero-grid,
+  .hero-grid,
+  .premium-hero-grid {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 100%;
+    border-radius: 18px;
+    aspect-ratio: 16 / 10;
+    box-shadow: 0 12px 30px rgba(15,23,42,0.12);
+  }
+
+  .hero-image img,
+  .premium-hero .hero-image img,
+  .hero.premium-hero .hero-image img {
+    border-radius: inherit;
+  }
+
+  .hero.premium-hero h1,
+  .premium-hero h1,
+  h1,
+  .hero-copy h1 {
+    font-size: clamp(2rem, 10vw, 2.7rem);
+    line-height: 1.04;
+    letter-spacing: -0.05em;
+    max-width: 100%;
+    margin-top: 0.5rem;
+  }
+
+  .hero-actions {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .cta {
+    width: 100%;
+  }
+
+  .mobile-bottom-nav {
+    display: grid;
+  }
 }
 
-/* FINAL HERO IMAGE CONSISTENCY FIX */
-.hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  border-radius: 28px !important;
-  object-fit: contain !important;
+/* ---------- Small phones ---------- */
+@media (max-width: 420px) {
+  .hero-image {
+    border-radius: 16px;
+  }
 }
 
-/* FINAL PREMIUM HERO FIX */
-.mve-premium .premium-hero .hero-image{
-  overflow: hidden !important;
-  border-radius: 28px !important;
-}
-
-.mve-premium .premium-hero .hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  object-fit: cover !important;
-  aspect-ratio: 16 / 9 !important;
-}
 
