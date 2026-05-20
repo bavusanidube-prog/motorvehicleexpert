@@ -2383,3 +2383,88 @@ body .diagnostics-hero .hero-grid{
     }
 
 }
+
+/* =========================================================
+   TRUE FINAL DIAGNOSTICS HERO FIX
+========================================================= */
+
+body .diagnostics-hero .premium-hero-grid,
+body .diagnostics-hero .hero-grid{
+    display: grid !important;
+    grid-template-columns: 48% 52% !important;
+    gap: 64px !important;
+    align-items: center !important;
+}
+
+/* TEXT SIDE */
+body .diagnostics-hero .hero-copy{
+    width: 100% !important;
+    max-width: 100% !important;
+}
+
+/* FIX MASSIVE TITLE STACKING */
+body .diagnostics-hero h1{
+    font-size: clamp(3.2rem, 4.8vw, 5.8rem) !important;
+    line-height: 0.95 !important;
+    letter-spacing: -0.06em !important;
+
+    max-width: 12ch !important;
+    width: 100% !important;
+}
+
+/* DESCRIPTION */
+body .diagnostics-hero .lead{
+    max-width: 36ch !important;
+}
+
+/* IMAGE */
+body .diagnostics-hero .hero-image{
+    width: 100% !important;
+    max-width: 720px !important;
+    margin: 0 auto !important;
+}
+
+body .diagnostics-hero .hero-image img{
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    aspect-ratio: auto !important;
+}
+
+/* LAPTOP */
+@media (max-width: 1200px){
+
+    body .diagnostics-hero h1{
+        font-size: clamp(2.8rem, 5vw, 4.8rem) !important;
+        max-width: 13ch !important;
+    }
+
+}
+
+/* TABLET + MOBILE */
+@media (max-width: 980px){
+
+    body .diagnostics-hero .premium-hero-grid,
+    body .diagnostics-hero .hero-grid{
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+
+    body .diagnostics-hero .hero-image{
+        order: 1 !important;
+        max-width: 100% !important;
+    }
+
+    body .diagnostics-hero .hero-copy{
+        order: 2 !important;
+    }
+
+    body .diagnostics-hero h1{
+        max-width: 100% !important;
+    }
+
+    body .diagnostics-hero .lead{
+        max-width: 100% !important;
+    }
+
+}
