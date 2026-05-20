@@ -2432,3 +2432,59 @@ body .diagnostics-hero .lead{
     max-width: 100% !important;
   }
 }
+
+/* =========================================================
+   NAVBAR FIX - KEEP LOGO AND NAV LEVEL
+========================================================= */
+
+.topbar .nav{
+  display: flex !important;
+  align-items: center !important;
+}
+
+.topbar .brand,
+.topbar .logo-brand{
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+}
+
+.topbar .site-logo,
+.topbar .brand img,
+.topbar .logo-brand img{
+  height: 54px !important;
+  width: auto !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+  display: block !important;
+  border-radius: 12px !important;
+}
+
+.topbar .nav-links{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+}
+
+.topbar .nav-links a{
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+}
+
+/* Mobile keeps nav tidy */
+@media (max-width: 760px){
+
+  .topbar .nav{
+    align-items: flex-start !important;
+  }
+
+  .topbar .site-logo,
+  .topbar .brand img,
+  .topbar .logo-brand img{
+    height: 44px !important;
+  }
+
+}
