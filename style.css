@@ -2552,3 +2552,71 @@ body .diagnostics-hero .lead{
   object-fit: contain !important;
   aspect-ratio: auto !important;
 }
+
+/* =========================================================
+   LAPTOP / DESKTOP IMAGE OVERLAP FIX
+========================================================= */
+
+@media (min-width: 981px){
+
+  .hero-image,
+  .article-image,
+  .feature-image,
+  .card-image,
+  .guide-image,
+  .topic-image,
+  .content-image,
+  .page-image,
+  .problem-image,
+  .warning-light-image,
+  .mot-image,
+  .service-image{
+    max-width: 100% !important;
+    overflow: hidden !important;
+    position: relative !important;
+    z-index: 1 !important;
+  }
+
+  .hero-image img,
+  .article-image img,
+  .feature-image img,
+  .card-image img,
+  .guide-image img,
+  .topic-image img,
+  .content-image img,
+  .page-image img,
+  .problem-image img,
+  .warning-light-image img,
+  .mot-image img,
+  .service-image img{
+    width: 100% !important;
+    height: auto !important;
+    max-height: 520px !important;
+    object-fit: contain !important;
+    object-position: center !important;
+    display: block !important;
+  }
+
+  .hero-grid,
+  .premium-hero-grid,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .split,
+  .article-layout{
+    align-items: start !important;
+  }
+
+  .hero-copy,
+  .article-content,
+  .card,
+  .feature-card,
+  .topic-card,
+  .mini-card,
+  .step-card{
+    position: relative !important;
+    z-index: 2 !important;
+    min-width: 0 !important;
+  }
+
+}
