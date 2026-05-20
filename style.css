@@ -2151,4 +2151,30 @@ body {
     object-fit:cover;
 }
 
+/* Mobile premium hero image layout fix */
+@media (max-width: 760px){
+
+  .premium-hero-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-copy{
+    order: 1;
+  }
+
+  .hero-image{
+    order: 2;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-image img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    display: block;
+  }
+
+}
+
 
