@@ -2177,4 +2177,12 @@ body {
 
 }
 
+/* FINAL HERO IMAGE CONSISTENCY FIX */
+.hero-image img{
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  border-radius: 28px !important;
+  object-fit: contain !important;
+}
 
