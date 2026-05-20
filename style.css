@@ -1972,3 +1972,168 @@ h4,
 }
 
 
+/* =========================================================
+   FINAL IMAGE FIT PATCH — v2
+   Purpose: stop uploaded images being cropped, stretched or escaping frames.
+   Keep this at the VERY BOTTOM of style.css.
+========================================================= */
+
+/* 1) Universal safety for common image wrappers */
+.hero-image,
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image,
+.page-image,
+.post-image,
+.thumbnail,
+.image-frame,
+.visual-frame,
+.hero-visual,
+.premium-image,
+.content-image,
+.img-frame,
+figure {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+/* 2) Stop images stretching outside their boxes */
+.hero-image img,
+.article-image img,
+.card-image img,
+.feature-image img,
+.topic-image img,
+.guide-image img,
+.page-image img,
+.post-image img,
+.thumbnail img,
+.image-frame img,
+.visual-frame img,
+.hero-visual img,
+.premium-image img,
+.content-image img,
+.img-frame img,
+figure img,
+.article-content img,
+.card img,
+.feature-card img,
+.mini-card img,
+.step-card img,
+.topic-card img {
+  display: block !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  object-position: center center !important;
+}
+
+/* 3) Hero images: show the whole uploaded image, not cropped */
+.hero-image,
+.premium-hero .hero-image,
+.hero.premium-hero .hero-image {
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  background: #0f172a;
+  border-radius: 28px;
+}
+
+.hero-image img,
+.premium-hero .hero-image img,
+.hero.premium-hero .hero-image img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  object-fit: contain !important;
+  border-radius: inherit !important;
+}
+
+/* 4) Card/article thumbnails: fill the card neatly */
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image,
+.thumbnail,
+.post-image {
+  aspect-ratio: 16 / 10;
+  background: #f1f5f9;
+  border-radius: 20px;
+}
+
+.article-image img,
+.card-image img,
+.feature-image img,
+.topic-image img,
+.guide-image img,
+.thumbnail img,
+.post-image img {
+  height: 100% !important;
+  object-fit: cover !important;
+  border-radius: inherit !important;
+}
+
+/* 5) Images inside article body should not be forced into odd crops */
+.article-content > img,
+.article-content p > img,
+.article-content figure img,
+.content-image img,
+.page-image img {
+  height: auto !important;
+  object-fit: contain !important;
+  border-radius: 22px;
+}
+
+.article-content figure {
+  margin: 1.5rem 0;
+  border-radius: 22px;
+}
+
+/* 6) Override helper classes for pages where you want a specific behaviour */
+.image-cover img,
+.cover-image img,
+.hero-image.cover-image img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+}
+
+.image-contain img,
+.contain-image img,
+.full-image img,
+.no-crop img,
+.hero-image.contain-image img,
+.hero-image.full-image img,
+.hero-image.no-crop img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+/* 7) Mobile: slightly taller frame so car images do not feel squeezed */
+@media (max-width: 760px) {
+  .hero-image,
+  .premium-hero .hero-image,
+  .hero.premium-hero .hero-image {
+    aspect-ratio: 4 / 3;
+    border-radius: 18px;
+  }
+
+  .article-image,
+  .card-image,
+  .feature-image,
+  .topic-image,
+  .guide-image,
+  .thumbnail,
+  .post-image {
+    aspect-ratio: 16 / 11;
+    border-radius: 18px;
+  }
+}
+
