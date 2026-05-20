@@ -2137,3 +2137,18 @@ body {
   display: block !important;
   border-radius: 28px !important;
 }
+
+/* Premium hero image sizing fix */
+.hero-image{
+    width:100%;
+}
+
+.hero-image img{
+    width:100%;
+    height:auto;
+    display:block;
+    border-radius:28px;
+    object-fit:cover;
+}
+
+
