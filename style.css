@@ -2216,3 +2216,47 @@ figure img,
 
 }
 
+/* FORCE FIX: diagnostics page hero image */
+body .diagnostics-hero .hero-image{
+  width: 100% !important;
+  max-width: 680px !important;
+  height: auto !important;
+  margin: 0 auto !important;
+  overflow: hidden !important;
+  border-radius: 28px !important;
+  background: #fff !important;
+}
+
+body .diagnostics-hero .hero-image img{
+  width: 100% !important;
+  height: auto !important;
+  max-height: 520px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  aspect-ratio: auto !important;
+  display: block !important;
+  border-radius: 28px !important;
+}
+
+body .diagnostics-hero .premium-hero-grid,
+body .diagnostics-hero .hero-grid{
+  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr) !important;
+  align-items: center !important;
+  gap: 56px !important;
+}
+
+@media (max-width: 980px){
+  body .diagnostics-hero .premium-hero-grid,
+  body .diagnostics-hero .hero-grid{
+    grid-template-columns: 1fr !important;
+  }
+
+  body .diagnostics-hero .hero-image{
+    max-width: 100% !important;
+  }
+
+  body .diagnostics-hero .hero-image img{
+    max-height: none !important;
+  }
+}
+
