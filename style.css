@@ -2488,3 +2488,67 @@ body .diagnostics-hero .lead{
   }
 
 }
+
+/* =========================================================
+   GLOBAL CONTENT IMAGE FIT FIX
+   Keeps uploaded page images visible without cutting them off
+========================================================= */
+
+/* Normal page/article/section image frames */
+.article-image,
+.feature-image,
+.card-image,
+.guide-image,
+.topic-image,
+.content-image,
+.page-image,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image{
+  width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 22px !important;
+  background: #f8fafc !important;
+}
+
+/* Images inside normal content frames */
+.article-image img,
+.feature-image img,
+.card-image img,
+.guide-image img,
+.topic-image img,
+.content-image img,
+.page-image img,
+.problem-image img,
+.warning-light-image img,
+.mot-image img,
+.service-image img{
+  width: 100% !important;
+  height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+}
+
+/* General images inside cards/articles */
+.card img,
+.feature-card img,
+.topic-card img,
+.mini-card img,
+.step-card img,
+.article-content img{
+  max-width: 100% !important;
+  height: auto !important;
+  object-fit: contain !important;
+  object-position: center !important;
+}
+
+/* Do not affect logo/nav images */
+.topbar img,
+.site-logo{
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+}
