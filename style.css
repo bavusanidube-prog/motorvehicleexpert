@@ -2620,3 +2620,162 @@ body .diagnostics-hero .lead{
   }
 
 }
+
+/* =========================================================
+   UNIVERSAL IMAGE FRAME SYSTEM
+   For all current and future uploaded images
+========================================================= */
+
+/* Every image stays inside its parent */
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+/* Any image inside main content, cards, articles, sections */
+main img,
+section img,
+article img,
+.card img,
+.feature-card img,
+.topic-card img,
+.mini-card img,
+.step-card img,
+.article-content img{
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-position: center !important;
+}
+
+/* Standard image frame class for future uploads */
+.image-frame,
+.hero-image,
+.article-image,
+.feature-image,
+.card-image,
+.guide-image,
+.topic-image,
+.content-image,
+.page-image,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image{
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
+  border-radius: 24px !important;
+  background: #f8fafc !important;
+  position: relative !important;
+}
+
+/* Images inside frames: show full image, no cutting */
+.image-frame img,
+.hero-image img,
+.article-image img,
+.feature-image img,
+.card-image img,
+.guide-image img,
+.topic-image img,
+.content-image img,
+.page-image img,
+.problem-image img,
+.warning-light-image img,
+.mot-image img,
+.service-image img{
+  width: 100% !important;
+  height: auto !important;
+  max-height: 560px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  aspect-ratio: auto !important;
+  display: block !important;
+}
+
+/* Desktop/laptop: stop oversized images overlapping */
+@media (min-width: 981px){
+
+  .image-frame,
+  .hero-image,
+  .article-image,
+  .feature-image,
+  .card-image,
+  .guide-image,
+  .topic-image,
+  .content-image,
+  .page-image,
+  .problem-image,
+  .warning-light-image,
+  .mot-image,
+  .service-image{
+    max-height: 580px !important;
+  }
+
+  .image-frame img,
+  .hero-image img,
+  .article-image img,
+  .feature-image img,
+  .card-image img,
+  .guide-image img,
+  .topic-image img,
+  .content-image img,
+  .page-image img,
+  .problem-image img,
+  .warning-light-image img,
+  .mot-image img,
+  .service-image img{
+    max-height: 560px !important;
+  }
+
+}
+
+/* Mobile: full image, no cropping */
+@media (max-width: 760px){
+
+  .image-frame,
+  .hero-image,
+  .article-image,
+  .feature-image,
+  .card-image,
+  .guide-image,
+  .topic-image,
+  .content-image,
+  .page-image,
+  .problem-image,
+  .warning-light-image,
+  .mot-image,
+  .service-image{
+    border-radius: 18px !important;
+    max-height: none !important;
+  }
+
+  .image-frame img,
+  .hero-image img,
+  .article-image img,
+  .feature-image img,
+  .card-image img,
+  .guide-image img,
+  .topic-image img,
+  .content-image img,
+  .page-image img,
+  .problem-image img,
+  .warning-light-image img,
+  .mot-image img,
+  .service-image img{
+    max-height: none !important;
+  }
+
+}
+
+/* Do not affect logo/nav images */
+.topbar img,
+.site-logo,
+.logo-brand img,
+.brand img{
+  width: auto !important;
+  height: 54px !important;
+  max-height: 54px !important;
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+}
