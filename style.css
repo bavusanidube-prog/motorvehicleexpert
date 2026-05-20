@@ -2186,3 +2186,17 @@ body {
   object-fit: contain !important;
 }
 
+/* FINAL PREMIUM HERO FIX */
+.mve-premium .premium-hero .hero-image{
+  overflow: hidden !important;
+  border-radius: 28px !important;
+}
+
+.mve-premium .premium-hero .hero-image img{
+  width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: cover !important;
+  aspect-ratio: 16 / 9 !important;
+}
+
