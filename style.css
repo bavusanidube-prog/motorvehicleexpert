@@ -1971,14 +1971,100 @@ h4,
   }
 }
 
-
 /* =========================================================
-   FINAL IMAGE FIT PATCH — v2
-   Purpose: stop uploaded images being cropped, stretched or escaping frames.
-   Keep this at the VERY BOTTOM of style.css.
+   FINAL STABLE IMAGE + NAV SYSTEM
+   This replaces all previous image patches.
+   You can keep uploading images exactly the same way.
 ========================================================= */
 
-/* 1) Universal safety for common image wrappers */
+/* Prevent laptop grid columns from forcing images/text to overflow */
+.hero-grid,
+.premium-hero-grid,
+.grid-2,
+.grid-3,
+.grid-4,
+.split,
+.article-layout,
+.contact-wrap,
+.symptom-grid,
+.stats,
+.footer-grid {
+  min-width: 0 !important;
+}
+
+.hero-grid > *,
+.premium-hero-grid > *,
+.grid-2 > *,
+.grid-3 > *,
+.grid-4 > *,
+.split > *,
+.article-layout > *,
+.contact-wrap > *,
+.symptom-grid > *,
+.stats > *,
+.footer-grid > * {
+  min-width: 0 !important;
+}
+
+/* Keep the header/logo stable and level */
+.topbar .nav {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.topbar .brand,
+.topbar .logo-brand {
+  display: flex !important;
+  align-items: center !important;
+  flex-shrink: 0 !important;
+  min-width: 0 !important;
+}
+
+.topbar .site-logo,
+.topbar .brand img,
+.topbar .logo-brand img {
+  width: auto !important;
+  height: 54px !important;
+  max-width: none !important;
+  max-height: 54px !important;
+  object-fit: contain !important;
+  aspect-ratio: auto !important;
+  display: block !important;
+  border-radius: 12px !important;
+}
+
+.topbar .nav-links {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: flex-end !important;
+  gap: 0.45rem !important;
+}
+
+.topbar .nav-links a {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  min-height: 42px !important;
+}
+
+/* Universal image safety: images never escape their own column */
+main img,
+section img,
+article img,
+figure img,
+.card img,
+.feature-card img,
+.topic-card img,
+.mini-card img,
+.step-card img,
+.article-content img {
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+  object-position: center center !important;
+}
+
+/* Existing image wrappers used across the site */
 .hero-image,
 .article-image,
 .card-image,
@@ -1994,15 +2080,22 @@ h4,
 .premium-image,
 .content-image,
 .img-frame,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image,
 figure {
-  position: relative;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  overflow: hidden;
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+  overflow: hidden !important;
+  position: relative !important;
 }
 
-/* 2) Stop images stretching outside their boxes */
+/* Show the full uploaded image inside all normal frames */
 .hero-image img,
 .article-image img,
 .card-image img,
@@ -2018,53 +2111,58 @@ figure {
 .premium-image img,
 .content-image img,
 .img-frame img,
-figure img,
-.article-content img,
-.card img,
-.feature-card img,
-.mini-card img,
-.step-card img,
-.topic-card img {
-  display: block !important;
+.problem-image img,
+.warning-light-image img,
+.mot-image img,
+.service-image img,
+figure img {
   width: 100% !important;
   max-width: 100% !important;
   min-width: 0 !important;
   height: auto !important;
+  max-height: none !important;
+  aspect-ratio: auto !important;
+  object-fit: contain !important;
   object-position: center center !important;
+  display: block !important;
 }
 
-/* 3) Hero images: show the whole uploaded image, not cropped */
+/* Hero frames: keep the card look, but do not crop uploaded images */
 .hero-image,
 .premium-hero .hero-image,
 .hero.premium-hero .hero-image {
-  aspect-ratio: 16 / 9;
-  display: grid;
-  place-items: center;
-  background: #0f172a;
-  border-radius: 28px;
+  aspect-ratio: auto !important;
+  border-radius: 28px !important;
+  background: #f8fafc !important;
+  box-shadow: 0 22px 55px rgba(15,23,42,0.14) !important;
 }
 
 .hero-image img,
 .premium-hero .hero-image img,
 .hero.premium-hero .hero-image img {
-  width: 100% !important;
-  height: 100% !important;
-  max-height: 100% !important;
+  height: auto !important;
   object-fit: contain !important;
   border-radius: inherit !important;
 }
 
-/* 4) Card/article thumbnails: fill the card neatly */
+/* Card/article image frames: no cutting, no overlap */
 .article-image,
 .card-image,
 .feature-image,
 .topic-image,
 .guide-image,
 .thumbnail,
-.post-image {
-  aspect-ratio: 16 / 10;
-  background: #f1f5f9;
-  border-radius: 20px;
+.post-image,
+.image-frame,
+.content-image,
+.page-image,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image {
+  aspect-ratio: auto !important;
+  border-radius: 22px !important;
+  background: #f8fafc !important;
 }
 
 .article-image img,
@@ -2073,56 +2171,39 @@ figure img,
 .topic-image img,
 .guide-image img,
 .thumbnail img,
-.post-image img {
-  height: 100% !important;
-  object-fit: cover !important;
+.post-image img,
+.image-frame img,
+.content-image img,
+.page-image img,
+.problem-image img,
+.warning-light-image img,
+.mot-image img,
+.service-image img {
+  height: auto !important;
+  object-fit: contain !important;
   border-radius: inherit !important;
 }
 
-/* 5) Images inside article body should not be forced into odd crops */
-.article-content > img,
-.article-content p > img,
-.article-content figure img,
-.content-image img,
-.page-image img {
-  height: auto !important;
-  object-fit: contain !important;
-  border-radius: 22px;
-}
+/* Laptop/desktop: stop large images pushing into neighbouring text/cards */
+@media (min-width: 981px) {
+  .hero-grid,
+  .premium-hero-grid {
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
+    align-items: center !important;
+  }
 
-.article-content figure {
-  margin: 1.5rem 0;
-  border-radius: 22px;
-}
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .split,
+  .article-layout {
+    align-items: start !important;
+  }
 
-/* 6) Override helper classes for pages where you want a specific behaviour */
-.image-cover img,
-.cover-image img,
-.hero-image.cover-image img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: cover !important;
-}
-
-.image-contain img,
-.contain-image img,
-.full-image img,
-.no-crop img,
-.hero-image.contain-image img,
-.hero-image.full-image img,
-.hero-image.no-crop img {
-  width: 100% !important;
-  height: 100% !important;
-  object-fit: contain !important;
-}
-
-/* 7) Mobile: slightly taller frame so car images do not feel squeezed */
-@media (max-width: 760px) {
-  .hero-image,
-  .premium-hero .hero-image,
-  .hero.premium-hero .hero-image {
-    aspect-ratio: 4 / 3;
-    border-radius: 18px;
+  .hero-image {
+    max-width: 720px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
   }
 
   .article-image,
@@ -2131,271 +2212,39 @@ figure img,
   .topic-image,
   .guide-image,
   .thumbnail,
-  .post-image {
-    aspect-ratio: 16 / 11;
-    border-radius: 18px;
-  }
-}
-
-/* =========================================================
-   DIAGNOSTICS HERO BALANCE FIX
-========================================================= */
-
-.diagnostics-hero .premium-hero-grid,
-.diagnostics-hero .hero-grid{
-    align-items: center;
-    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
-    gap: 56px;
-}
-
-/* IMAGE COLUMN */
-.diagnostics-hero .hero-image{
-    max-width: 760px;
-    margin: 0 auto;
-    border-radius: 28px;
-    overflow: hidden;
-    background: #ffffff;
-    box-shadow: 0 20px 50px rgba(15,23,42,.10);
-}
-
-/* KEEP IMAGE CLEAN */
-.diagnostics-hero .hero-image img{
-    width: 100%;
-    height: auto;
-    display: block;
-    object-fit: contain;
-    aspect-ratio: auto;
-}
-
-/* TEXT COLUMN */
-.diagnostics-hero .hero-copy{
-    max-width: 680px;
-}
-
-/* LARGE DESKTOPS */
-@media (min-width: 1400px){
-
-    .diagnostics-hero .hero-image{
-        max-width: 820px;
-    }
-
-}
-
-/* TABLETS */
-@media (max-width: 1100px){
-
-    .diagnostics-hero .premium-hero-grid,
-    .diagnostics-hero .hero-grid{
-        gap: 36px;
-    }
-
-    .diagnostics-hero .hero-image{
-        max-width: 100%;
-    }
-
-}
-
-/* MOBILE */
-@media (max-width: 760px){
-
-    .diagnostics-hero .premium-hero-grid,
-    .diagnostics-hero .hero-grid{
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-
-    .diagnostics-hero .hero-image{
-        order: 1;
-        border-radius: 20px;
-    }
-
-    .diagnostics-hero .hero-copy{
-        order: 2;
-        max-width: 100%;
-    }
-
-}
-
-/* FORCE FIX: diagnostics page hero image */
-body .diagnostics-hero .hero-image{
-  width: 100% !important;
-  max-width: 680px !important;
-  height: auto !important;
-  margin: 0 auto !important;
-  overflow: hidden !important;
-  border-radius: 28px !important;
-  background: #fff !important;
-}
-
-body .diagnostics-hero .hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  max-height: 520px !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  aspect-ratio: auto !important;
-  display: block !important;
-  border-radius: 28px !important;
-}
-
-body .diagnostics-hero .premium-hero-grid,
-body .diagnostics-hero .hero-grid{
-  grid-template-columns: minmax(0, .92fr) minmax(0, 1.08fr) !important;
-  align-items: center !important;
-  gap: 56px !important;
-}
-
-@media (max-width: 980px){
-  body .diagnostics-hero .premium-hero-grid,
-  body .diagnostics-hero .hero-grid{
-    grid-template-columns: 1fr !important;
-  }
-
-  body .diagnostics-hero .hero-image{
+  .post-image,
+  .image-frame,
+  .content-image,
+  .page-image,
+  .problem-image,
+  .warning-light-image,
+  .mot-image,
+  .service-image {
     max-width: 100% !important;
   }
-
-  body .diagnostics-hero .hero-image img{
-    max-height: none !important;
-  }
 }
 
-/* =========================================================
-   DIAGNOSTICS HERO FINAL PROPORTION FIX
-========================================================= */
-
-.diagnostics-hero .premium-hero-grid,
-.diagnostics-hero .hero-grid{
-    display: grid !important;
-    grid-template-columns: minmax(0, 0.92fr) minmax(0, 1.08fr) !important;
-    gap: 72px !important;
-    align-items: center !important;
-}
-
-/* IMAGE SIDE */
-.diagnostics-hero .hero-image{
-    width: 100% !important;
-    max-width: 760px !important;
-    margin: 0 auto !important;
-    border-radius: 32px !important;
-    overflow: hidden !important;
-    background: #fff !important;
-    box-shadow: 0 18px 50px rgba(15,23,42,.08) !important;
-}
-
-/* IMAGE */
-.diagnostics-hero .hero-image img{
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
-    object-fit: contain !important;
-    aspect-ratio: auto !important;
-}
-
-/* TEXT SIDE */
-.diagnostics-hero .hero-copy{
-    max-width: 760px !important;
-}
-
-/* BIG TITLE FIX */
-.diagnostics-hero h1{
-    font-size: clamp(3.8rem, 5vw, 6.4rem) !important;
-    line-height: 0.92 !important;
-    letter-spacing: -0.07em !important;
-    max-width: 9ch !important;
-    margin-bottom: 1.4rem !important;
-}
-
-/* DESCRIPTION */
-.diagnostics-hero .lead{
-    font-size: 1.25rem !important;
-    line-height: 1.8 !important;
-    max-width: 30ch !important;
-}
-
-/* BUTTON AREA */
-.diagnostics-hero .hero-actions{
-    margin-top: 2rem !important;
-}
-
-/* LAPTOP */
-@media (max-width: 1250px){
-
-    .diagnostics-hero .premium-hero-grid,
-    .diagnostics-hero .hero-grid{
-        gap: 48px !important;
-    }
-
-    .diagnostics-hero h1{
-        font-size: clamp(3rem, 5vw, 5rem) !important;
-    }
-
-}
-
-/* TABLET */
-@media (max-width: 980px){
-
-    .diagnostics-hero .premium-hero-grid,
-    .diagnostics-hero .hero-grid{
-        grid-template-columns: 1fr !important;
-        gap: 32px !important;
-    }
-
-    .diagnostics-hero .hero-image{
-        max-width: 100% !important;
-        order: 1 !important;
-    }
-
-    .diagnostics-hero .hero-copy{
-        order: 2 !important;
-        max-width: 100% !important;
-    }
-
-    .diagnostics-hero h1{
-        max-width: 100% !important;
-    }
-
-    .diagnostics-hero .lead{
-        max-width: 100% !important;
-    }
-
-}
-
-/* =========================================================
-   FINAL DIAGNOSTICS HERO FIX - WIDE TITLE VERSION
-========================================================= */
-
+/* Diagnostics page only: balanced desktop hero without squeezing the title */
 body .diagnostics-hero .premium-hero-grid,
-body .diagnostics-hero .hero-grid{
+body .diagnostics-hero .hero-grid {
   display: grid !important;
-  grid-template-columns: 46% 54% !important;
+  grid-template-columns: minmax(0, 46%) minmax(0, 54%) !important;
   gap: 56px !important;
   align-items: center !important;
 }
 
-body .diagnostics-hero .hero-image{
-  width: 100% !important;
+body .diagnostics-hero .hero-image {
   max-width: 700px !important;
   margin: 0 auto !important;
-  overflow: hidden !important;
-  border-radius: 28px !important;
-  background: #fff !important;
+  background: #ffffff !important;
 }
 
-body .diagnostics-hero .hero-image img{
-  width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-}
-
-body .diagnostics-hero .hero-copy{
+body .diagnostics-hero .hero-copy {
   width: 100% !important;
   max-width: 760px !important;
 }
 
-body .diagnostics-hero h1{
+body .diagnostics-hero h1 {
   max-width: 760px !important;
   width: 100% !important;
   font-size: clamp(3rem, 4.5vw, 5.3rem) !important;
@@ -2404,378 +2253,78 @@ body .diagnostics-hero h1{
   margin-bottom: 1.3rem !important;
 }
 
-body .diagnostics-hero .lead{
+body .diagnostics-hero .lead {
   max-width: 680px !important;
   font-size: 1.2rem !important;
   line-height: 1.75 !important;
 }
 
-@media (max-width: 980px){
-  body .diagnostics-hero .premium-hero-grid,
-  body .diagnostics-hero .hero-grid{
-    grid-template-columns: 1fr !important;
-    gap: 28px !important;
-  }
-
-  body .diagnostics-hero .hero-image{
-    order: 1 !important;
-    max-width: 100% !important;
-  }
-
-  body .diagnostics-hero .hero-copy{
-    order: 2 !important;
-    max-width: 100% !important;
-  }
-
-  body .diagnostics-hero h1,
-  body .diagnostics-hero .lead{
-    max-width: 100% !important;
-  }
-}
-
-/* =========================================================
-   NAVBAR FIX - KEEP LOGO AND NAV LEVEL
-========================================================= */
-
-.topbar .nav{
-  display: flex !important;
-  align-items: center !important;
-}
-
-.topbar .brand,
-.topbar .logo-brand{
-  display: flex !important;
-  align-items: center !important;
-  flex-shrink: 0 !important;
-}
-
-.topbar .site-logo,
-.topbar .brand img,
-.topbar .logo-brand img{
-  height: 54px !important;
-  width: auto !important;
-  max-width: none !important;
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-  display: block !important;
-  border-radius: 12px !important;
-}
-
-.topbar .nav-links{
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-}
-
-.topbar .nav-links a{
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 42px !important;
-}
-
-/* Mobile keeps nav tidy */
-@media (max-width: 760px){
-
-  .topbar .nav{
-    align-items: flex-start !important;
-  }
-
-  .topbar .site-logo,
-  .topbar .brand img,
-  .topbar .logo-brand img{
-    height: 44px !important;
-  }
-
-}
-
-/* =========================================================
-   GLOBAL CONTENT IMAGE FIT FIX
-   Keeps uploaded page images visible without cutting them off
-========================================================= */
-
-/* Normal page/article/section image frames */
-.article-image,
-.feature-image,
-.card-image,
-.guide-image,
-.topic-image,
-.content-image,
-.page-image,
-.problem-image,
-.warning-light-image,
-.mot-image,
-.service-image{
-  width: 100% !important;
-  overflow: hidden !important;
-  border-radius: 22px !important;
-  background: #f8fafc !important;
-}
-
-/* Images inside normal content frames */
-.article-image img,
-.feature-image img,
-.card-image img,
-.guide-image img,
-.topic-image img,
-.content-image img,
-.page-image img,
-.problem-image img,
-.warning-light-image img,
-.mot-image img,
-.service-image img{
-  width: 100% !important;
-  height: auto !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  display: block !important;
-}
-
-/* General images inside cards/articles */
-.card img,
-.feature-card img,
-.topic-card img,
-.mini-card img,
-.step-card img,
-.article-content img{
-  max-width: 100% !important;
-  height: auto !important;
-  object-fit: contain !important;
-  object-position: center !important;
-}
-
-/* Do not affect logo/nav images */
-.topbar img,
-.site-logo{
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-}
-
-/* =========================================================
-   LAPTOP / DESKTOP IMAGE OVERLAP FIX
-========================================================= */
-
-@media (min-width: 981px){
-
-  .hero-image,
-  .article-image,
-  .feature-image,
-  .card-image,
-  .guide-image,
-  .topic-image,
-  .content-image,
-  .page-image,
-  .problem-image,
-  .warning-light-image,
-  .mot-image,
-  .service-image{
-    max-width: 100% !important;
-    overflow: hidden !important;
-    position: relative !important;
-    z-index: 1 !important;
-  }
-
-  .hero-image img,
-  .article-image img,
-  .feature-image img,
-  .card-image img,
-  .guide-image img,
-  .topic-image img,
-  .content-image img,
-  .page-image img,
-  .problem-image img,
-  .warning-light-image img,
-  .mot-image img,
-  .service-image img{
-    width: 100% !important;
-    height: auto !important;
-    max-height: 520px !important;
-    object-fit: contain !important;
-    object-position: center !important;
-    display: block !important;
-  }
-
+/* Tablet/mobile: stack safely */
+@media (max-width: 980px) {
   .hero-grid,
   .premium-hero-grid,
   .grid-2,
   .grid-3,
   .grid-4,
   .split,
-  .article-layout{
-    align-items: start !important;
+  .article-layout,
+  .contact-wrap,
+  .symptom-grid,
+  .stats,
+  .footer-grid,
+  body .diagnostics-hero .premium-hero-grid,
+  body .diagnostics-hero .hero-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .hero-image,
+  body .diagnostics-hero .hero-image {
+    order: 1 !important;
+    max-width: 100% !important;
   }
 
   .hero-copy,
-  .article-content,
-  .card,
-  .feature-card,
-  .topic-card,
-  .mini-card,
-  .step-card{
-    position: relative !important;
-    z-index: 2 !important;
-    min-width: 0 !important;
+  .hero-content,
+  body .diagnostics-hero .hero-copy {
+    order: 2 !important;
+    max-width: 100% !important;
   }
 
+  body .diagnostics-hero h1,
+  body .diagnostics-hero .lead {
+    max-width: 100% !important;
+  }
 }
 
-/* =========================================================
-   UNIVERSAL IMAGE FRAME SYSTEM
-   For all current and future uploaded images
-========================================================= */
+/* Mobile nav and images */
+@media (max-width: 760px) {
+  .topbar .nav {
+    align-items: flex-start !important;
+  }
 
-/* Every image stays inside its parent */
-img{
-  max-width: 100%;
-  height: auto;
-}
+  .topbar .site-logo,
+  .topbar .brand img,
+  .topbar .logo-brand img {
+    height: 44px !important;
+    max-height: 44px !important;
+  }
 
-/* Any image inside main content, cards, articles, sections */
-main img,
-section img,
-article img,
-.card img,
-.feature-card img,
-.topic-card img,
-.mini-card img,
-.step-card img,
-.article-content img{
-  max-width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  object-position: center !important;
-}
-
-/* Standard image frame class for future uploads */
-.image-frame,
-.hero-image,
-.article-image,
-.feature-image,
-.card-image,
-.guide-image,
-.topic-image,
-.content-image,
-.page-image,
-.problem-image,
-.warning-light-image,
-.mot-image,
-.service-image{
-  width: 100% !important;
-  max-width: 100% !important;
-  overflow: hidden !important;
-  border-radius: 24px !important;
-  background: #f8fafc !important;
-  position: relative !important;
-}
-
-/* Images inside frames: show full image, no cutting */
-.image-frame img,
-.hero-image img,
-.article-image img,
-.feature-image img,
-.card-image img,
-.guide-image img,
-.topic-image img,
-.content-image img,
-.page-image img,
-.problem-image img,
-.warning-light-image img,
-.mot-image img,
-.service-image img{
-  width: 100% !important;
-  height: auto !important;
-  max-height: 560px !important;
-  object-fit: contain !important;
-  object-position: center !important;
-  aspect-ratio: auto !important;
-  display: block !important;
-}
-
-/* Desktop/laptop: stop oversized images overlapping */
-@media (min-width: 981px){
-
-  .image-frame,
   .hero-image,
   .article-image,
-  .feature-image,
   .card-image,
-  .guide-image,
+  .feature-image,
   .topic-image,
+  .guide-image,
+  .thumbnail,
+  .post-image,
+  .image-frame,
   .content-image,
   .page-image,
   .problem-image,
   .warning-light-image,
   .mot-image,
-  .service-image{
-    max-height: 580px !important;
-  }
-
-  .image-frame img,
-  .hero-image img,
-  .article-image img,
-  .feature-image img,
-  .card-image img,
-  .guide-image img,
-  .topic-image img,
-  .content-image img,
-  .page-image img,
-  .problem-image img,
-  .warning-light-image img,
-  .mot-image img,
-  .service-image img{
-    max-height: 560px !important;
-  }
-
-}
-
-/* Mobile: full image, no cropping */
-@media (max-width: 760px){
-
-  .image-frame,
-  .hero-image,
-  .article-image,
-  .feature-image,
-  .card-image,
-  .guide-image,
-  .topic-image,
-  .content-image,
-  .page-image,
-  .problem-image,
-  .warning-light-image,
-  .mot-image,
-  .service-image{
+  .service-image {
     border-radius: 18px !important;
-    max-height: none !important;
   }
-
-  .image-frame img,
-  .hero-image img,
-  .article-image img,
-  .feature-image img,
-  .card-image img,
-  .guide-image img,
-  .topic-image img,
-  .content-image img,
-  .page-image img,
-  .problem-image img,
-  .warning-light-image img,
-  .mot-image img,
-  .service-image img{
-    max-height: none !important;
-  }
-
 }
 
-/* Do not affect logo/nav images */
-.topbar img,
-.site-logo,
-.logo-brand img,
-.brand img{
-  width: auto !important;
-  height: 54px !important;
-  max-height: 54px !important;
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-}
