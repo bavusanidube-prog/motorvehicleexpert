@@ -2151,21 +2151,21 @@ body {
     object-fit:cover;
 }
 
-/* Mobile premium hero image layout fix */
+/* Mobile premium hero layout: image first */
 @media (max-width: 760px){
 
   .premium-hero-grid{
     grid-template-columns: 1fr !important;
   }
 
-  .hero-copy{
-    order: 1;
-  }
-
   .hero-image{
-    order: 2;
+    order: 1;
     width: 100%;
     max-width: 100%;
+  }
+
+  .hero-copy{
+    order: 2;
   }
 
   .hero-image img{
