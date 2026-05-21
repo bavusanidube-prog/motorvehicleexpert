@@ -2370,3 +2370,42 @@ body .diagnostics-hero .lead {
   }
 }
 
+/* MOBILE TOP NAV CLEAN ALIGNMENT FIX */
+@media (max-width: 760px){
+
+  .topbar .nav{
+    align-items: center !important;
+    text-align: center !important;
+  }
+
+  .topbar .brand,
+  .topbar .logo-brand{
+    justify-content: center !important;
+  }
+
+  .topbar .nav-links{
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    gap: 0.55rem !important;
+    justify-items: stretch !important;
+  }
+
+  .topbar .nav-links a{
+    width: 100% !important;
+    min-height: 38px !important;
+    padding: 0.55rem 0.35rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    text-align: center !important;
+    white-space: nowrap !important;
+    font-size: 0.76rem !important;
+  }
+
+  .topbar .nav-links a.cta{
+    grid-column: 1 / -1 !important;
+  }
+
+}
+
