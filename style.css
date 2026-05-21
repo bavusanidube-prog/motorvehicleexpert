@@ -2471,7 +2471,7 @@ body .diagnostics-hero .lead {
 
 }
 
-/* FINAL ARTICLE SIDEBAR - STAYS BESIDE ARTICLE */
+/* FINAL ARTICLE SIDEBAR - NORMAL STICKY DESIGN */
 
 @media (min-width: 1081px){
 
@@ -2486,18 +2486,11 @@ body .diagnostics-hero .lead {
   .article-layout > .toc,
   .article-layout > aside.toc{
     position: sticky !important;
-    top: 115px !important;
+    top: 110px !important;
     align-self: start !important;
-    max-height: calc(100vh - 135px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    z-index: 20 !important;
-    scrollbar-width: none !important;
-  }
-
-  .article-layout > .toc::-webkit-scrollbar,
-  .article-layout > aside.toc::-webkit-scrollbar{
-    display: none !important;
+    max-height: none !important;
+    overflow: visible !important;
+    z-index: 5 !important;
   }
 
 }
