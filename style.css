@@ -2471,33 +2471,20 @@ body .diagnostics-hero .lead {
 
 }
 
-/* MOBILE + TABLET */
-
-@media (max-width: 1080px){
-
-  .article-layout > .toc,
-  .article-layout > aside.toc{
-    position: static !important;
-    width: 100% !important;
-    max-width: 100% !important;
-    overflow: visible !important;
-  }
-
-}
-
-/* FINAL LAPTOP TOC STICKY FIX */
+/* FINAL SIDEBAR TOC - DESKTOP STICKY, MOBILE NORMAL */
 
 @media (min-width: 1081px){
 
   .article-layout{
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
     align-items: start !important;
     overflow: visible !important;
   }
 
   .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc,
-  .toc{
+  .article-layout > aside.toc{
     position: sticky !important;
     top: 110px !important;
     align-self: start !important;
@@ -2505,6 +2492,23 @@ body .diagnostics-hero .lead {
     overflow-y: auto !important;
     overflow-x: hidden !important;
     z-index: 50 !important;
+  }
+
+}
+
+@media (max-width: 1080px){
+
+  .article-layout{
+    display: block !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc{
+    position: static !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1.5rem !important;
   }
 
 }
