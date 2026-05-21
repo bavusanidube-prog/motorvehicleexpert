@@ -2471,24 +2471,7 @@ body .diagnostics-hero .lead {
 
 }
 
-@media (max-width: 1080px){
-
-  .article-layout{
-    display: block !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc{
-    position: static !important;
-    width: 100% !important;
-    max-height: none !important;
-    overflow: visible !important;
-    margin-bottom: 1.5rem !important;
-  }
-
-}
-
-/* TRUE ARTICLE STICKY SIDEBAR */
+/* FINAL TRUE STICKY SIDEBAR - NO INNER SCROLL */
 
 @media (min-width: 1081px){
 
@@ -2501,7 +2484,8 @@ body .diagnostics-hero .lead {
   }
 
   .article-layout > .toc,
-  .article-layout > aside.toc{
+  .article-layout > aside.toc,
+  aside.toc.toc{
     position: sticky !important;
     top: 115px !important;
     align-self: start !important;
@@ -2519,9 +2503,12 @@ body .diagnostics-hero .lead {
   }
 
   .article-layout > .toc,
-  .article-layout > aside.toc{
+  .article-layout > aside.toc,
+  aside.toc.toc{
     position: static !important;
     width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
     margin-bottom: 1.5rem !important;
   }
 
