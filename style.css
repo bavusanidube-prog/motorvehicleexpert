@@ -2471,3 +2471,24 @@ body .diagnostics-hero .lead {
 
 }
 
+/* ARTICLE SIDEBAR / TOC STICKY FIX */
+
+@media (min-width: 1081px){
+
+  .article-layout{
+    align-items: start !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc{
+    position: sticky !important;
+    top: 115px !important;
+    align-self: start !important;
+    max-height: calc(100vh - 135px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    z-index: 20 !important;
+  }
+
+}
+
