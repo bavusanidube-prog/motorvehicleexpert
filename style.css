@@ -2511,3 +2511,50 @@ body .diagnostics-hero .lead {
 
 }
 
+/* FINAL DESKTOP SIDEBAR ALWAYS VISIBLE */
+
+@media (min-width: 1081px){
+
+  .article-layout{
+    display: grid !important;
+    grid-template-columns: 280px minmax(0, 1fr) !important;
+    gap: 1.5rem !important;
+    align-items: start !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc{
+    position: fixed !important;
+    left: max(1rem, calc((100vw - 1180px) / 2)) !important;
+    top: 115px !important;
+    width: 280px !important;
+    max-height: calc(100vh - 140px) !important;
+    overflow-y: auto !important;
+    overflow-x: hidden !important;
+    z-index: 100 !important;
+  }
+
+  .article-layout > .article-content{
+    grid-column: 2 !important;
+  }
+
+}
+
+/* MOBILE/TABLET NORMAL */
+@media (max-width: 1080px){
+
+  .article-layout{
+    display: block !important;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc{
+    position: static !important;
+    width: 100% !important;
+    max-height: none !important;
+    overflow: visible !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+}
+
