@@ -2471,7 +2471,7 @@ body .diagnostics-hero .lead {
 
 }
 
-/* TOC NORMAL SCROLL FIX - SIDEBAR MOVES WITH PAGE */
+/* DESKTOP TOC NORMAL FLOW */
 
 @media (min-width: 1081px){
 
@@ -2480,6 +2480,20 @@ body .diagnostics-hero .lead {
     position: static !important;
     top: auto !important;
     max-height: none !important;
+    overflow: visible !important;
+  }
+
+}
+
+/* MOBILE + TABLET */
+
+@media (max-width: 1080px){
+
+  .article-layout > .toc,
+  .article-layout > aside.toc{
+    position: static !important;
+    width: 100% !important;
+    max-width: 100% !important;
     overflow: visible !important;
   }
 
