@@ -2471,7 +2471,7 @@ body .diagnostics-hero .lead {
 
 }
 
-/* FINAL ARTICLE SIDEBAR - CORRECT */
+/* FINAL SIDEBAR - FULL, CLEAN, STAYS ON SIDE */
 
 @media (min-width: 1081px){
 
@@ -2487,12 +2487,25 @@ body .diagnostics-hero .lead {
   .article-layout > aside.toc,
   aside.toc.toc{
     position: sticky !important;
-    top: 120px !important;
+    top: 105px !important;
     align-self: start !important;
-    width: auto !important;
+    width: 280px !important;
     max-height: none !important;
     overflow: visible !important;
     z-index: 10 !important;
+    padding: 1.15rem !important;
+  }
+
+  .toc a,
+  aside.toc a{
+    padding: 0.55rem 0.65rem !important;
+    font-size: 0.9rem !important;
+    line-height: 1.25 !important;
+  }
+
+  .toc ul,
+  aside.toc ul{
+    gap: 0.15rem !important;
   }
 
 }
