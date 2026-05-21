@@ -2471,7 +2471,7 @@ body .diagnostics-hero .lead {
 
 }
 
-/* FINAL SIDEBAR TOC - DESKTOP STICKY, MOBILE NORMAL */
+/* FINAL TOC NORMAL SIDE LAYOUT */
 
 @media (min-width: 1081px){
 
@@ -2480,35 +2480,16 @@ body .diagnostics-hero .lead {
     grid-template-columns: 280px minmax(0, 1fr) !important;
     gap: 1.5rem !important;
     align-items: start !important;
-    overflow: visible !important;
   }
 
   .article-layout > .toc,
   .article-layout > aside.toc{
-    position: sticky !important;
-    top: 110px !important;
+    position: relative !important;
+    top: auto !important;
     align-self: start !important;
-    max-height: calc(100vh - 130px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    z-index: 50 !important;
-  }
-
-}
-
-@media (max-width: 1080px){
-
-  .article-layout{
-    display: block !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc{
-    position: static !important;
-    width: 100% !important;
     max-height: none !important;
     overflow: visible !important;
-    margin-bottom: 1.5rem !important;
+    z-index: 1 !important;
   }
 
 }
