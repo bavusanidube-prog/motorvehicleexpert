@@ -2471,23 +2471,16 @@ body .diagnostics-hero .lead {
 
 }
 
-/* ARTICLE SIDEBAR / TOC STICKY FIX - NO INTERNAL SCROLL */
+/* TOC NORMAL SCROLL FIX - SIDEBAR MOVES WITH PAGE */
 
 @media (min-width: 1081px){
 
-  .article-layout{
-    align-items: start !important;
-    overflow: visible !important;
-  }
-
   .article-layout > .toc,
   .article-layout > aside.toc{
-    position: sticky !important;
-    top: 115px !important;
-    align-self: start !important;
+    position: static !important;
+    top: auto !important;
     max-height: none !important;
     overflow: visible !important;
-    z-index: 20 !important;
   }
 
 }
