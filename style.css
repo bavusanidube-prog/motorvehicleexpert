@@ -2409,3 +2409,11 @@ body .diagnostics-hero .lead {
 
 }
 
+.brake-light-hero h1{
+  max-width: 7.5ch;
+}
+
+.brake-light-hero .hero-image{
+  transform: translateY(-12px);
+}
+
