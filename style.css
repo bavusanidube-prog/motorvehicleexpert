@@ -2471,12 +2471,14 @@ body .diagnostics-hero .lead {
 
 }
 
-/* DESKTOP TOC NORMAL FLOW */
+/* FINAL TOC FIX */
 
 @media (min-width: 1081px){
 
-  .article-layout > .toc,
-  .article-layout > aside.toc{
+  body.article-page .article-layout > .toc,
+  body.article-page .article-layout > aside.toc,
+  body.mve-premium.article-page .article-layout > .toc,
+  body.mve-premium.article-page .article-layout > aside.toc{
     position: static !important;
     top: auto !important;
     max-height: none !important;
