@@ -2488,7 +2488,7 @@ body .diagnostics-hero .lead {
 
 }
 
-/* FINAL CORRECT ARTICLE SIDEBAR */
+/* TRUE ARTICLE STICKY SIDEBAR */
 
 @media (min-width: 1081px){
 
@@ -2497,18 +2497,17 @@ body .diagnostics-hero .lead {
     grid-template-columns: 280px minmax(0, 1fr) !important;
     gap: 1.5rem !important;
     align-items: start !important;
-    position: relative !important;
+    overflow: visible !important;
   }
 
   .article-layout > .toc,
   .article-layout > aside.toc{
     position: sticky !important;
-    top: 130px !important;
+    top: 115px !important;
     align-self: start !important;
-    max-height: calc(100vh - 160px) !important;
-    overflow-y: auto !important;
-    overflow-x: hidden !important;
-    z-index: 5 !important;
+    max-height: none !important;
+    overflow: visible !important;
+    z-index: 10 !important;
   }
 
 }
@@ -2523,8 +2522,6 @@ body .diagnostics-hero .lead {
   .article-layout > aside.toc{
     position: static !important;
     width: 100% !important;
-    max-height: none !important;
-    overflow: visible !important;
     margin-bottom: 1.5rem !important;
   }
 
