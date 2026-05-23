@@ -2234,23 +2234,4 @@ figure img {
   }
 }
 
-/* FIX: keep article sidebar fixed while scrolling */
-@media (min-width: 1081px) {
-  .article-layout {
-    display: grid !important;
-    grid-template-columns: 280px minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
-    align-items: start !important;
-  }
 
-  .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc {
-    position: sticky !important;
-    top: 105px !important;
-    align-self: start !important;
-    height: fit-content !important;
-    max-height: calc(100vh - 125px) !important;
-    overflow-y: auto !important;
-  }
-}
