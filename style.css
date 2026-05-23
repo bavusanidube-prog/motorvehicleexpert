@@ -1661,14 +1661,13 @@ footer::after {
     animation: none !important;
   }
 }
-
 /* =========================================================
-   PRODUCTION CLEAN-UP LAYER
-   Replaces the old duplicated FINAL FIX blocks.
+   MOTOR VEHICLE EXPERT — FINAL STABLE SITE LAYER
+   Clean single override layer for layout, images, sidebar and mobile nav.
    Keep this section at the very bottom of style.css.
 ========================================================= */
 
-/* ---------- Global safety ---------- */
+/* ---------- Global overflow / grid safety ---------- */
 html,
 body {
   max-width: 100%;
@@ -1686,32 +1685,285 @@ body {
 .topic-card,
 .symptom-card,
 .premium-diagnostic-visual,
-.hero-warning-panel {
+.hero-warning-panel,
+.hero-grid,
+.premium-hero-grid,
+.grid-2,
+.grid-3,
+.grid-4,
+.split,
+.article-layout,
+.contact-wrap,
+.symptom-grid,
+.stats,
+.footer-grid,
+.hero-grid > *,
+.premium-hero-grid > *,
+.grid-2 > *,
+.grid-3 > *,
+.grid-4 > *,
+.split > *,
+.article-layout > *,
+.contact-wrap > *,
+.symptom-grid > *,
+.stats > *,
+.footer-grid > * {
   min-width: 0;
 }
 
-/* ---------- Clean article / hub layout rules ---------- */
+h1,
+h2,
+h3,
+h4,
+.brand-text,
+.card,
+.article-content {
+  overflow-wrap: anywhere;
+}
+
+/* ---------- Header / desktop nav ---------- */
+.topbar .nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.topbar .brand,
+.topbar .logo-brand {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  min-width: 0;
+}
+
+.topbar .site-logo,
+.topbar .brand img,
+.topbar .logo-brand img {
+  width: auto;
+  height: 54px;
+  max-width: none;
+  max-height: 54px;
+  object-fit: contain;
+  aspect-ratio: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.topbar .nav-links {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+}
+
+.topbar .nav-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 42px;
+}
+
+/* ---------- Premium hero layout ---------- */
+.hero.premium-hero,
+.premium-hero {
+  padding: clamp(2rem, 5vw, 4.5rem) 0;
+}
+
+.hero.premium-hero .premium-hero-grid,
+.hero.premium-hero .hero-grid,
+.premium-hero .premium-hero-grid,
+.premium-hero .hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(0, 0.92fr);
+  gap: clamp(1.5rem, 4vw, 3rem);
+  align-items: center;
+}
+
+.hero.premium-hero .hero-copy,
+.premium-hero .hero-copy,
+.hero.premium-hero .hero-content,
+.premium-hero .hero-content {
+  order: 1;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.hero.premium-hero h1,
+.premium-hero h1 {
+  font-size: clamp(2.6rem, 5vw, 5.2rem);
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+  max-width: 12ch;
+}
+
+/* ---------- Image system ---------- */
+main img,
+section img,
+article img,
+figure img,
+.card img,
+.feature-card img,
+.topic-card img,
+.mini-card img,
+.step-card img,
+.article-content img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  object-position: center center;
+}
+
+.hero-image,
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image,
+.page-image,
+.post-image,
+.thumbnail,
+.image-frame,
+.visual-frame,
+.hero-visual,
+.premium-image,
+.content-image,
+.img-frame,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image,
+figure {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  min-height: 0;
+  max-height: none;
+  overflow: hidden;
+}
+
+.hero-image {
+  order: 2;
+  max-width: 720px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 28px;
+  background: #f8fafc;
+  border: 1px solid var(--line);
+  box-shadow: 0 22px 55px rgba(15,23,42,0.14);
+}
+
+.hero-image img,
+.premium-hero .hero-image img,
+.hero.premium-hero .hero-image img,
+.article-image img,
+.card-image img,
+.feature-image img,
+.topic-image img,
+.guide-image img,
+.page-image img,
+.post-image img,
+.thumbnail img,
+.image-frame img,
+.visual-frame img,
+.hero-visual img,
+.premium-image img,
+.content-image img,
+.img-frame img,
+.problem-image img,
+.warning-light-image img,
+.mot-image img,
+.service-image img,
+figure img {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: auto;
+  max-height: none;
+  aspect-ratio: auto;
+  object-fit: contain;
+  object-position: center center;
+  display: block;
+  border-radius: inherit;
+}
+
+.article-image,
+.card-image,
+.feature-image,
+.topic-image,
+.guide-image,
+.thumbnail,
+.post-image,
+.image-frame,
+.content-image,
+.page-image,
+.problem-image,
+.warning-light-image,
+.mot-image,
+.service-image {
+  aspect-ratio: auto;
+  border-radius: 22px;
+  background: #f8fafc;
+}
+
+/* Optional: use this class only when you want a cropped premium image frame. */
+.hero-image.cover-image,
+.article-image.cover-image,
+.card-image.cover-image,
+.feature-image.cover-image,
+.topic-image.cover-image,
+.guide-image.cover-image,
+.image-frame.cover-image {
+  aspect-ratio: 16 / 9;
+}
+
+.hero-image.cover-image img,
+.article-image.cover-image img,
+.card-image.cover-image img,
+.feature-image.cover-image img,
+.topic-image.cover-image img,
+.guide-image.cover-image img,
+.image-frame.cover-image img {
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------- Article sidebar ---------- */
 @media (min-width: 1081px) {
   body.mve-premium.article-page .article-layout,
-  body.article-page .article-layout {
+  body.article-page .article-layout,
+  .article-layout {
     display: grid;
-    grid-template-columns: 260px minmax(0, 1fr);
-    gap: 1.75rem;
+    grid-template-columns: 280px minmax(0, 1fr);
+    gap: 1.5rem;
     align-items: start;
     overflow: visible;
   }
 
-  body.mve-premium.article-page .article-layout > .toc,
-  body.mve-premium.article-page .article-layout > aside.toc,
-  body.article-page .article-layout > .toc,
-  body.article-page .article-layout > aside.toc {
+  .article-layout > .toc,
+  .article-layout > aside.toc,
+  aside.toc.toc {
     position: sticky;
-    top: 115px;
+    top: 105px;
     align-self: start;
-    max-height: calc(100vh - 135px);
-    overflow-y: auto;
-    overflow-x: hidden;
-    scrollbar-width: thin;
+    width: 280px;
+    max-height: none;
+    overflow: visible;
+    z-index: 10;
+    padding: 1.15rem;
+  }
+
+  .toc a,
+  aside.toc a {
+    padding: 0.55rem 0.65rem;
+    font-size: 0.9rem;
+    line-height: 1.25;
+  }
+
+  .toc ul,
+  aside.toc ul {
+    gap: 0.15rem;
   }
 
   body.mve-premium:not(.article-page) .article-layout {
@@ -1721,6 +1973,7 @@ body {
   body.mve-premium:not(.article-page) .article-layout > .toc,
   body.mve-premium:not(.article-page) .article-layout > aside.toc {
     position: static;
+    width: 100%;
     max-height: none;
     overflow: visible;
     margin-bottom: 1.5rem;
@@ -1750,128 +2003,75 @@ body {
   }
 }
 
-/* ---------- Clean premium hero layout ---------- */
-.hero.premium-hero,
-.premium-hero {
-  padding: clamp(2rem, 5vw, 4.5rem) 0;
+/* ---------- Diagnostics page hero ---------- */
+@media (min-width: 981px) {
+  body .diagnostics-hero .premium-hero-grid,
+  body .diagnostics-hero .hero-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 46%) minmax(0, 54%);
+    gap: 56px;
+    align-items: center;
+  }
+
+  body .diagnostics-hero .hero-image {
+    max-width: 700px;
+    margin: 0 auto;
+    background: #ffffff;
+  }
+
+  body .diagnostics-hero .hero-copy {
+    width: 100%;
+    max-width: 760px;
+  }
+
+  body .diagnostics-hero h1 {
+    max-width: 760px;
+    width: 100%;
+    font-size: clamp(3rem, 4.5vw, 5.3rem);
+    line-height: 0.96;
+    letter-spacing: -0.06em;
+    margin-bottom: 1.3rem;
+  }
+
+  body .diagnostics-hero .lead {
+    max-width: 680px;
+    font-size: 1.2rem;
+    line-height: 1.75;
+  }
 }
 
-.hero.premium-hero .premium-hero-grid,
-.hero.premium-hero .hero-grid,
-.premium-hero .premium-hero-grid,
-.premium-hero .hero-grid {
-  display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(360px, 0.92fr);
-  gap: clamp(1.5rem, 4vw, 3rem);
-  align-items: center;
+/* ---------- Battery page hero ---------- */
+@media (min-width: 981px) {
+  .battery-hero .premium-hero-grid {
+    align-items: center;
+    grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+    gap: 48px;
+  }
+
+  .battery-hero .hero-copy {
+    max-width: 720px;
+  }
+
+  .battery-hero h1 {
+    font-size: clamp(3.2rem, 5vw, 5.7rem);
+    line-height: 0.95;
+    max-width: 9.5ch;
+  }
+
+  .battery-hero .hero-image {
+    align-self: center;
+    margin-top: 0;
+    transform: translateY(-18px);
+  }
 }
 
-.hero.premium-hero .hero-copy,
-.premium-hero .hero-copy,
-.hero.premium-hero .hero-content,
-.premium-hero .hero-content {
-  order: 1;
-  min-width: 0;
-  max-width: 100%;
+/* ---------- Brake light hero ---------- */
+.brake-light-hero h1 {
+  max-width: 7.5ch;
 }
 
-.hero.premium-hero h1,
-.premium-hero h1 {
-  font-size: clamp(2.6rem, 5vw, 5.2rem);
-  line-height: 0.98;
-  letter-spacing: -0.055em;
-  max-width: 12ch;
-}
-
-/* ---------- Clean hero image system ---------- */
-.hero-image {
-  position: relative;
-  order: 2;
-  width: 100%;
-  max-width: 100%;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;
-  border-radius: 28px;
-  background: #0f172a;
-  border: 1px solid rgba(255,255,255,0.08);
-  box-shadow: 0 22px 55px rgba(15,23,42,0.16);
-}
-
-.hero-image img,
-.premium-hero .hero-image img,
-.hero.premium-hero .hero-image img {
-  width: 100%;
-  height: 100%;
-  max-width: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-  border-radius: inherit;
-}
-
-/* Add class="hero-image contain-image" when an image must show fully without cropping. */
-.hero-image.contain-image img,
-.hero-image.image-contain img,
-.hero-image.full-image img,
-.hero-image.no-crop img {
-  object-fit: contain;
-  background: #0f172a;
-}
-
-/* ---------- Normal article / card image frames ---------- */
-.article-image,
-.card-image,
-.feature-image,
-.topic-image,
-.guide-image,
-.image-frame {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 18px;
-  background: linear-gradient(135deg, rgba(215,25,32,0.12), rgba(15,23,42,0.08));
-}
-
-.article-image,
-.card-image,
-.feature-image,
-.topic-image,
-.guide-image {
-  aspect-ratio: 16 / 10;
-}
-
-.article-image img,
-.card-image img,
-.feature-image img,
-.topic-image img,
-.guide-image img,
-.image-frame img {
-  width: 100%;
-  height: 100%;
-  display: block;
-  object-fit: cover;
-  object-position: center center;
-}
-
-.article-image.contain-image img,
-.card-image.contain-image img,
-.feature-image.contain-image img,
-.topic-image.contain-image img,
-.guide-image.contain-image img,
-.image-frame.contain-image img {
-  object-fit: contain;
-  background: #0f172a;
-}
-
-/* ---------- Safer text wrapping ---------- */
-h1,
-h2,
-h3,
-h4,
-.brand-text,
-.card,
-.article-content {
-  overflow-wrap: anywhere;
+.brake-light-hero .hero-image {
+  transform: translateY(-12px);
 }
 
 /* ---------- Tablet ---------- */
@@ -1881,27 +2081,56 @@ h4,
   .premium-hero .premium-hero-grid,
   .premium-hero .hero-grid,
   .hero-grid,
-  .premium-hero-grid {
+  .premium-hero-grid,
+  .grid-2,
+  .grid-3,
+  .grid-4,
+  .split,
+  .article-layout,
+  .contact-wrap,
+  .symptom-grid,
+  .stats,
+  .footer-grid,
+  body .diagnostics-hero .premium-hero-grid,
+  body .diagnostics-hero .hero-grid,
+  .battery-hero .premium-hero-grid {
     grid-template-columns: 1fr;
   }
 
-  .hero-image {
+  .article-layout {
+    display: block;
+  }
+
+  .article-layout > .toc,
+  .article-layout > aside.toc,
+  aside.toc.toc {
+    position: static;
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-image,
+  body .diagnostics-hero .hero-image,
+  .battery-hero .hero-image {
     order: 1;
-    max-width: 760px;
-    margin: 0 auto;
+    max-width: 100%;
+    transform: none;
   }
 
   .hero-copy,
   .hero-content,
-  .hero.premium-hero .hero-copy,
-  .premium-hero .hero-copy,
-  .hero.premium-hero .hero-content,
-  .premium-hero .hero-content {
+  body .diagnostics-hero .hero-copy {
     order: 2;
+    max-width: 100%;
   }
 
   .hero.premium-hero h1,
-  .premium-hero h1 {
+  .premium-hero h1,
+  body .diagnostics-hero h1,
+  body .diagnostics-hero .lead,
+  .battery-hero h1 {
     max-width: 100%;
   }
 }
@@ -1924,39 +2153,73 @@ h4,
     gap: 1.25rem;
   }
 
-  .hero-image {
-    width: 100%;
-    max-width: 100%;
+  .hero-image,
+  .article-image,
+  .card-image,
+  .feature-image,
+  .topic-image,
+  .guide-image,
+  .thumbnail,
+  .post-image,
+  .image-frame,
+  .content-image,
+  .page-image,
+  .problem-image,
+  .warning-light-image,
+  .mot-image,
+  .service-image {
     border-radius: 18px;
-    aspect-ratio: 16 / 10;
-    box-shadow: 0 12px 30px rgba(15,23,42,0.12);
   }
 
-  .hero-image img,
-  .premium-hero .hero-image img,
-  .hero.premium-hero .hero-image img {
-    border-radius: inherit;
+  .topbar .nav {
+    align-items: center;
+    text-align: center;
   }
 
-  .hero.premium-hero h1,
-  .premium-hero h1,
-  h1,
-  .hero-copy h1 {
-    font-size: clamp(2rem, 10vw, 2.7rem);
-    line-height: 1.04;
-    letter-spacing: -0.05em;
-    max-width: 100%;
-    margin-top: 0.5rem;
+  .topbar .brand,
+  .topbar .logo-brand {
+    justify-content: center;
   }
 
-  .hero-actions {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0.75rem;
+  .topbar .site-logo,
+  .topbar .brand img,
+  .topbar .logo-brand img {
+    height: 44px;
+    max-height: 44px;
   }
 
-  .cta {
+  .topbar .nav-links {
     width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.55rem;
+    justify-items: stretch;
+  }
+
+  .topbar .nav-links a {
+    width: 100%;
+    min-height: 38px;
+    padding: 0.55rem 0.35rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 0.76rem;
+    transition: all 0.25s ease;
+  }
+
+  .topbar .nav-links a.cta {
+    grid-column: 1 / -1;
+  }
+
+  .topbar .nav-links a:hover,
+  .topbar .nav-links a:active,
+  .topbar .nav-links a.active {
+    background: #dc2626;
+    color: #ffffff;
+    border-color: #dc2626;
+    box-shadow: 0 10px 25px rgba(220,38,38,0.18);
   }
 
   .mobile-bottom-nav {
@@ -1969,561 +2232,4 @@ h4,
   .hero-image {
     border-radius: 16px;
   }
-}
-
-/* =========================================================
-   FINAL STABLE IMAGE + NAV SYSTEM
-   This replaces all previous image patches.
-   You can keep uploading images exactly the same way.
-========================================================= */
-
-/* Prevent laptop grid columns from forcing images/text to overflow */
-.hero-grid,
-.premium-hero-grid,
-.grid-2,
-.grid-3,
-.grid-4,
-.split,
-.article-layout,
-.contact-wrap,
-.symptom-grid,
-.stats,
-.footer-grid {
-  min-width: 0 !important;
-}
-
-.hero-grid > *,
-.premium-hero-grid > *,
-.grid-2 > *,
-.grid-3 > *,
-.grid-4 > *,
-.split > *,
-.article-layout > *,
-.contact-wrap > *,
-.symptom-grid > *,
-.stats > *,
-.footer-grid > * {
-  min-width: 0 !important;
-}
-
-/* Keep the header/logo stable and level */
-.topbar .nav {
-  display: flex !important;
-  align-items: center !important;
-}
-
-.topbar .brand,
-.topbar .logo-brand {
-  display: flex !important;
-  align-items: center !important;
-  flex-shrink: 0 !important;
-  min-width: 0 !important;
-}
-
-.topbar .site-logo,
-.topbar .brand img,
-.topbar .logo-brand img {
-  width: auto !important;
-  height: 54px !important;
-  max-width: none !important;
-  max-height: 54px !important;
-  object-fit: contain !important;
-  aspect-ratio: auto !important;
-  display: block !important;
-  border-radius: 12px !important;
-}
-
-.topbar .nav-links {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-end !important;
-  gap: 0.45rem !important;
-}
-
-.topbar .nav-links a {
-  display: inline-flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  min-height: 42px !important;
-}
-
-/* Universal image safety: images never escape their own column */
-main img,
-section img,
-article img,
-figure img,
-.card img,
-.feature-card img,
-.topic-card img,
-.mini-card img,
-.step-card img,
-.article-content img {
-  max-width: 100% !important;
-  height: auto !important;
-  display: block !important;
-  object-position: center center !important;
-}
-
-/* Existing image wrappers used across the site */
-.hero-image,
-.article-image,
-.card-image,
-.feature-image,
-.topic-image,
-.guide-image,
-.page-image,
-.post-image,
-.thumbnail,
-.image-frame,
-.visual-frame,
-.hero-visual,
-.premium-image,
-.content-image,
-.img-frame,
-.problem-image,
-.warning-light-image,
-.mot-image,
-.service-image,
-figure {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  height: auto !important;
-  min-height: 0 !important;
-  max-height: none !important;
-  overflow: hidden !important;
-  position: relative !important;
-}
-
-/* Show the full uploaded image inside all normal frames */
-.hero-image img,
-.article-image img,
-.card-image img,
-.feature-image img,
-.topic-image img,
-.guide-image img,
-.page-image img,
-.post-image img,
-.thumbnail img,
-.image-frame img,
-.visual-frame img,
-.hero-visual img,
-.premium-image img,
-.content-image img,
-.img-frame img,
-.problem-image img,
-.warning-light-image img,
-.mot-image img,
-.service-image img,
-figure img {
-  width: 100% !important;
-  max-width: 100% !important;
-  min-width: 0 !important;
-  height: auto !important;
-  max-height: none !important;
-  aspect-ratio: auto !important;
-  object-fit: contain !important;
-  object-position: center center !important;
-  display: block !important;
-}
-
-/* Hero frames: keep the card look, but do not crop uploaded images */
-.hero-image,
-.premium-hero .hero-image,
-.hero.premium-hero .hero-image {
-  aspect-ratio: auto !important;
-  border-radius: 28px !important;
-  background: #f8fafc !important;
-  box-shadow: 0 22px 55px rgba(15,23,42,0.14) !important;
-}
-
-.hero-image img,
-.premium-hero .hero-image img,
-.hero.premium-hero .hero-image img {
-  height: auto !important;
-  object-fit: contain !important;
-  border-radius: inherit !important;
-}
-
-/* Card/article image frames: no cutting, no overlap */
-.article-image,
-.card-image,
-.feature-image,
-.topic-image,
-.guide-image,
-.thumbnail,
-.post-image,
-.image-frame,
-.content-image,
-.page-image,
-.problem-image,
-.warning-light-image,
-.mot-image,
-.service-image {
-  aspect-ratio: auto !important;
-  border-radius: 22px !important;
-  background: #f8fafc !important;
-}
-
-.article-image img,
-.card-image img,
-.feature-image img,
-.topic-image img,
-.guide-image img,
-.thumbnail img,
-.post-image img,
-.image-frame img,
-.content-image img,
-.page-image img,
-.problem-image img,
-.warning-light-image img,
-.mot-image img,
-.service-image img {
-  height: auto !important;
-  object-fit: contain !important;
-  border-radius: inherit !important;
-}
-
-/* Laptop/desktop: stop large images pushing into neighbouring text/cards */
-@media (min-width: 981px) {
-  .hero-grid,
-  .premium-hero-grid {
-    grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr) !important;
-    align-items: center !important;
-  }
-
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .split,
-  .article-layout {
-    align-items: start !important;
-  }
-
-  .hero-image {
-    max-width: 720px !important;
-    margin-left: auto !important;
-    margin-right: auto !important;
-  }
-
-  .article-image,
-  .card-image,
-  .feature-image,
-  .topic-image,
-  .guide-image,
-  .thumbnail,
-  .post-image,
-  .image-frame,
-  .content-image,
-  .page-image,
-  .problem-image,
-  .warning-light-image,
-  .mot-image,
-  .service-image {
-    max-width: 100% !important;
-  }
-}
-
-/* Diagnostics page only: balanced desktop hero without squeezing the title */
-body .diagnostics-hero .premium-hero-grid,
-body .diagnostics-hero .hero-grid {
-  display: grid !important;
-  grid-template-columns: minmax(0, 46%) minmax(0, 54%) !important;
-  gap: 56px !important;
-  align-items: center !important;
-}
-
-body .diagnostics-hero .hero-image {
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  background: #ffffff !important;
-}
-
-body .diagnostics-hero .hero-copy {
-  width: 100% !important;
-  max-width: 760px !important;
-}
-
-body .diagnostics-hero h1 {
-  max-width: 760px !important;
-  width: 100% !important;
-  font-size: clamp(3rem, 4.5vw, 5.3rem) !important;
-  line-height: 0.96 !important;
-  letter-spacing: -0.06em !important;
-  margin-bottom: 1.3rem !important;
-}
-
-body .diagnostics-hero .lead {
-  max-width: 680px !important;
-  font-size: 1.2rem !important;
-  line-height: 1.75 !important;
-}
-
-/* Tablet/mobile: stack safely */
-@media (max-width: 980px) {
-  .hero-grid,
-  .premium-hero-grid,
-  .grid-2,
-  .grid-3,
-  .grid-4,
-  .split,
-  .article-layout,
-  .contact-wrap,
-  .symptom-grid,
-  .stats,
-  .footer-grid,
-  body .diagnostics-hero .premium-hero-grid,
-  body .diagnostics-hero .hero-grid {
-    grid-template-columns: 1fr !important;
-  }
-
-  .hero-image,
-  body .diagnostics-hero .hero-image {
-    order: 1 !important;
-    max-width: 100% !important;
-  }
-
-  .hero-copy,
-  .hero-content,
-  body .diagnostics-hero .hero-copy {
-    order: 2 !important;
-    max-width: 100% !important;
-  }
-
-  body .diagnostics-hero h1,
-  body .diagnostics-hero .lead {
-    max-width: 100% !important;
-  }
-}
-
-/* Mobile nav and images */
-@media (max-width: 760px) {
-  .topbar .nav {
-    align-items: flex-start !important;
-  }
-
-  .topbar .site-logo,
-  .topbar .brand img,
-  .topbar .logo-brand img {
-    height: 44px !important;
-    max-height: 44px !important;
-  }
-
-  .hero-image,
-  .article-image,
-  .card-image,
-  .feature-image,
-  .topic-image,
-  .guide-image,
-  .thumbnail,
-  .post-image,
-  .image-frame,
-  .content-image,
-  .page-image,
-  .problem-image,
-  .warning-light-image,
-  .mot-image,
-  .service-image {
-    border-radius: 18px !important;
-  }
-}
-
-/* BATTERY PAGE HERO ALIGNMENT FIX */
-
-.battery-hero .premium-hero-grid{
-  align-items: center !important;
-  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr) !important;
-  gap: 48px !important;
-}
-
-.battery-hero .hero-copy{
-  max-width: 720px !important;
-}
-
-.battery-hero h1{
-  font-size: clamp(3.2rem, 5vw, 5.7rem) !important;
-  line-height: 0.95 !important;
-  max-width: 9.5ch !important;
-}
-
-.battery-hero .hero-image{
-  align-self: center !important;
-  margin-top: 0 !important;
-  transform: translateY(-18px);
-}
-
-.battery-hero .hero-image img{
-  object-fit: contain !important;
-}
-
-@media (max-width: 980px){
-  .battery-hero .premium-hero-grid{
-    grid-template-columns: 1fr !important;
-  }
-
-  .battery-hero .hero-image{
-    transform: none !important;
-  }
-
-  .battery-hero h1{
-    max-width: 100% !important;
-  }
-}
-
-/* MOBILE TOP NAV CLEAN ALIGNMENT FIX */
-@media (max-width: 760px){
-
-  .topbar .nav{
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .topbar .brand,
-  .topbar .logo-brand{
-    justify-content: center !important;
-  }
-
-  .topbar .nav-links{
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.55rem !important;
-    justify-items: stretch !important;
-  }
-
-  .topbar .nav-links a{
-    width: 100% !important;
-    min-height: 38px !important;
-    padding: 0.55rem 0.35rem !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    white-space: nowrap !important;
-    font-size: 0.76rem !important;
-  }
-
-  .topbar .nav-links a.cta{
-    grid-column: 1 / -1 !important;
-  }
-
-}
-
-.brake-light-hero h1{
-  max-width: 7.5ch;
-}
-
-.brake-light-hero .hero-image{
-  transform: translateY(-12px);
-}
-
-@media (max-width: 760px){
-
-  .topbar .nav{
-    align-items: center !important;
-    text-align: center !important;
-  }
-
-  .topbar .brand,
-  .topbar .logo-brand{
-    justify-content: center !important;
-  }
-
-  .topbar .nav-links{
-    width: 100% !important;
-    display: grid !important;
-    grid-template-columns: repeat(3, 1fr) !important;
-    gap: 0.55rem !important;
-  }
-
-  .topbar .nav-links a{
-    width: 100% !important;
-    min-height: 38px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    text-align: center !important;
-    font-size: 0.76rem !important;
-    white-space: nowrap !important;
-  }
-
-  .topbar .nav-links a.cta{
-    grid-column: 1 / -1 !important;
-  }
-}
-
-/* MOBILE NAV ACTIVE STATE */
-
-@media (max-width: 760px){
-
-  .topbar .nav-links a{
-    transition: all 0.25s ease;
-  }
-
-  .topbar .nav-links a:hover,
-  .topbar .nav-links a:active,
-  .topbar .nav-links a.active{
-    background: #dc2626 !important;
-    color: #ffffff !important;
-    border-color: #dc2626 !important;
-    box-shadow: 0 10px 25px rgba(220,38,38,0.18);
-  }
-
-}
-
-/* FINAL SIDEBAR - FULL, CLEAN, STAYS ON SIDE */
-
-@media (min-width: 1081px){
-
-  .article-layout{
-    display: grid !important;
-    grid-template-columns: 280px minmax(0, 1fr) !important;
-    gap: 1.5rem !important;
-    align-items: start !important;
-    overflow: visible !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc.toc{
-    position: sticky !important;
-    top: 105px !important;
-    align-self: start !important;
-    width: 280px !important;
-    max-height: none !important;
-    overflow: visible !important;
-    z-index: 10 !important;
-    padding: 1.15rem !important;
-  }
-
-  .toc a,
-  aside.toc a{
-    padding: 0.55rem 0.65rem !important;
-    font-size: 0.9rem !important;
-    line-height: 1.25 !important;
-  }
-
-  .toc ul,
-  aside.toc ul{
-    gap: 0.15rem !important;
-  }
-
-}
-
-@media (max-width: 1080px){
-
-  .article-layout{
-    display: block !important;
-  }
-
-  .article-layout > .toc,
-  .article-layout > aside.toc,
-  aside.toc.toc{
-    position: static !important;
-    width: 100% !important;
-    max-height: none !important;
-    overflow: visible !important;
-    margin-bottom: 1.5rem !important;
-  }
-
 }
