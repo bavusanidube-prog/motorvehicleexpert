@@ -114,8 +114,23 @@ content="Coolant warning light on UK guide" />
   object-position: center top;
 }
 
+.mve-premium .trust-strip {
+  padding: 20px 0;
+}
+
+.mve-premium .trust-strip + section {
+  padding-top: 18px;
+}
+
 .mve-premium .section-head {
   margin-bottom: 22px;
+}
+
+.mve-premium .section-head h2,
+.mve-premium .feature-card h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  line-height: 1.12;
 }
 
 .mve-premium .feature-card,
@@ -130,10 +145,26 @@ content="Coolant warning light on UK guide" />
   padding: 24px;
 }
 
+.mve-premium .feature-card > :first-child,
+.mve-premium .mini-card > :first-child {
+  margin-top: 0;
+}
+
+.mve-premium .feature-card > :last-child,
+.mve-premium .mini-card > :last-child,
+.mve-premium .safe-box > :last-child,
+.mve-premium .panel-band > :last-child {
+  margin-bottom: 0;
+}
+
 .mve-premium .grid-2,
 .mve-premium .grid-3,
 .mve-premium .split {
   gap: 20px;
+}
+
+.mve-premium #real-life .feature-card {
+  grid-column: span 2;
 }
 
 .mve-premium .category-list {
@@ -145,13 +176,16 @@ content="Coolant warning light on UK guide" />
   margin-top: 14px;
 }
 
+.mve-premium .checklist li {
+  align-items: flex-start;
+}
+
 .mve-premium .text-link {
   display: inline-block;
   margin-top: 10px;
 }
 
 @media (max-width: 900px) {
-
   .mve-premium main > section {
     padding: 28px 0;
   }
@@ -178,19 +212,26 @@ content="Coolant warning light on UK guide" />
     aspect-ratio: 16 / 9;
     border-radius: 22px;
   }
+
+  .mve-premium #real-life .feature-card {
+    grid-column: auto;
+  }
 }
 
 @media (max-width: 560px) {
-
   .mve-premium main > section {
     padding: 24px 0;
+  }
+
+  .mve-premium .trust-strip {
+    padding: 16px 0;
   }
 
   .mve-premium .category-list a {
     width: 100%;
   }
 }
-</style>  
+</style>
 
 <script type="application/ld+json">
 {
