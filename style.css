@@ -1561,4 +1561,25 @@ footer,
   }
 }
 
+/* Premium desktop hero alignment fix */
+
+.hero-grid,
+.premium-hero-grid {
+  align-items: start;
+}
+
+.hero-image {
+  align-self: start;
+}
+
+/* Larger desktop logo */
+
+.site-logo,
+.brand img,
+.logo-brand img {
+  height: 66px;
+  max-height: 66px;
+  width: auto;
+}
+
 
