@@ -1561,27 +1561,6 @@ footer,
   }
 }
 
-/* Premium desktop hero alignment fix */
 
-.hero-grid,
-.premium-hero-grid {
-  align-items: start;
-}
-
-.hero-image {
-  align-self: start;
-}
-
-/* Desktop only logo size */
-
-@media (min-width: 761px) {
-  .site-logo,
-  .brand img,
-  .logo-brand img {
-    height: 66px;
-    max-height: 66px;
-    width: auto;
-  }
-}
 
 
