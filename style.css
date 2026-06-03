@@ -1572,14 +1572,16 @@ footer,
   align-self: start;
 }
 
-/* Larger desktop logo */
+/* Desktop only logo size */
 
-.site-logo,
-.brand img,
-.logo-brand img {
-  height: 66px;
-  max-height: 66px;
-  width: auto;
+@media (min-width: 761px) {
+  .site-logo,
+  .brand img,
+  .logo-brand img {
+    height: 66px;
+    max-height: 66px;
+    width: auto;
+  }
 }
 
 
