@@ -1561,6 +1561,18 @@ footer,
   }
 }
 
+/* Larger desktop logo */
+
+@media (min-width: 761px) {
+  .site-logo,
+  .brand img,
+  .logo-brand img {
+    height: 82px;
+    max-height: 82px;
+    width: auto;
+  }
+}
+
 
 
 
