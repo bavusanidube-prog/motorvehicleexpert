@@ -1573,6 +1573,36 @@ footer,
   }
 }
 
+/* New logo contains full brand name */
 
+.brand-text{
+    display:none;
+}
+
+/* Larger logo */
+
+@media (min-width:761px){
+
+  .site-logo,
+  .brand img,
+  .logo-brand img{
+      height:90px;
+      max-height:90px;
+      width:auto;
+  }
+
+}
+
+@media (max-width:760px){
+
+  .site-logo,
+  .brand img,
+  .logo-brand img{
+      height:56px;
+      max-height:56px;
+      width:auto;
+  }
+
+}
 
 
