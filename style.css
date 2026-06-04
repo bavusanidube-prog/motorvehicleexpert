@@ -1579,19 +1579,7 @@ footer,
     display:none;
 }
 
-/* Larger logo */
-
-@media (min-width:761px){
-
-  .site-logo,
-  .brand img,
-  .logo-brand img{
-      height:90px;
-      max-height:90px;
-      width:auto;
-  }
-
-}
+/* Desktop logo */
 
 @media (min-width:761px){
 
@@ -1604,5 +1592,21 @@ footer,
   }
 
 }
+
+/* Mobile logo */
+
+@media (max-width:760px){
+
+  .site-logo,
+  .brand img,
+  .logo-brand img{
+      height:70px;
+      max-height:70px;
+      width:auto;
+  }
+
+}
+
+
 
 
