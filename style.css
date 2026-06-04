@@ -1593,13 +1593,13 @@ footer,
 
 }
 
-@media (max-width:760px){
+@media (min-width:761px){
 
   .site-logo,
   .brand img,
   .logo-brand img{
-      height:56px;
-      max-height:56px;
+      height:95px;
+      max-height:95px;
       width:auto;
   }
 
