@@ -3,7 +3,7 @@
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/</loc>
-    <lastmod>2026-06-06</lastmod>
+    <lastmod>2026-06-10</lastmod>
   </url>
 
   <url>
@@ -1172,6 +1172,55 @@
   <lastmod>2026-06-08</lastmod>
   <changefreq>monthly</changefreq>
   <priority>0.8</priority>
+</url>  
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/fault-codes.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.90</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0420-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0300-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0171-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0011-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0401-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
+</url>
+
+<url>
+  <loc>https://motorvehicleexpert.co.uk/p0101-code-meaning.html</loc>
+  <lastmod>2026-06-10</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.80</priority>
 </url>  
 
 </urlset>
