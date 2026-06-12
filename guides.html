@@ -41,7 +41,7 @@
   "description": "Main UK car guides hub covering diagnostics, warning lights, overheating, repair costs, servicing, MOT advice, used car buying and the Motor Vehicle Expert diagnostic app.",
   "image": "https://motorvehicleexpert.co.uk/guides-hero.png",
   "datePublished": "2026-05-15",
-  "dateModified": "2026-06-09",
+  "dateModified": "2026-06-12",
   "publisher": {
     "@type": "Organization",
     "name": "Motor Vehicle Expert",
@@ -74,6 +74,22 @@
 </nav>
 </div>
 </header>
+
+<div class="mve-global-search">
+  <div class="container">
+
+    <input
+      type="search"
+      id="mve-search"
+      placeholder="🔍 Search Motor Vehicle Expert..."
+      autocomplete="off"
+      aria-label="Search Motor Vehicle Expert"
+    />
+
+    <div id="mve-search-results" role="listbox"></div>
+
+  </div>
+</div>  
 
 <main>
 
@@ -908,6 +924,8 @@ Read guide →
 <a href="common-mot-failure-reasons-uk.html">MOT</a>
 <a href="guides.html">Guides</a>
 </nav>
+
+<script src="search.js" defer></script>  
 
 </body>
 </html>
