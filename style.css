@@ -1623,19 +1623,25 @@ footer,
 
 #mve-search{
     width:100%;
-    padding:16px 20px;
+    padding:16px 22px;
     border-radius:999px;
-    border:1px solid var(--line);
+    border:1px solid #d9dde5;
     font:inherit;
     font-size:1rem;
     background:#ffffff;
-    box-shadow:var(--shadow-soft);
-    transition:.2s;
+    color:var(--text-strong);
+    box-shadow:0 6px 18px rgba(15,23,42,.06);
+    transition:all .2s ease;
+}
+
+#mve-search:hover{
+    border-color:#c6ccd8;
 }
 
 #mve-search:focus{
-    border-color:rgba(215,25,32,.45);
-    box-shadow:0 0 0 4px rgba(215,25,32,.08);
+    outline:none;
+    border-color:#d4a017;
+    box-shadow:0 0 0 3px rgba(212,160,23,.15);
 }
 
 #mve-search-results{
