@@ -178,7 +178,7 @@
     <div id="mve-search-results" role="listbox"></div>
 
   </div>
-</div>  
+</div>
 
 <main>
 
@@ -201,7 +201,8 @@ If your car has stored a fault code such as P0420, P0300, P0171, P0101, P0335, P
 </div>
 
 <div class="hero-actions">
-<a class="cta cta-primary" href="#popular-codes">Browse fault codes</a>
+<a class="cta cta-primary" href="#lookup">Find your code</a>
+<a class="cta cta-ghost" href="#popular-codes">Browse fault codes</a>
 <a class="cta cta-ghost" href="diagnostic-app.html">Use Diagnostic App</a>
 <a class="cta cta-ghost" href="engine-management-light-guide.html">Engine Light Guide</a>
 </div>
@@ -256,6 +257,7 @@ height="900"
 <section>
 <div class="container">
 <div class="category-list">
+<a href="#lookup">Code lookup</a>
 <a href="#quick-answer">Quick answer</a>
 <a href="#popular-codes">Popular codes</a>
 <a href="#air-fuel">Air & fuel</a>
@@ -266,8 +268,50 @@ height="900"
 <a href="#electrical">Electrical</a>
 <a href="#gearbox">Gearbox</a>
 <a href="#mot-impact">MOT</a>
+<a href="#related">Related guides</a>
 <a href="#faqs">FAQs</a>
 </div>
+</div>
+</section>
+
+<section id="lookup">
+<div class="container">
+<article class="feature-card">
+<span class="pill">Quick lookup</span>
+
+<h2>Find your OBD fault code</h2>
+
+<p class="muted">
+Enter a fault code such as <strong>P0420</strong>, <strong>P0300</strong>, <strong>P0171</strong>, <strong>P0335</strong>, <strong>P0440</strong> or <strong>P0700</strong>. If we already have a full guide for it, you can jump straight to the mechanic-style explanation.
+</p>
+
+<div class="grid-2">
+<div>
+<label for="faultCodeInput">Enter fault code</label>
+<input
+type="text"
+id="faultCodeInput"
+placeholder="Example: P0420"
+maxlength="5"
+autocomplete="off"
+aria-label="Enter OBD fault code"
+/>
+</div>
+
+<div>
+<label for="faultCodeButton">Search code</label>
+<button type="button" id="faultCodeButton" class="cta cta-primary">
+Find Code
+</button>
+</div>
+</div>
+
+<div id="faultCodeResult" class="safe-box" style="display:none;" aria-live="polite"></div>
+
+<p class="muted">
+This lookup currently supports the live fault-code pages already published on Motor Vehicle Expert. For other codes, use the main search bar above or browse the full list below.
+</p>
+</article>
 </div>
 </section>
 
@@ -287,17 +331,17 @@ If you're scanning a vehicle before buying it, our
 <a href="used-car-buying-guides.html">Used Car Buying Guides UK</a>
 hub explains how to check MOT history, service records, dashboard warning lights,
 test drive behaviour, paperwork and common scams before committing to a purchase.
-</p>  
+</p>
 
 <div class="grid-3">
 <div class="step-card">
 <h3>1. Record all codes</h3>
-<p class="muted">Write down stored, pending and permanent codes before clearing anything.</p>
+<p class="muted">Write down stored, pending and permanent codes before clearing anything. Multiple codes together often tell a better story than one code on its own.</p>
 </div>
 
 <div class="step-card">
 <h3>2. Check symptoms</h3>
-<p class="muted">Misfire, smoke, limp mode, rough idle, warning lights, no-start and loss of power matter as much as the code.</p>
+<p class="muted">Misfire, smoke, limp mode, rough idle, warning lights, no-start and loss of power matter as much as the code itself.</p>
 </div>
 
 <div class="step-card">
@@ -316,7 +360,7 @@ test drive behaviour, paperwork and common scams before committing to a purchase
 <span class="pill">Popular searches</span>
 <h2>Most useful OBD fault code guides</h2>
 <p>
-These are the main code guides in your Motor Vehicle Expert fault-code cluster.
+These are the main live code guides in your Motor Vehicle Expert fault-code cluster.
 </p>
 </div>
 </div>
@@ -327,9 +371,9 @@ These are the main code guides in your Motor Vehicle Expert fault-code cluster.
 <a class="mini-card" href="p0171-code-meaning.html"><h3>P0171 Code Meaning</h3><p class="muted">System too lean bank 1.</p></a>
 <a class="mini-card" href="p0011-code-meaning.html"><h3>P0011 Code Meaning</h3><p class="muted">Camshaft timing over advanced.</p></a>
 <a class="mini-card" href="p0101-code-meaning.html"><h3>P0101 Code Meaning</h3><p class="muted">Mass air flow sensor range/performance.</p></a>
+<a class="mini-card" href="p0113-code-meaning.html"><h3>P0113 Code Meaning</h3><p class="muted">Intake air temperature sensor high input.</p></a>
+<a class="mini-card" href="p0128-code-meaning.html"><h3>P0128 Code Meaning</h3><p class="muted">Coolant temperature below thermostat regulating temperature.</p></a>
 <a class="mini-card" href="p0335-code-meaning.html"><h3>P0335 Code Meaning</h3><p class="muted">Crankshaft position sensor circuit fault.</p></a>
-<a class="mini-card" href="p0401-code-meaning.html"><h3>P0401 Code Meaning</h3><p class="muted">EGR flow insufficient detected.</p></a>
-<a class="mini-card" href="p0440-code-meaning.html"><h3>P0440 Code Meaning</h3><p class="muted">EVAP system malfunction.</p></a>
 <a class="mini-card" href="p0700-code-meaning.html"><h3>P0700 Code Meaning</h3><p class="muted">Transmission control system malfunction.</p></a>
 </div>
 </div>
@@ -353,7 +397,7 @@ These codes often cause rough idle, hesitation, poor acceleration, poor economy,
 <a class="mini-card" href="p0128-code-meaning.html"><h3>P0128 — Coolant Temperature Below Thermostat</h3><p class="muted">Often thermostat stuck open, coolant sensor issue or slow warm-up.</p></a>
 <a class="mini-card" href="p0171-code-meaning.html"><h3>P0171 — System Too Lean</h3><p class="muted">Too much air or not enough fuel on bank 1.</p></a>
 <a class="mini-card" href="p0201-code-meaning.html"><h3>P0201 — Injector Circuit Cylinder 1</h3><p class="muted">Cylinder 1 injector circuit, wiring or injector fault.</p></a>
-<a class="mini-card" href="p2195-code-meaning.html"><h3>P2195 — O2 Sensor Stuck Lean</h3><p class="muted">Upstream oxygen or air-fuel sensor biased/stuck lean.</p></a>
+<a class="mini-card" href="p2195-code-meaning.html"><h3>P2195 — O2 Sensor Stuck Lean</h3><p class="muted">Upstream oxygen or air-fuel sensor biased or stuck lean.</p></a>
 </div>
 </div>
 </section>
@@ -422,7 +466,7 @@ Turbo and EGR faults can cause limp mode, smoke, poor acceleration, poor fuel ec
 <a class="mini-card" href="p0401-code-meaning.html"><h3>P0401 — EGR Insufficient Flow</h3><p class="muted">EGR flow too low, often carbon or blockage related.</p></a>
 <a class="mini-card" href="p0402-code-meaning.html"><h3>P0402 — EGR Excessive Flow</h3><p class="muted">EGR flow too high, often stuck-open valve related.</p></a>
 <a class="mini-card" href="car-losing-power-when-accelerating.html"><h3>Car Losing Power</h3><p class="muted">Helpful for boost, EGR and fuel delivery symptoms.</p></a>
-<a class="mini-card" href="dpf-warning-light-explained.html"><h3>DPF Warning Light</h3><p class="muted">Useful if diesel boost/EGR faults appear with DPF symptoms.</p></a>
+<a class="mini-card" href="dpf-warning-light-explained.html"><h3>DPF Warning Light</h3><p class="muted">Useful if diesel boost or EGR faults appear with DPF symptoms.</p></a>
 </div>
 </div>
 </section>
@@ -529,7 +573,7 @@ In real diagnostics, the cheapest repair is often the correct test. A P0171 may 
 </p>
 
 <p class="muted">
-The best order is simple: scan, record data, check symptoms, inspect visually, test live data, check wiring/voltage/pressure, then replace parts only when the evidence supports it.
+The best order is simple: scan, record data, check symptoms, inspect visually, test live data, check wiring, voltage and pressure, then replace parts only when the evidence supports it.
 </p>
 </article>
 
@@ -556,21 +600,24 @@ The best order is simple: scan, record data, check symptoms, inspect visually, t
 </div>
 </article>
 
-<article class="feature-card">
+<article class="feature-card" id="related">
 <span class="pill">Helpful diagnostic pages</span>
 <h2>Related Motor Vehicle Expert guides</h2>
 
 <div class="category-list">
 <a href="diagnostic-app.html">Free Diagnostic App</a>
 <a href="diagnostics.html">Diagnostics Hub</a>
+<a href="used-car-buying-guides.html">Used Car Buying Guides UK</a>
 <a href="engine-management-light-guide.html">Engine Management Light Guide</a>
 <a href="can-you-drive-with-engine-management-light-on.html">Can You Drive With Engine Management Light On?</a>
+<a href="will-engine-management-light-fail-mot.html">Will Engine Management Light Fail MOT?</a>
 <a href="car-cranks-but-wont-start.html">Car Cranks But Won't Start</a>
 <a href="engine-misfire-symptoms-and-causes.html">Engine Misfire Symptoms</a>
 <a href="car-losing-power-when-accelerating.html">Car Losing Power When Accelerating</a>
 <a href="car-hesitates-when-accelerating.html">Car Hesitates When Accelerating</a>
 <a href="car-jerks-when-accelerating.html">Car Jerks When Accelerating</a>
 <a href="car-fails-mot-on-emissions.html">Car Fails MOT On Emissions</a>
+<a href="battery-warning-light-meaning.html">Battery Warning Light Meaning</a>
 <a href="car-repair-costs-guide-uk.html">Car Repair Costs Guide UK</a>
 </div>
 </article>
@@ -679,7 +726,86 @@ Practical UK car advice, diagnostics, maintenance guides, MOT information, repai
 <a href="guides.html">Guides</a>
 </nav>
 
-<script src="search.js" defer></script>  
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const input = document.getElementById("faultCodeInput");
+  const button = document.getElementById("faultCodeButton");
+  const result = document.getElementById("faultCodeResult");
+
+  if (!input || !button || !result) return;
+
+  const codes = {
+    "P0011": "p0011-code-meaning.html",
+    "P0101": "p0101-code-meaning.html",
+    "P0113": "p0113-code-meaning.html",
+    "P0128": "p0128-code-meaning.html",
+    "P0135": "p0135-code-meaning.html",
+    "P0141": "p0141-code-meaning.html",
+    "P0171": "p0171-code-meaning.html",
+    "P0201": "p0201-code-meaning.html",
+    "P0234": "p0234-code-meaning.html",
+    "P0299": "p0299-code-meaning.html",
+    "P0300": "p0300-code-meaning.html",
+    "P0335": "p0335-code-meaning.html",
+    "P0340": "p0340-code-meaning.html",
+    "P0401": "p0401-code-meaning.html",
+    "P0402": "p0402-code-meaning.html",
+    "P0420": "p0420-code-meaning.html",
+    "P0440": "p0440-code-meaning.html",
+    "P0442": "p0442-code-meaning.html",
+    "P0446": "p0446-code-meaning.html",
+    "P0455": "p0455-code-meaning.html",
+    "P0500": "p0500-code-meaning.html",
+    "P0507": "p0507-code-meaning.html",
+    "P0520": "p0520-code-meaning.html",
+    "P0562": "p0562-code-meaning.html",
+    "P0700": "p0700-code-meaning.html",
+    "P2195": "p2195-code-meaning.html"
+  };
+
+  function cleanCode(value) {
+    return String(value || "")
+      .trim()
+      .toUpperCase()
+      .replace(/\s+/g, "");
+  }
+
+  function findCode() {
+    const code = cleanCode(input.value);
+
+    if (!code) {
+      result.style.display = "block";
+      result.innerHTML = "<strong>Enter a code first.</strong><p>Try a code such as P0420, P0300, P0171, P0335 or P0700.</p>";
+      return;
+    }
+
+    if (!/^P[0-9]{4}$/.test(code)) {
+      result.style.display = "block";
+      result.innerHTML = "<strong>Check the code format.</strong><p>Use a standard P-code format such as P0420, P0300 or P0171.</p>";
+      return;
+    }
+
+    if (codes[code]) {
+      window.location.href = codes[code];
+      return;
+    }
+
+    result.style.display = "block";
+    result.innerHTML = "<strong>We do not have a dedicated page for " + code + " yet.</strong><p>Use the main site search above, browse the fault-code hub, or check the diagnostic app for related symptoms.</p>";
+  }
+
+  button.addEventListener("click", findCode);
+
+  input.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+      event.preventDefault();
+      findCode();
+    }
+  });
+});
+</script>
+
+<script src="search.js" defer></script>
 
 </body>
 </html>
