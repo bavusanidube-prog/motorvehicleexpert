@@ -719,49 +719,23 @@ Practical UK car advice, diagnostics, maintenance guides, MOT information, repai
 </footer>
 
 <nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
-<a href="/">Home</a>
-<a href="diagnostic-app.html">Diagnose</a>
-<a href="warning-lights.html">Lights</a>
-<a href="common-mot-failure-reasons-uk.html">MOT</a>
-<a href="guides.html">Guides</a>
+  <a href="/">Home</a>
+  <a href="diagnostic-app.html">Diagnose</a>
+  <a href="warning-lights.html">Lights</a>
+  <a href="common-mot-failure-reasons-uk.html">MOT</a>
+  <a href="guides.html">Guides</a>
 </nav>
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
+
   const input = document.getElementById("faultCodeInput");
   const button = document.getElementById("faultCodeButton");
   const result = document.getElementById("faultCodeResult");
 
   if (!input || !button || !result) return;
 
-  const codes = {
-    "P0011": "p0011-code-meaning.html",
-    "P0101": "p0101-code-meaning.html",
-    "P0113": "p0113-code-meaning.html",
-    "P0128": "p0128-code-meaning.html",
-    "P0135": "p0135-code-meaning.html",
-    "P0141": "p0141-code-meaning.html",
-    "P0171": "p0171-code-meaning.html",
-    "P0201": "p0201-code-meaning.html",
-    "P0234": "p0234-code-meaning.html",
-    "P0299": "p0299-code-meaning.html",
-    "P0300": "p0300-code-meaning.html",
-    "P0335": "p0335-code-meaning.html",
-    "P0340": "p0340-code-meaning.html",
-    "P0401": "p0401-code-meaning.html",
-    "P0402": "p0402-code-meaning.html",
-    "P0420": "p0420-code-meaning.html",
-    "P0440": "p0440-code-meaning.html",
-    "P0442": "p0442-code-meaning.html",
-    "P0446": "p0446-code-meaning.html",
-    "P0455": "p0455-code-meaning.html",
-    "P0500": "p0500-code-meaning.html",
-    "P0507": "p0507-code-meaning.html",
-    "P0520": "p0520-code-meaning.html",
-    "P0562": "p0562-code-meaning.html",
-    "P0700": "p0700-code-meaning.html",
-    "P2195": "p2195-code-meaning.html"
-  };
+  let faultCodePages = [];
 
   function cleanCode(value) {
     return String(value || "")
@@ -770,29 +744,105 @@ document.addEventListener("DOMContentLoaded", function () {
       .replace(/\s+/g, "");
   }
 
+  function showMessage(title, message) {
+    result.style.display = "block";
+    result.innerHTML =
+      "<strong>" + title + "</strong><p>" + message + "</p>";
+  }
+
+  async function loadFaultCodes() {
+    try {
+
+      const response = await fetch("search.json", {
+        cache: "no-store"
+      });
+
+      if (!response.ok) {
+        throw new Error("Failed to load search.json");
+      }
+
+      const pages = await response.json();
+
+      faultCodePages = pages.filter(function (page) {
+        return (
+          page.url &&
+          page.url.toLowerCase().endsWith("-code-meaning.html")
+        );
+      });
+
+    } catch (err) {
+
+      console.error(err);
+
+      showMessage(
+        "Lookup is temporarily unavailable.",
+        "Please use the main site search above or browse the fault-code hub."
+      );
+
+    }
+  }
+
   function findCode() {
+
+    if (faultCodePages.length === 0) {
+      showMessage(
+        "Loading fault codes...",
+        "Please wait a second and try again."
+      );
+      return;
+    }
+
     const code = cleanCode(input.value);
 
     if (!code) {
-      result.style.display = "block";
-      result.innerHTML = "<strong>Enter a code first.</strong><p>Try a code such as P0420, P0300, P0171, P0335 or P0700.</p>";
+
+      showMessage(
+        "Enter a code first.",
+        "Try P0420, P0300, P0171, P0172, P0335 or P0700."
+      );
+
       return;
+
     }
 
     if (!/^P[0-9]{4}$/.test(code)) {
-      result.style.display = "block";
-      result.innerHTML = "<strong>Check the code format.</strong><p>Use a standard P-code format such as P0420, P0300 or P0171.</p>";
+
+      showMessage(
+        "Check the code format.",
+        "Use a standard format such as P0420, P0300, P0171 or P0172."
+      );
+
+      return;
+
+    }
+
+    const match = faultCodePages.find(function (page) {
+
+      const title = String(page.title || "").toUpperCase();
+      const keywords = String(page.keywords || "").toUpperCase();
+      const url = String(page.url || "").toUpperCase();
+
+      return (
+        title.includes(code) ||
+        keywords.includes(code) ||
+        url.includes(code)
+      );
+
+    });
+
+    if (match && match.url) {
+      window.location.href = match.url;
       return;
     }
 
-    if (codes[code]) {
-      window.location.href = codes[code];
-      return;
-    }
+    showMessage(
+      "We do not have a dedicated page for " + code + " yet.",
+      "Use the main site search above, browse the fault-code hub or check the diagnostic app for related symptoms."
+    );
 
-    result.style.display = "block";
-    result.innerHTML = "<strong>We do not have a dedicated page for " + code + " yet.</strong><p>Use the main site search above, browse the fault-code hub, or check the diagnostic app for related symptoms.</p>";
   }
+
+  loadFaultCodes();
 
   button.addEventListener("click", findCode);
 
@@ -802,6 +852,7 @@ document.addEventListener("DOMContentLoaded", function () {
       findCode();
     }
   });
+
 });
 </script>
 
@@ -809,5 +860,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 </body>
 </html>
+
+
 
 
