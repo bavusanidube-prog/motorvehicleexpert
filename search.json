@@ -1804,5 +1804,185 @@
   "url": "p0705-code-meaning.html",
   "category": "OBD Fault Codes",
   "keywords": "p0705 P0705 code meaning transmission range sensor circuit gear position sensor neutral safety switch automatic gearbox engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+}, 
+{
+  "title": "P0608 Code Meaning",
+  "url": "p0608-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0608 P0608 code meaning control module vss output a fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0609 Code Meaning",
+  "url": "p0609-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0609 P0609 code meaning control module vss output b fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0610 Code Meaning",
+  "url": "p0610-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0610 P0610 code meaning control module vehicle options error ecu configuration fault pcm vehicle options programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0611 Code Meaning",
+  "url": "p0611-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0611 P0611 code meaning fuel injector control module performance ficm fault injector module error diesel injector controller engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0612 Code Meaning",
+  "url": "p0612-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0612 P0612 code meaning fuel injector control module relay control fault ficm relay fault injector module relay engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0613 Code Meaning",
+  "url": "p0613-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0613 P0613 code meaning transmission control module processor fault tcm processor error gearbox control module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0614 Code Meaning",
+  "url": "p0614-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0614 P0614 code meaning ecu tcm incompatibility engine control module transmission control module communication mismatch engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0615 Code Meaning",
+  "url": "p0615-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0615 P0615 code meaning starter relay circuit fault starter relay failure no crank starter system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0616 Code Meaning",
+  "url": "p0616-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0616 P0616 code meaning starter relay circuit low starter relay low voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0617 Code Meaning",
+  "url": "p0617-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0617 P0617 code meaning starter relay circuit high starter relay high voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0618 Code Meaning",
+  "url": "p0618-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0618 P0618 code meaning alternative fuel control module keep alive memory fault afcm keep alive memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0619 Code Meaning",
+  "url": "p0619-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0619 P0619 code meaning alternative fuel control module ram rom fault afcm memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0620 Code Meaning",
+  "url": "p0620-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0620 P0620 code meaning generator control circuit alternator control fault charging system battery charging fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0621 Code Meaning",
+  "url": "p0621-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0621 P0621 code meaning generator lamp l control circuit alternator warning lamp fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0622 Code Meaning",
+  "url": "p0622-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0622 P0622 code meaning generator field f control circuit alternator field control fault charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0623 Code Meaning",
+  "url": "p0623-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0623 P0623 code meaning generator lamp control circuit alternator warning circuit fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0624 Code Meaning",
+  "url": "p0624-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0624 P0624 code meaning generator lamp control circuit low alternator warning lamp low charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0625 Code Meaning",
+  "url": "p0625-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0625 P0625 code meaning generator field f control circuit low alternator field low charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0626 Code Meaning",
+  "url": "p0626-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0626 P0626 code meaning generator field f control circuit high alternator field high charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0627 Code Meaning",
+  "url": "p0627-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0627 P0627 code meaning fuel pump a control circuit open fuel pump control fault fuel delivery problem engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0628 Code Meaning",
+  "url": "p0628-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0628 P0628 code meaning fuel pump a control circuit low fuel pump low voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0629 Code Meaning",
+  "url": "p0629-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0629 P0629 code meaning fuel pump a control circuit high fuel pump high voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0630 Code Meaning",
+  "url": "p0630-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0630 P0630 code meaning vin not programmed ecu vin mismatch engine control module programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0631 Code Meaning",
+  "url": "p0631-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0631 P0631 code meaning vin not programmed incompatible theft deterrent immobiliser vin mismatch ecu programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0632 Code Meaning",
+  "url": "p0632-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0632 P0632 code meaning odometer not programmed ecu odometer mismatch mileage programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0633 Code Meaning",
+  "url": "p0633-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0633 P0633 code meaning immobilizer key not programmed ecu key programming anti theft system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0634 Code Meaning",
+  "url": "p0634-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0634 P0634 code meaning pcm ecu internal temperature too high control module overheating engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0635 Code Meaning",
+  "url": "p0635-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0635 P0635 code meaning power steering control circuit electric power steering eps module fault steering control fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0636 Code Meaning",
+  "url": "p0636-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0636 P0636 code meaning power steering control circuit low electric power steering low voltage eps fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0637 Code Meaning",
+  "url": "p0637-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0637 P0637 code meaning power steering control circuit high electric power steering high voltage eps fault steering module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
 }  
 ]
