@@ -1984,5 +1984,59 @@
   "url": "p0637-code-meaning.html",
   "category": "OBD Fault Codes",
   "keywords": "p0637 P0637 code meaning power steering control circuit high electric power steering high voltage eps fault steering module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0638 Code Meaning",
+  "url": "p0638-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0638 P0638 code meaning throttle actuator control range performance throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0639 Code Meaning",
+  "url": "p0639-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0639 P0639 code meaning throttle actuator control range performance bank 2 throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0641 Code Meaning",
+  "url": "p0641-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0641 P0641 code meaning sensor reference voltage a circuit open 5 volt reference circuit fault sensor reference voltage fault multiple sensor codes limp mode engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0642 Code Meaning",
+  "url": "p0642-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0642 P0642 code meaning sensor reference voltage a circuit low 5 volt reference circuit low sensor reference voltage low multiple sensor codes limp mode poor throttle response engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0643 Code Meaning",
+  "url": "p0643-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0643 P0643 code meaning sensor reference voltage a circuit high 5 volt reference circuit high sensor reference voltage high multiple sensor codes limp mode short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0644 Code Meaning",
+  "url": "p0644-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0644 P0644 code meaning driver display serial communication circuit instrument cluster communication fault dashboard display fault can communication fault module communication engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0645 Code Meaning",
+  "url": "p0645-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0645 P0645 code meaning ac clutch relay control circuit a/c clutch relay fault air conditioning compressor clutch relay ac not blowing cold air compressor clutch not engaging engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0646 Code Meaning",
+  "url": "p0646-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0646 P0646 code meaning ac clutch relay control circuit low a/c clutch relay low circuit air conditioning compressor clutch relay low ac not blowing cold air compressor clutch not engaging relay control low engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+},
+{
+  "title": "P0647 Code Meaning",
+  "url": "p0647-code-meaning.html",
+  "category": "OBD Fault Codes",
+  "keywords": "p0647 P0647 code meaning ac clutch relay control circuit high a/c clutch relay high circuit air conditioning compressor clutch relay high ac not blowing cold air compressor clutch not engaging relay control high short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
 }  
 ]
