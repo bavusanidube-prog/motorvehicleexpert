@@ -97,16 +97,66 @@
       "@id": "https://motorvehicleexpert.co.uk/most-common-mot-advisories-explained.html#advisory-cluster",
       "name": "Most Common MOT Advisory Guides UK",
       "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Corroded Brake Pipe Advisory", "url": "https://motorvehicleexpert.co.uk/corroded-brake-pipe-advisory.html"},
-        {"@type": "ListItem", "position": 2, "name": "Tyre Wear Advisory Explained", "url": "https://motorvehicleexpert.co.uk/tyre-wear-advisory-explained.html"},
-        {"@type": "ListItem", "position": 3, "name": "Brake Disc Advisory Explained", "url": "https://motorvehicleexpert.co.uk/brake-disc-advisory-explained.html"},
-        {"@type": "ListItem", "position": 4, "name": "Brake Pad Advisory Explained", "url": "https://motorvehicleexpert.co.uk/brake-pad-advisory-explained.html"},
-        {"@type": "ListItem", "position": 5, "name": "Suspension Advisory Explained", "url": "https://motorvehicleexpert.co.uk/suspension-advisory-explained.html"},
-        {"@type": "ListItem", "position": 6, "name": "Oil Leak Advisory Explained", "url": "https://motorvehicleexpert.co.uk/oil-leak-advisory-explained.html"},
-        {"@type": "ListItem", "position": 7, "name": "Structural Corrosion Advisory", "url": "https://motorvehicleexpert.co.uk/structural-corrosion-advisory.html"},
-        {"@type": "ListItem", "position": 8, "name": "Shock Absorber Advisory Explained", "url": "https://motorvehicleexpert.co.uk/shock-absorber-advisory-explained.html"},
-        {"@type": "ListItem", "position": 9, "name": "Do MOT Advisories Affect Insurance?", "url": "https://motorvehicleexpert.co.uk/do-mot-advisories-affect-insurance.html"},
-        {"@type": "ListItem", "position": 10, "name": "How Long Can You Drive With an MOT Advisory?", "url": "https://motorvehicleexpert.co.uk/how-long-can-you-drive-with-an-mot-advisory.html"}
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Corroded Brake Pipe Advisory",
+          "url": "https://motorvehicleexpert.co.uk/corroded-brake-pipe-advisory.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Tyre Wear Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/tyre-wear-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Brake Disc Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/brake-disc-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Brake Pad Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/brake-pad-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 5,
+          "name": "Suspension Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/suspension-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 6,
+          "name": "Oil Leak Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/oil-leak-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 7,
+          "name": "Structural Corrosion Advisory",
+          "url": "https://motorvehicleexpert.co.uk/structural-corrosion-advisory.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 8,
+          "name": "Shock Absorber Advisory Explained",
+          "url": "https://motorvehicleexpert.co.uk/shock-absorber-advisory-explained.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 9,
+          "name": "Do MOT Advisories Affect Insurance?",
+          "url": "https://motorvehicleexpert.co.uk/do-mot-advisories-affect-insurance.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 10,
+          "name": "How Long Can You Drive With an MOT Advisory?",
+          "url": "https://motorvehicleexpert.co.uk/how-long-can-you-drive-with-an-mot-advisory.html"
+        }
       ]
     },
     {
@@ -183,7 +233,13 @@
 
 <div class="mve-global-search">
 <div class="container">
-<input type="search" id="mve-search" placeholder="🔍 Search Motor Vehicle Expert..." autocomplete="off" aria-label="Search Motor Vehicle Expert" />
+<input
+type="search"
+id="mve-search"
+placeholder="🔍 Search Motor Vehicle Expert..."
+autocomplete="off"
+aria-label="Search Motor Vehicle Expert"
+/>
 <div id="mve-search-results" role="listbox"></div>
 </div>
 </div>
@@ -204,7 +260,7 @@ An MOT advisory is an early warning that something on your vehicle is worn, corr
 
 <div class="hero-actions">
 <a class="cta cta-primary" href="#top-10-advisories">Top 10 Advisories</a>
-<a class="cta cta-ghost" href="#risk-cost-table">Risk &amp; Cost Table</a>
+<a class="cta cta-ghost" href="#priority-dashboard">Repair Priority</a>
 <a class="cta cta-ghost" href="#cluster-links">Advisory Guides</a>
 </div>
 
@@ -234,14 +290,17 @@ height="900"
 <span>Brake pipe corrosion</span>
 <strong class="status red">High risk</strong>
 </div>
+
 <div class="diagnostic-row">
 <span>Tyre wear advisory</span>
 <strong class="status amber">Fix soon</strong>
 </div>
+
 <div class="diagnostic-row">
 <span>Oil leak advisory</span>
 <strong class="status amber">Monitor</strong>
 </div>
+
 <div class="diagnostic-row">
 <span>Structural corrosion</span>
 <strong class="status red">Inspect now</strong>
@@ -258,7 +317,7 @@ height="900"
 <a href="#quick-answer">Quick answer</a>
 <a href="#top-10-advisories">Top 10 advisories</a>
 <a href="#mechanic-view">Mechanic-style view</a>
-<a href="#risk-cost-table">Risk &amp; cost table</a>
+<a href="#priority-dashboard">Priority dashboard</a>
 <a href="#repair-urgency">How soon to fix</a>
 <a href="#buying-car">Buying advice</a>
 <a href="#insurance">Insurance</a>
@@ -494,105 +553,151 @@ Do not leave advisories until the next MOT week. Fix high-risk items early and u
 </div>
 </section>
 
-<section id="risk-cost-table">
+<section id="priority-dashboard">
 <div class="container">
+
 <div class="section-head">
 <div>
-<span class="pill">10/10 decision table</span>
-<h2>MOT Advisory Risk, Cost and Next MOT Failure Table</h2>
+<span class="pill">What should you fix first?</span>
+<h2>MOT Advisory Priority Dashboard</h2>
 <p>
-Use this table to decide what to fix first. It is designed for real driver questions: can I still drive, how urgent is it, what could it cost and will it fail next year?
+Most drivers do not want a complicated table. They want to know what is dangerous, what can wait, what may become expensive and what is most likely to fail the next MOT. This dashboard gives a clearer repair order.
 </p>
 </div>
 </div>
 
-<div class="card">
-<div class="table-wrap">
-<table>
-<thead>
-<tr>
-<th>Advisory</th>
-<th>Danger level</th>
-<th>Likely cost level</th>
-<th>Next MOT failure risk</th>
-<th>Best action</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Corroded brake pipe</td>
-<td>High</td>
-<td>Medium to high</td>
-<td>High</td>
-<td>Inspect and repair before corrosion worsens</td>
-</tr>
-<tr>
-<td>Tyre close to legal limit</td>
-<td>High in wet weather</td>
-<td>Low to medium</td>
-<td>High</td>
-<td>Measure tread and replace soon</td>
-</tr>
-<tr>
-<td>Brake disc worn, pitted or corroded</td>
-<td>Medium to high</td>
-<td>Medium</td>
-<td>Medium to high</td>
-<td>Check discs, pads and braking performance</td>
-</tr>
-<tr>
-<td>Brake pads wearing low</td>
-<td>Medium to high</td>
-<td>Low to medium</td>
-<td>High if ignored</td>
-<td>Replace before grinding or disc damage</td>
-</tr>
-<tr>
-<td>Suspension bush, arm or joint worn</td>
-<td>Medium to high</td>
-<td>Medium</td>
-<td>Medium to high</td>
-<td>Check for knocking, play and uneven tyre wear</td>
-</tr>
-<tr>
-<td>Minor oil leak</td>
-<td>Low to medium</td>
-<td>Low to high</td>
-<td>Medium</td>
-<td>Identify source and monitor oil level</td>
-</tr>
-<tr>
-<td>Structural corrosion</td>
-<td>High</td>
-<td>High</td>
-<td>High</td>
-<td>Inspect underside and price welding before buying</td>
-</tr>
-<tr>
-<td>Shock absorber misting or leaking</td>
-<td>Medium</td>
-<td>Medium</td>
-<td>Medium</td>
-<td>Check damping, bounce and tyre wear</td>
-</tr>
-<tr>
-<td>Exhaust corrosion</td>
-<td>Low to medium</td>
-<td>Low to medium</td>
-<td>Medium</td>
-<td>Check for leaks, noise and loose mountings</td>
-</tr>
-<tr>
-<td>Registration plate deterioration</td>
-<td>Low</td>
-<td>Low</td>
-<td>Medium</td>
-<td>Replace before it becomes unreadable</td>
-</tr>
-</tbody>
-</table>
+<article class="feature-card">
+<span class="pill">🔴 High Priority Advisories</span>
+<h3>Fix These As Soon As Possible</h3>
+<p class="muted">
+These advisories involve safety-critical components or expensive structural risks. They should be inspected quickly and repaired before they become dangerous, illegal or more costly.
+</p>
+
+<div class="grid-3">
+
+<article class="mini-card">
+<h4>Corroded Brake Pipe</h4>
+<p class="muted"><strong>Risk:</strong> Very high because the brake pipe carries hydraulic brake pressure.</p>
+<p class="muted"><strong>Next MOT risk:</strong> Very high if corrosion worsens or a leak develops.</p>
+<p class="muted"><strong>Best action:</strong> Get the pipe inspected and priced before it becomes a major or dangerous defect.</p>
+<a class="text-link" href="corroded-brake-pipe-advisory.html">Full brake pipe guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Tyres Close To Legal Limit</h4>
+<p class="muted"><strong>Risk:</strong> High, especially in wet weather or under emergency braking.</p>
+<p class="muted"><strong>Next MOT risk:</strong> Very high if tread continues to wear.</p>
+<p class="muted"><strong>Best action:</strong> Measure tread depth and replace before the tyre becomes illegal.</p>
+<a class="text-link" href="tyre-wear-advisory-explained.html">Full tyre advisory guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Structural Corrosion</h4>
+<p class="muted"><strong>Risk:</strong> Very high if corrosion affects strength near important areas.</p>
+<p class="muted"><strong>Next MOT risk:</strong> Very high if rust spreads, holes appear or welding is needed.</p>
+<p class="muted"><strong>Best action:</strong> Inspect the underside and price repair before buying or relying on the car.</p>
+<a class="text-link" href="structural-corrosion-advisory.html">Full corrosion guide →</a>
+</article>
+
 </div>
+</article>
+
+<article class="feature-card">
+<span class="pill">🟠 Medium Priority Advisories</span>
+<h3>Plan Repairs Before The Next MOT</h3>
+<p class="muted">
+These defects are often safe to drive with temporarily if the car has no symptoms, but they can become MOT failures if ignored. They are also useful negotiation points when buying a used car.
+</p>
+
+<div class="grid-3">
+
+<article class="mini-card">
+<h4>Brake Disc Wear</h4>
+<p class="muted">
+Corroded, pitted, scored or worn brake discs should be checked with the pads. Grinding, vibration or weak braking makes this more urgent.
+</p>
+<a class="text-link" href="brake-disc-advisory-explained.html">Full brake disc guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Brake Pad Wear</h4>
+<p class="muted">
+Low brake pads should be replaced before they wear down to metal and damage the discs.
+</p>
+<a class="text-link" href="brake-pad-advisory-explained.html">Full brake pad guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Suspension Wear</h4>
+<p class="muted">
+Bushes, arms, ball joints and drop links should be checked if there are knocks, clunks, pulling or uneven tyre wear.
+</p>
+<a class="text-link" href="suspension-advisory-explained.html">Full suspension guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Oil Leak Advisory</h4>
+<p class="muted">
+Minor oil leaks should be traced before oil level drops, oil spreads across the underside or oil reaches hot components.
+</p>
+<a class="text-link" href="oil-leak-advisory-explained.html">Full oil leak guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Shock Absorber Leakage</h4>
+<p class="muted">
+Misting may only need monitoring, but leaking shocks can affect handling, tyre contact and braking stability.
+</p>
+<a class="text-link" href="shock-absorber-advisory-explained.html">Full shock absorber guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Exhaust Corrosion</h4>
+<p class="muted">
+Surface rust may not be urgent, but blowing, loose mountings, fumes or excessive noise should be repaired.
+</p>
+<a class="text-link" href="car-exhaust-blowing-noise.html">Read exhaust noise guide →</a>
+</article>
+
 </div>
+</article>
+
+<article class="feature-card">
+<span class="pill">🟢 Lower Priority Advisories</span>
+<h3>Usually Cheap To Fix, But Do Not Ignore Them</h3>
+<p class="muted">
+These advisories are often inexpensive maintenance items. They may not be dangerous today, but they can still become simple MOT failures if ignored.
+</p>
+
+<div class="grid-3">
+
+<article class="mini-card">
+<h4>Registration Plate Deterioration</h4>
+<p class="muted">
+Replace faded, damaged, delaminated or unreadable plates before they become a fail.
+</p>
+<a class="text-link" href="can-number-plate-fail-mot.html">Number plate MOT guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Wiper Blade Wear</h4>
+<p class="muted">
+Replace worn, split or smearing wipers before visibility is affected in rain.
+</p>
+<a class="text-link" href="can-wipers-fail-mot.html">Wiper MOT guide →</a>
+</article>
+
+<article class="mini-card">
+<h4>Minor Lighting Advisories</h4>
+<p class="muted">
+Repair cloudy lenses, weak bulbs, cracked covers or poor light output before the next MOT.
+</p>
+<a class="text-link" href="car-fails-mot-on-lights.html">Lights MOT guide →</a>
+</article>
+
+</div>
+</article>
+
 </div>
 </section>
 
