@@ -2038,5 +2038,77 @@
   "url": "p0647-code-meaning.html",
   "category": "OBD Fault Codes",
   "keywords": "p0647 P0647 code meaning ac clutch relay control circuit high a/c clutch relay high circuit air conditioning compressor clutch relay high ac not blowing cold air compressor clutch not engaging relay control high short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-}  
+},
+{
+    "title": "Most Common MOT Advisories Explained",
+    "url": "most-common-mot-advisories-explained.html",
+    "category": "MOT Advisories",
+    "description": "UK MOT advisory hub explaining common advisories, safety risk, repair urgency, insurance, costs and next MOT failure risk."
+  },
+  {
+    "title": "Corroded Brake Pipe Advisory Explained",
+    "url": "corroded-brake-pipe-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Brake pipe corrosion advisory explained with safety risk, repair cost and next MOT failure risk."
+  },
+  {
+    "title": "Tyre Wear Advisory Explained",
+    "url": "tyre-wear-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Tyre worn close to legal limit advisory explained with tread depth, safety and replacement advice."
+  },
+  {
+    "title": "Brake Disc Advisory Explained",
+    "url": "brake-disc-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Corroded, pitted, scored or worn brake disc advisory explained for UK drivers."
+  },
+  {
+    "title": "Brake Pad Advisory Explained",
+    "url": "brake-pad-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Low brake pad advisory explained with replacement timing, costs and MOT failure risk."
+  },
+  {
+    "title": "Suspension Advisory Explained",
+    "url": "suspension-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Suspension component advisory explained, including bushes, arms, ball joints, drop links and repair cost."
+  },
+  {
+    "title": "Oil Leak Advisory Explained",
+    "url": "oil-leak-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Minor oil leak MOT advisory explained with causes, repair costs and failure risk."
+  },
+  {
+    "title": "Structural Corrosion Advisory Explained",
+    "url": "structural-corrosion-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Structural corrosion, sill rust, chassis rust and subframe corrosion advisory explained."
+  },
+  {
+    "title": "Shock Absorber Advisory Explained",
+    "url": "shock-absorber-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Shock absorber misting, leakage and deterioration advisory explained with replacement guidance."
+  },
+  {
+    "title": "Do MOT Advisories Affect Insurance?",
+    "url": "do-mot-advisories-affect-insurance.html",
+    "category": "MOT Advisories",
+    "description": "Explains whether MOT advisories affect insurance, roadworthiness and claim risk."
+  },
+  {
+    "title": "How Long Can You Drive With an MOT Advisory?",
+    "url": "how-long-can-you-drive-with-an-mot-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Repair urgency guide explaining how long UK drivers can drive with different MOT advisories."
+  },
+  {
+    "title": "Car Fails MOT On Lights",
+    "url": "car-fails-mot-on-lights.html",
+    "category": "MOT Failures",
+    "description": "Lighting MOT failure guide covering headlights, brake lights, indicators, fog lights and retest advice."
+  }    
 ]
