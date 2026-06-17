@@ -2110,5 +2110,11 @@
     "url": "car-fails-mot-on-lights.html",
     "category": "MOT Failures",
     "description": "Lighting MOT failure guide covering headlights, brake lights, indicators, fog lights and retest advice."
-  }    
+  },
+{
+  "title": "Exhaust Corrosion Advisory Explained",
+  "url": "exhaust-corrosion-advisory-explained.html",
+  "category": "MOT Advisories",
+  "description": "Exhaust corrosion MOT advisory explained with repair costs, driving advice, replacement timing and next MOT failure risk."
+}  
 ]
