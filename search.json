@@ -2116,5 +2116,53 @@
   "url": "exhaust-corrosion-advisory-explained.html",
   "category": "MOT Advisories",
   "description": "Exhaust corrosion MOT advisory explained with repair costs, driving advice, replacement timing and next MOT failure risk."
+},
+{
+  "title": "Does MOT Check?",
+  "url": "does-mot-check.html",
+  "category": "MOT Guides",
+  "description": "Complete UK MOT inspection checklist explaining what an MOT checks, what is not checked and how to prepare before the test."
+},
+{
+  "title": "Does MOT Check Tracking?",
+  "url": "does-mot-check-tracking.html",
+  "category": "MOT Guides",
+  "description": "UK guide explaining whether tracking is checked during an MOT and how tracking problems can affect tyres, steering and suspension."
+},
+{
+  "title": "Does MOT Check Wheel Balancing?",
+  "url": "does-mot-check-wheel-balancing.html",
+  "category": "MOT Guides",
+  "description": "Explains whether wheel balancing is checked during an MOT and when vibration, tyre or wheel defects can affect the result."
+},
+{
+  "title": "Does MOT Check Clutch?",
+  "url": "does-mot-check-clutch.html",
+  "category": "MOT Guides",
+  "description": "UK guide explaining whether clutch wear, slipping clutch, biting point and pedal faults are checked during an MOT."
+},
+{
+  "title": "Does MOT Check Service History?",
+  "url": "does-mot-check-service-history.html",
+  "category": "MOT Guides",
+  "description": "Explains whether service history is checked during an MOT and the difference between MOT history and service records."
+},
+{
+  "title": "Does MOT Check Engine Oil?",
+  "url": "does-mot-check-engine-oil.html",
+  "category": "MOT Guides",
+  "description": "UK guide explaining whether engine oil, oil leaks, oil warning lights and oil quality are checked during an MOT."
+},
+{
+  "title": "Does MOT Check Gearbox?",
+  "url": "does-mot-check-gearbox.html",
+  "category": "MOT Guides",
+  "description": "Explains whether gearbox condition, transmission faults, gear selection and gearbox leaks are checked during an MOT."
+},
+{
+  "title": "Does MOT Check Air Conditioning?",
+  "url": "does-mot-check-air-conditioning.html",
+  "category": "MOT Guides",
+  "description": "UK guide explaining whether air conditioning, demisters, heater blowers and windscreen visibility are checked during an MOT."
 }  
 ]
