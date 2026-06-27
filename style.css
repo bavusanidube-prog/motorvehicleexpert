@@ -1708,6 +1708,49 @@ footer,
     font-weight:800;
 }
 
+/* ==========================================================
+   MOTOR VEHICLE EXPERT — ARTICLE DIAGRAM SYSTEM
+   Use on pages with large educational diagrams
+========================================================== */
+
+.mve-diagram,
+.article-content .mve-diagram,
+.card .mve-diagram,
+.feature-card .mve-diagram {
+    max-width: 700px;
+    margin: 2rem auto;
+    border-radius: 22px;
+    overflow: hidden;
+}
+
+.mve-diagram img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.mve-small-diagram {
+    max-width: 520px;
+}
+
+.mve-small-diagram img {
+    max-width: 520px;
+}
+
+.mve-hero-image {
+    max-width: 560px;
+    margin: 0 auto;
+}
+
+.mve-hero-image img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+}
+
 
 
 
