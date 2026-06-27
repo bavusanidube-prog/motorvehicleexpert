@@ -1751,6 +1751,21 @@ footer,
     display: block;
 }
 
+.table-card {
+  margin: 1.5rem 0 2rem;
+  padding: 1rem;
+  border: 1px solid rgba(148, 163, 184, 0.22);
+  border-radius: 18px;
+  background: rgba(15, 23, 42, 0.45);
+  overflow-x: auto;
+}
+
+.table-card table {
+  width: 100%;
+  margin: 0;
+  border-collapse: collapse;
+}
+
 
 
 
