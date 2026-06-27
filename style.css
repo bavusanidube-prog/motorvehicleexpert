@@ -1710,13 +1710,41 @@ footer,
 
 /* ==========================================================
    MOTOR VEHICLE EXPERT — ARTICLE DIAGRAM SYSTEM
-   Use on pages with large educational diagrams
+   Keeps educational diagrams centred and responsive
 ========================================================== */
 
-.mve-diagram,
-.article-content .mve-diagram,
-.card .mve-diagram,
-.feature-card .mve-diagram {
+.article-content figure,
+.article-content .feature-card,
+.card figure,
+.card .feature-card {
+    width: 100%;
+    max-width: 920px;
+    margin: 2rem auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.article-content figure img,
+.article-content .feature-card img,
+.card figure img,
+.card .feature-card img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+.article-content figcaption,
+.card figcaption {
+    max-width: 760px;
+    margin: 0.75rem auto 0;
+    text-align: center;
+}
+
+/* Smaller educational diagrams */
+.mve-diagram {
     max-width: 700px;
     margin: 2rem auto;
     border-radius: 22px;
@@ -1724,92 +1752,64 @@ footer,
 }
 
 .mve-diagram img {
+    display: block;
     width: 100%;
     max-width: 700px;
     height: auto;
-    display: block;
     margin: 0 auto;
 }
 
 .mve-small-diagram {
     max-width: 520px;
+    margin: 2rem auto;
 }
 
 .mve-small-diagram img {
+    display: block;
+    width: 100%;
     max-width: 520px;
+    height: auto;
+    margin: 0 auto;
 }
 
+/* Hero image control */
 .mve-hero-image {
     max-width: 560px;
     margin: 0 auto;
 }
 
 .mve-hero-image img {
+    display: block;
     width: 100%;
     max-width: 560px;
     height: auto;
-    display: block;
+    margin: 0 auto;
 }
 
-/* ==========================================================
-   MOTOR VEHICLE EXPERT — PRODUCTION TABLE BOXES
-   Safe wrapper for article tables only
-========================================================== */
-
-.article-content .mve-table-box {
-    width: 100%;
-    margin: 1.5rem 0 2rem;
-    padding: 0.75rem;
-    border-radius: 18px;
-    border: 1px solid rgba(15, 23, 42, 0.10);
-    background: #ffffff;
-    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.07);
-    overflow-x: auto;
-}
-
-.article-content .mve-table-box table {
-    width: 100%;
-    min-width: 640px;
-    margin: 0;
-    border-collapse: collapse;
-}
-
-.article-content .mve-table-box th,
-.article-content .mve-table-box td {
-    padding: 0.9rem 1rem;
-    text-align: left;
-    vertical-align: top;
-}
-
-.article-content .mve-table-box th {
-    background: #0f172a;
-    color: #ffffff;
-    font-weight: 800;
-}
-
-.article-content .mve-table-box td {
-    background: #ffffff;
-}
-
-.article-content .mve-table-box tr:nth-child(even) td {
-    background: #f8fafc;
-}
-
+/* Mobile image behaviour */
 @media (max-width: 760px) {
-    .article-content .mve-table-box {
-        padding: 0.5rem;
-        margin: 1.25rem 0 1.75rem;
-        border-radius: 16px;
+    .article-content figure,
+    .article-content .feature-card,
+    .card figure,
+    .card .feature-card {
+        max-width: 100%;
+        margin: 1.5rem auto;
     }
 
-    .article-content .mve-table-box table {
-        min-width: 560px;
+    .article-content figure img,
+    .article-content .feature-card img,
+    .card figure img,
+    .card .feature-card img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
     }
 
-    .article-content .mve-table-box th,
-    .article-content .mve-table-box td {
-        padding: 0.75rem 0.85rem;
+    .article-content figcaption,
+    .card figcaption {
         font-size: 0.92rem;
+        line-height: 1.5;
     }
 }
 
