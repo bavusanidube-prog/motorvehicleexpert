@@ -1792,6 +1792,48 @@ footer,
     }
 }
 
+/* ==========================================================
+   MOTOR VEHICLE EXPERT
+   ARTICLE LINK VISIBILITY FIX
+   Place at the very bottom of style.css
+========================================================== */
+
+.card a:not(.cta),
+.mini-card a:not(.cta),
+.safe-box a:not(.cta),
+.faq a:not(.cta),
+.link-list a{
+    color:var(--brand);
+    font-weight:900;
+    text-decoration:underline;
+    text-decoration-color:rgba(215,25,32,.35);
+    text-underline-offset:4px;
+    transition:.2s ease;
+}
+
+.card a:not(.cta):hover,
+.mini-card a:not(.cta):hover,
+.safe-box a:not(.cta):hover,
+.faq a:not(.cta):hover,
+.link-list a:hover{
+    color:var(--brand-dark);
+}
+
+.link-list{
+    list-style:none;
+    padding:0;
+    margin:0.8rem 0 0;
+}
+
+.link-list li{
+    margin:.45rem 0;
+}
+
+.link-list a{
+    display:inline-flex;
+    align-items:center;
+}
+
 
 
 
