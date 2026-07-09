@@ -1939,6 +1939,151 @@ footer,
 
 }
 
+/* ==========================================================
+   MOTOR VEHICLE EXPERT
+   PREMIUM DECISION TABLE SYSTEM
+   Global Responsive Tables
+   Place at the very bottom of style.css
+========================================================== */
+
+.table-wrap{
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+    margin:2rem 0;
+    border:1px solid var(--line);
+    border-radius:22px;
+    background:#fff;
+    box-shadow:var(--shadow-soft);
+}
+
+.decision-table{
+    width:100%;
+    min-width:720px;
+    border-collapse:collapse;
+    table-layout:auto;
+    background:#fff;
+}
+
+.decision-table.table-wide{
+    min-width:900px;
+}
+
+.decision-table thead th{
+    background:linear-gradient(180deg,#d71920,#b9131a);
+    color:#fff;
+    padding:1rem 1.1rem;
+    text-align:left;
+    font-size:.95rem;
+    font-weight:900;
+    line-height:1.35;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.decision-table tbody td{
+    padding:1rem 1.1rem;
+    vertical-align:top;
+    line-height:1.6;
+    color:var(--muted);
+    border:1px solid var(--line);
+    background:#fff;
+}
+
+.decision-table tbody tr:nth-child(even) td{
+    background:#fafbfc;
+}
+
+.decision-table tbody tr:hover td{
+    background:#fff8f8;
+    transition:background .2s ease;
+}
+
+.decision-table td strong{
+    color:var(--text-strong);
+}
+
+.decision-table th:first-child,
+.decision-table td:first-child{
+    width:28%;
+    font-weight:800;
+    color:var(--text-strong);
+}
+
+.decision-table th:nth-child(2),
+.decision-table td:nth-child(2){
+    width:18%;
+}
+
+.decision-table th:nth-child(3),
+.decision-table td:nth-child(3){
+    width:24%;
+}
+
+.decision-table th:nth-child(4),
+.decision-table td:nth-child(4){
+    width:30%;
+}
+
+.decision-table caption{
+    caption-side:bottom;
+    padding:1rem;
+    font-size:.9rem;
+    color:var(--muted-light);
+}
+
+/* Three-column tables */
+
+.decision-table.table-3 th:first-child,
+.decision-table.table-3 td:first-child{
+    width:30%;
+}
+
+.decision-table.table-3 th:nth-child(2),
+.decision-table.table-3 td:nth-child(2){
+    width:20%;
+}
+
+.decision-table.table-3 th:nth-child(3),
+.decision-table.table-3 td:nth-child(3){
+    width:50%;
+}
+
+/* Five-column tables */
+
+.decision-table.table-5 th,
+.decision-table.table-5 td{
+    width:20%;
+}
+
+/* Mobile */
+
+@media (max-width:900px){
+
+    .table-wrap{
+        margin:1.5rem 0;
+        border-radius:18px;
+    }
+
+    .decision-table{
+        min-width:680px;
+    }
+
+    .decision-table.table-wide{
+        min-width:860px;
+    }
+
+    .decision-table th,
+    .decision-table td{
+        padding:.85rem;
+        font-size:.92rem;
+    }
+
+}
+
+/* ==========================================================
+   END OF MOTOR VEHICLE EXPERT GLOBAL TABLE SYSTEM
+========================================================== */
+
 
 
 
