@@ -2121,49 +2121,55 @@
   "title": "Does MOT Check?",
   "url": "does-mot-check.html",
   "category": "MOT Guides",
-  "description": "Complete UK MOT inspection checklist explaining what an MOT checks, what is not checked and how to prepare before the test."
+  "keywords": "does mot check what does mot check MOT checklist UK MOT inspection checklist what is checked in MOT what is not checked in MOT roadworthiness MOT test UK Motor Vehicle Expert"
 },
 {
   "title": "Does MOT Check Tracking?",
   "url": "does-mot-check-tracking.html",
   "category": "MOT Guides",
-  "description": "UK guide explaining whether tracking is checked during an MOT and how tracking problems can affect tyres, steering and suspension."
+  "keywords": "does mot check tracking tracking MOT wheel tracking MOT toe angle tyre wear steering pull suspension track rod MOT inspection UK Motor Vehicle Expert"
 },
 {
   "title": "Does MOT Check Wheel Balancing?",
   "url": "does-mot-check-wheel-balancing.html",
   "category": "MOT Guides",
-  "description": "Explains whether wheel balancing is checked during an MOT and when vibration, tyre or wheel defects can affect the result."
+  "keywords": "does mot check wheel balancing wheel balancing MOT steering wheel vibration tyre vibration wheel bearing suspension tyres wheels MOT inspection UK Motor Vehicle Expert"
 },
 {
   "title": "Does MOT Check Clutch?",
   "url": "does-mot-check-clutch.html",
   "category": "MOT Guides",
-  "description": "UK guide explaining whether clutch wear, slipping clutch, biting point and pedal faults are checked during an MOT."
+  "keywords": "does mot check clutch clutch MOT slipping clutch biting point clutch pedal clutch wear gear selection safe control MOT inspection UK Motor Vehicle Expert"
 },
 {
   "title": "Does MOT Check Service History?",
   "url": "does-mot-check-service-history.html",
   "category": "MOT Guides",
-  "description": "Explains whether service history is checked during an MOT and the difference between MOT history and service records."
-},
-{
-  "title": "Does MOT Check Engine Oil?",
-  "url": "does-mot-check-engine-oil.html",
-  "category": "MOT Guides",
-  "description": "UK guide explaining whether engine oil, oil leaks, oil warning lights and oil quality are checked during an MOT."
-},
-{
-  "title": "Does MOT Check Gearbox?",
-  "url": "does-mot-check-gearbox.html",
-  "category": "MOT Guides",
-  "description": "Explains whether gearbox condition, transmission faults, gear selection and gearbox leaks are checked during an MOT."
+  "keywords": "does mot check service history MOT service history service book MOT history service records stamped service book used car buying maintenance records UK Motor Vehicle Expert"
 },
 {
   "title": "Does MOT Check Air Conditioning?",
   "url": "does-mot-check-air-conditioning.html",
   "category": "MOT Guides",
-  "description": "UK guide explaining whether air conditioning, demisters, heater blowers and windscreen visibility are checked during an MOT."
+  "keywords": "does mot check air conditioning AC MOT air con MOT demister heater blower windscreen visibility AC not cold MOT inspection UK Motor Vehicle Expert"
+},
+{
+  "title": "Does MOT Check Engine Oil?",
+  "url": "does-mot-check-engine-oil.html",
+  "category": "MOT Guides",
+  "keywords": "does mot check engine oil oil level MOT oil quality oil leak MOT oil warning light blue smoke emissions MOT inspection UK Motor Vehicle Expert"
+},
+{
+  "title": "Does MOT Check Gearbox?",
+  "url": "does-mot-check-gearbox.html",
+  "category": "MOT Guides",
+  "keywords": "does mot check gearbox gearbox MOT transmission MOT gear selection gearbox oil leak gearbox fault automatic gearbox manual gearbox MOT inspection UK Motor Vehicle Expert"
+},
+{
+  "title": "Does MOT Check Wheel Alignment?",
+  "url": "does-mot-check-wheel-alignment.html",
+  "category": "MOT Guides",
+  "keywords": "does mot check wheel alignment wheel alignment MOT tracking MOT uneven tyre wear steering pull suspension tyre wear four wheel alignment wheel geometry MOT inspection UK Motor Vehicle Expert"
 },
 {
   "title": "Water Pump Replacement Cost UK",
