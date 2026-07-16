@@ -7415,7 +7415,7 @@
 
   <figure class="mve-diagram">
       <img
-        src="common-fault-code-categories.png"
+        src="drive-safety-fault-code-priority.png"
         alt="Common fault-code categories explained"
         loading="lazy"
         width="1600"
@@ -9511,42 +9511,32 @@ document.addEventListener("DOMContentLoaded", function () {
   let faultCodePages = [];
   let lookupReady = false;
 
-
   function cleanCode(value) {
-
     return String(value || "")
       .trim()
       .toUpperCase()
       .replace(/\s+/g, "");
-
   }
 
-
   function escapeHtml(value) {
-
     return String(value || "")
       .replace(/&/g, "&amp;")
       .replace(/</g, "&lt;")
       .replace(/>/g, "&gt;")
       .replace(/"/g, "&quot;")
       .replace(/'/g, "&#039;");
-
   }
 
-
   function showResult(type, title, message, actions) {
-
     result.hidden = false;
     result.className = "safe-box " + type;
 
     let actionMarkup = "";
 
     if (Array.isArray(actions) && actions.length) {
-
       actionMarkup = '<div class="hero-actions">';
 
       actions.forEach(function (action) {
-
         actionMarkup +=
           '<a class="' +
           escapeHtml(action.className || "cta cta-secondary") +
@@ -9555,11 +9545,9 @@ document.addEventListener("DOMContentLoaded", function () {
           '">' +
           escapeHtml(action.label || "Open") +
           "</a>";
-
       });
 
       actionMarkup += "</div>";
-
     }
 
     result.innerHTML =
@@ -9570,12 +9558,9 @@ document.addEventListener("DOMContentLoaded", function () {
       escapeHtml(message) +
       "</p>" +
       actionMarkup;
-
   }
 
-
   async function loadFaultCodes() {
-
     showResult(
       "info",
       "Loading the fault-code library...",
@@ -9583,7 +9568,6 @@ document.addEventListener("DOMContentLoaded", function () {
     );
 
     try {
-
       const response = await fetch("search.json", {
         cache: "no-store"
       });
@@ -9599,21 +9583,18 @@ document.addEventListener("DOMContentLoaded", function () {
       }
 
       faultCodePages = pages.filter(function (page) {
-
         const url = String(page.url || "").toLowerCase();
 
         return (
           url.endsWith("-code-meaning.html") &&
           !url.startsWith("http")
         );
-
       });
 
       lookupReady = true;
       result.hidden = true;
 
     } catch (error) {
-
       lookupReady = false;
 
       console.error("Fault-code lookup error:", error);
@@ -9635,20 +9616,15 @@ document.addEventListener("DOMContentLoaded", function () {
           }
         ]
       );
-
     }
-
   }
 
-
   function findCode() {
-
     const code = cleanCode(input.value);
 
     input.value = code;
 
     if (!code) {
-
       showResult(
         "warning",
         "Enter a fault code first.",
@@ -9657,11 +9633,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       input.focus();
       return;
-
     }
 
     if (!/^[PBCU][0-9A-F]{4}$/.test(code)) {
-
       showResult(
         "warning",
         "Check the fault-code format.",
@@ -9670,11 +9644,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
       input.focus();
       return;
-
     }
 
     if (!lookupReady) {
-
       showResult(
         "info",
         "The fault-code library is still loading.",
@@ -9682,12 +9654,9 @@ document.addEventListener("DOMContentLoaded", function () {
       );
 
       return;
-
     }
 
-
     const match = faultCodePages.find(function (page) {
-
       const title = String(page.title || "").toUpperCase();
       const keywords = String(page.keywords || "").toUpperCase();
       const url = String(page.url || "").toUpperCase();
@@ -9695,14 +9664,11 @@ document.addEventListener("DOMContentLoaded", function () {
       return (
         title.includes(code) ||
         keywords.includes(code) ||
-        url.includes(code.toLowerCase())
+        url.includes(code)
       );
-
     });
 
-
     if (match && match.url) {
-
       showResult(
         "tip",
         code + " guide found.",
@@ -9721,9 +9687,7 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 450);
 
       return;
-
     }
-
 
     showResult(
       "info",
@@ -9742,47 +9706,31 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       ]
     );
-
   }
-
 
   button.addEventListener("click", findCode);
 
-
   input.addEventListener("keydown", function (event) {
-
     if (event.key === "Enter") {
-
       event.preventDefault();
       findCode();
-
     }
-
   });
-
 
   input.addEventListener("input", function () {
-
     input.value = cleanCode(input.value).slice(0, 5);
-
   });
 
-
   exampleButtons.forEach(function (exampleButton) {
-
     exampleButton.addEventListener("click", function () {
-
       const exampleCode = cleanCode(
         exampleButton.getAttribute("data-code")
       );
 
       input.value = exampleCode;
       findCode();
-
     });
-
   });
-
 
   loadFaultCodes();
 
