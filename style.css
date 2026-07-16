@@ -2156,6 +2156,15 @@ footer,
         grid-template-rows: auto;
     }
 }
+/* ==========================================================
+   MOTOR VEHICLE EXPERT
+   KEEP ARTICLE TWO-CARD GRIDS SIDE BY SIDE ON TABLETS
+========================================================== */
 
+@media (min-width: 761px) and (max-width: 1080px) {
+  .article-content .grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
 
 
