@@ -1711,11 +1711,10 @@ footer,
 /* ==========================================================
    MOTOR VEHICLE EXPERT — ARTICLE DIAGRAM SYSTEM
    Keeps educational diagrams centred and responsive
-   Does not affect hero images
+   Does not affect normal feature cards or hero images
 ========================================================== */
 
-.article-content figure.feature-card,
-.article-content .feature-card {
+.article-content figure.feature-card {
     width: 100%;
     max-width: 920px;
     margin: 2rem auto;
@@ -1723,8 +1722,7 @@ footer,
     overflow: hidden;
 }
 
-.article-content figure.feature-card img,
-.article-content .feature-card img {
+.article-content figure.feature-card img {
     display: block;
     width: 100%;
     max-width: 900px;
@@ -1733,14 +1731,14 @@ footer,
     object-fit: contain;
 }
 
-.article-content figure.feature-card figcaption,
-.article-content .feature-card figcaption {
+.article-content figure.feature-card figcaption {
     max-width: 760px;
     margin: 0.75rem auto 0;
     text-align: center;
 }
 
 /* Smaller educational diagrams */
+
 .article-content .mve-diagram {
     max-width: 700px;
     margin: 2rem auto;
@@ -1754,6 +1752,7 @@ footer,
     max-width: 700px;
     height: auto;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 .article-content .mve-small-diagram {
@@ -1767,26 +1766,26 @@ footer,
     max-width: 520px;
     height: auto;
     margin: 0 auto;
+    object-fit: contain;
 }
 
 /* Mobile image behaviour */
+
 @media (max-width: 760px) {
-    .article-content figure.feature-card,
-    .article-content .feature-card {
+
+    .article-content figure.feature-card {
         max-width: 100%;
         margin: 1.5rem auto;
     }
 
-    .article-content figure.feature-card img,
-    .article-content .feature-card img {
+    .article-content figure.feature-card img {
         width: 100%;
         max-width: 100%;
         height: auto;
         margin: 0 auto;
     }
 
-    .article-content figure.feature-card figcaption,
-    .article-content .feature-card figcaption {
+    .article-content figure.feature-card figcaption {
         font-size: 0.92rem;
         line-height: 1.5;
     }
@@ -2080,91 +2079,5 @@ footer,
 
 }
 
-/* ==========================================================
-   MOTOR VEHICLE EXPERT
-   ALIGNED RUST COMPARISON CARDS
-========================================================== */
-
-.article-content .rust-comparison-grid {
-    align-items: stretch;
-    margin: 1.5rem 0 2rem;
-}
-
-.article-content .rust-comparison-grid > .rust-comparison-card {
-    width: 100%;
-    max-width: none;
-    height: 100%;
-    margin: 0;
-    text-align: left;
-    display: grid;
-    grid-template-rows:
-        auto
-        minmax(3.2rem, auto)
-        minmax(8.5rem, auto)
-        1fr
-        auto;
-}
-
-.article-content .rust-comparison-card .alt-pill {
-    align-self: start;
-}
-
-.article-content .rust-comparison-card h3 {
-    margin-bottom: 1rem;
-}
-
-.article-content .rust-comparison-card > p {
-    margin-bottom: 1.25rem;
-}
-
-.article-content .rust-comparison-card .checklist {
-    align-self: start;
-    width: 100%;
-    margin: 0 0 1.5rem;
-    padding: 0;
-}
-
-.article-content .rust-comparison-card .checklist li {
-    display: grid;
-    grid-template-columns: 1.5rem minmax(0, 1fr);
-    gap: 0.55rem;
-    align-items: start;
-    text-align: left;
-    margin-bottom: 0.65rem;
-}
-
-.article-content .rust-comparison-card .check {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.35rem;
-    height: 1.35rem;
-    line-height: 1;
-    font-weight: 950;
-}
-
-.article-content .rust-comparison-card .risk-low,
-.article-content .rust-comparison-card .risk-medium,
-.article-content .rust-comparison-card .risk-high {
-    align-self: end;
-    width: 100%;
-    margin-top: 0;
-}
-
-@media (max-width: 1080px) {
-    .article-content .rust-comparison-grid > .rust-comparison-card {
-        grid-template-rows: auto;
-    }
-}
-/* ==========================================================
-   MOTOR VEHICLE EXPERT
-   KEEP ARTICLE TWO-CARD GRIDS SIDE BY SIDE ON TABLETS
-========================================================== */
-
-@media (min-width: 761px) and (max-width: 1080px) {
-  .article-content .grid-2 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
 
 
