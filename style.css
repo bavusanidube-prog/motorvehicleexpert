@@ -2080,31 +2080,7 @@ footer,
 
 }
 
-/* ==========================================================
-   MOTOR VEHICLE EXPERT
-   EQUAL HEIGHT COMPARISON CARDS
-========================================================== */
 
-.grid-2{
-    align-items:stretch;
-}
-
-.grid-2 > .feature-card{
-    display:flex;
-    flex-direction:column;
-    height:100%;
-}
-
-.grid-2 > .feature-card .checklist{
-    flex:1;
-    margin-bottom:1.5rem;
-}
-
-.grid-2 > .feature-card .risk-low,
-.grid-2 > .feature-card .risk-medium,
-.grid-2 > .feature-card .risk-high{
-    margin-top:auto;
-}
 
 
 
