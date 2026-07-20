@@ -190,264 +190,170 @@
     ]
   }
   </script>
-
-  <!-- FAQ schema will be added with the matching on-page FAQ in the final part. -->
-
 </head>
 
 <body class="mve-premium">
 
-  <!-- ======================================================
-       SITE HEADER
-  ======================================================= -->
+<header class="topbar">
+  <div class="container nav">
 
-  <header class="topbar">
+    <a href="/" class="brand logo-brand" aria-label="Motor Vehicle Expert home">
+      <img src="logo.png"
+           alt="Motor Vehicle Expert Logo"
+           class="site-logo"
+           width="56"
+           height="56" />
+      <span class="brand-text">Motor Vehicle Expert</span>
+    </a>
 
-    <div class="container nav">
+    <nav class="nav-links" aria-label="Primary navigation">
 
-      <a href="index.html"
-         class="brand logo-brand"
-         aria-label="Motor Vehicle Expert home">
+      <a href="/">Home</a>
 
-        <img src="logo.png"
-             alt="Motor Vehicle Expert logo"
-             class="site-logo"
-             width="64"
-             height="64">
+      <a href="about.html">About</a>
 
-        <span class="brand-text">
-          Motor Vehicle Expert
-        </span>
+      <a href="guides.html">Guides</a>
 
-      </a>
+      <a href="diagnostics.html" class="active">Diagnostics</a>
 
-      <nav class="nav-links"
-           aria-label="Primary navigation">
+      <a href="warning-lights.html">Warning Lights</a>
 
-        <a href="index.html">
-          Home
+      <a href="diagnostic-app.html">Diagnostic App</a>
+
+      <a href="contact.html" class="cta cta-secondary">Contact</a>
+
+    </nav>
+
+  </div>
+</header>
+
+<div class="mve-global-search">
+  <div class="container">
+
+    <input
+      type="search"
+      id="mve-search"
+      placeholder="🔍 Search Motor Vehicle Expert..."
+      autocomplete="off"
+      aria-label="Search Motor Vehicle Expert"
+    />
+
+    <div id="mve-search-results" role="listbox"></div>
+
+  </div>
+</div>
+
+<main>
+
+<nav class="breadcrumbs container" aria-label="Breadcrumb">
+
+  <a href="/">Home</a>
+
+  <span>/</span>
+
+  <a href="diagnostics.html">Diagnostics</a>
+
+  <span>/</span>
+
+  <span aria-current="page">ECU Explained</span>
+
+</nav>
+
+<section class="premium-hero diagnostics-hero">
+
+  <div class="container hero-grid premium-hero-grid">
+
+    <div class="hero-copy">
+
+      <span class="eyebrow">
+        Car Electronics Guide
+      </span>
+
+      <h1>
+        ECU Explained: How a Car Engine Control Unit Works
+      </h1>
+
+      <p class="lead">
+        Learn exactly how an automotive Engine Control Unit (ECU) works, how it
+        receives information from sensors, controls fuel injection, ignition,
+        turbocharging and emissions systems, communicates over the CAN Bus and
+        how professional technicians diagnose ECU faults before replacing
+        expensive components.
+      </p>
+
+      <div class="hero-actions">
+
+        <a class="cta cta-primary"
+           href="#quick-answer">
+          Quick Answer
         </a>
 
-        <a href="about.html">
-          About
+        <a class="cta cta-secondary"
+           href="diagnostic-app.html">
+          Use Diagnostic App
         </a>
 
-        <a href="guides.html"
-           class="active">
-          Guides
+        <a class="cta cta-ghost"
+           href="obd-ii-explained.html">
+          OBD-II Explained
         </a>
 
-        <a href="diagnostics.html">
-          Diagnostics
+        <a class="cta cta-ghost"
+           href="fault-codes.html">
+          Fault Codes
         </a>
-
-        <a href="warning-lights.html">
-          Warning Lights
-        </a>
-
-        <a href="diagnostic-app.html">
-          Diagnostic App
-        </a>
-
-      </nav>
-
-      <div class="nav-search">
-
-        <label for="mve-search"
-               class="sr-only">
-          Search Motor Vehicle Expert
-        </label>
-
-        <input type="search"
-               id="mve-search"
-               name="search"
-               placeholder="Search car guides..."
-               autocomplete="off"
-               aria-label="Search Motor Vehicle Expert">
-
-        <div id="mve-search-results"
-             class="search-results"
-             aria-live="polite">
-        </div>
 
       </div>
 
     </div>
 
-  </header>
+    <aside
+      class="premium-diagnostic-visual"
+      aria-label="Engine Control Unit educational illustration">
 
-  <main>
+      <div class="hero-image mve-hero-image">
 
-    <!-- ======================================================
-         BREADCRUMBS
-    ======================================================= -->
+        <img
+          src="ecu-explained-hero.png"
+          alt="ECU explained showing sensors, engine control unit, CAN Bus communication and engine outputs"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width="1600"
+          height="900"
+        />
 
-    <nav class="breadcrumbs container"
-         aria-label="Breadcrumb">
+      </div>
 
-      <a href="index.html">
-        Home
-      </a>
+      <div class="diagnostic-stack">
 
-      <span aria-hidden="true">
-        /
-      </span>
-
-      <a href="diagnostics.html">
-        Diagnostics
-      </a>
-
-      <span aria-hidden="true">
-        /
-      </span>
-
-      <span aria-current="page">
-        ECU Explained
-      </span>
-
-    </nav>
-
-    <!-- ======================================================
-         PREMIUM HERO
-    ======================================================= -->
-
-    <section class="hero article-hero">
-
-      <div class="container hero-grid">
-
-        <div class="hero-copy">
-
-          <span class="pill">
-            Car Diagnostics Guide
-          </span>
-
-          <h1>
-            ECU Explained: How a Car Engine Control Unit Works
-          </h1>
-
-          <p class="hero-lead">
-            The ECU is the electronic brain behind many of a modern vehicle's
-            most important functions. It receives information from sensors,
-            processes that information using programmed software and controls
-            components such as the fuel injectors, ignition coils, electronic
-            throttle, turbocharger actuator and cooling fans.
-          </p>
-
-          <p>
-            This complete UK guide explains what an ECU is, how it works, what
-            it controls, how different control modules communicate and how a
-            suspected ECU fault should be diagnosed before expensive parts are
-            replaced.
-          </p>
-
-          <div class="hero-actions">
-
-            <a class="btn btn-primary"
-               href="#quick-answer">
-              Get the Quick Answer
-            </a>
-
-            <a class="btn btn-secondary"
-               href="diagnostic-app.html">
-              Open Diagnostic App
-            </a>
-
-          </div>
-
-          <div class="hero-meta">
-
-            <span>
-              Reviewed for UK motorists
-            </span>
-
-            <span>
-              Mechanic-level guidance
-            </span>
-
-            <span>
-              Updated 20 July 2026
-            </span>
-
-          </div>
-
+        <div class="diagnostic-row">
+          <span>Sensor inputs monitored</span>
+          <strong class="status blue">Live Data</strong>
         </div>
 
-        <div class="hero-image mve-hero-image">
+        <div class="diagnostic-row">
+          <span>Engine calculations</span>
+          <strong class="status amber">Processing</strong>
+        </div>
 
-          <img src="ecu-explained-hero.png"
-               alt="ECU explained diagram showing an engine control unit receiving vehicle sensor inputs and controlling engine outputs"
-               width="1600"
-               height="900"
-               loading="eager"
-               fetchpriority="high"
-               decoding="async">
+        <div class="diagnostic-row">
+          <span>Fuel & ignition control</span>
+          <strong class="status green">Operating</strong>
+        </div>
 
+        <div class="diagnostic-row">
+          <span>CAN Bus communication</span>
+          <strong class="status blue">Connected</strong>
         </div>
 
       </div>
 
-    </section>
+    </aside>
 
-    <!-- ======================================================
-         TRUST STRIP
-    ======================================================= -->
+  </div>
 
-    <section class="trust-strip"
-             aria-label="Guide features">
-
-      <div class="container trust-grid">
-
-        <div class="trust-item">
-
-          <strong>
-            ECU Fundamentals
-          </strong>
-
-          <span>
-            Inputs, processing and outputs
-          </span>
-
-        </div>
-
-        <div class="trust-item">
-
-          <strong>
-            Practical Diagnosis
-          </strong>
-
-          <span>
-            Power, earth, data and network checks
-          </span>
-
-        </div>
-
-        <div class="trust-item">
-
-          <strong>
-            UK Cost Guidance
-          </strong>
-
-          <span>
-            Testing, repair and replacement
-          </span>
-
-        </div>
-
-        <div class="trust-item">
-
-          <strong>
-            Buying Advice
-          </strong>
-
-          <span>
-            ECU checks before buying a used car
-          </span>
-
-        </div>
-
-      </div>
-
-    </section>
+</section>
 
     <!-- ======================================================
          PAGE LAYOUT
@@ -14612,1022 +14518,1007 @@
              RELATED GUIDES
         ================================================= -->
 
-        <section class="card" id="related-guides">
+       <section class="card" id="related-guides">
 
-          <span class="pill">
-            Continue Learning
-          </span>
+  <div class="section-head">
 
-          <h2>
-            Related Car Diagnostic Guides
-          </h2>
+    <span class="pill">
+      Continue Learning
+    </span>
 
-          <p class="muted">
-            Learn more about vehicle electronics, diagnostic trouble codes,
-            warning lights and the systems that communicate with the ECU.
-          </p>
+    <h2>Related Car Diagnostic Guides</h2>
 
-          <div class="category-list">
+    <p class="muted">
+      Continue learning how modern vehicle electronics, fault codes and warning
+      systems work with these carefully selected Motor Vehicle Expert diagnostic
+      guides.
+    </p>
 
-            <a href="car-diagnostics-explained.html" class="category-item">
-              <span>
-                Car Diagnostics Explained
-              </span>
-              <small>
-                Understand the complete professional diagnostic process.
-              </small>
-            </a>
+  </div>
 
-            <a href="fault-codes.html" class="category-item">
-              <span>
-                Fault Codes Explained
-              </span>
-              <small>
-                Learn how diagnostic trouble codes are created and interpreted.
-              </small>
-            </a>
+  <h3>Essential Diagnostic Guides</h3>
 
-            <a href="obd-ii-explained.html" class="category-item">
-              <span>
-                OBD-II Explained
-              </span>
-              <small>
-                Understand diagnostic ports, scan tools, live data and generic
-                fault codes.
-              </small>
-            </a>
+  <p class="muted">
+    Start with these cornerstone guides to understand the complete diagnostic
+    process and how the ECU communicates with the rest of the vehicle.
+  </p>
 
-            <a href="engine-management-light-guide.html" class="category-item">
-              <span>
-                Engine Management Light Guide
-              </span>
-              <small>
-                Learn what steady and flashing engine warning lights mean.
-              </small>
-            </a>
+  <div class="grid-2">
 
-            <a href="p0299-code-meaning.html" class="category-item">
-              <span>
-                P0299 Turbo Underboost Code
-              </span>
-              <small>
-                Diagnose low boost pressure and turbo-control faults.
-              </small>
-            </a>
+    <article class="feature-card">
 
-            <a href="p0234-code-meaning.html" class="category-item">
-              <span>
-                P0234 Turbo Overboost Code
-              </span>
-              <small>
-                Understand excessive boost pressure and control-system faults.
-              </small>
-            </a>
+      <span class="alt-pill">
+        Complete Guide
+      </span>
 
-            <a href="diagnostics.html" class="category-item">
-              <span>
-                Car Diagnostics Hub
-              </span>
-              <small>
-                Browse diagnostic guides, warning-light explanations and fault
-                code resources.
-              </small>
-            </a>
+      <h3>Car Diagnostics Explained</h3>
 
-            <a href="diagnostic-app.html" class="category-item">
-              <span>
-                Motor Vehicle Expert Diagnostic App
-              </span>
-              <small>
-                Follow a structured process for understanding vehicle symptoms
-                and warning lights.
-              </small>
-            </a>
+      <p>
+        Learn how professional technicians move from an initial symptom to fault
+        confirmation using visual checks, scan data, electrical testing and
+        verification after repair.
+      </p>
 
-          </div>
+      <a href="car-diagnostics-explained.html" class="text-link">
+        Read Car Diagnostics Guide →
+      </a>
 
-        </section>
+    </article>
+
+    <article class="feature-card">
+
+      <span class="alt-pill">
+        Fault Code Guide
+      </span>
+
+      <h3>Fault Codes Explained</h3>
+
+      <p>
+        Understand how diagnostic trouble codes are created, what the letters
+        and numbers mean and why a stored code does not automatically identify
+        the failed component.
+      </p>
+
+      <a href="fault-codes.html" class="text-link">
+        Learn About Fault Codes →
+      </a>
+
+    </article>
+
+    <article class="feature-card">
+
+      <span class="alt-pill">
+        OBD-II Guide
+      </span>
+
+      <h3>OBD-II Explained</h3>
+
+      <p>
+        Discover how scan tools communicate with a vehicle through the OBD-II
+        port and access fault codes, live data, readiness monitors and
+        freeze-frame information.
+      </p>
+
+      <a href="obd-ii-explained.html" class="text-link">
+        Read OBD-II Guide →
+      </a>
+
+    </article>
+
+    <article class="feature-card">
+
+      <span class="alt-pill">
+        Warning Light Guide
+      </span>
+
+      <h3>Engine Management Light Guide</h3>
+
+      <p>
+        Learn the difference between a steady and flashing engine warning light,
+        what each condition can mean and when the vehicle should be stopped.
+      </p>
+
+      <a href="engine-management-light-guide.html" class="text-link">
+        Understand the Engine Light →
+      </a>
+
+    </article>
+
+  </div>
+
+  <div class="safe-box info">
+
+    <strong>ECU Diagnosis Starts With Evidence</strong>
+
+    <p>
+      A warning light or fault code should be treated as the beginning of the
+      diagnostic process, not proof that a particular sensor, actuator or ECU
+      has failed. Always compare stored codes with live data, wiring checks and
+      the vehicle’s actual symptoms.
+    </p>
+
+  </div>
+
+  <h3>Fault Code and Troubleshooting Resources</h3>
+
+  <p class="muted">
+    Explore practical fault-code guides and broader diagnostic resources for
+    investigating engine performance and electronic control problems.
+  </p>
+
+  <div class="grid-2">
+
+    <article class="mini-card">
+
+      <span class="alt-pill">
+        Turbo Underboost
+      </span>
+
+      <h3>P0299 Fault Code</h3>
+
+      <p class="muted">
+        Diagnose low boost pressure, air leaks, actuator problems, vacuum faults
+        and turbocharger control issues.
+      </p>
+
+      <a href="p0299-code-meaning.html" class="text-link">
+        Read P0299 Guide →
+      </a>
+
+    </article>
+
+    <article class="mini-card">
+
+      <span class="alt-pill">
+        Turbo Overboost
+      </span>
+
+      <h3>P0234 Fault Code</h3>
+
+      <p class="muted">
+        Understand excessive boost pressure, sticking turbo controls, sensor
+        errors and common causes of overboost protection.
+      </p>
+
+      <a href="p0234-code-meaning.html" class="text-link">
+        Read P0234 Guide →
+      </a>
+
+    </article>
+
+    <article class="mini-card">
+
+      <span class="alt-pill">
+        All Diagnostic Guides
+      </span>
+
+      <h3>Car Diagnostics Hub</h3>
+
+      <p class="muted">
+        Browse Motor Vehicle Expert guides covering diagnostic procedures,
+        warning lights, fault codes and common vehicle symptoms.
+      </p>
+
+      <a href="diagnostics.html" class="text-link">
+        Visit Diagnostics Hub →
+      </a>
+
+    </article>
+
+    <article class="mini-card">
+
+      <span class="alt-pill">
+        Dashboard Warnings
+      </span>
+
+      <h3>Warning Lights Hub</h3>
+
+      <p class="muted">
+        Find clear explanations of dashboard warning lights, severity levels and
+        the most appropriate next diagnostic step.
+      </p>
+
+      <a href="warning-lights.html" class="text-link">
+        Browse Warning Light Guides →
+      </a>
+
+    </article>
+
+  </div>
+
+  <div class="safe-box success">
+
+    <strong>Need Help Investigating a Vehicle Fault?</strong>
+
+    <p>
+      Use the Motor Vehicle Expert Diagnostic App to work through warning lights,
+      fault codes and vehicle symptoms in a structured order before replacing
+      expensive parts.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="diagnostic-app.html" class="cta cta-primary">
+        Open Diagnostic App
+      </a>
+
+      <a href="diagnostics.html" class="cta cta-secondary">
+        Browse Diagnostic Guides
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
         <!-- ================================================
              FREQUENTLY ASKED QUESTIONS
         ================================================= -->
 
-        <section class="card" id="faq">
+       <section class="card" id="faq">
 
-          <span class="pill">
-            Frequently Asked Questions
-          </span>
+  <div class="section-head">
 
-          <h2>
-            ECU Frequently Asked Questions
-          </h2>
+    <span class="pill">
+      Frequently Asked Questions
+    </span>
 
-          <div class="faq-list">
+    <h2>ECU Frequently Asked Questions</h2>
 
-            <details class="faq-item">
+    <p class="muted">
+      Engine Control Units are often blamed for warning lights, starting
+      problems and unexplained electrical faults, but genuine internal ECU
+      failure is less common than many motorists assume. These answers explain
+      how ECUs work, how faults are diagnosed, when repair or programming may be
+      required and what replacement can cost in the UK.
+    </p>
 
-              <summary>
-                What does ECU mean in a car?
-              </summary>
+  </div>
 
-              <div class="faq-answer">
+  <div class="summary-dashboard">
 
-                <p>
-                  ECU usually means Electronic Control Unit. In an engine
-                  management context, it refers to the computer that processes
-                  sensor information and controls fuel injection, ignition,
-                  emissions equipment, turbo boost and other engine functions.
-                </p>
+    <div class="summary-item">
+      <strong>20</strong>
+      <span>Common ECU questions answered</span>
+    </div>
 
-              </div>
+    <div class="summary-item">
+      <strong>Diagnosis</strong>
+      <span>Fault codes, symptoms and testing</span>
+    </div>
 
-            </details>
+    <div class="summary-item">
+      <strong>Repair</strong>
+      <span>Cloning, coding and replacement</span>
+    </div>
 
-            <details class="faq-item">
+    <div class="summary-item">
+      <strong>UK Costs</strong>
+      <span>Typical repair price guidance</span>
+    </div>
 
-              <summary>
-                Is the ECU the same as the engine computer?
-              </summary>
+  </div>
 
-              <div class="faq-answer">
+  <div class="safe-box info">
 
-                <p>
-                  Yes. Drivers and technicians often use the terms ECU, engine
-                  computer, engine control module and ECM to describe the
-                  electronic module controlling the engine. Some manufacturers
-                  use different terminology depending on the vehicle.
-                </p>
+    <strong>Professional Workshop Advice</strong>
 
-              </div>
+    <p>
+      An ECU should not be condemned from a fault code or warning light alone.
+      Low battery voltage, poor earth connections, damaged wiring, corroded
+      connectors, faulty sensors and CAN Bus communication faults can all
+      produce symptoms that resemble ECU failure.
+    </p>
 
-            </details>
+    <p>
+      A proper diagnosis should confirm ECU power supplies, earth circuits,
+      network communication, sensor inputs and actuator outputs before an
+      expensive control module is repaired or replaced.
+    </p>
 
-            <details class="faq-item">
+  </div>
 
-              <summary>
-                What is the difference between an ECU, ECM and PCM?
-              </summary>
+  <div class="faq-list">
 
-              <div class="faq-answer">
+    <details class="faq-item">
 
-                <p>
-                  ECU is a general term for an electronic control unit. ECM
-                  normally means Engine Control Module. PCM means Powertrain
-                  Control Module and may control both the engine and automatic
-                  transmission within one module.
-                </p>
+      <summary>
+        What does ECU mean in a car?
+      </summary>
 
-              </div>
+      <div class="faq-answer">
 
-            </details>
+        <p>
+          ECU usually means <strong>Electronic Control Unit</strong>. Modern
+          vehicles contain numerous ECUs controlling systems such as the engine,
+          transmission, airbags, braking, body electronics and climate control.
+        </p>
 
-            <details class="faq-item">
+        <p>
+          When motorists refer to “the ECU”, they normally mean the engine
+          management computer. It processes information from sensors and controls
+          fuel injection, ignition timing, turbo boost, emissions equipment,
+          cooling fans and other engine functions.
+        </p>
 
-              <summary>
-                What does an ECU control?
-              </summary>
+      </div>
 
-              <div class="faq-answer">
+    </details>
 
-                <p>
-                  Depending on the vehicle, the ECU may control fuel injection,
-                  ignition timing, electronic throttle operation, turbo boost,
-                  EGR flow, cooling fans, fuel pressure, variable valve timing,
-                  glow plugs and emissions monitoring.
-                </p>
+    <details class="faq-item">
 
-              </div>
+      <summary>
+        Is the ECU the same as the engine computer?
+      </summary>
 
-            </details>
+      <div class="faq-answer">
 
-            <details class="faq-item">
+        <p>
+          Yes. ECU, engine computer and Engine Control Module are commonly used
+          to describe the electronic module responsible for managing engine
+          operation.
+        </p>
 
-              <summary>
-                What are the symptoms of a faulty ECU?
-              </summary>
+        <p>
+          Manufacturers may use different terminology, including ECM, PCM,
+          DME or engine management module. Although the names differ, they
+          generally refer to a computer that receives sensor data and controls
+          engine-related actuators.
+        </p>
 
-              <div class="faq-answer">
+      </div>
 
-                <p>
-                  Possible symptoms include non-starting, intermittent stalling,
-                  loss of communication, unexplained warning lights, cooling fans
-                  running continuously, repeated output-circuit faults and
-                  inconsistent engine operation. These symptoms can also be
-                  caused by wiring, sensor or power-supply faults.
-                </p>
+    </details>
 
-              </div>
+    <details class="faq-item">
 
-            </details>
+      <summary>
+        What is the difference between an ECU, ECM and PCM?
+      </summary>
 
-            <details class="faq-item">
+      <div class="faq-answer">
 
-              <summary>
-                Can a faulty ECU cause a car not to start?
-              </summary>
+        <p>
+          ECU is a broad term meaning Electronic Control Unit. It can describe
+          almost any electronic module fitted to a vehicle.
+        </p>
 
-              <div class="faq-answer">
+        <p>
+          ECM normally means <strong>Engine Control Module</strong> and focuses
+          primarily on engine management. PCM means
+          <strong>Powertrain Control Module</strong> and may control both the
+          engine and automatic transmission within one unit.
+        </p>
 
-                <p>
-                  Yes. A failed ECU may prevent injector operation, ignition
-                  control, fuel-pump activation or immobiliser authorisation.
-                  However, battery, starter, sensor, wiring and security-system
-                  faults should be tested before blaming the ECU.
-                </p>
+        <p>
+          The exact terminology depends on the vehicle manufacturer and system
+          design.
+        </p>
 
-              </div>
+      </div>
 
-            </details>
+    </details>
 
-            <details class="faq-item">
+    <details class="faq-item">
 
-              <summary>
-                Can an ECU fail without storing a fault code?
-              </summary>
+      <summary>
+        What does an ECU control?
+      </summary>
 
-              <div class="faq-answer">
+      <div class="faq-answer">
 
-                <p>
-                  Yes. Complete power loss, processor failure, internal voltage
-                  regulator faults and certain communication failures may prevent
-                  the ECU from storing or reporting a diagnostic trouble code.
-                </p>
+        <p>
+          Depending on the vehicle, the engine ECU may control fuel injection,
+          ignition timing, electronic throttle operation, turbocharger boost,
+          fuel pressure, variable valve timing and cooling-fan operation.
+        </p>
 
-              </div>
+        <p>
+          It may also manage EGR flow, oxygen-sensor corrections, catalytic
+          converter monitoring, diesel glow plugs, DPF regeneration and other
+          emissions-related functions.
+        </p>
 
-            </details>
+        <p>
+          The ECU continuously adjusts these systems using information received
+          from sensors around the engine and vehicle.
+        </p>
 
-            <details class="faq-item">
+      </div>
 
-              <summary>
-                Can a diagnostic fault code prove the ECU is faulty?
-              </summary>
+    </details>
 
-              <div class="faq-answer">
+    <details class="faq-item">
 
-                <p>
-                  No. A fault code identifies a circuit or operating condition
-                  detected by the ECU. The cause may be a sensor, actuator,
-                  connector, wiring fault, poor earth, voltage issue or internal
-                  ECU problem.
-                </p>
+      <summary>
+        What are the symptoms of a faulty ECU?
+      </summary>
 
-              </div>
+      <div class="faq-answer">
 
-            </details>
+        <p>
+          Possible symptoms include non-starting, intermittent stalling,
+          unexplained warning lights, loss of diagnostic communication,
+          inconsistent engine operation and cooling fans running continuously.
+        </p>
 
-            <details class="faq-item">
+        <p>
+          Other signs may include injectors or ignition coils not being
+          activated, repeated output-circuit fault codes, incorrect sensor
+          readings or a vehicle entering reduced-power mode.
+        </p>
 
-              <summary>
-                Can an ECU be repaired?
-              </summary>
+        <p>
+          These symptoms do not prove the ECU is faulty. Wiring, sensor,
+          actuator, battery and earth faults can create very similar problems.
+        </p>
 
-              <div class="faq-answer">
+      </div>
 
-                <p>
-                  Many ECUs can be repaired when the problem involves output
-                  drivers, solder joints, voltage regulators, memory corruption
-                  or limited circuit-board damage. Severe corrosion, processor
-                  failure or extensive burning may require replacement.
-                </p>
+    </details>
 
-              </div>
+    <details class="faq-item">
 
-            </details>
+      <summary>
+        Can a faulty ECU cause a car not to start?
+      </summary>
 
-            <details class="faq-item">
+      <div class="faq-answer">
 
-              <summary>
-                Can a second-hand ECU be fitted to another car?
-              </summary>
+        <p>
+          Yes. A failed ECU may prevent fuel injectors, ignition coils, the fuel
+          pump or other essential starting systems from operating correctly.
+        </p>
 
-              <div class="faq-answer">
+        <p>
+          It may also fail to communicate with the immobiliser system, preventing
+          security authorisation and stopping the engine from starting.
+        </p>
 
-                <p>
-                  Sometimes. The replacement must be technically compatible and
-                  may require cloning, virginising, VIN coding, immobiliser
-                  pairing and software configuration before the vehicle will
-                  start and operate correctly.
-                </p>
+        <p>
+          Battery condition, starter operation, crankshaft sensor signals,
+          wiring, fuses, relays and immobiliser faults should be tested before
+          the ECU is blamed.
+        </p>
 
-              </div>
+      </div>
 
-            </details>
+    </details>
 
-            <details class="faq-item">
+    <details class="faq-item">
 
-              <summary>
-                What is ECU cloning?
-              </summary>
+      <summary>
+        Can an ECU fail without storing a fault code?
+      </summary>
 
-              <div class="faq-answer">
+      <div class="faq-answer">
 
-                <p>
-                  ECU cloning transfers important information from an original
-                  module into a compatible replacement. This may include
-                  software, calibration, coding, VIN and immobiliser data.
-                </p>
+        <p>
+          Yes. If the ECU loses its main power supply, earth connection or
+          internal processor function, it may be unable to store or report a
+          diagnostic trouble code.
+        </p>
 
-              </div>
+        <p>
+          Internal voltage-regulator faults, memory failure and complete
+          communication loss may also leave no readable code.
+        </p>
 
-            </details>
+        <p>
+          In these situations, technicians may need to test power, earth and
+          CAN Bus circuits directly rather than relying only on a diagnostic
+          scan.
+        </p>
 
-            <details class="faq-item">
+      </div>
 
-              <summary>
-                Does disconnecting the battery reset the ECU?
-              </summary>
+    </details>
 
-              <div class="faq-answer">
+    <details class="faq-item">
 
-                <p>
-                  Disconnecting the battery may clear temporary memory and some
-                  learned values, but it normally does not erase the ECU
-                  software, coding, VIN or immobiliser information. Some settings
-                  may need to be relearned afterwards.
-                </p>
+      <summary>
+        Can a diagnostic fault code prove the ECU is faulty?
+      </summary>
 
-              </div>
+      <div class="faq-answer">
 
-            </details>
+        <p>
+          No. A diagnostic trouble code identifies a circuit, system or
+          operating condition that the ECU has detected as abnormal.
+        </p>
 
-            <details class="faq-item">
+        <p>
+          The underlying cause may be a failed sensor, damaged actuator,
+          corroded connector, broken wire, poor earth connection, low voltage
+          or communication problem.
+        </p>
 
-              <summary>
-                Can a weak battery cause ECU problems?
-              </summary>
+        <p>
+          Even codes containing phrases such as “control module” or “internal
+          fault” should be supported by electrical testing and manufacturer
+          diagnostic procedures before the ECU is replaced.
+        </p>
 
-              <div class="faq-answer">
+      </div>
 
-                <p>
-                  Yes. Low or unstable voltage can create communication errors,
-                  sensor faults, failed starting attempts and interrupted
-                  programming. Battery and charging-system condition should be
-                  checked early in the diagnostic process.
-                </p>
+    </details>
 
-              </div>
+    <details class="faq-item">
 
-            </details>
+      <summary>
+        Can an ECU be repaired?
+      </summary>
 
-            <details class="faq-item">
+      <div class="faq-answer">
 
-              <summary>
-                Can jump starting damage an ECU?
-              </summary>
+        <p>
+          Many ECUs can be repaired by a specialist electronics company.
+          Repairable faults may include failed output drivers, damaged voltage
+          regulators, poor solder joints, memory corruption and limited
+          circuit-board damage.
+        </p>
 
-              <div class="faq-answer">
+        <p>
+          Water ingress and corrosion may also be repairable when the damage is
+          found early. Severe burning, extensive corrosion or processor failure
+          may make replacement more practical.
+        </p>
 
-                <p>
-                  Incorrect polarity, poor connections or excessive voltage
-                  spikes can damage electronic modules. Jump starting should
-                  follow the vehicle manufacturer’s instructions and use suitable
-                  equipment.
-                </p>
+        <p>
+          The ECU should be professionally tested before repair so the specialist
+          can confirm whether an internal fault is actually present.
+        </p>
 
-              </div>
+      </div>
 
-            </details>
+    </details>
 
-            <details class="faq-item">
+    <details class="faq-item">
 
-              <summary>
-                How much does an ECU repair cost in the UK?
-              </summary>
+      <summary>
+        Can a second-hand ECU be fitted to another car?
+      </summary>
 
-              <div class="faq-answer">
+      <div class="faq-answer">
 
-                <p>
-                  Specialist electronic ECU repairs commonly cost around
-                  £200–£600, although the exact price depends on the fault,
-                  vehicle and repair method. Diagnostic testing, removal,
-                  refitting and programming may be charged separately.
-                </p>
+        <p>
+          Sometimes, but a used ECU cannot always be fitted and used immediately.
+          The replacement must have compatible hardware, software and part
+          numbers.
+        </p>
 
-              </div>
+        <p>
+          It may require cloning, virginising, VIN coding, immobiliser pairing
+          and vehicle-specific software configuration before the engine will
+          start and operate correctly.
+        </p>
 
-            </details>
+        <p>
+          A cheaper used module can become expensive if it is incompatible or
+          cannot be programmed to the vehicle.
+        </p>
 
-            <details class="faq-item">
+      </div>
 
-              <summary>
-                How much does a replacement ECU cost?
-              </summary>
+    </details>
 
-              <div class="faq-answer">
+    <details class="faq-item">
 
-                <p>
-                  A used ECU supplied and programmed may cost approximately
-                  £250–£700 or more. A new genuine ECU can cost £700–£2,000 or
-                  considerably more on premium, performance, hybrid or specialist
-                  vehicles.
-                </p>
+      <summary>
+        What is ECU cloning?
+      </summary>
 
-              </div>
+      <div class="faq-answer">
 
-            </details>
+        <p>
+          ECU cloning involves transferring important information from the
+          original control unit into a compatible replacement module.
+        </p>
 
-            <details class="faq-item">
+        <p>
+          The transferred information may include operating software,
+          calibration data, vehicle coding, VIN information and immobiliser
+          security data.
+        </p>
 
-              <summary>
-                Does a replacement ECU need programming?
-              </summary>
+        <p>
+          When cloning is completed successfully, the replacement ECU may behave
+          like the original unit without requiring every setting to be programmed
+          individually.
+        </p>
 
-              <div class="faq-answer">
+      </div>
 
-                <p>
-                  Usually, yes. Replacement may involve installing the correct
-                  software, vehicle coding, VIN writing, immobiliser pairing,
-                  injector coding and other adaptation procedures.
-                </p>
+    </details>
 
-              </div>
+    <details class="faq-item">
 
-            </details>
+      <summary>
+        Does disconnecting the battery reset the ECU?
+      </summary>
 
-            <details class="faq-item">
+      <div class="faq-answer">
 
-              <summary>
-                Can ECU programming fail?
-              </summary>
+        <p>
+          Disconnecting the battery may clear temporary memory, learned fuel
+          corrections and some adaptation values, depending on the vehicle.
+        </p>
 
-              <div class="faq-answer">
+        <p>
+          It normally does not erase the ECU operating software, VIN, security
+          coding or immobiliser information.
+        </p>
 
-                <p>
-                  Yes. Low battery voltage, incorrect software, communication
-                  loss, unstable network conditions or failing memory can
-                  interrupt programming. Many failed modules can still be
-                  recovered by an experienced specialist.
-                </p>
+        <p>
+          After reconnection, the vehicle may need to relearn idle control,
+          throttle position, window settings or other adaptations. Battery
+          disconnection should therefore follow the manufacturer’s procedure.
+        </p>
 
-              </div>
+      </div>
 
-            </details>
+    </details>
 
-            <details class="faq-item">
+    <details class="faq-item">
 
-              <summary>
-                Does remapping damage the ECU?
-              </summary>
+      <summary>
+        Can a weak battery cause ECU problems?
+      </summary>
 
-              <div class="faq-answer">
+      <div class="faq-answer">
 
-                <p>
-                  Correctly completed calibration work should not physically
-                  damage a healthy ECU. However, interrupted flashing, unsuitable
-                  files or aggressive calibration changes can corrupt software,
-                  increase mechanical stress or cause emissions and reliability
-                  problems.
-                </p>
+        <p>
+          Yes. Low or unstable battery voltage can cause communication errors,
+          false fault codes, failed starting attempts and unexpected warning
+          lights.
+        </p>
 
-              </div>
+        <p>
+          Voltage may fall particularly low while the starter motor is operating,
+          causing control modules to reset or temporarily stop communicating.
+        </p>
 
-            </details>
+        <p>
+          Battery condition, charging voltage and voltage drop should be checked
+          early in the diagnostic process, especially when several unrelated
+          electronic faults appear at the same time.
+        </p>
 
-            <details class="faq-item">
+      </div>
 
-              <summary>
-                Should I buy a used car with an ECU warning?
-              </summary>
+    </details>
 
-              <div class="faq-answer">
+    <details class="faq-item">
 
-                <p>
-                  Only after an independent diagnostic inspection confirms the
-                  cause and likely repair cost. An ECU-related warning may
-                  represent a minor software issue or a complex repair costing
-                  thousands of pounds.
-                </p>
+      <summary>
+        Can jump starting damage an ECU?
+      </summary>
 
-              </div>
+      <div class="faq-answer">
 
-            </details>
+        <p>
+          Incorrect jump-starting procedures can damage an ECU and other
+          electronic modules. Reversed polarity, unstable connections and
+          excessive voltage spikes create the greatest risk.
+        </p>
 
-          </div>
+        <p>
+          Jump leads or a booster pack should be connected in accordance with
+          the vehicle manufacturer’s instructions. Some vehicles provide
+          dedicated jump-starting terminals away from the battery.
+        </p>
 
-        </section>
+        <p>
+          If the vehicle behaves abnormally after a jump start, the battery,
+          charging system, fuses and module communication should be checked.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        How much does an ECU repair cost in the UK?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          Specialist electronic ECU repair commonly costs approximately
+          <strong>£200–£600</strong>, although prices vary according to the
+          vehicle, module type and internal fault.
+        </p>
+
+        <p>
+          Diagnostic testing, ECU removal, delivery, refitting and programming
+          may be charged separately. Water-damaged or badly burnt modules may
+          cost more to repair or may be considered beyond economical repair.
+        </p>
+
+        <p>
+          Obtain a written quotation confirming what is included and whether
+          the repair carries a warranty.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        How much does a replacement ECU cost?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          A used ECU supplied and programmed may cost approximately
+          <strong>£250–£700 or more</strong>, depending on availability and
+          compatibility.
+        </p>
+
+        <p>
+          A new genuine ECU may cost around
+          <strong>£700–£2,000</strong>, with some premium, performance, hybrid
+          and specialist vehicles costing considerably more.
+        </p>
+
+        <p>
+          The total price may also include diagnosis, module removal, software
+          installation, coding, immobiliser pairing and adaptation procedures.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        Does a replacement ECU need programming?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          Usually, yes. A replacement ECU normally needs the correct operating
+          software and vehicle configuration before it can function properly.
+        </p>
+
+        <p>
+          Programming may include VIN writing, immobiliser pairing, injector
+          coding, throttle adaptation and configuration of optional equipment.
+        </p>
+
+        <p>
+          Some cloned ECUs may already contain the required information, but the
+          installation should still be checked with suitable diagnostic
+          equipment.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        Can ECU programming fail?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          Yes. Programming can fail if battery voltage drops, diagnostic
+          communication is interrupted or incorrect software is installed.
+        </p>
+
+        <p>
+          Network faults, damaged wiring, unstable internet connections and
+          failing ECU memory can also interrupt the process.
+        </p>
+
+        <p>
+          A regulated battery-support unit should normally be used during
+          programming. Some interrupted ECUs can be recovered by an experienced
+          specialist, while others may require bench programming or replacement.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        Does remapping damage the ECU?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          Correctly completed calibration work should not physically damage a
+          healthy ECU. However, the process does involve rewriting part of the
+          ECU software.
+        </p>
+
+        <p>
+          Interrupted flashing, unsuitable files or poor-quality equipment can
+          corrupt the software and leave the vehicle unable to start.
+        </p>
+
+        <p>
+          Aggressive calibration changes may also increase turbocharger, engine,
+          clutch, transmission and emissions-system stress. Any modification
+          should be carried out by a reputable specialist who understands the
+          vehicle’s mechanical limits.
+        </p>
+
+      </div>
+
+    </details>
+
+    <details class="faq-item">
+
+      <summary>
+        Should I buy a used car with an ECU warning?
+      </summary>
+
+      <div class="faq-answer">
+
+        <p>
+          Only after an independent diagnostic inspection confirms the cause of
+          the warning and the likely repair cost.
+        </p>
+
+        <p>
+          An apparent ECU warning may be caused by a minor sensor or wiring
+          problem, but it may also indicate water damage, network failure,
+          previous poor-quality repairs or a control module requiring expensive
+          replacement and programming.
+        </p>
+
+        <p>
+          Do not rely on the seller clearing fault codes before a test drive.
+          Scan the vehicle again after it has been driven and inspect the
+          available fault-code, freeze-frame and readiness-monitor information.
+        </p>
+
+      </div>
+
+    </details>
+
+  </div>
+
+  <div class="safe-box success">
+
+    <strong>Still Need Help Diagnosing an ECU Fault?</strong>
+
+    <p>
+      Use the Motor Vehicle Expert Diagnostic App to investigate warning lights,
+      fault codes and engine symptoms before replacing expensive electronic
+      components. A structured diagnostic process can often identify the real
+      cause and prevent unnecessary ECU replacement.
+    </p>
+
+    <div class="hero-actions">
+
+      <a href="diagnostic-app.html" class="cta cta-primary">
+        Open Diagnostic App
+      </a>
+
+      <a href="car-diagnostics-explained.html" class="cta cta-secondary">
+        Learn Car Diagnostics
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
 
         <!-- ================================================
              ABOUT THIS GUIDE
         ================================================= -->
 
-        <section class="author-box" id="about-this-guide">
+ <section class="author-box">
 
-          <div class="container">
+  <div class="container">
 
-            <article class="card">
+    <article class="card">
 
-              <span class="pill">
-                About This Guide
-              </span>
+      <span class="pill">About This Guide</span>
 
-              <h2>
-                About Our ECU Explained Guide
-              </h2>
+      <h2>Based on Practical Mechanic-Style Experience</h2>
 
-              <p class="muted">
-                This guide has been written for UK motorists, vehicle owners,
-                apprentices and technicians who want a clear but technically
-                detailed explanation of automotive engine control units.
-              </p>
+      <p class="muted">
+        Motor Vehicle Expert publishes practical UK vehicle guidance based on
+        real-world mechanical knowledge and hands-on diagnostic experience.
+        This ECU guide explains how modern engine control units process sensor
+        information, control engine systems, communicate across vehicle
+        networks and help technicians diagnose faults accurately.
+      </p>
 
-              <p>
-                It explains what an ECU is, how it processes sensor information,
-                how it controls engine actuators, how modules communicate across
-                CAN bus networks and how technicians diagnose, program, repair
-                and replace control units.
-              </p>
+      <p class="muted">
+        Every guide is reviewed and updated to reflect current UK diagnostic
+        practices, common vehicle faults and practical repair advice, helping
+        drivers understand complex automotive technology with confidence before
+        replacing expensive components.
+      </p>
 
-              <p>
-                The information is based on established motor-vehicle diagnostic
-                principles and practical workshop methods. Vehicle systems vary,
-                so manufacturer-specific technical information should always be
-                followed when testing or programming a particular model.
-              </p>
+    </article>
 
-              <div class="grid-3">
+  </div>
 
-                <article class="mini-card">
+</section>
 
-                  <span class="alt-pill">
-                    UK Focus
-                  </span>
+<section class="trust-strip">
 
-                  <h3>
-                    Written for UK Drivers
-                  </h3>
+  <div class="container">
 
-                  <p class="muted">
-                    Costs, terminology and ownership advice are presented for a
-                    UK audience.
-                  </p>
+    <p>
+      Motor Vehicle Expert publishes practical UK-focused vehicle diagnostics,
+      maintenance, MOT and used car guidance based on common driver symptoms,
+      dashboard warning lights and real-world repair questions.
+    </p>
 
-                </article>
+  </div>
 
-                <article class="mini-card">
+</section>
 
-                  <span class="alt-pill">
-                    Technical Depth
-                  </span>
+</main>
 
-                  <h3>
-                    Mechanic-Level Explanation
-                  </h3>
+<footer>
 
-                  <p class="muted">
-                    Complex ECU functions are explained in practical,
-                    understandable language.
-                  </p>
+  <div class="container footer-grid">
 
-                </article>
+    <div>
 
-                <article class="mini-card">
+      <strong>Motor Vehicle Expert</strong>
 
-                  <span class="alt-pill">
-                    Diagnostic Focus
-                  </span>
-
-                  <h3>
-                    Evidence Before Replacement
-                  </h3>
-
-                  <p class="muted">
-                    The guide promotes testing and confirmation rather than
-                    unnecessary parts replacement.
-                  </p>
-
-                </article>
-
-              </div>
-
-            </article>
-
-          </div>
-
-        </section>
-
-        <!-- ================================================
-             EDITORIAL POLICY
-        ================================================= -->
-
-        <section class="card" id="editorial-policy">
-
-          <span class="pill">
-            Editorial Standards
-          </span>
-
-          <h2>
-            Our Editorial and Technical Review Policy
-          </h2>
-
-          <p>
-            Motor Vehicle Expert aims to publish accurate, useful and
-            independently written automotive information. Our diagnostic guides
-            are structured around recognised vehicle-system principles,
-            manufacturer-style diagnostic workflows and practical workshop
-            experience.
-          </p>
-
-          <div class="grid-3">
-
-            <article class="mini-card">
-
-              <h3>
-                Original Content
-              </h3>
-
-              <p class="muted">
-                Guides are written specifically for Motor Vehicle Expert and are
-                not copied from manufacturer manuals or other websites.
-              </p>
-
-            </article>
-
-            <article class="mini-card">
-
-              <h3>
-                Practical Accuracy
-              </h3>
-
-              <p class="muted">
-                Diagnostic advice prioritises testing, system understanding and
-                safe workshop practice.
-              </p>
-
-            </article>
-
-            <article class="mini-card">
-
-              <h3>
-                UK Relevance
-              </h3>
-
-              <p class="muted">
-                Pricing, terminology, MOT considerations and ownership guidance
-                are tailored to UK motorists.
-              </p>
-
-            </article>
-
-            <article class="mini-card">
-
-              <h3>
-                Clear Limitations
-              </h3>
-
-              <p class="muted">
-                Guide prices and common symptoms are presented as general
-                information rather than guaranteed outcomes.
-              </p>
-
-            </article>
-
-            <article class="mini-card">
-
-              <h3>
-                Safety First
-              </h3>
-
-              <p class="muted">
-                High-risk electrical, programming and vehicle repair work is
-                directed towards suitably equipped professionals.
-              </p>
-
-            </article>
-
-            <article class="mini-card">
-
-              <h3>
-                Ongoing Updates
-              </h3>
-
-              <p class="muted">
-                Guides may be reviewed as diagnostic systems, costs and vehicle
-                technologies develop.
-              </p>
-
-            </article>
-
-          </div>
-
-          <p>
-            For more information about how our content is researched, written and
-            maintained, visit our
-            <a href="editorial-policy.html">Editorial Policy</a>.
-          </p>
-
-        </section>
-
-        <!-- ================================================
-             DISCLAIMER
-        ================================================= -->
-
-        <section class="card" id="disclaimer">
-
-          <span class="pill">
-            Important Information
-          </span>
-
-          <h2>
-            ECU Diagnostic and Repair Disclaimer
-          </h2>
-
-          <div class="safe-box warning">
-
-            <strong>
-              This guide is for general educational purposes.
-            </strong>
-
-            <p>
-              Vehicle design, ECU location, electrical values, programming
-              procedures and security requirements vary between manufacturers,
-              models, engines and production years.
-            </p>
-
-          </div>
-
-          <p>
-            Always use the correct wiring diagrams, technical specifications,
-            diagnostic procedures and safety information for the exact vehicle
-            being tested.
-          </p>
-
-          <p>
-            ECU removal, circuit-board repair, immobiliser programming, module
-            cloning and boot-mode access require specialist knowledge and
-            equipment. Incorrect testing or programming can damage control
-            modules, prevent the vehicle from starting or affect safety and
-            emissions systems.
-          </p>
-
-          <p>
-            UK repair prices shown in this guide are broad estimates only. Actual
-            quotations depend on vehicle make, model, location, labour rate,
-            fault severity, parts availability and the programming work required.
-          </p>
-
-          <div class="safe-box danger">
-
-            <strong>
-              Do not open, probe, program or replace an ECU unless you understand
-              the system and can follow the correct manufacturer procedure.
-            </strong>
-
-          </div>
-
-        </section>
-
-        <!-- ================================================
-             FINAL CALL TO ACTION
-        ================================================= -->
-
-        <section class="cta-banner" id="diagnostic-help">
-
-          <div class="cta-content">
-
-            <span class="pill">
-              Need Help Understanding a Vehicle Fault?
-            </span>
-
-            <h2>
-              Use the Motor Vehicle Expert Diagnostic App
-            </h2>
-
-            <p>
-              Work through warning lights, symptoms and diagnostic information
-              using a structured process designed to help UK motorists understand
-              what may need checking next.
-            </p>
-
-            <div class="cta-actions">
-
-              <a href="diagnostic-app.html" class="btn btn-primary">
-                Open Diagnostic App
-              </a>
-
-              <a href="diagnostics.html" class="btn btn-secondary">
-                Browse Diagnostic Guides
-              </a>
-
-            </div>
-
-          </div>
-
-        </section>
-
+      <div>
+        Practical car advice and maintenance information for UK drivers.
       </div>
 
-    </main>
+    </div>
 
-    <!-- ================================================
-         SITE FOOTER
-    ================================================= -->
+    <div>
+      © 2026 Motor Vehicle Expert. All rights reserved.
+    </div>
 
-    <footer class="site-footer">
+    <div class="footer-links">
 
-      <div class="container">
+      <a href="guides.html">Guides</a>
+      <a href="diagnostics.html">Diagnostics</a>
+      <a href="warning-lights.html">Warning Lights</a>
+      <a href="diagnostic-app.html">Diagnostic App</a>
+      <a href="privacy-policy.html">Privacy Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="contact.html">Contact</a>
 
-        <div class="footer-grid">
+    </div>
 
-          <div class="footer-brand">
+  </div>
 
-            <a href="index.html"
-               class="brand logo-brand"
-               aria-label="Motor Vehicle Expert home">
+</footer>
 
-              <img src="logo.png"
-                   alt="Motor Vehicle Expert logo"
-                   class="site-logo"
-                   loading="lazy">
+<nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
 
-              <span class="brand-text">
-                Motor Vehicle Expert
-              </span>
+  <a href="/">Home</a>
+  <a href="diagnostic-app.html">Diagnose</a>
+  <a href="warning-lights.html">Lights</a>
+  <a href="common-mot-failure-reasons-uk.html">MOT</a>
+  <a href="guides.html">Guides</a>
 
-            </a>
+</nav>
 
-            <p>
-              Clear UK car diagnostic, MOT, servicing, warning-light and repair
-              cost guides written to help motorists make informed decisions.
-            </p>
+<script src="search.js" defer></script>
 
-          </div>
-
-          <div class="footer-links">
-
-            <h2>
-              Diagnostics
-            </h2>
-
-            <a href="diagnostics.html">
-              Diagnostics Hub
-            </a>
-
-            <a href="car-diagnostics-explained.html">
-              Car Diagnostics Explained
-            </a>
-
-            <a href="fault-codes.html">
-              Fault Codes
-            </a>
-
-            <a href="obd-ii-explained.html">
-              OBD-II Explained
-            </a>
-
-            <a href="diagnostic-app.html">
-              Diagnostic App
-            </a>
-
-          </div>
-
-          <div class="footer-links">
-
-            <h2>
-              Popular Guides
-            </h2>
-
-            <a href="warning-lights.html">
-              Warning Lights
-            </a>
-
-            <a href="does-mot-check.html">
-              Does MOT Check?
-            </a>
-
-            <a href="most-common-mot-advisories-explained.html">
-              MOT Advisories
-            </a>
-
-            <a href="used-car-buying-guides.html">
-              Used Car Buying
-            </a>
-
-            <a href="guides.html">
-              All Guides
-            </a>
-
-          </div>
-
-          <div class="footer-links">
-
-            <h2>
-              About
-            </h2>
-
-            <a href="about.html">
-              About Motor Vehicle Expert
-            </a>
-
-            <a href="editorial-policy.html">
-              Editorial Policy
-            </a>
-
-            <a href="contact.html">
-              Contact
-            </a>
-
-            <a href="privacy-policy.html">
-              Privacy Policy
-            </a>
-
-            <a href="terms.html">
-              Terms and Conditions
-            </a>
-
-          </div>
-
-        </div>
-
-        <div class="footer-bottom">
-
-          <p>
-            &copy; 2026 Motor Vehicle Expert. All rights reserved.
-          </p>
-
-          <p>
-            UK automotive information for educational purposes.
-          </p>
-
-        </div>
-
-      </div>
-
-    </footer>
-
-    <!-- ================================================
-         MOBILE BOTTOM NAVIGATION
-    ================================================= -->
-
-    <nav class="mobile-bottom-nav"
-         aria-label="Mobile navigation">
-
-      <a href="index.html">
-
-        <span aria-hidden="true">
-          ⌂
-        </span>
-
-        <small>
-          Home
-        </small>
-
-      </a>
-
-      <a href="diagnostic-app.html">
-
-        <span aria-hidden="true">
-          ⌕
-        </span>
-
-        <small>
-          Diagnose
-        </small>
-
-      </a>
-
-      <a href="warning-lights.html">
-
-        <span aria-hidden="true">
-          ⚠
-        </span>
-
-        <small>
-          Warning Lights
-        </small>
-
-      </a>
-
-      <a href="does-mot-check.html">
-
-        <span aria-hidden="true">
-          ✓
-        </span>
-
-        <small>
-          MOT
-        </small>
-
-      </a>
-
-      <a href="guides.html">
-
-        <span aria-hidden="true">
-          ☰
-        </span>
-
-        <small>
-          Guides
-        </small>
-
-      </a>
-
-    </nav>
-
-    <script src="script.js" defer></script>
-
-  </body>
-
-</html>       
+</body>
+</html> 
 
         
