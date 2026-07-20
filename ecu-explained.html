@@ -3,114 +3,179 @@
 
 <head>
 
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
   <meta name="viewport"
-        content="width=device-width, initial-scale=1.0">
+        content="width=device-width, initial-scale=1.0" />
 
   <title>ECU Explained: How a Car Engine Control Unit Works | UK Guide</title>
 
   <meta name="description"
-        content="A complete UK guide to car ECUs, explaining what an engine control unit does, how ECU inputs and outputs work, common ECU faults, diagnosis, programming and replacement costs.">
-
-  <link rel="canonical"
-        href="https://motorvehicleexpert.co.uk/ecu-explained.html">
+        content="A complete UK guide to car ECUs, explaining what an engine control unit does, ECU inputs and outputs, common faults, diagnosis, programming and replacement costs." />
 
   <meta name="robots"
-        content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+        content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
 
   <meta name="author"
-        content="Motor Vehicle Expert Editorial Team">
+        content="Motor Vehicle Expert Editorial Team" />
 
   <meta name="theme-color"
-        content="#0b1f3a">
+        content="#ffffff" />
+
+  <link rel="canonical"
+        href="https://motorvehicleexpert.co.uk/ecu-explained.html" />
+
+  <!-- Site assets -->
+
+  <link rel="icon"
+        type="image/png"
+        href="favicon.png" />
+
+  <link rel="stylesheet"
+        href="style.css" />
+
+  <link rel="preload"
+        href="ecu-explained-hero.png"
+        as="image"
+        type="image/png" />
 
   <!-- Open Graph -->
 
   <meta property="og:type"
-        content="article">
+        content="article" />
 
   <meta property="og:site_name"
-        content="Motor Vehicle Expert">
+        content="Motor Vehicle Expert" />
+
+  <meta property="og:locale"
+        content="en_GB" />
 
   <meta property="og:title"
-        content="ECU Explained: How a Car Engine Control Unit Works">
+        content="ECU Explained: How a Car Engine Control Unit Works" />
 
   <meta property="og:description"
-        content="Learn what a car ECU does, how it processes sensor data, controls engine systems, stores fault codes and how ECU faults are diagnosed and repaired.">
+        content="Learn what a car ECU does, how it processes sensor data, controls engine systems, stores fault codes and how ECU faults are diagnosed and repaired." />
 
   <meta property="og:url"
-        content="https://motorvehicleexpert.co.uk/ecu-explained.html">
+        content="https://motorvehicleexpert.co.uk/ecu-explained.html" />
 
   <meta property="og:image"
-        content="https://motorvehicleexpert.co.uk/ecu-explained-hero.png">
+        content="https://motorvehicleexpert.co.uk/ecu-explained-hero.png" />
+
+  <meta property="og:image:secure_url"
+        content="https://motorvehicleexpert.co.uk/ecu-explained-hero.png" />
+
+  <meta property="og:image:type"
+        content="image/png" />
 
   <meta property="og:image:width"
-        content="1600">
+        content="1600" />
 
   <meta property="og:image:height"
-        content="900">
+        content="900" />
 
   <meta property="og:image:alt"
-        content="ECU explained infographic showing an engine control unit connected to vehicle sensors and actuators">
+        content="ECU explained infographic showing an engine control unit connected to vehicle sensors and actuators" />
 
   <meta property="article:published_time"
-        content="2026-07-20">
+        content="2026-07-20" />
 
   <meta property="article:modified_time"
-        content="2026-07-20">
+        content="2026-07-20" />
 
   <meta property="article:section"
-        content="Car Diagnostics">
+        content="Car Diagnostics" />
+
+  <meta property="article:author"
+        content="Motor Vehicle Expert Editorial Team" />
 
   <!-- Twitter -->
 
   <meta name="twitter:card"
-        content="summary_large_image">
+        content="summary_large_image" />
 
   <meta name="twitter:title"
-        content="ECU Explained: How a Car Engine Control Unit Works">
+        content="ECU Explained: How a Car Engine Control Unit Works" />
 
   <meta name="twitter:description"
-        content="A complete UK guide to engine control units, ECU inputs, outputs, programming, diagnosis, faults and replacement costs.">
+        content="A complete UK guide to engine control units, ECU inputs, outputs, programming, diagnosis, faults and replacement costs." />
 
   <meta name="twitter:image"
-        content="https://motorvehicleexpert.co.uk/ecu-explained-hero.png">
+        content="https://motorvehicleexpert.co.uk/ecu-explained-hero.png" />
 
   <meta name="twitter:image:alt"
-        content="Engine control unit connected to vehicle sensors and actuators">
+        content="Engine control unit connected to vehicle sensors and actuators" />
 
-  <!-- Site Assets -->
-
-  <link rel="icon"
-        href="favicon.ico"
-        type="image/x-icon">
-
-  <link rel="stylesheet"
-        href="style.css">
-
-  <!-- Article, WebPage and Breadcrumb Schema -->
+  <!-- Article, WebPage, Breadcrumb and FAQ schema -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "WebSite",
+        "@id": "https://motorvehicleexpert.co.uk/#website",
+        "url": "https://motorvehicleexpert.co.uk/",
+        "name": "Motor Vehicle Expert",
+        "description": "Practical UK car diagnostics, maintenance, MOT, warning-light, repair-cost and used-car guidance.",
+        "inLanguage": "en-GB",
+        "publisher": {
+          "@id": "https://motorvehicleexpert.co.uk/#organization"
+        }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://motorvehicleexpert.co.uk/#organization",
+        "name": "Motor Vehicle Expert",
+        "url": "https://motorvehicleexpert.co.uk/",
+        "logo": {
+          "@type": "ImageObject",
+          "@id": "https://motorvehicleexpert.co.uk/#logo",
+          "url": "https://motorvehicleexpert.co.uk/logo.png",
+          "contentUrl": "https://motorvehicleexpert.co.uk/logo.png",
+          "caption": "Motor Vehicle Expert"
+        }
+      },
+      {
+        "@type": "ImageObject",
+        "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#primaryimage",
+        "url": "https://motorvehicleexpert.co.uk/ecu-explained-hero.png",
+        "contentUrl": "https://motorvehicleexpert.co.uk/ecu-explained-hero.png",
+        "width": 1600,
+        "height": 900,
+        "caption": "ECU explained infographic showing an engine control unit connected to vehicle sensors and actuators"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#webpage",
+        "url": "https://motorvehicleexpert.co.uk/ecu-explained.html",
+        "name": "ECU Explained: How a Car Engine Control Unit Works",
+        "description": "A complete UK guide explaining how an automotive ECU uses sensors, software and actuators to control a vehicle.",
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#primaryimage"
+        },
+        "breadcrumb": {
+          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#breadcrumb"
+        },
+        "datePublished": "2026-07-20",
+        "dateModified": "2026-07-20",
+        "inLanguage": "en-GB"
+      },
+      {
         "@type": "Article",
         "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#article",
+        "mainEntityOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#webpage"
+        },
         "headline": "ECU Explained: How a Car Engine Control Unit Works",
-        "description": "A complete UK guide explaining what a car ECU is, how an engine control unit processes sensor information, controls actuators, communicates over CAN bus and how ECU faults are diagnosed, repaired and replaced.",
+        "description": "A complete UK guide explaining what a car ECU is, how an engine control unit processes sensor information, controls actuators, communicates over CAN Bus and how ECU faults are diagnosed, repaired and replaced.",
         "image": {
-          "@type": "ImageObject",
-          "url": "https://motorvehicleexpert.co.uk/ecu-explained-hero.png",
-          "width": 1600,
-          "height": 900
+          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#primaryimage"
         },
         "url": "https://motorvehicleexpert.co.uk/ecu-explained.html",
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html"
-        },
         "datePublished": "2026-07-20",
         "dateModified": "2026-07-20",
         "inLanguage": "en-GB",
@@ -120,11 +185,14 @@
           "what is an ECU",
           "engine control unit",
           "electronic control unit",
+          "ECU inputs and outputs",
           "ECU fault symptoms",
           "ECU diagnosis",
+          "ECU programming",
           "ECU repair cost UK",
           "ECU replacement cost UK",
           "how an ECU works",
+          "CAN Bus communication",
           "car diagnostics"
         ],
         "author": {
@@ -133,35 +201,8 @@
           "url": "https://motorvehicleexpert.co.uk/about.html"
         },
         "publisher": {
-          "@type": "Organization",
-          "name": "Motor Vehicle Expert",
-          "url": "https://motorvehicleexpert.co.uk/",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "https://motorvehicleexpert.co.uk/logo.png"
-          }
+          "@id": "https://motorvehicleexpert.co.uk/#organization"
         }
-      },
-      {
-        "@type": "WebPage",
-        "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html",
-        "url": "https://motorvehicleexpert.co.uk/ecu-explained.html",
-        "name": "ECU Explained: How a Car Engine Control Unit Works",
-        "description": "Understand how an automotive ECU uses sensors, software and actuators to control a vehicle.",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://motorvehicleexpert.co.uk/#website",
-          "name": "Motor Vehicle Expert",
-          "url": "https://motorvehicleexpert.co.uk/"
-        },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://motorvehicleexpert.co.uk/ecu-explained-hero.png"
-        },
-        "breadcrumb": {
-          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#breadcrumb"
-        },
-        "inLanguage": "en-GB"
       },
       {
         "@type": "BreadcrumbList",
@@ -186,10 +227,183 @@
             "item": "https://motorvehicleexpert.co.uk/ecu-explained.html"
           }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#faq",
+        "url": "https://motorvehicleexpert.co.uk/ecu-explained.html#faq",
+        "name": "ECU Frequently Asked Questions",
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/ecu-explained.html#webpage"
+        },
+        "inLanguage": "en-GB",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What does ECU mean in a car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ECU usually means Electronic Control Unit. A modern vehicle contains several ECUs, but when motorists refer to the ECU they normally mean the engine management computer that processes sensor information and controls engine actuators."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is the ECU the same as the engine computer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. ECU, engine computer and Engine Control Module are commonly used to describe the electronic module responsible for managing engine operation. Manufacturers may also use terms such as ECM, PCM or DME."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between an ECU, ECM and PCM?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ECU is a broad term for an Electronic Control Unit. ECM normally means Engine Control Module, while PCM means Powertrain Control Module and may control both the engine and automatic transmission."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does an ECU control?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "An engine ECU may control fuel injection, ignition timing, throttle operation, turbocharger boost, fuel pressure, variable valve timing, cooling fans, EGR operation, emissions monitoring and other engine functions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the symptoms of a faulty ECU?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Possible symptoms include non-starting, intermittent stalling, warning lights, loss of diagnostic communication, incorrect sensor readings, reduced-power mode and injectors or ignition coils not being activated. These symptoms can also be caused by wiring, battery, sensor or earth faults."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a faulty ECU cause a car not to start?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A failed ECU may prevent the fuel injectors, ignition coils, fuel pump or immobiliser authorisation from operating correctly. Battery condition, sensors, fuses, relays and wiring should be tested before the ECU is condemned."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can an ECU fail without storing a fault code?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If the ECU loses power, earth, communication or internal processor function, it may be unable to store or report a diagnostic trouble code. Direct electrical and CAN Bus testing may then be required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a diagnostic fault code prove the ECU is faulty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. A diagnostic trouble code identifies an abnormal circuit, system or condition. The cause may be a sensor, actuator, connector, wire, poor earth, low voltage or communication fault rather than the ECU itself."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can an ECU be repaired?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Many ECUs can be repaired by a specialist. Repairable faults may include failed output drivers, voltage regulators, poor solder joints, memory corruption and some forms of water or circuit-board damage."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a second-hand ECU be fitted to another car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sometimes. A used ECU must have compatible hardware, software and part numbers. It may also require cloning, virginising, VIN coding, immobiliser pairing and vehicle-specific configuration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is ECU cloning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "ECU cloning transfers operating software, calibration data, coding, VIN information and immobiliser data from an original ECU into a compatible replacement unit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does disconnecting the battery reset the ECU?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Disconnecting the battery may clear temporary memory and some adaptation values, but it normally does not erase the ECU software, VIN, security coding or immobiliser information."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a weak battery cause ECU problems?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Low or unstable voltage can cause false fault codes, communication errors, warning lights, failed starting attempts and control modules resetting while the starter motor is operating."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can jump starting damage an ECU?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Incorrect jump starting can damage an ECU and other electronic modules. Reversed polarity, poor connections and voltage spikes create the greatest risk, so the manufacturer's procedure should be followed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does an ECU repair cost in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Specialist ECU repair commonly costs approximately £200 to £600 in the UK. Diagnosis, removal, delivery, refitting and programming may be charged separately."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a replacement ECU cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A used ECU supplied and programmed may cost approximately £250 to £700 or more. A new genuine ECU may cost around £700 to £2,000, with some specialist and premium vehicles costing considerably more."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a replacement ECU need programming?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually, yes. Programming may include installation of the correct software, VIN writing, immobiliser pairing, injector coding, throttle adaptation and vehicle configuration."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can ECU programming fail?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Programming can fail if battery voltage drops, communication is interrupted, incorrect software is installed or the ECU has damaged memory. A regulated battery-support unit should normally be used."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does remapping damage the ECU?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Correctly completed calibration work should not physically damage a healthy ECU. However, interrupted flashing, unsuitable software or poor equipment can corrupt the ECU, while aggressive tuning may increase mechanical stress."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I buy a used car with an ECU warning?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only after an independent diagnostic inspection confirms the cause and likely repair cost. An ECU-related warning may indicate a minor sensor fault, but it can also involve wiring damage, network faults, water ingress or expensive module replacement."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
+
 </head>
 
 <body class="mve-premium">
@@ -244,20 +458,6 @@
 </div>
 
 <main>
-
-<nav class="breadcrumbs container" aria-label="Breadcrumb">
-
-  <a href="/">Home</a>
-
-  <span>/</span>
-
-  <a href="diagnostics.html">Diagnostics</a>
-
-  <span>/</span>
-
-  <span aria-current="page">ECU Explained</span>
-
-</nav>
 
 <section class="premium-hero diagnostics-hero">
 
