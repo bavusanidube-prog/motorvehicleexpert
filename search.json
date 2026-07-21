@@ -2302,5 +2302,17 @@
   "url": "obd-ii-explained.html",
   "category": "Diagnostics",
   "keywords": "OBD-II explained OBD2 explained on board diagnostics OBD port OBD scanner diagnostic trouble codes DTC live data freeze frame readiness monitors generic vs manufacturer fault codes engine management light ECU diagnostics UK Motor Vehicle Expert"
+},
+{
+  "title": "ECU Explained",
+  "url": "ecu-explained.html",
+  "category": "Diagnostics",
+  "keywords": "ECU explained engine control unit explained electronic control unit ECU meaning ECU diagnostics ECU faults ECU sensors ECU actuators engine management computer car ECU UK Motor Vehicle Expert"
+},
+{
+  "title": "Car Sensors Explained",
+  "url": "car-sensors-explained.html",
+  "category": "Diagnostics",
+  "keywords": "car sensors explained vehicle sensors engine sensors oxygen sensor MAF sensor MAP sensor crankshaft sensor camshaft sensor coolant temperature sensor ABS wheel speed sensor pressure sensor position sensor ECU sensors diagnostics UK Motor Vehicle Expert"
 }  
 ]
