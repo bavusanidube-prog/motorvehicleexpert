@@ -842,10 +842,11 @@
    <lastmod>2026-06-08</lastmod>
   </url>
 
-  <url>
+ <url>
     <loc>https://motorvehicleexpert.co.uk/diagnostic-app.html</loc>
-    <lastmod>2026-05-11</lastmod>
-  </url>
+    <lastmod>2026-08-02</lastmod>
+    <priority>1.0</priority>
+</url>
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/diagnostics.html</loc>
