@@ -1,3 +1,8 @@
+Library
+/
+search.json
+
+
 [
   {
     "title": "Motor Vehicle Expert",
@@ -10,6 +15,12 @@
     "url": "about.html",
     "category": "Guides",
     "keywords": "about About Guides motor vehicle expert uk car guide"
+  },
+  {
+    "title": "ABS Explained",
+    "url": "abs-explained.html",
+    "category": "Braking System",
+    "keywords": "ABS explained anti lock braking system wheel speed sensors ABS pump brake safety UK Motor Vehicle Expert"
   },
   {
     "title": "Abs Warning Light On Safe Drive",
@@ -32,7 +43,7 @@
   {
     "title": "Alternator Replacement Cost Uk",
     "url": "alternator-replacement-cost-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "alternator replacement cost uk Alternator Replacement Cost Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
   },
   {
@@ -72,10 +83,102 @@
     "keywords": "blown head gasket symptoms Blown Head Gasket Symptoms Cooling system motor vehicle expert uk car guide coolant leak overheating temperature radiator fan thermostat head gasket"
   },
   {
+    "title": "Brake Caliper Replacement Cost UK",
+    "url": "brake-caliper-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "brake caliper replacement cost UK seized caliper repair caliper prices UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Calipers Explained",
+    "url": "brake-calipers-explained.html",
+    "category": "Braking System",
+    "keywords": "brake calipers explained floating caliper fixed caliper seized caliper braking system UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Disc Advisory Explained",
+    "url": "brake-disc-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Corroded, pitted, scored or worn brake disc advisory explained for UK drivers.",
+    "keywords": "Corroded, pitted, scored or worn brake disc advisory explained for UK drivers."
+  },
+  {
+    "title": "Brake Disc Replacement Cost UK",
+    "url": "brake-disc-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "brake disc replacement cost UK brake rotor replacement cost brake repair prices UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Discs Explained",
+    "url": "brake-discs-explained.html",
+    "category": "Braking System",
+    "keywords": "brake discs explained brake rotors vented discs solid discs brake disc wear UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Fade Explained",
+    "url": "brake-fade-explained.html",
+    "category": "Braking System",
+    "keywords": "brake fade explained overheating brakes brake fade symptoms brake fade causes brake fade prevention UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Fluid Change Cost UK",
+    "url": "brake-fluid-change-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "brake fluid change cost UK brake fluid flush cost hydraulic brake service brake maintenance UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Fluid Explained",
+    "url": "brake-fluid-explained.html",
+    "category": "Braking System",
+    "keywords": "brake fluid explained DOT4 DOT5 hydraulic fluid moisture contamination brake system UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Hoses Explained",
+    "url": "brake-hoses-explained.html",
+    "category": "Braking System",
+    "keywords": "brake hoses explained flexible brake hose hydraulic braking brake hose faults cracked hose bulging hose brake fluid leak MOT brake inspection replacement cost UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Master Cylinder Explained",
+    "url": "brake-master-cylinder-explained.html",
+    "category": "Braking System",
+    "keywords": "brake master cylinder explained master cylinder symptoms hydraulic braking UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Overheating Explained",
+    "url": "brake-overheating-explained.html",
+    "category": "Braking System",
+    "keywords": "brake overheating explained overheating brakes brake overheating symptoms burning smell hot brakes brake temperature seized caliper brake fade overheating brake discs brake pads brake fluid UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Pad Advisory Explained",
+    "url": "brake-pad-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Low brake pad advisory explained with replacement timing, costs and MOT failure risk.",
+    "keywords": "Low brake pad advisory explained with replacement timing, costs and MOT failure risk."
+  },
+  {
     "title": "Brake Pad Replacement Cost Uk",
     "url": "brake-pad-replacement-cost-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "brake pad replacement cost uk Brake Pad Replacement Cost Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
+  },
+  {
+    "title": "Brake Pads Explained",
+    "url": "brake-pads-explained.html",
+    "category": "Braking System",
+    "keywords": "brake pads explained brake pad wear brake friction material changing brake pads UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Pipes Explained",
+    "url": "brake-pipe-explained.html",
+    "category": "Braking System",
+    "keywords": "brake pipes explained brake lines copper brake pipes steel brake pipes corrosion UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Brake Servo Explained",
+    "url": "brake-servo-explained.html",
+    "category": "Braking System",
+    "keywords": "brake servo explained vacuum brake booster servo failure hard brake pedal UK Motor Vehicle Expert"
   },
   {
     "title": "Brake Warning Light On While Driving",
@@ -100,6 +203,12 @@
     "url": "burning-clutch-smell.html",
     "category": "Smells and smoke",
     "keywords": "burning clutch smell Burning Clutch Smell Smells and smoke motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Burnt Clutch Symptoms UK",
+    "url": "burnt-clutch-symptoms.html",
+    "category": "Clutch & Transmission",
+    "keywords": "burnt clutch symptoms signs of a burnt clutch burnt clutch warning signs clutch overheating symptoms damaged clutch symptoms burnt clutch smell clutch slipping poor acceleration high clutch bite point clutch judder clutch smoke loss of drive overheated clutch manual clutch overheating clutch replacement cost clutch diagnosis UK Motor Vehicle Expert"
   },
   {
     "title": "Buying Car With Failed Mot History",
@@ -492,6 +601,12 @@
     "keywords": "car cranks but wont start Car Cranks But Wont Start Diagnostics motor vehicle expert uk car guide"
   },
   {
+    "title": "Car Diagnostics Explained",
+    "url": "car-diagnostics-explained.html",
+    "category": "Diagnostics",
+    "keywords": "car diagnostics explained vehicle diagnostics UK OBD OBD2 OBD-II diagnostic guide fault codes live data freeze frame diagnostic trouble codes DTC ECU engine control unit sensors vehicle sensors scan tool diagnostic scanner professional diagnostics diagnostic testing engine management light P codes B codes C codes U codes pending codes stored codes permanent codes readiness monitors diagnostic process electrical testing mechanical testing multimeter oscilloscope smoke machine garage diagnostics repair costs Motor Vehicle Expert"
+  },
+  {
     "title": "Car Door Wont Open From Inside",
     "url": "car-door-wont-open-from-inside.html",
     "category": "Guides",
@@ -728,7 +843,7 @@
   {
     "title": "Car Repair Costs Guide Uk",
     "url": "car-repair-costs-guide-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "car repair costs guide uk Car Repair Costs Guide Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
   },
   {
@@ -742,6 +857,12 @@
     "url": "car-rough-idle-when-cold.html",
     "category": "Guides",
     "keywords": "car rough idle when cold Car Rough Idle When Cold Guides motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Car Sensors Explained",
+    "url": "car-sensors-explained.html",
+    "category": "Diagnostics",
+    "keywords": "car sensors explained vehicle sensors engine sensors oxygen sensor MAF sensor MAP sensor crankshaft sensor camshaft sensor coolant temperature sensor ABS wheel speed sensor pressure sensor position sensor ECU sensors diagnostics UK Motor Vehicle Expert"
   },
   {
     "title": "Car Servicing Guide Uk",
@@ -924,16 +1045,82 @@
     "keywords": "check engine light flashing then stops Check Engine Light Flashing Then Stops Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "Clutch Burning Smell",
+    "url": "clutch-burning-smell.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch burning smell burnt clutch smell burning clutch symptoms clutch overheating clutch slip smell clutch smell after hill start clutch smell when reversing clutch smell in traffic clutch smell when towing worn clutch pressure plate flywheel oil contamination clutch repair costs UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Judder When Pulling Away",
+    "url": "clutch-judder-when-pulling-away.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch judder when pulling away clutch judder clutch shudders when moving off clutch vibration on take off car judders when releasing clutch clutch shakes in first gear manual car judders pulling away clutch judder after replacement dual mass flywheel judder contaminated clutch judder clutch vibration diagnosis clutch repair clutch plate flywheel engine mounts gearbox mounts clutch slipping UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Makes Noise When Pressed",
+    "url": "clutch-makes-noise-when-pressed.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch makes noise when pressed clutch noise when pressing pedal release bearing noise clutch release bearing faulty clutch fork noise clutch squeal clutch chirping noise clutch grinding noise clutch pedal noise pressure plate noise gearbox input shaft bearing clutch repair costs UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Pedal Goes to the Floor",
+    "url": "clutch-pedal-goes-to-floor.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch pedal goes to floor clutch pedal on floor no resistance clutch hydraulic failure clutch master cylinder failure clutch slave cylinder failure clutch hydraulic leak clutch pressure loss clutch pedal no pressure release bearing hydraulic clutch system emergency clutch fault difficult gear selection clutch repair costs UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Pedal Stuck Down",
+    "url": "clutch-pedal-stuck-down.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch pedal stuck down clutch pedal stays down clutch pedal on floor clutch pedal not returning slow clutch pedal return failed clutch master cylinder slave cylinder clutch hydraulic leak broken clutch cable clutch pedal spring release fork release bearing pressure plate difficult gear selection clutch repair costs UK Motor Vehicle Expert"
+  },
+  {
     "title": "Clutch Replacement Cost Uk",
     "url": "clutch-replacement-cost-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "clutch replacement cost uk Clutch Replacement Cost Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
+  },
+  {
+    "title": "Clutch Slip After Replacement",
+    "url": "clutch-slip-after-replacement.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch slip after replacement new clutch slipping replacement clutch slipping clutch slipping after new clutch incorrect clutch installation wrong clutch kit clutch contamination flywheel problem clutch hydraulic preload clutch warranty clutch repair after replacement clutch replacement problems UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Slip in High Gears",
+    "url": "clutch-slip-in-high-gears.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch slips in high gears clutch slip in fifth gear clutch slip in sixth gear clutch revs rise no acceleration clutch slipping under load worn clutch pressure plate flywheel clutch high gear acceleration clutch slipping uphill clutch replacement signs clutch repair costs UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Slipping in First Gear? Causes, Fixes & Repair Costs (UK 2026)",
+    "url": "clutch-slipping-in-first-gear.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch slipping in first gear first gear clutch slip clutch slips when pulling away engine revs but car barely moves clutch slipping from standstill clutch slipping uphill clutch slip when hot new clutch slipping in first gear worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault clutch replacement cost UK 2026 Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Slipping in Second Gear? Causes, Fixes & Costs UK 2026",
+    "url": "clutch-slipping-in-second-gear.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch slipping in second gear second gear clutch slip clutch slips after changing into second revs flare after first to second shift engine revs but car does not accelerate clutch slips under acceleration clutch slip uphill clutch slips when hot worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault new clutch slipping in second gear manual gearbox second gear problem clutch repair costs UK 2026 Motor Vehicle Expert"
   },
   {
     "title": "Clutch Slipping Symptoms",
     "url": "clutch-slipping-symptoms.html",
     "category": "Guides",
     "keywords": "clutch slipping symptoms Clutch Slipping Symptoms Guides motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Clutch Slips in Reverse? Causes, Fixes & Costs UK 2026",
+    "url": "clutch-slips-in-reverse.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch slips in reverse clutch slipping in reverse reverse clutch slip manual car slips when reversing clutch slips reversing uphill engine revs but car reverses slowly reverse gear clutch problem burning clutch smell in reverse worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault new clutch slips in reverse clutch repair costs UK 2026 Motor Vehicle Expert"
+  },
+  {
+    "title": "Clutch Vibrates in First Gear UK 2026",
+    "url": "clutch-vibrates-in-first-gear.html",
+    "category": "Clutch & Transmission",
+    "keywords": "clutch vibrates in first gear clutch vibration in first gear car shakes in first gear manual car vibrates when moving off clutch shakes when released vibration at clutch bite point first gear clutch judder car vibrates pulling away first gear vibration diagnosis worn clutch plate dual mass flywheel engine mounts gearbox mounts oil contaminated clutch clutch vibration repair cost UK 2026 Motor Vehicle Expert"
   },
   {
     "title": "Clutch Wear Signs",
@@ -984,6 +1171,13 @@
     "keywords": "cooling system guides Cooling System Guides Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "Corroded Brake Pipe Advisory Explained",
+    "url": "corroded-brake-pipe-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Brake pipe corrosion advisory explained with safety risk, repair cost and next MOT failure risk.",
+    "keywords": "Brake pipe corrosion advisory explained with safety risk, repair cost and next MOT failure risk."
+  },
+  {
     "title": "Diagnostic App",
     "url": "diagnostic-app.html",
     "category": "Diagnostics",
@@ -996,10 +1190,23 @@
     "keywords": "diagnostics Diagnostics Diagnostics motor vehicle expert uk car guide"
   },
   {
+    "title": "Disc Brakes Explained",
+    "url": "disc-brakes-explained.html",
+    "category": "Braking System",
+    "keywords": "disc brakes explained brake discs braking system disc brake guide brake rotor caliper pads hydraulic braking UK Motor Vehicle Expert"
+  },
+  {
     "title": "Disclaimer",
     "url": "disclaimer.html",
     "category": "Guides",
     "keywords": "disclaimer Disclaimer Guides motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Do MOT Advisories Affect Insurance?",
+    "url": "do-mot-advisories-affect-insurance.html",
+    "category": "MOT Advisories",
+    "description": "Explains whether MOT advisories affect insurance, roadworthiness and claim risk.",
+    "keywords": "Explains whether MOT advisories affect insurance, roadworthiness and claim risk."
   },
   {
     "title": "Do You Need An Mot To Insure A Car",
@@ -1008,10 +1215,58 @@
     "keywords": "do you need an mot to insure a car Do You Need An Mot To Insure A Car MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
   },
   {
+    "title": "Does MOT Check Air Conditioning?",
+    "url": "does-mot-check-air-conditioning.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check air conditioning AC MOT air con MOT demister heater blower windscreen visibility AC not cold MOT inspection UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check Clutch?",
+    "url": "does-mot-check-clutch.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check clutch clutch MOT slipping clutch biting point clutch pedal clutch wear gear selection safe control MOT inspection UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check Engine Oil?",
+    "url": "does-mot-check-engine-oil.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check engine oil oil level MOT oil quality oil leak MOT oil warning light blue smoke emissions MOT inspection UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check Gearbox?",
+    "url": "does-mot-check-gearbox.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check gearbox gearbox MOT transmission MOT gear selection gearbox oil leak gearbox fault automatic gearbox manual gearbox MOT inspection UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check Service History?",
+    "url": "does-mot-check-service-history.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check service history MOT service history service book MOT history service records stamped service book used car buying maintenance records UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check Tracking?",
+    "url": "does-mot-check-tracking.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check tracking tracking MOT wheel tracking MOT toe angle tyre wear steering pull suspension track rod MOT inspection UK Motor Vehicle Expert"
+  },
+  {
     "title": "Does Mot Check Wheel Alignment",
     "url": "does-mot-check-wheel-alignment.html",
     "category": "MOT",
     "keywords": "does mot check wheel alignment Does Mot Check Wheel Alignment MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
+  },
+  {
+    "title": "Does MOT Check Wheel Balancing?",
+    "url": "does-mot-check-wheel-balancing.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check wheel balancing wheel balancing MOT steering wheel vibration tyre vibration wheel bearing suspension tyres wheels MOT inspection UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Does MOT Check?",
+    "url": "does-mot-check.html",
+    "category": "MOT Guides",
+    "keywords": "does mot check what does mot check MOT checklist UK MOT inspection checklist what is checked in MOT what is not checked in MOT roadworthiness MOT test UK Motor Vehicle Expert"
   },
   {
     "title": "Does SORN Car Need Insurance",
@@ -1030,6 +1285,24 @@
     "url": "driving-with-expired-mot-fine-uk.html",
     "category": "MOT",
     "keywords": "driving with expired mot fine uk Driving With Expired Mot Fine Uk MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
+  },
+  {
+    "title": "ECU Explained",
+    "url": "ecu-explained.html",
+    "category": "Diagnostics",
+    "keywords": "ECU explained engine control unit explained electronic control unit ECU meaning ECU diagnostics ECU faults ECU sensors ECU actuators engine management computer car ECU UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Electronic Parking Brake Fault",
+    "url": "electronic-parking-brake-fault.html",
+    "category": "Braking System",
+    "keywords": "electronic parking brake fault EPB warning light parking brake not working electric handbrake fault causes fixes safe to drive MOT UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Engine Braking Explained",
+    "url": "engine-braking-explained.html",
+    "category": "Braking System",
+    "keywords": "engine braking explained how engine braking works when to use engine braking downhill braking safety manual automatic car UK Motor Vehicle Expert"
   },
   {
     "title": "Engine Management Light Guide",
@@ -1068,6 +1341,13 @@
     "keywords": "esp light on safe drive Esp Light On Safe Drive Warning lights motor vehicle expert uk car guide dashboard light warning symbol safe to drive mot"
   },
   {
+    "title": "Exhaust Corrosion Advisory Explained",
+    "url": "exhaust-corrosion-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Exhaust corrosion MOT advisory explained with repair costs, driving advice, replacement timing and next MOT failure risk.",
+    "keywords": "Exhaust corrosion MOT advisory explained with repair costs, driving advice, replacement timing and next MOT failure risk."
+  },
+  {
     "title": "Exhaust Smoke Colour Guide",
     "url": "exhaust-smoke-colour-guide.html",
     "category": "Smells and smoke",
@@ -1076,13 +1356,13 @@
   {
     "title": "Fault Codes",
     "url": "fault-codes.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "fault codes Fault Codes OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "Full Car Service Cost Uk",
     "url": "full-car-service-cost-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "full car service cost uk Full Car Service Cost Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
   },
   {
@@ -1092,10 +1372,23 @@
     "keywords": "guides Guides Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "High Clutch Bite Point",
+    "url": "high-clutch-bite-point.html",
+    "category": "Clutch & Transmission",
+    "keywords": "high clutch bite point high clutch biting point clutch bites high clutch engagement point worn clutch symptoms normal clutch bite point cable clutch adjustment hydraulic clutch fault clutch pedal travel clutch slip high bite point clutch replacement costs used car clutch check UK Motor Vehicle Expert"
+  },
+  {
     "title": "How Early Can You Renew Mot",
     "url": "how-early-can-you-renew-mot.html",
     "category": "MOT",
     "keywords": "how early can you renew mot How Early Can You Renew Mot MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
+  },
+  {
+    "title": "How Long Can You Drive With an MOT Advisory?",
+    "url": "how-long-can-you-drive-with-an-mot-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Repair urgency guide explaining how long UK drivers can drive with different MOT advisories.",
+    "keywords": "Repair urgency guide explaining how long UK drivers can drive with different MOT advisories."
   },
   {
     "title": "How Long Do Brake Pads Last Uk",
@@ -1108,6 +1401,12 @@
     "url": "how-long-is-an-mot-valid.html",
     "category": "MOT",
     "keywords": "how long is an mot valid How Long Is An Mot Valid MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
+  },
+  {
+    "title": "How To Check Brake Pads",
+    "url": "how-to-check-brake-pads.html",
+    "category": "Braking System",
+    "keywords": "how to check brake pads brake pad thickness worn brake pads inspection minimum thickness brake wear symptoms brakes UK Motor Vehicle Expert"
   },
   {
     "title": "How To Check Car Battery Health",
@@ -1158,6 +1457,12 @@
     "keywords": "how to value my car uk How To Value My Car Uk Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "Hydraulic Braking System Explained",
+    "url": "hydraulic-braking-system-explained.html",
+    "category": "Braking System",
+    "keywords": "hydraulic braking system explained hydraulic brakes brake pressure brake fluid operation UK Motor Vehicle Expert"
+  },
+  {
     "title": "Is 100k Miles Too Much Used Car",
     "url": "is-100k-miles-too-much-used-car.html",
     "category": "Used car buying",
@@ -1172,8 +1477,15 @@
   {
     "title": "Is It Worth Repairing An Old Car Uk",
     "url": "is-it-worth-repairing-an-old-car-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "is it worth repairing an old car uk Is It Worth Repairing An Old Car Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
+  },
+  {
+    "title": "Most Common MOT Advisories Explained",
+    "url": "most-common-mot-advisories-explained.html",
+    "category": "MOT Advisories",
+    "description": "UK MOT advisory hub explaining common advisories, safety risk, repair urgency, insurance, costs and next MOT failure risk.",
+    "keywords": "UK MOT advisory hub explaining common advisories, safety risk, repair urgency, insurance, costs and next MOT failure risk."
   },
   {
     "title": "Most Reliable Used Cars Uk",
@@ -1206,6 +1518,19 @@
     "keywords": "national speed limit sign meaning National Speed Limit Sign Meaning Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "OBD-II Explained",
+    "url": "obd-ii-explained.html",
+    "category": "Diagnostics",
+    "keywords": "OBD-II explained OBD2 explained on board diagnostics OBD port OBD scanner diagnostic trouble codes DTC live data freeze frame readiness monitors generic vs manufacturer fault codes engine management light ECU diagnostics UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Oil Leak Advisory Explained",
+    "url": "oil-leak-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Minor oil leak MOT advisory explained with causes, repair costs and failure risk.",
+    "keywords": "Minor oil leak MOT advisory explained with causes, repair costs and failure risk."
+  },
+  {
     "title": "Oil Light On Then Off",
     "url": "oil-light-on-then-off.html",
     "category": "Warning lights",
@@ -1220,157 +1545,619 @@
   {
     "title": "P0011 Code Meaning",
     "url": "p0011-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0011 code meaning P0011 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0016 Code Meaning",
+    "url": "p0016-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0016 P0016 code meaning crankshaft camshaft correlation crankshaft position sensor camshaft position sensor timing chain timing belt variable valve timing vvt engine timing check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0101 Code Meaning",
     "url": "p0101-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0101 code meaning P0101 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0102 Code Meaning",
+    "url": "p0102-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0102 P0102 code meaning mass air flow sensor low input maf sensor low voltage intake air sensor dirty maf wiring fault check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0113 Code Meaning",
     "url": "p0113-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0113 code meaning P0113 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0117 Code Meaning",
+    "url": "p0117-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0117 P0117 code meaning engine coolant temperature sensor low input ect sensor low voltage coolant temperature sensor wiring fault overheating engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0118 Code Meaning",
+    "url": "p0118-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "P0118 code meaning engine coolant temperature sensor circuit high ECT fault symptoms causes diagnosis repair cost OBD UK Motor Vehicle Expert"
+  },
+  {
+    "title": "P0121 Code Meaning",
+    "url": "p0121-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "P0121 code meaning throttle pedal position sensor range performance fault symptoms causes diagnosis repair cost OBD UK Motor Vehicle Expert"
   },
   {
     "title": "P0128 Code Meaning",
     "url": "p0128-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0128 code meaning P0128 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0130 Code Meaning",
+    "url": "p0130-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0130 P0130 code meaning oxygen sensor circuit bank 1 sensor 1 o2 sensor lambda sensor upstream oxygen sensor fuel mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0131 Code Meaning",
+    "url": "p0131-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0131 P0131 code meaning oxygen sensor low voltage bank 1 sensor 1 o2 sensor lambda sensor lean mixture fuel trim engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0132 Code Meaning",
+    "url": "p0132-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0132 P0132 code meaning oxygen sensor high voltage bank 1 sensor 1 o2 sensor lambda sensor rich mixture fuel trim engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0133 Code Meaning",
+    "url": "p0133-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0133 P0133 code meaning oxygen sensor slow response bank 1 sensor 1 o2 sensor lambda sensor slow switching fuel mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0134 Code Meaning",
+    "url": "p0134-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0134 P0134 code meaning oxygen sensor no activity bank 1 sensor 1 o2 sensor lambda sensor inactive engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0135 Code Meaning",
     "url": "p0135-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0135 code meaning P0135 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0136 Code Meaning",
+    "url": "p0136-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0136 P0136 code meaning oxygen sensor circuit bank 1 sensor 2 downstream oxygen sensor lambda sensor catalytic converter engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0137 Code Meaning",
+    "url": "p0137-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0137 P0137 code meaning oxygen sensor low voltage bank 1 sensor 2 downstream o2 sensor lambda sensor exhaust sensor engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0138 Code Meaning",
+    "url": "p0138-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0138 P0138 code meaning oxygen sensor high voltage bank 1 sensor 2 downstream o2 sensor lambda sensor rich mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0141 Code Meaning",
     "url": "p0141-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0141 code meaning P0141 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0171 Code Meaning",
     "url": "p0171-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0171 code meaning P0171 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0172 Code Meaning",
+    "url": "p0172-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0172 P0172 code meaning system too rich bank 1 rich mixture fuel trim maf oxygen sensor injector fuel pressure engine management light obd fault code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0174 Code Meaning",
+    "url": "p0174-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0174 P0174 code meaning system too lean bank 2 lean mixture bank 2 fuel trim vacuum leak intake leak maf sensor oxygen sensor o2 sensor air leak fuel injector fuel pressure engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0201 Code Meaning",
     "url": "p0201-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0201 code meaning P0201 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0234 Code Meaning",
     "url": "p0234-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0234 code meaning P0234 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0299 Code Meaning",
     "url": "p0299-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0299 code meaning P0299 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0300 Code Meaning",
     "url": "p0300-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0300 code meaning P0300 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0301 Code Meaning",
+    "url": "p0301-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0301 P0301 code meaning cylinder 1 misfire cylinder one misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0302 Code Meaning",
+    "url": "p0302-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0302 P0302 code meaning cylinder 2 misfire cylinder two misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0303 Code Meaning",
+    "url": "p0303-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0303 P0303 code meaning cylinder 3 misfire cylinder three misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0304 Code Meaning",
+    "url": "p0304-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0304 P0304 code meaning cylinder 4 misfire cylinder four misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0325 Code Meaning",
+    "url": "p0325-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0325 P0325 code meaning knock sensor circuit knock sensor fault engine pinging detonation ignition timing engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0335 Code Meaning",
     "url": "p0335-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0335 code meaning P0335 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0340 Code Meaning",
     "url": "p0340-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0340 code meaning P0340 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0341 Code Meaning",
+    "url": "p0341-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0341 P0341 code meaning camshaft position sensor range performance cam sensor timing sensor engine timing engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0401 Code Meaning",
     "url": "p0401-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0401 code meaning P0401 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0402 Code Meaning",
     "url": "p0402-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0402 code meaning P0402 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0420 Code Meaning",
     "url": "p0420-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0420 code meaning P0420 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0440 Code Meaning",
     "url": "p0440-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0440 code meaning P0440 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0441 Code Meaning",
+    "url": "p0441-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0441 P0441 code meaning evap incorrect purge flow evap purge valve evap system purge solenoid charcoal canister fuel vapour leak vent valve fuel cap emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0442 Code Meaning",
     "url": "p0442-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0442 code meaning P0442 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0443 Code Meaning",
+    "url": "p0443-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0443 P0443 code meaning evap purge control valve circuit evap purge solenoid purge valve fault emissions fuel vapour engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0446 Code Meaning",
     "url": "p0446-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0446 code meaning P0446 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0449 Code Meaning",
+    "url": "p0449-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0449 P0449 code meaning evap vent valve circuit evap vent solenoid charcoal canister emissions fuel vapour engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0452 Code Meaning",
+    "url": "p0452-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0452 P0452 code meaning fuel tank pressure sensor low input evap pressure sensor fuel vapour system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0453 Code Meaning",
+    "url": "p0453-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0453 P0453 code meaning fuel tank pressure sensor high input evap pressure sensor fuel vapour system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0455 Code Meaning",
     "url": "p0455-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0455 code meaning P0455 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0456 Code Meaning",
+    "url": "p0456-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0456 P0456 code meaning evap very small leak evap leak small evap leak fuel cap loose fuel cap purge valve vent valve charcoal canister vapour leak emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0496 Code Meaning",
+    "url": "p0496-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0496 P0496 code meaning evap flow during non purge excessive evap flow purge valve stuck open charcoal canister emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0500 Code Meaning",
     "url": "p0500-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0500 code meaning P0500 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0507 Code Meaning",
     "url": "p0507-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0507 code meaning P0507 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0520 Code Meaning",
     "url": "p0520-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0520 code meaning P0520 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
     "title": "P0562 Code Meaning",
     "url": "p0562-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0562 code meaning P0562 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0601 Code Meaning",
+    "url": "p0601-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0601 P0601 code meaning internal control module memory checksum error ecu fault pcm fault engine control module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0602 Code Meaning",
+    "url": "p0602-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0602 P0602 code meaning control module programming error ecu programming pcm programming engine control module software fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0603 Code Meaning",
+    "url": "p0603-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0603 P0603 code meaning internal control module keep alive memory error kam error ecu memory battery disconnect pcm fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0604 Code Meaning",
+    "url": "p0604-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0604 P0604 code meaning internal control module random access memory error ram error ecu memory pcm fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0605 Code Meaning",
+    "url": "p0605-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "P0605 code meaning internal control module ROM error ECU PCM fault symptoms causes diagnosis repair cost OBD UK Motor Vehicle Expert"
+  },
+  {
+    "title": "P0606 Code Meaning",
+    "url": "p0606-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0606 P0606 code meaning pcm processor fault ecu processor error engine control module failure engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0607 Code Meaning",
+    "url": "p0607-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0607 P0607 code meaning control module performance pcm performance ecu fault engine control module error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0608 Code Meaning",
+    "url": "p0608-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0608 P0608 code meaning control module vss output a fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0609 Code Meaning",
+    "url": "p0609-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0609 P0609 code meaning control module vss output b fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0610 Code Meaning",
+    "url": "p0610-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0610 P0610 code meaning control module vehicle options error ecu configuration fault pcm vehicle options programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0611 Code Meaning",
+    "url": "p0611-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0611 P0611 code meaning fuel injector control module performance ficm fault injector module error diesel injector controller engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0612 Code Meaning",
+    "url": "p0612-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0612 P0612 code meaning fuel injector control module relay control fault ficm relay fault injector module relay engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0613 Code Meaning",
+    "url": "p0613-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0613 P0613 code meaning transmission control module processor fault tcm processor error gearbox control module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0614 Code Meaning",
+    "url": "p0614-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0614 P0614 code meaning ecu tcm incompatibility engine control module transmission control module communication mismatch engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0615 Code Meaning",
+    "url": "p0615-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0615 P0615 code meaning starter relay circuit fault starter relay failure no crank starter system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0616 Code Meaning",
+    "url": "p0616-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0616 P0616 code meaning starter relay circuit low starter relay low voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0617 Code Meaning",
+    "url": "p0617-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0617 P0617 code meaning starter relay circuit high starter relay high voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0618 Code Meaning",
+    "url": "p0618-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0618 P0618 code meaning alternative fuel control module keep alive memory fault afcm keep alive memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0619 Code Meaning",
+    "url": "p0619-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0619 P0619 code meaning alternative fuel control module ram rom fault afcm memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0620 Code Meaning",
+    "url": "p0620-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0620 P0620 code meaning generator control circuit alternator control fault charging system battery charging fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0621 Code Meaning",
+    "url": "p0621-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0621 P0621 code meaning generator lamp l control circuit alternator warning lamp fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0622 Code Meaning",
+    "url": "p0622-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0622 P0622 code meaning generator field f control circuit alternator field control fault charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0623 Code Meaning",
+    "url": "p0623-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0623 P0623 code meaning generator lamp control circuit alternator warning circuit fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0624 Code Meaning",
+    "url": "p0624-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0624 P0624 code meaning generator lamp control circuit low alternator warning lamp low charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0625 Code Meaning",
+    "url": "p0625-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0625 P0625 code meaning generator field f control circuit low alternator field low charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0626 Code Meaning",
+    "url": "p0626-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0626 P0626 code meaning generator field f control circuit high alternator field high charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0627 Code Meaning",
+    "url": "p0627-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0627 P0627 code meaning fuel pump a control circuit open fuel pump control fault fuel delivery problem engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0628 Code Meaning",
+    "url": "p0628-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0628 P0628 code meaning fuel pump a control circuit low fuel pump low voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0629 Code Meaning",
+    "url": "p0629-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0629 P0629 code meaning fuel pump a control circuit high fuel pump high voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0630 Code Meaning",
+    "url": "p0630-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0630 P0630 code meaning vin not programmed ecu vin mismatch engine control module programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0631 Code Meaning",
+    "url": "p0631-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0631 P0631 code meaning vin not programmed incompatible theft deterrent immobiliser vin mismatch ecu programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0632 Code Meaning",
+    "url": "p0632-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0632 P0632 code meaning odometer not programmed ecu odometer mismatch mileage programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0633 Code Meaning",
+    "url": "p0633-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0633 P0633 code meaning immobilizer key not programmed ecu key programming anti theft system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0634 Code Meaning",
+    "url": "p0634-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0634 P0634 code meaning pcm ecu internal temperature too high control module overheating engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0635 Code Meaning",
+    "url": "p0635-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0635 P0635 code meaning power steering control circuit electric power steering eps module fault steering control fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0636 Code Meaning",
+    "url": "p0636-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0636 P0636 code meaning power steering control circuit low electric power steering low voltage eps fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0637 Code Meaning",
+    "url": "p0637-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0637 P0637 code meaning power steering control circuit high electric power steering high voltage eps fault steering module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0638 Code Meaning",
+    "url": "p0638-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0638 P0638 code meaning throttle actuator control range performance throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0639 Code Meaning",
+    "url": "p0639-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0639 P0639 code meaning throttle actuator control range performance bank 2 throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0640 Code Meaning",
+    "url": "p0640-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "P0640 code meaning intake air heater control circuit fault symptoms causes diagnosis repair cost OBD UK Motor Vehicle Expert"
+  },
+  {
+    "title": "P0641 Code Meaning",
+    "url": "p0641-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0641 P0641 code meaning sensor reference voltage a circuit open 5 volt reference circuit fault sensor reference voltage fault multiple sensor codes limp mode engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0642 Code Meaning",
+    "url": "p0642-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0642 P0642 code meaning sensor reference voltage a circuit low 5 volt reference circuit low sensor reference voltage low multiple sensor codes limp mode poor throttle response engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0643 Code Meaning",
+    "url": "p0643-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0643 P0643 code meaning sensor reference voltage a circuit high 5 volt reference circuit high sensor reference voltage high multiple sensor codes limp mode short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0644 Code Meaning",
+    "url": "p0644-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0644 P0644 code meaning driver display serial communication circuit instrument cluster communication fault dashboard display fault can communication fault module communication engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0645 Code Meaning",
+    "url": "p0645-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0645 P0645 code meaning ac clutch relay control circuit a/c clutch relay fault air conditioning compressor clutch relay ac not blowing cold air compressor clutch not engaging engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0646 Code Meaning",
+    "url": "p0646-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0646 P0646 code meaning ac clutch relay control circuit low a/c clutch relay low circuit air conditioning compressor clutch relay low ac not blowing cold air compressor clutch not engaging relay control low engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0647 Code Meaning",
+    "url": "p0647-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0647 P0647 code meaning ac clutch relay control circuit high a/c clutch relay high circuit air conditioning compressor clutch relay high ac not blowing cold air compressor clutch not engaging relay control high short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
   },
   {
     "title": "P0700 Code Meaning",
     "url": "p0700-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p0700 code meaning P0700 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
+  },
+  {
+    "title": "P0705 Code Meaning",
+    "url": "p0705-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "p0705 P0705 code meaning transmission range sensor circuit gear position sensor neutral safety switch automatic gearbox engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
+  },
+  {
+    "title": "P0741 Code Meaning",
+    "url": "p0741-code-meaning.html",
+    "category": "OBD Fault Codes",
+    "keywords": "P0741 code meaning torque converter clutch circuit performance stuck off transmission fault symptoms causes diagnosis repair cost OBD UK Motor Vehicle Expert"
   },
   {
     "title": "P2195 Code Meaning",
     "url": "p2195-code-meaning.html",
-    "category": "OBD fault codes",
+    "category": "OBD Fault Codes",
     "keywords": "p2195 code meaning P2195 Code Meaning OBD fault codes motor vehicle expert uk car guide obd code diagnostic trouble code check engine light engine management light"
   },
   {
@@ -1410,6 +2197,12 @@
     "keywords": "radiator fan not working Radiator Fan Not Working Cooling system motor vehicle expert uk car guide coolant leak overheating temperature radiator fan thermostat head gasket"
   },
   {
+    "title": "Radiator Replacement Cost UK",
+    "url": "radiator-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "radiator replacement cost radiator replacement cost uk new radiator cost radiator repair cost radiator leak repair car radiator replacement radiator labour cost cooling system repair engine overheating radiator leaking radiator replacement price radiator repair uk"
+  },
+  {
     "title": "Sell Failed Mot Car",
     "url": "sell-failed-mot-car.html",
     "category": "MOT",
@@ -1426,6 +2219,13 @@
     "url": "service-light-on-after-service.html",
     "category": "Warning lights",
     "keywords": "service light on after service Service Light On After Service Warning lights motor vehicle expert uk car guide dashboard light warning symbol safe to drive mot"
+  },
+  {
+    "title": "Shock Absorber Advisory Explained",
+    "url": "shock-absorber-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Shock absorber misting, leakage and deterioration advisory explained with replacement guidance.",
+    "keywords": "Shock absorber misting, leakage and deterioration advisory explained with replacement guidance."
   },
   {
     "title": "Should You Buy A Car With Advisories",
@@ -1476,6 +2276,26 @@
     "keywords": "steering wheel shaking while driving Steering Wheel Shaking While Driving Guides motor vehicle expert uk car guide"
   },
   {
+    "title": "Structural Corrosion Advisory Explained",
+    "url": "structural-corrosion-advisory.html",
+    "category": "MOT Advisories",
+    "description": "Structural corrosion, sill rust, chassis rust and subframe corrosion advisory explained.",
+    "keywords": "Structural corrosion, sill rust, chassis rust and subframe corrosion advisory explained."
+  },
+  {
+    "title": "Suspension Advisory Explained",
+    "url": "suspension-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Suspension component advisory explained, including bushes, arms, ball joints, drop links and repair cost.",
+    "keywords": "Suspension component advisory explained, including bushes, arms, ball joints, drop links and repair cost."
+  },
+  {
+    "title": "Thermostat Replacement Cost UK",
+    "url": "thermostat-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "thermostat replacement cost thermostat replacement cost uk car thermostat replacement thermostat repair cost thermostat housing replacement thermostat stuck open thermostat stuck closed thermostat failure symptoms thermostat labour cost engine overheating coolant temperature fault thermostat replacement price"
+  },
+  {
     "title": "Thermostat Stuck Open Or Closed",
     "url": "thermostat-stuck-open-or-closed.html",
     "category": "Cooling system",
@@ -1486,6 +2306,12 @@
     "url": "timing-chain-rattle-on-startup.html",
     "category": "Diagnostics",
     "keywords": "timing chain rattle on startup Timing Chain Rattle On Startup Diagnostics motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Timing Chain Replacement Cost UK",
+    "url": "timing-chain-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "timing chain replacement cost UK timing chain repair price labour chain tensioner guides engine timing replacement garage cost Motor Vehicle Expert"
   },
   {
     "title": "Traction Control Light Fail Mot",
@@ -1500,16 +2326,41 @@
     "keywords": "traction control light on but car drives fine Traction Control Light On But Car Drives Fine Warning lights motor vehicle expert uk car guide dashboard light warning symbol safe to drive mot"
   },
   {
+    "title": "Traction Control Warning Light",
+    "url": "traction-control-warning-light.html",
+    "category": "Warning lights",
+    "keywords": "traction control warning light traction control light on dashboard warning ESP ESC fault safe to drive causes MOT UK Motor Vehicle Expert"
+  },
+  {
+    "title": "Turbo Replacement Cost UK",
+    "url": "turbo-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "turbo replacement cost UK turbocharger repair price labour replacement turbo failure symptoms garage cost diesel petrol Motor Vehicle Expert"
+  },
+  {
     "title": "Tyre Pressure Warning Light Reset Uk",
     "url": "tyre-pressure-warning-light-reset-uk.html",
     "category": "Warning lights",
     "keywords": "tyre pressure warning light reset uk Tyre Pressure Warning Light Reset Uk Warning lights motor vehicle expert uk car guide dashboard light warning symbol safe to drive mot"
   },
   {
+    "title": "Tyre Wear Advisory Explained",
+    "url": "tyre-wear-advisory-explained.html",
+    "category": "MOT Advisories",
+    "description": "Tyre worn close to legal limit advisory explained with tread depth, safety and replacement advice.",
+    "keywords": "Tyre worn close to legal limit advisory explained with tread depth, safety and replacement advice."
+  },
+  {
     "title": "Uk Speed Limits Explained",
     "url": "uk-speed-limits-explained.html",
     "category": "Guides",
     "keywords": "uk speed limits explained Uk Speed Limits Explained Guides motor vehicle expert uk car guide"
+  },
+  {
+    "title": "Used Car Brake Inspection Guide",
+    "url": "used-car-brake-inspection-guide.html",
+    "category": "Used car buying",
+    "keywords": "used car brake inspection guide check brake pads discs calipers brake fluid test drive buying used car brake wear repair risk UK Motor Vehicle Expert"
   },
   {
     "title": "Used Car Buying Guides",
@@ -1566,6 +2417,12 @@
     "keywords": "water pump failure symptoms Water Pump Failure Symptoms Cooling system motor vehicle expert uk car guide coolant leak overheating temperature radiator fan thermostat head gasket"
   },
   {
+    "title": "Water Pump Replacement Cost UK",
+    "url": "water-pump-replacement-cost-uk.html",
+    "category": "Repair Costs",
+    "keywords": "water pump replacement cost water pump replacement cost uk water pump repair cost water pump price water pump labour cost car water pump replacement water pump failure symptoms water pump leaking coolant leak repair engine overheating cooling system repair"
+  },
+  {
     "title": "What Happens If Your Car Fails Mot",
     "url": "what-happens-if-your-car-fails-mot.html",
     "category": "MOT",
@@ -1580,7 +2437,7 @@
   {
     "title": "Wheel Bearing Replacement Cost Uk",
     "url": "wheel-bearing-replacement-cost-uk.html",
-    "category": "Repair costs",
+    "category": "Repair Costs",
     "keywords": "wheel bearing replacement cost uk Wheel Bearing Replacement Cost Uk Repair costs motor vehicle expert uk car guide repair cost price garage labour replacement uk"
   },
   {
@@ -1606,791 +2463,5 @@
     "url": "will-engine-management-light-fail-mot.html",
     "category": "MOT",
     "keywords": "will engine management light fail mot Will Engine Management Light Fail Mot MOT motor vehicle expert uk car guide mot failure test retest advisory legal uk"
-  },
-{
-  "title": "P0174 Code Meaning",
-  "url": "p0174-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0174 P0174 code meaning system too lean bank 2 lean mixture bank 2 fuel trim vacuum leak intake leak maf sensor oxygen sensor o2 sensor air leak fuel injector fuel pressure engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0301 Code Meaning",
-  "url": "p0301-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0301 P0301 code meaning cylinder 1 misfire cylinder one misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0302 Code Meaning",
-  "url": "p0302-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0302 P0302 code meaning cylinder 2 misfire cylinder two misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0303 Code Meaning",
-  "url": "p0303-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0303 P0303 code meaning cylinder 3 misfire cylinder three misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0304 Code Meaning",
-  "url": "p0304-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0304 P0304 code meaning cylinder 4 misfire cylinder four misfire engine misfire spark plug ignition coil injector compression check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0441 Code Meaning",
-  "url": "p0441-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0441 P0441 code meaning evap incorrect purge flow evap purge valve evap system purge solenoid charcoal canister fuel vapour leak vent valve fuel cap emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0456 Code Meaning",
-  "url": "p0456-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0456 P0456 code meaning evap very small leak evap leak small evap leak fuel cap loose fuel cap purge valve vent valve charcoal canister vapour leak emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0172 Code Meaning",
-  "url": "p0172-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0172 P0172 code meaning system too rich bank 1 rich mixture fuel trim maf oxygen sensor injector fuel pressure engine management light obd fault code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0016 Code Meaning",
-  "url": "p0016-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0016 P0016 code meaning crankshaft camshaft correlation crankshaft position sensor camshaft position sensor timing chain timing belt variable valve timing vvt engine timing check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0102 Code Meaning",
-  "url": "p0102-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0102 P0102 code meaning mass air flow sensor low input maf sensor low voltage intake air sensor dirty maf wiring fault check engine light engine management light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0117 Code Meaning",
-  "url": "p0117-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0117 P0117 code meaning engine coolant temperature sensor low input ect sensor low voltage coolant temperature sensor wiring fault overheating engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0130 Code Meaning",
-  "url": "p0130-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0130 P0130 code meaning oxygen sensor circuit bank 1 sensor 1 o2 sensor lambda sensor upstream oxygen sensor fuel mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0131 Code Meaning",
-  "url": "p0131-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0131 P0131 code meaning oxygen sensor low voltage bank 1 sensor 1 o2 sensor lambda sensor lean mixture fuel trim engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0132 Code Meaning",
-  "url": "p0132-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0132 P0132 code meaning oxygen sensor high voltage bank 1 sensor 1 o2 sensor lambda sensor rich mixture fuel trim engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0133 Code Meaning",
-  "url": "p0133-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0133 P0133 code meaning oxygen sensor slow response bank 1 sensor 1 o2 sensor lambda sensor slow switching fuel mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0134 Code Meaning",
-  "url": "p0134-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0134 P0134 code meaning oxygen sensor no activity bank 1 sensor 1 o2 sensor lambda sensor inactive engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0136 Code Meaning",
-  "url": "p0136-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0136 P0136 code meaning oxygen sensor circuit bank 1 sensor 2 downstream oxygen sensor lambda sensor catalytic converter engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0137 Code Meaning",
-  "url": "p0137-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0137 P0137 code meaning oxygen sensor low voltage bank 1 sensor 2 downstream o2 sensor lambda sensor exhaust sensor engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0138 Code Meaning",
-  "url": "p0138-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0138 P0138 code meaning oxygen sensor high voltage bank 1 sensor 2 downstream o2 sensor lambda sensor rich mixture engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0325 Code Meaning",
-  "url": "p0325-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0325 P0325 code meaning knock sensor circuit knock sensor fault engine pinging detonation ignition timing engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0341 Code Meaning",
-  "url": "p0341-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0341 P0341 code meaning camshaft position sensor range performance cam sensor timing sensor engine timing engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0443 Code Meaning",
-  "url": "p0443-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0443 P0443 code meaning evap purge control valve circuit evap purge solenoid purge valve fault emissions fuel vapour engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0449 Code Meaning",
-  "url": "p0449-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0449 P0449 code meaning evap vent valve circuit evap vent solenoid charcoal canister emissions fuel vapour engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0452 Code Meaning",
-  "url": "p0452-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0452 P0452 code meaning fuel tank pressure sensor low input evap pressure sensor fuel vapour system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0453 Code Meaning",
-  "url": "p0453-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0453 P0453 code meaning fuel tank pressure sensor high input evap pressure sensor fuel vapour system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0496 Code Meaning",
-  "url": "p0496-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0496 P0496 code meaning evap flow during non purge excessive evap flow purge valve stuck open charcoal canister emissions engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0601 Code Meaning",
-  "url": "p0601-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0601 P0601 code meaning internal control module memory checksum error ecu fault pcm fault engine control module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0602 Code Meaning",
-  "url": "p0602-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0602 P0602 code meaning control module programming error ecu programming pcm programming engine control module software fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0603 Code Meaning",
-  "url": "p0603-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0603 P0603 code meaning internal control module keep alive memory error kam error ecu memory battery disconnect pcm fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0604 Code Meaning",
-  "url": "p0604-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0604 P0604 code meaning internal control module random access memory error ram error ecu memory pcm fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0606 Code Meaning",
-  "url": "p0606-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0606 P0606 code meaning pcm processor fault ecu processor error engine control module failure engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0607 Code Meaning",
-  "url": "p0607-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0607 P0607 code meaning control module performance pcm performance ecu fault engine control module error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0705 Code Meaning",
-  "url": "p0705-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0705 P0705 code meaning transmission range sensor circuit gear position sensor neutral safety switch automatic gearbox engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-}, 
-{
-  "title": "P0608 Code Meaning",
-  "url": "p0608-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0608 P0608 code meaning control module vss output a fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0609 Code Meaning",
-  "url": "p0609-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0609 P0609 code meaning control module vss output b fault vehicle speed signal fault pcm vss output ecu vehicle speed output engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0610 Code Meaning",
-  "url": "p0610-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0610 P0610 code meaning control module vehicle options error ecu configuration fault pcm vehicle options programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0611 Code Meaning",
-  "url": "p0611-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0611 P0611 code meaning fuel injector control module performance ficm fault injector module error diesel injector controller engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0612 Code Meaning",
-  "url": "p0612-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0612 P0612 code meaning fuel injector control module relay control fault ficm relay fault injector module relay engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0613 Code Meaning",
-  "url": "p0613-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0613 P0613 code meaning transmission control module processor fault tcm processor error gearbox control module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0614 Code Meaning",
-  "url": "p0614-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0614 P0614 code meaning ecu tcm incompatibility engine control module transmission control module communication mismatch engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0615 Code Meaning",
-  "url": "p0615-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0615 P0615 code meaning starter relay circuit fault starter relay failure no crank starter system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0616 Code Meaning",
-  "url": "p0616-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0616 P0616 code meaning starter relay circuit low starter relay low voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0617 Code Meaning",
-  "url": "p0617-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0617 P0617 code meaning starter relay circuit high starter relay high voltage starter system fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0618 Code Meaning",
-  "url": "p0618-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0618 P0618 code meaning alternative fuel control module keep alive memory fault afcm keep alive memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0619 Code Meaning",
-  "url": "p0619-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0619 P0619 code meaning alternative fuel control module ram rom fault afcm memory error engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0620 Code Meaning",
-  "url": "p0620-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0620 P0620 code meaning generator control circuit alternator control fault charging system battery charging fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0621 Code Meaning",
-  "url": "p0621-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0621 P0621 code meaning generator lamp l control circuit alternator warning lamp fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0622 Code Meaning",
-  "url": "p0622-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0622 P0622 code meaning generator field f control circuit alternator field control fault charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0623 Code Meaning",
-  "url": "p0623-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0623 P0623 code meaning generator lamp control circuit alternator warning circuit fault charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0624 Code Meaning",
-  "url": "p0624-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0624 P0624 code meaning generator lamp control circuit low alternator warning lamp low charging system battery light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0625 Code Meaning",
-  "url": "p0625-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0625 P0625 code meaning generator field f control circuit low alternator field low charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0626 Code Meaning",
-  "url": "p0626-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0626 P0626 code meaning generator field f control circuit high alternator field high charging system battery warning light engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0627 Code Meaning",
-  "url": "p0627-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0627 P0627 code meaning fuel pump a control circuit open fuel pump control fault fuel delivery problem engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0628 Code Meaning",
-  "url": "p0628-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0628 P0628 code meaning fuel pump a control circuit low fuel pump low voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0629 Code Meaning",
-  "url": "p0629-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0629 P0629 code meaning fuel pump a control circuit high fuel pump high voltage fuel delivery fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0630 Code Meaning",
-  "url": "p0630-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0630 P0630 code meaning vin not programmed ecu vin mismatch engine control module programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0631 Code Meaning",
-  "url": "p0631-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0631 P0631 code meaning vin not programmed incompatible theft deterrent immobiliser vin mismatch ecu programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0632 Code Meaning",
-  "url": "p0632-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0632 P0632 code meaning odometer not programmed ecu odometer mismatch mileage programming engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0633 Code Meaning",
-  "url": "p0633-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0633 P0633 code meaning immobilizer key not programmed ecu key programming anti theft system engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0634 Code Meaning",
-  "url": "p0634-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0634 P0634 code meaning pcm ecu internal temperature too high control module overheating engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0635 Code Meaning",
-  "url": "p0635-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0635 P0635 code meaning power steering control circuit electric power steering eps module fault steering control fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0636 Code Meaning",
-  "url": "p0636-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0636 P0636 code meaning power steering control circuit low electric power steering low voltage eps fault engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0637 Code Meaning",
-  "url": "p0637-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0637 P0637 code meaning power steering control circuit high electric power steering high voltage eps fault steering module engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0638 Code Meaning",
-  "url": "p0638-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0638 P0638 code meaning throttle actuator control range performance throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0639 Code Meaning",
-  "url": "p0639-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0639 P0639 code meaning throttle actuator control range performance bank 2 throttle body fault electronic throttle control reduced power limp mode poor acceleration engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0641 Code Meaning",
-  "url": "p0641-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0641 P0641 code meaning sensor reference voltage a circuit open 5 volt reference circuit fault sensor reference voltage fault multiple sensor codes limp mode engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0642 Code Meaning",
-  "url": "p0642-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0642 P0642 code meaning sensor reference voltage a circuit low 5 volt reference circuit low sensor reference voltage low multiple sensor codes limp mode poor throttle response engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0643 Code Meaning",
-  "url": "p0643-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0643 P0643 code meaning sensor reference voltage a circuit high 5 volt reference circuit high sensor reference voltage high multiple sensor codes limp mode short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0644 Code Meaning",
-  "url": "p0644-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0644 P0644 code meaning driver display serial communication circuit instrument cluster communication fault dashboard display fault can communication fault module communication engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0645 Code Meaning",
-  "url": "p0645-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0645 P0645 code meaning ac clutch relay control circuit a/c clutch relay fault air conditioning compressor clutch relay ac not blowing cold air compressor clutch not engaging engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0646 Code Meaning",
-  "url": "p0646-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0646 P0646 code meaning ac clutch relay control circuit low a/c clutch relay low circuit air conditioning compressor clutch relay low ac not blowing cold air compressor clutch not engaging relay control low engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-  "title": "P0647 Code Meaning",
-  "url": "p0647-code-meaning.html",
-  "category": "OBD Fault Codes",
-  "keywords": "p0647 P0647 code meaning ac clutch relay control circuit high a/c clutch relay high circuit air conditioning compressor clutch relay high ac not blowing cold air compressor clutch not engaging relay control high short to voltage engine management light check engine light obd fault code diagnostic trouble code motor vehicle expert uk car guide"
-},
-{
-    "title": "Most Common MOT Advisories Explained",
-    "url": "most-common-mot-advisories-explained.html",
-    "category": "MOT Advisories",
-    "description": "UK MOT advisory hub explaining common advisories, safety risk, repair urgency, insurance, costs and next MOT failure risk."
-  },
-  {
-    "title": "Corroded Brake Pipe Advisory Explained",
-    "url": "corroded-brake-pipe-advisory.html",
-    "category": "MOT Advisories",
-    "description": "Brake pipe corrosion advisory explained with safety risk, repair cost and next MOT failure risk."
-  },
-  {
-    "title": "Tyre Wear Advisory Explained",
-    "url": "tyre-wear-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Tyre worn close to legal limit advisory explained with tread depth, safety and replacement advice."
-  },
-  {
-    "title": "Brake Disc Advisory Explained",
-    "url": "brake-disc-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Corroded, pitted, scored or worn brake disc advisory explained for UK drivers."
-  },
-  {
-    "title": "Brake Pad Advisory Explained",
-    "url": "brake-pad-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Low brake pad advisory explained with replacement timing, costs and MOT failure risk."
-  },
-  {
-    "title": "Suspension Advisory Explained",
-    "url": "suspension-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Suspension component advisory explained, including bushes, arms, ball joints, drop links and repair cost."
-  },
-  {
-    "title": "Oil Leak Advisory Explained",
-    "url": "oil-leak-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Minor oil leak MOT advisory explained with causes, repair costs and failure risk."
-  },
-  {
-    "title": "Structural Corrosion Advisory Explained",
-    "url": "structural-corrosion-advisory.html",
-    "category": "MOT Advisories",
-    "description": "Structural corrosion, sill rust, chassis rust and subframe corrosion advisory explained."
-  },
-  {
-    "title": "Shock Absorber Advisory Explained",
-    "url": "shock-absorber-advisory-explained.html",
-    "category": "MOT Advisories",
-    "description": "Shock absorber misting, leakage and deterioration advisory explained with replacement guidance."
-  },
-  {
-    "title": "Do MOT Advisories Affect Insurance?",
-    "url": "do-mot-advisories-affect-insurance.html",
-    "category": "MOT Advisories",
-    "description": "Explains whether MOT advisories affect insurance, roadworthiness and claim risk."
-  },
-  {
-    "title": "How Long Can You Drive With an MOT Advisory?",
-    "url": "how-long-can-you-drive-with-an-mot-advisory.html",
-    "category": "MOT Advisories",
-    "description": "Repair urgency guide explaining how long UK drivers can drive with different MOT advisories."
-  },
-  {
-    "title": "Car Fails MOT On Lights",
-    "url": "car-fails-mot-on-lights.html",
-    "category": "MOT Failures",
-    "description": "Lighting MOT failure guide covering headlights, brake lights, indicators, fog lights and retest advice."
-  },
-{
-  "title": "Exhaust Corrosion Advisory Explained",
-  "url": "exhaust-corrosion-advisory-explained.html",
-  "category": "MOT Advisories",
-  "description": "Exhaust corrosion MOT advisory explained with repair costs, driving advice, replacement timing and next MOT failure risk."
-},
-{
-  "title": "Does MOT Check?",
-  "url": "does-mot-check.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check what does mot check MOT checklist UK MOT inspection checklist what is checked in MOT what is not checked in MOT roadworthiness MOT test UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Tracking?",
-  "url": "does-mot-check-tracking.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check tracking tracking MOT wheel tracking MOT toe angle tyre wear steering pull suspension track rod MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Wheel Balancing?",
-  "url": "does-mot-check-wheel-balancing.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check wheel balancing wheel balancing MOT steering wheel vibration tyre vibration wheel bearing suspension tyres wheels MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Clutch?",
-  "url": "does-mot-check-clutch.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check clutch clutch MOT slipping clutch biting point clutch pedal clutch wear gear selection safe control MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Service History?",
-  "url": "does-mot-check-service-history.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check service history MOT service history service book MOT history service records stamped service book used car buying maintenance records UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Air Conditioning?",
-  "url": "does-mot-check-air-conditioning.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check air conditioning AC MOT air con MOT demister heater blower windscreen visibility AC not cold MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Engine Oil?",
-  "url": "does-mot-check-engine-oil.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check engine oil oil level MOT oil quality oil leak MOT oil warning light blue smoke emissions MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Gearbox?",
-  "url": "does-mot-check-gearbox.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check gearbox gearbox MOT transmission MOT gear selection gearbox oil leak gearbox fault automatic gearbox manual gearbox MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Wheel Alignment?",
-  "url": "does-mot-check-wheel-alignment.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check wheel alignment wheel alignment MOT tracking MOT uneven tyre wear steering pull suspension tyre wear four wheel alignment wheel geometry MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Water Pump Replacement Cost UK",
-  "url": "water-pump-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "water pump replacement cost water pump replacement cost uk water pump repair cost water pump price water pump labour cost car water pump replacement water pump failure symptoms water pump leaking coolant leak repair engine overheating cooling system repair"
-},
-{
-  "title": "Radiator Replacement Cost UK",
-  "url": "radiator-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "radiator replacement cost radiator replacement cost uk new radiator cost radiator repair cost radiator leak repair car radiator replacement radiator labour cost cooling system repair engine overheating radiator leaking radiator replacement price radiator repair uk"
-},
-{
-  "title": "Thermostat Replacement Cost UK",
-  "url": "thermostat-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "thermostat replacement cost thermostat replacement cost uk car thermostat replacement thermostat repair cost thermostat housing replacement thermostat stuck open thermostat stuck closed thermostat failure symptoms thermostat labour cost engine overheating coolant temperature fault thermostat replacement price"
-},
-{
-  "title": "Disc Brakes Explained",
-  "url": "disc-brakes-explained.html",
-  "category": "Braking System",
-  "keywords": "disc brakes explained brake discs braking system disc brake guide brake rotor caliper pads hydraulic braking UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Pads Explained",
-  "url": "brake-pads-explained.html",
-  "category": "Braking System",
-  "keywords": "brake pads explained brake pad wear brake friction material changing brake pads UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Discs Explained",
-  "url": "brake-discs-explained.html",
-  "category": "Braking System",
-  "keywords": "brake discs explained brake rotors vented discs solid discs brake disc wear UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Calipers Explained",
-  "url": "brake-calipers-explained.html",
-  "category": "Braking System",
-  "keywords": "brake calipers explained floating caliper fixed caliper seized caliper braking system UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Fluid Explained",
-  "url": "brake-fluid-explained.html",
-  "category": "Braking System",
-  "keywords": "brake fluid explained DOT4 DOT5 hydraulic fluid moisture contamination brake system UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Pipes Explained",
-  "url": "brake-pipe-explained.html",
-  "category": "Braking System",
-  "keywords": "brake pipes explained brake lines copper brake pipes steel brake pipes corrosion UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Servo Explained",
-  "url": "brake-servo-explained.html",
-  "category": "Braking System",
-  "keywords": "brake servo explained vacuum brake booster servo failure hard brake pedal UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Master Cylinder Explained",
-  "url": "brake-master-cylinder-explained.html",
-  "category": "Braking System",
-  "keywords": "brake master cylinder explained master cylinder symptoms hydraulic braking UK Motor Vehicle Expert"
-},
-{
-  "title": "Hydraulic Braking System Explained",
-  "url": "hydraulic-braking-system-explained.html",
-  "category": "Braking System",
-  "keywords": "hydraulic braking system explained hydraulic brakes brake pressure brake fluid operation UK Motor Vehicle Expert"
-},
-{
-  "title": "ABS Explained",
-  "url": "abs-explained.html",
-  "category": "Braking System",
-  "keywords": "ABS explained anti lock braking system wheel speed sensors ABS pump brake safety UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Fade Explained",
-  "url": "brake-fade-explained.html",
-  "category": "Braking System",
-  "keywords": "brake fade explained overheating brakes brake fade symptoms brake fade causes brake fade prevention UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Disc Replacement Cost UK",
-  "url": "brake-disc-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "brake disc replacement cost UK brake rotor replacement cost brake repair prices UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Pad Replacement Cost UK",
-  "url": "brake-pad-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "brake pad replacement cost UK brake pad prices labour brake repairs UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Caliper Replacement Cost UK",
-  "url": "brake-caliper-replacement-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "brake caliper replacement cost UK seized caliper repair caliper prices UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Fluid Change Cost UK",
-  "url": "brake-fluid-change-cost-uk.html",
-  "category": "Repair Costs",
-  "keywords": "brake fluid change cost UK brake fluid flush cost hydraulic brake service brake maintenance UK Motor Vehicle Expert"
-},
-{
-  "title": "Brake Overheating Explained",
-  "url": "brake-overheating-explained.html",
-  "category": "Braking System",
-  "keywords": "brake overheating explained overheating brakes brake overheating symptoms burning smell hot brakes brake temperature seized caliper brake fade overheating brake discs brake pads brake fluid UK Motor Vehicle Expert"
-},
-{
-  "title": "Does MOT Check Wheel Alignment?",
-  "url": "does-mot-check-wheel-alignment.html",
-  "category": "MOT Guides",
-  "keywords": "does mot check wheel alignment does MOT check tracking can wheel alignment fail MOT wheel alignment MOT tracking MOT uneven tyre wear MOT steering MOT suspension MOT tyre wear car pulls to one side steering wheel off centre wheel alignment explained four wheel alignment front wheel tracking wheel geometry MOT inspection UK Motor Vehicle Expert"
-},
-{
-  "title": "Car Diagnostics Explained",
-  "url": "car-diagnostics-explained.html",
-  "category": "Diagnostics",
-  "keywords": "car diagnostics explained vehicle diagnostics UK OBD OBD2 OBD-II diagnostic guide fault codes live data freeze frame diagnostic trouble codes DTC ECU engine control unit sensors vehicle sensors scan tool diagnostic scanner professional diagnostics diagnostic testing engine management light P codes B codes C codes U codes pending codes stored codes permanent codes readiness monitors diagnostic process electrical testing mechanical testing multimeter oscilloscope smoke machine garage diagnostics repair costs Motor Vehicle Expert"
-},
-{
-  "title": "OBD-II Explained",
-  "url": "obd-ii-explained.html",
-  "category": "Diagnostics",
-  "keywords": "OBD-II explained OBD2 explained on board diagnostics OBD port OBD scanner diagnostic trouble codes DTC live data freeze frame readiness monitors generic vs manufacturer fault codes engine management light ECU diagnostics UK Motor Vehicle Expert"
-},
-{
-  "title": "ECU Explained",
-  "url": "ecu-explained.html",
-  "category": "Diagnostics",
-  "keywords": "ECU explained engine control unit explained electronic control unit ECU meaning ECU diagnostics ECU faults ECU sensors ECU actuators engine management computer car ECU UK Motor Vehicle Expert"
-},
-{
-  "title": "Car Sensors Explained",
-  "url": "car-sensors-explained.html",
-  "category": "Diagnostics",
-  "keywords": "car sensors explained vehicle sensors engine sensors oxygen sensor MAF sensor MAP sensor crankshaft sensor camshaft sensor coolant temperature sensor ABS wheel speed sensor pressure sensor position sensor ECU sensors diagnostics UK Motor Vehicle Expert"
-},  
-{
-  "title": "Clutch Burning Smell",
-  "url": "clutch-burning-smell.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch burning smell burnt clutch smell burning clutch symptoms clutch overheating clutch slip smell clutch smell after hill start clutch smell when reversing clutch smell in traffic clutch smell when towing worn clutch pressure plate flywheel oil contamination clutch repair costs UK Motor Vehicle Expert"
-},
-{
-  "title": "High Clutch Bite Point",
-  "url": "high-clutch-bite-point.html",
-  "category": "Clutch and Transmission",
-  "keywords": "high clutch bite point high clutch biting point clutch bites high clutch engagement point worn clutch symptoms normal clutch bite point cable clutch adjustment hydraulic clutch fault clutch pedal travel clutch slip high bite point clutch replacement costs used car clutch check UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Pedal Stuck Down",
-  "url": "clutch-pedal-stuck-down.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch pedal stuck down clutch pedal stays down clutch pedal on floor clutch pedal not returning slow clutch pedal return failed clutch master cylinder slave cylinder clutch hydraulic leak broken clutch cable clutch pedal spring release fork release bearing pressure plate difficult gear selection clutch repair costs UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Pedal Goes to the Floor",
-  "url": "clutch-pedal-goes-to-floor.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch pedal goes to floor clutch pedal on floor no resistance clutch hydraulic failure clutch master cylinder failure clutch slave cylinder failure clutch hydraulic leak clutch pressure loss clutch pedal no pressure release bearing hydraulic clutch system emergency clutch fault difficult gear selection clutch repair costs UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Makes Noise When Pressed",
-  "url": "clutch-makes-noise-when-pressed.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch makes noise when pressed clutch noise when pressing pedal release bearing noise clutch release bearing faulty clutch fork noise clutch squeal clutch chirping noise clutch grinding noise clutch pedal noise pressure plate noise gearbox input shaft bearing clutch repair costs UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Slip in High Gears",
-  "url": "clutch-slip-in-high-gears.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch slips in high gears clutch slip in fifth gear clutch slip in sixth gear clutch revs rise no acceleration clutch slipping under load worn clutch pressure plate flywheel clutch high gear acceleration clutch slipping uphill clutch replacement signs clutch repair costs UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Slip After Replacement",
-  "url": "clutch-slip-after-replacement.html",
-  "category": "Clutch and Transmission",
-  "keywords": "clutch slip after replacement new clutch slipping replacement clutch slipping clutch slipping after new clutch incorrect clutch installation wrong clutch kit clutch contamination flywheel problem clutch hydraulic preload clutch warranty clutch repair after replacement clutch replacement problems UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Judder When Pulling Away",
-  "url": "clutch-judder-when-pulling-away.html",
-  "category": "Clutch & Transmission",
-  "keywords": "clutch judder when pulling away clutch judder clutch shudders when moving off clutch vibration on take off car judders when releasing clutch clutch shakes in first gear manual car judders pulling away clutch judder after replacement dual mass flywheel judder contaminated clutch judder clutch vibration diagnosis clutch repair clutch plate flywheel engine mounts gearbox mounts clutch slipping UK Motor Vehicle Expert"
-},
-{
-  "title": "Burnt Clutch Symptoms UK",
-  "url": "burnt-clutch-symptoms.html",
-  "category": "Clutch & Transmission",
-  "keywords": "burnt clutch symptoms signs of a burnt clutch burnt clutch warning signs clutch overheating symptoms damaged clutch symptoms burnt clutch smell clutch slipping poor acceleration high clutch bite point clutch judder clutch smoke loss of drive overheated clutch manual clutch overheating clutch replacement cost clutch diagnosis UK Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Vibrates in First Gear UK 2026",
-  "url": "clutch-vibrates-in-first-gear.html",
-  "category": "Clutch & Transmission",
-  "keywords": "clutch vibrates in first gear clutch vibration in first gear car shakes in first gear manual car vibrates when moving off clutch shakes when released vibration at clutch bite point first gear clutch judder car vibrates pulling away first gear vibration diagnosis worn clutch plate dual mass flywheel engine mounts gearbox mounts oil contaminated clutch clutch vibration repair cost UK 2026 Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Slipping in First Gear? Causes, Fixes & Repair Costs (UK 2026)",
-  "url": "clutch-slipping-in-first-gear.html",
-  "category": "Clutch & Transmission",
-  "keywords": "clutch slipping in first gear first gear clutch slip clutch slips when pulling away engine revs but car barely moves clutch slipping from standstill clutch slipping uphill clutch slip when hot new clutch slipping in first gear worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault clutch replacement cost UK 2026 Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Slips in Reverse? Causes, Fixes & Costs UK 2026",
-  "url": "clutch-slips-in-reverse.html",
-  "category": "Clutch & Transmission",
-  "keywords": "clutch slips in reverse clutch slipping in reverse reverse clutch slip manual car slips when reversing clutch slips reversing uphill engine revs but car reverses slowly reverse gear clutch problem burning clutch smell in reverse worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault new clutch slips in reverse clutch repair costs UK 2026 Motor Vehicle Expert"
-},
-{
-  "title": "Clutch Slipping in Second Gear? Causes, Fixes & Costs UK 2026",
-  "url": "clutch-slipping-in-second-gear.html",
-  "category": "Clutch & Transmission",
-  "keywords": "clutch slipping in second gear second gear clutch slip clutch slips after changing into second revs flare after first to second shift engine revs but car does not accelerate clutch slips under acceleration clutch slip uphill clutch slips when hot worn clutch plate glazed clutch oil contaminated clutch weak pressure plate dual mass flywheel hydraulic clutch fault new clutch slipping in second gear manual gearbox second gear problem clutch repair costs UK 2026 Motor Vehicle Expert"
-}  
+  }
 ]
