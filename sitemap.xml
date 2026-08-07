@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/</loc>
-  <lastmod>2026-08-07</lastmod>
-  <priority>1.0</priority>
-</url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/</loc>
+    <lastmod>2026-08-07</lastmod>
+  </url>
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/about.html</loc>
     <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/abs-explained.html</loc>
+    <lastmod>2026-07-02</lastmod>
   </url>
 
   <url>
@@ -63,8 +67,83 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-caliper-replacement-cost-uk.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-calipers-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-disc-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-disc-replacement-cost-uk.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-discs-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-fade-explained.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-fluid-change-cost-uk.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-fluid-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-hoses-explained.html</loc>
+    <lastmod>2026-06-28</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-master-cylinder-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-overheating-explained.html</loc>
+    <lastmod>2026-07-03</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-pad-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/brake-pad-replacement-cost-uk.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-pads-explained.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-pipe-explained.html</loc>
+    <lastmod>2026-07-02</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/brake-servo-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
   </url>
 
   <url>
@@ -83,13 +162,33 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/burning-clutch-smell.html</loc>
+    <lastmod>2026-06-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/burnt-clutch-symptoms.html</loc>
+    <lastmod>2026-08-03</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/buying-car-with-failed-mot-history.html</loc>
     <lastmod>2026-07-10</lastmod>
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/buying-car-with-no-mot.html</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/buying-from-dealer-vs-private-seller.html</loc>
     <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/can-a-clutch-fail-mot.html</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
 
   <url>
@@ -125,13 +224,6 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/can-boot-fail-mot.html</loc>
     <lastmod>2026-05-11</lastmod>
-  </url>
-
-  <url>
-    <loc>https://motorvehicleexpert.co.uk/buying-car-with-no-mot.html</loc>
-    <lastmod>2026-06-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
@@ -245,6 +337,11 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/can-police-see-no-mot.html</loc>
+    <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/can-power-steering-leak-fail-mot.html</loc>
     <lastmod>2026-05-11</lastmod>
   </url>
@@ -335,6 +432,11 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/can-you-drive-car-with-failed-mot.html</loc>
+    <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/can-you-drive-to-an-mot-without-tax.html</loc>
     <lastmod>2026-05-11</lastmod>
   </url>
@@ -342,6 +444,11 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/can-you-drive-with-engine-management-light-on.html</loc>
     <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/can-you-park-car-on-road-without-mot.html</loc>
+    <lastmod>2026-05-15</lastmod>
   </url>
 
   <url>
@@ -387,6 +494,11 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/car-cranks-but-wont-start.html</loc>
     <lastmod>2026-05-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/car-diagnostics-explained.html</loc>
+    <lastmod>2026-07-15</lastmod>
   </url>
 
   <url>
@@ -600,6 +712,11 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/car-sensors-explained.html</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/car-servicing-guide-uk.html</loc>
     <lastmod>2026-07-11</lastmod>
   </url>
@@ -749,78 +866,69 @@
     <lastmod>2026-05-12</lastmod>
   </url>
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-burning-smell.html</loc>
-  <lastmod>2026-07-29</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-burning-smell.html</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/high-clutch-bite-point.html</loc>
-  <lastmod>2026-07-29</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-judder-when-pulling-away.html</loc>
+    <lastmod>2026-08-03</lastmod>
+  </url>
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-pedal-stuck-down.html</loc>
-  <lastmod>2026-07-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-makes-noise-when-pressed.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-pedal-goes-to-floor.html</loc>
-  <lastmod>2026-07-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-pedal-goes-to-floor.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
 
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-makes-noise-when-pressed.html</loc>
-  <lastmod>2026-07-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slip-in-high-gears.html</loc>
-  <lastmod>2026-07-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slip-after-replacement.html</loc>
-  <lastmod>2026-07-30</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slipping-in-second-gear.html</loc>
-  <lastmod>2026-08-05</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-vibrates-in-first-gear.html</loc>
-  <lastmod>2026-08-04</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/burnt-clutch-symptoms.html</loc>
-  <lastmod>2026-08-03</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-judder-when-pulling-away.html</loc>
-  <lastmod>2026-08-03</lastmod>
-</url>  
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-pedal-stuck-down.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/clutch-replacement-cost-uk.html</loc>
     <lastmod>2026-05-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slip-after-replacement.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slip-in-high-gears.html</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slipping-in-first-gear.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slipping-in-second-gear.html</loc>
+    <lastmod>2026-08-05</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slipping-symptoms.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-slips-in-reverse.html</loc>
+    <lastmod>2026-08-04</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/clutch-vibrates-in-first-gear.html</loc>
+    <lastmod>2026-08-04</lastmod>
   </url>
 
   <url>
@@ -859,19 +967,28 @@
   </url>
 
   <url>
-   <loc>https://motorvehicleexpert.co.uk/cooling-system-guides.html</loc>
-   <lastmod>2026-06-08</lastmod>
+    <loc>https://motorvehicleexpert.co.uk/cooling-system-guides.html</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
 
- <url>
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/corroded-brake-pipe-advisory.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/diagnostic-app.html</loc>
     <lastmod>2026-08-02</lastmod>
-    <priority>1.0</priority>
-</url>
+  </url>
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/diagnostics.html</loc>
     <lastmod>2026-07-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/disc-brakes-explained.html</loc>
+    <lastmod>2026-07-02</lastmod>
   </url>
 
   <url>
@@ -880,13 +997,88 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/do-mot-advisories-affect-insurance.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/do-you-need-an-mot-to-insure-a-car.html</loc>
     <lastmod>2026-05-12</lastmod>
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-air-conditioning.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-clutch.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-engine-oil.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-gearbox.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-service-history.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-tracking.html</loc>
+    <lastmod>2026-07-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-wheel-alignment.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check-wheel-balancing.html</loc>
+    <lastmod>2026-07-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-mot-check.html</loc>
+    <lastmod>2026-07-09</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/does-sorn-car-need-insurance.html</loc>
+    <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/dpf-warning-light-explained.html</loc>
     <lastmod>2026-06-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/driving-with-expired-mot-fine-uk.html</loc>
+    <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/ecu-explained.html</loc>
+    <lastmod>2026-07-21</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/electronic-parking-brake-fault.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/engine-braking-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
   </url>
 
   <url>
@@ -920,8 +1112,18 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/exhaust-corrosion-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/exhaust-smoke-colour-guide.html</loc>
     <lastmod>2026-05-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/fault-codes.html</loc>
+    <lastmod>2026-07-16</lastmod>
   </url>
 
   <url>
@@ -935,13 +1137,18 @@
   </url>
 
   <url>
-    <loc>https://motorvehicleexpert.co.uk/mot-failure-guides.html</loc>
-    <lastmod>2026-06-12</lastmod>
+    <loc>https://motorvehicleexpert.co.uk/high-clutch-bite-point.html</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
 
   <url>
     <loc>https://motorvehicleexpert.co.uk/how-early-can-you-renew-mot.html</loc>
     <lastmod>2026-05-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/how-long-can-you-drive-with-an-mot-advisory.html</loc>
+    <lastmod>2026-06-17</lastmod>
   </url>
 
   <url>
@@ -955,8 +1162,18 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/how-to-check-brake-pads.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/how-to-check-car-battery-health.html</loc>
     <lastmod>2026-05-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/how-to-check-if-car-is-stolen-or-written-off.html</loc>
+    <lastmod>2026-06-08</lastmod>
   </url>
 
   <url>
@@ -975,8 +1192,23 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/how-to-sell-a-car-privately-uk.html</loc>
+    <lastmod>2026-05-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/how-to-spot-accident-repair.html</loc>
     <lastmod>2026-06-08</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/how-to-value-my-car-uk.html</loc>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/hydraulic-braking-system-explained.html</loc>
+    <lastmod>2026-07-06</lastmod>
   </url>
 
   <url>
@@ -995,8 +1227,23 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/most-common-mot-advisories-explained.html</loc>
+    <lastmod>2026-06-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/most-reliable-used-cars-uk.html</loc>
+    <lastmod>2026-05-22</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/mot-advisory-meaning-explained.html</loc>
     <lastmod>2026-05-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/mot-failure-guides.html</loc>
+    <lastmod>2026-06-12</lastmod>
   </url>
 
   <url>
@@ -1010,6 +1257,16 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/obd-ii-explained.html</loc>
+    <lastmod>2026-07-20</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/oil-leak-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/oil-light-on-then-off.html</loc>
     <lastmod>2026-05-13</lastmod>
   </url>
@@ -1017,6 +1274,521 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/oil-warning-light-on-and-off.html</loc>
     <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0011-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0016-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0101-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0102-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0113-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0117-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0118-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0121-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0128-code-meaning.html</loc>
+    <lastmod>2026-07-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0130-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0131-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0132-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0133-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0134-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0135-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0136-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0137-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0138-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0141-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0171-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0172-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0174-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0201-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0234-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0299-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0300-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0301-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0302-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0303-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0304-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0325-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0335-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0340-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0341-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0401-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0402-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0420-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0440-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0441-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0442-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0443-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0446-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0449-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0452-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0453-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0455-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0456-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0496-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0500-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0507-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0520-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0562-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0601-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0602-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0603-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0604-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0605-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0606-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0607-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0608-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0609-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0610-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0611-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0612-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0613-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0614-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0615-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0616-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0617-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0618-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0619-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0620-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0621-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0622-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0623-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0624-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0625-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0626-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0627-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0628-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0629-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0630-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0631-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0632-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0633-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0634-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0635-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0636-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0637-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0638-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0639-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0640-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0641-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0642-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0643-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0644-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0645-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0646-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0647-code-meaning.html</loc>
+    <lastmod>2026-06-14</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0700-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0705-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p0741-code-meaning.html</loc>
+    <lastmod>2026-06-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/p2195-code-meaning.html</loc>
+    <lastmod>2026-06-12</lastmod>
   </url>
 
   <url>
@@ -1050,6 +1822,16 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/radiator-replacement-cost-uk.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/sell-failed-mot-car.html</loc>
+    <lastmod>2026-06-02</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/service-esc-light-meaning.html</loc>
     <lastmod>2026-05-13</lastmod>
   </url>
@@ -1057,6 +1839,11 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/service-light-on-after-service.html</loc>
     <lastmod>2026-05-13</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/shock-absorber-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
   </url>
 
   <url>
@@ -1100,6 +1887,21 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/structural-corrosion-advisory.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/suspension-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/thermostat-replacement-cost-uk.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/thermostat-stuck-open-or-closed.html</loc>
     <lastmod>2026-05-29</lastmod>
   </url>
@@ -1107,6 +1909,11 @@
   <url>
     <loc>https://motorvehicleexpert.co.uk/timing-chain-rattle-on-startup.html</loc>
     <lastmod>2026-05-15</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/timing-chain-replacement-cost-uk.html</loc>
+    <lastmod>2026-06-18</lastmod>
   </url>
 
   <url>
@@ -1120,8 +1927,23 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/traction-control-warning-light.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/turbo-replacement-cost-uk.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/tyre-pressure-warning-light-reset-uk.html</loc>
     <lastmod>2026-05-11</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/tyre-wear-advisory-explained.html</loc>
+    <lastmod>2026-06-17</lastmod>
   </url>
 
   <url>
@@ -1130,8 +1952,18 @@
   </url>
 
   <url>
+    <loc>https://motorvehicleexpert.co.uk/used-car-brake-inspection-guide.html</loc>
+    <lastmod>2026-07-06</lastmod>
+  </url>
+
+  <url>
     <loc>https://motorvehicleexpert.co.uk/used-car-buying-guides.html</loc>
     <lastmod>2026-06-22</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/used-car-checker-pro.html</loc>
+    <lastmod>2026-06-07</lastmod>
   </url>
 
   <url>
@@ -1165,12 +1997,17 @@
   </url>
 
   <url>
-  <loc>https://motorvehicleexpert.co.uk/what-happens-if-your-car-fails-mot.html</loc>
-  <lastmod>2026-05-15</lastmod>
-</url>
+    <loc>https://motorvehicleexpert.co.uk/water-pump-failure-symptoms.html</loc>
+    <lastmod>2026-05-15</lastmod>
+  </url>
 
   <url>
-    <loc>https://motorvehicleexpert.co.uk/water-pump-failure-symptoms.html</loc>
+    <loc>https://motorvehicleexpert.co.uk/water-pump-replacement-cost-uk.html</loc>
+    <lastmod>2026-06-18</lastmod>
+  </url>
+
+  <url>
+    <loc>https://motorvehicleexpert.co.uk/what-happens-if-your-car-fails-mot.html</loc>
     <lastmod>2026-05-15</lastmod>
   </url>
 
@@ -1204,963 +2041,4 @@
     <lastmod>2026-05-12</lastmod>
   </url>
 
-  <url>
-  <loc>https://motorvehicleexpert.co.uk/can-you-drive-car-with-failed-mot.html</loc>
-  <lastmod>2026-05-15</lastmod>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/can-police-see-no-mot.html</loc>
-  <lastmod>2026-05-15</lastmod>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/can-you-park-car-on-road-without-mot.html</loc>
-  <lastmod>2026-05-15</lastmod>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/does-sorn-car-need-insurance.html</loc>
-  <lastmod>2026-05-15</lastmod>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slipping-symptoms.html</loc>
-  <lastmod>2026-08-04</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/burning-clutch-smell.html</loc>
-  <lastmod>2026-06-08</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/can-a-clutch-fail-mot.html</loc>
-  <lastmod>2026-06-08</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slipping-in-first-gear.html</loc>
-  <lastmod>2026-08-04</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/clutch-slips-in-reverse.html</loc>
-  <lastmod>2026-08-04</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/fault-codes.html</loc>
-  <lastmod>2026-07-16</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0420-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0300-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0171-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0011-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0401-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0101-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0113-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0128-code-meaning.html</loc>
-  <lastmod>2026-07-18</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0135-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0141-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0201-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0234-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0299-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0340-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0402-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0440-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0442-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0446-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0455-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0500-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0507-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0520-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0562-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0700-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p2195-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0335-code-meaning.html</loc>
-  <lastmod>2026-06-12</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0016-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0118-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0121-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0174-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0301-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0302-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0303-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0304-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0325-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0341-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0441-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0456-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0741-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0102-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0117-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0130-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0131-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0132-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0133-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0134-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0136-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0137-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0138-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0172-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0443-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0449-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0452-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0453-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0496-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0601-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0602-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0603-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0604-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0606-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0607-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0705-code-meaning.html</loc>
-  <lastmod>2026-06-13</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0608-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0609-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0610-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0611-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0612-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0613-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0614-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0615-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0616-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0617-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0618-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0619-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0620-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0621-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0622-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0623-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0624-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0625-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0626-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0627-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0628-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0629-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0630-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0631-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0632-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0633-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0634-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0635-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0636-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0637-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0638-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0639-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0641-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0642-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0643-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0644-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0645-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0646-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/p0647-code-meaning.html</loc>
-  <lastmod>2026-06-14</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url> 
-
-<url><loc>https://motorvehicleexpert.co.uk/most-common-mot-advisories-explained.html</loc><lastmod>2026-06-22</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/corroded-brake-pipe-advisory.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/tyre-wear-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/brake-disc-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/brake-pad-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/suspension-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/oil-leak-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/structural-corrosion-advisory.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/shock-absorber-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/do-mot-advisories-affect-insurance.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/how-long-can-you-drive-with-an-mot-advisory.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url> 
-<url><loc>https://motorvehicleexpert.co.uk/exhaust-corrosion-advisory-explained.html</loc><lastmod>2026-06-17</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>  
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check.html</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-tracking.html</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-wheel-balancing.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-clutch.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-service-history.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-engine-oil.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-gearbox.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-<url><loc>https://motorvehicleexpert.co.uk/does-mot-check-air-conditioning.html</loc><lastmod>2026-07-08</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>  
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/water-pump-replacement-cost-uk.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/radiator-replacement-cost-uk.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/thermostat-replacement-cost-uk.html</loc>
-    <lastmod>2026-06-18</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.90</priority>
-</url>  
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/disc-brakes-explained.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-pads-explained.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-discs-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-calipers-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-fluid-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-pipe-explained.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-servo-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-master-cylinder-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/hydraulic-braking-system-explained.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/abs-explained.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-fade-explained.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-disc-replacement-cost-uk.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-pad-replacement-cost-uk.html</loc>
-    <lastmod>2026-07-06</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-caliper-replacement-cost-uk.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-fluid-change-cost-uk.html</loc>
-    <lastmod>2026-07-02</lastmod>
-</url>  
-
-<url>
-    <loc>https://motorvehicleexpert.co.uk/brake-overheating-explained.html</loc>
-    <lastmod>2026-07-03</lastmod>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/engine-braking-explained.html</loc>
-  <lastmod>2026-07-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/how-to-check-brake-pads.html</loc>
-  <lastmod>2026-07-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/used-car-brake-inspection-guide.html</loc>
-  <lastmod>2026-07-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/traction-control-warning-light.html</loc>
-  <lastmod>2026-07-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/electronic-parking-brake-fault.html</loc>
-  <lastmod>2026-07-06</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.8</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/does-mot-check-wheel-alignment.html</loc>
-  <lastmod>2026-07-08</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.80</priority>
-</url> 
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/car-diagnostics-explained.html</loc>
-  <lastmod>2026-07-15</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.95</priority>
-</url>  
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/obd-ii-explained.html</loc>
-  <lastmod>2026-07-20</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url> 
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/ecu-explained.html</loc>
-  <lastmod>2026-07-21</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>
-
-<url>
-  <loc>https://motorvehicleexpert.co.uk/car-sensors-explained.html</loc>
-  <lastmod>2026-07-21</lastmod>
-  <changefreq>monthly</changefreq>
-  <priority>0.90</priority>
-</url>  
-  
 </urlset>
-
-
