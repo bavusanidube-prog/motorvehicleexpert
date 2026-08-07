@@ -1268,12 +1268,6 @@ footer,
     width: 100%;
   }
 
-  .site-logo,
-  .brand img,
-  .logo-brand img {
-    height: 44px;
-    max-height: 44px;
-  }
 
   .brand-text {
     font-size: 0.94rem;
@@ -1503,12 +1497,6 @@ footer,
     width: calc(100% - 18px);
   }
 
-  .site-logo,
-  .brand img,
-  .logo-brand img {
-    height: 40px;
-    max-height: 40px;
-  }
 
   .brand-text {
     font-size: 0.9rem;
@@ -1561,17 +1549,6 @@ footer,
   }
 }
 
-/* Larger desktop logo */
-
-@media (min-width: 761px) {
-  .site-logo,
-  .brand img,
-  .logo-brand img {
-    height: 82px;
-    max-height: 82px;
-    width: auto;
-  }
-}
 
 /* New logo contains full brand name */
 
@@ -1671,7 +1648,9 @@ footer,
     border-bottom:none;
 }
 
-#mve-search-results a:hover{
+#mve-search-results a:hover,
+#mve-search-results a.mve-search-active,
+#mve-search-results a[aria-selected="true"]{
     background:var(--brand-soft);
     color:var(--brand);
 }
@@ -1833,110 +1812,6 @@ footer,
     align-items:center;
 }
 
-/* ==========================================================
-   MOTOR VEHICLE EXPERT
-   PREMIUM DECISION TABLES
-   Place at the very bottom of style.css
-========================================================== */
-
-.table-wrap{
-    width:100%;
-    overflow-x:auto;
-    -webkit-overflow-scrolling:touch;
-    margin:1.75rem 0;
-    border:1px solid var(--line);
-    border-radius:22px;
-    background:#fff;
-    box-shadow:var(--shadow-soft);
-}
-
-.decision-table{
-    width:100%;
-    min-width:850px;
-    border-collapse:collapse;
-    table-layout:auto;
-    background:#fff;
-}
-
-.decision-table thead th{
-    background:linear-gradient(180deg,#d71920,#b9131a);
-    color:#fff;
-    padding:1rem;
-    text-align:left;
-    font-size:.95rem;
-    font-weight:900;
-    white-space:normal;
-    border:1px solid rgba(255,255,255,.08);
-}
-
-.decision-table tbody td{
-    padding:1rem;
-    vertical-align:top;
-    line-height:1.55;
-    color:var(--muted);
-    border:1px solid var(--line);
-    background:#fff;
-}
-
-.decision-table tbody tr:nth-child(even){
-    background:#fafbfc;
-}
-
-.decision-table tbody tr:nth-child(even) td{
-    background:#fafbfc;
-}
-
-.decision-table tbody tr:hover td{
-    background:#fff8f8;
-}
-
-.decision-table th:first-child,
-.decision-table td:first-child{
-    width:26%;
-    font-weight:800;
-    color:var(--text-strong);
-}
-
-.decision-table th:nth-child(2),
-.decision-table td:nth-child(2){
-    width:18%;
-}
-
-.decision-table th:nth-child(3),
-.decision-table td:nth-child(3){
-    width:26%;
-}
-
-.decision-table th:nth-child(4),
-.decision-table td:nth-child(4){
-    width:30%;
-}
-
-.decision-table caption{
-    caption-side:bottom;
-    padding:1rem;
-    color:var(--muted-light);
-    font-size:.9rem;
-}
-
-@media (max-width:900px){
-
-    .table-wrap{
-        margin:1.25rem 0;
-        border-radius:18px;
-    }
-
-    .decision-table{
-        min-width:820px;
-    }
-
-    .decision-table th,
-    .decision-table td{
-        padding:.85rem;
-        font-size:.92rem;
-    }
-
-}
 
 /* ==========================================================
    MOTOR VEHICLE EXPERT
@@ -2078,6 +1953,3 @@ footer,
     }
 
 }
-
-
-
