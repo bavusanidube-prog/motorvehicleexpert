@@ -442,98 +442,63 @@
 
 </head>
 
-
 <body class="mve-premium">
 
-
-<!-- ========================================================
-     HEADER
-     EXISTING APPEARANCE PRESERVED
-======================================================== -->
-
 <header class="topbar">
-
   <div class="container nav">
 
-    <a
-      href="/"
-      class="brand logo-brand"
-      aria-label="Motor Vehicle Expert home"
-    >
-
+    <a href="/" class="brand logo-brand" aria-label="Motor Vehicle Expert home">
       <img
         src="logo.png"
         alt="Motor Vehicle Expert Logo"
         class="site-logo"
+        width="56"
+        height="56"
       />
-
-      <span class="brand-text">
-        Motor Vehicle Expert
-      </span>
-
+      <span class="brand-text">Motor Vehicle Expert</span>
     </a>
 
-
-    <nav
-      class="nav-links"
-      aria-label="Primary navigation"
-    >
-
-      <a href="/">
-        Home
-      </a>
-
-      <a href="about.html">
-        About
-      </a>
-
-      <a href="guides.html">
-        Guides
-      </a>
-
-      <a
-        href="diagnostics.html"
-        class="active"
-      >
-        Diagnostics
-      </a>
-
-      <a href="warning-lights.html">
-        Warning Lights
-      </a>
-
-      <a href="diagnostic-app.html">
-        Diagnostic App
-      </a>
-
-      <a
-        href="contact.html"
-        class="cta cta-secondary"
-      >
-        Contact
-      </a>
-
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="/">Home</a>
+      <a href="about.html">About</a>
+      <a href="guides.html">Guides</a>
+      <a href="diagnostics.html" class="active">Diagnostics</a>
+      <a href="warning-lights.html">Warning Lights</a>
+      <a href="diagnostic-app.html">Diagnostic App</a>
+      <a href="contact.html" class="cta cta-secondary">Contact</a>
     </nav>
 
   </div>
-
 </header>
 
 
+<div class="mve-global-search">
+  <div class="container">
+
+    <input
+      type="search"
+      id="mve-search"
+      placeholder="🔍 Search Motor Vehicle Expert..."
+      autocomplete="off"
+      aria-label="Search Motor Vehicle Expert"
+    />
+
+    <div
+      id="mve-search-results"
+      role="listbox"
+    ></div>
+
+  </div>
+</div>
+
 
 <main>
-
-
-<!-- ========================================================
-     EXISTING HERO
-     APPEARANCE LOCKED — DO NOT ADD EXTRA ELEMENTS
-======================================================== -->
 
 <!-- ========================================================
      PREMIUM HERO
 ======================================================== -->
 
-<section class="premium-hero">
+<section class="premium-hero brakes-grinding-hero">
 
   <div class="container premium-hero-grid">
 
@@ -541,7 +506,7 @@
     <div class="hero-copy">
 
       <span class="eyebrow">
-        Brake grinding diagnostic guide
+        UK brake grinding diagnostic guide
       </span>
 
 
@@ -553,9 +518,10 @@
       <p class="lead">
         Grinding brakes should never be ignored. The noise can indicate
         worn brake pads, damaged brake discs, seized calipers, trapped
-        debris or brake shield contact. This UK mechanic-style guide
-        explains the causes, professional diagnosis, driving safety,
-        MOT implications and typical UK repair costs.
+        debris or brake shield contact. This complete UK mechanic-style
+        guide explains the causes, professional diagnosis, driving
+        safety, MOT implications, repair costs and what used car buyers
+        should check before committing to a vehicle.
       </p>
 
 
@@ -566,11 +532,15 @@
         </span>
 
         <span>
-          🇬🇧 UK Brake Guide
+          🇬🇧 UK Brakes Guide
         </span>
 
         <span>
           🛠 Mechanic-Style Advice
+        </span>
+
+        <span>
+          📘 Brake Diagnostic Guide
         </span>
 
       </div>
@@ -582,41 +552,113 @@
           class="cta cta-primary"
           href="#quick-answer"
         >
-          Quick Answer
+          Quick answer
         </a>
 
         <a
           class="cta cta-ghost"
           href="#causes"
         >
-          Common Causes
+          Common causes
         </a>
 
         <a
           class="cta cta-ghost"
-          href="brake-warning-signs.html"
+          href="#mot"
         >
-          Brake Warning Signs
+          MOT advice
         </a>
+
+        <a
+          class="cta cta-ghost"
+          href="#repair-costs"
+        >
+          UK costs
+        </a>
+
+      </div>
+
+
+      <div class="safe-box warning">
+
+        <strong>
+          Important brake safety note
+        </strong>
+
+        <p class="muted">
+          If grinding is accompanied by a spongy or low brake pedal,
+          severe pulling, reduced stopping performance, smoke, a burning
+          smell or excessive heat from one wheel, do not continue
+          driving normally. Brake faults can become dangerous quickly
+          and should be inspected before further driving.
+        </p>
 
       </div>
 
     </div>
 
 
-    <div class="hero-image mve-hero-image">
+    <aside
+      class="premium-diagnostic-visual"
+      aria-label="Grinding brakes diagnostic overview"
+    >
 
-      <img
-        src="brakes-grinding-when-driving-hero.png"
-        alt="Motor Vehicle Expert guide showing brakes grinding when driving including worn brake pads, damaged discs and brake inspection"
-        loading="eager"
-        fetchpriority="high"
-        decoding="sync"
-        width="1600"
-        height="900"
-      />
+      <div class="hero-image">
 
-    </div>
+        <img
+          src="brakes-grinding-when-driving-hero.png"
+          alt="Motor Vehicle Expert guide to brakes grinding when driving showing worn brake pads damaged discs seized calipers and brake inspection points"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width="1600"
+          height="900"
+        />
+
+      </div>
+
+
+      <div class="diagnostic-stack">
+
+        <div class="diagnostic-row">
+          <span>
+            Grinding when braking
+          </span>
+          <strong class="status amber">
+            Check pads &amp; discs
+          </strong>
+        </div>
+
+        <div class="diagnostic-row">
+          <span>
+            Grinding while driving
+          </span>
+          <strong class="status blue">
+            Check brake drag
+          </strong>
+        </div>
+
+        <div class="diagnostic-row">
+          <span>
+            One wheel overheating
+          </span>
+          <strong class="status amber">
+            Check caliper
+          </strong>
+        </div>
+
+        <div class="diagnostic-row">
+          <span>
+            Poor braking + grinding
+          </span>
+          <strong class="status green">
+            Inspect before driving
+          </strong>
+        </div>
+
+      </div>
+
+    </aside>
 
 
   </div>
@@ -634,35 +676,58 @@
   <div class="container">
 
     <p>
-      This guide is written for UK drivers, used-car buyers and vehicle
-      owners who want to understand a grinding brake or wheel-area noise
-      before authorising repairs. It covers worn brake pads, damaged
-      brake discs, seized calipers, trapped debris, brake shields,
-      corrosion, professional diagnosis, driving safety, MOT relevance
-      and typical UK repair costs.
+      This guide is written for UK drivers, used car buyers and vehicle
+      owners who want to understand grinding brake or wheel-area noises
+      before visiting a garage. It covers worn brake pads, damaged
+      discs, seized calipers, trapped debris, brake shields, corrosion,
+      professional diagnosis, driving safety, MOT relevance, repair
+      costs and inspection priorities.
     </p>
 
 
     <div class="category-list">
 
-      <a href="#quick-answer">Quick Answer</a>
-      <a href="#how-grinding-happens">How Grinding Happens</a>
-      <a href="#braking-only">When Braking</a>
-      <a href="#without-braking">Without Braking</a>
-      <a href="#causes">Common Causes</a>
-      <a href="#diagnostic-workflow">Diagnosis</a>
-      <a href="#safe-to-drive">Safe to Drive?</a>
-      <a href="#repair-costs">UK Costs</a>
-      <a href="#mot">MOT</a>
-      <a href="#faq">FAQs</a>
+      <a href="#quick-answer">
+        Quick Answer
+      </a>
+
+      <a href="#how-grinding-happens">
+        How Grinding Happens
+      </a>
+
+      <a href="#braking-only">
+        When Braking
+      </a>
+
+      <a href="#without-braking">
+        Without Braking
+      </a>
+
+      <a href="#causes">
+        Common Causes
+      </a>
+
+      <a href="#diagnostic-workflow">
+        Inspection
+      </a>
+
+      <a href="#mot">
+        MOT
+      </a>
+
+      <a href="#repair-costs">
+        UK Costs
+      </a>
+
+      <a href="#faq">
+        FAQs
+      </a>
 
     </div>
 
   </div>
 
 </section>
-
-
 
 <!-- ========================================================
      ARTICLE LAYOUT
