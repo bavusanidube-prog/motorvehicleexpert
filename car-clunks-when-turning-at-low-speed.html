@@ -1040,16 +1040,16 @@
 <body class="mve-premium">
 
 
-<!-- ================================================
+<!-- =====================================================
      HEADER
-================================================= -->
+====================================================== -->
 
 <header class="topbar">
 
   <div class="container nav">
 
     <a
-      href="index.html"
+      href="/"
       class="brand logo-brand"
       aria-label="Motor Vehicle Expert home"
     >
@@ -1058,6 +1058,8 @@
         src="logo.png"
         alt="Motor Vehicle Expert Logo"
         class="site-logo"
+        width="56"
+        height="56"
       />
 
       <span class="brand-text">
@@ -1072,7 +1074,7 @@
       aria-label="Primary navigation"
     >
 
-      <a href="index.html">
+      <a href="/">
         Home
       </a>
 
@@ -1099,25 +1101,14 @@
         Diagnostic App
       </a>
 
+      <a
+        href="contact.html"
+        class="cta cta-secondary"
+      >
+        Contact
+      </a>
+
     </nav>
-
-
-    <div class="nav-search">
-
-      <input
-        type="search"
-        id="mve-search"
-        placeholder="Search car problems..."
-        autocomplete="off"
-        aria-label="Search Motor Vehicle Expert"
-      />
-
-      <div
-        id="mve-search-results"
-        class="search-results"
-      ></div>
-
-    </div>
 
   </div>
 
@@ -1125,40 +1116,86 @@
 
 
 
+<!-- =====================================================
+     GLOBAL SEARCH
+====================================================== -->
+
+<div class="mve-global-search">
+
+  <div class="container">
+
+    <input
+      type="search"
+      id="mve-search"
+      placeholder="🔍 Search Motor Vehicle Expert..."
+      autocomplete="off"
+      aria-label="Search Motor Vehicle Expert"
+    />
+
+    <div
+      id="mve-search-results"
+      role="listbox"
+    ></div>
+
+  </div>
+
+</div>
+
+
+
 <main>
 
 
-<!-- ================================================
-     HERO
-================================================= -->
+<!-- =====================================================
+     PREMIUM HERO
+====================================================== -->
 
-<section class="hero">
+<section class="premium-hero car-clunks-when-turning-at-low-speed-hero">
 
-  <div class="container hero-grid">
+  <div class="container premium-hero-grid">
+
+
+    <!-- HERO COPY -->
 
     <div class="hero-copy">
 
-      <span class="pill">
-        Steering &amp; Suspension Diagnosis
+      <span class="eyebrow">
+        UK steering &amp; suspension diagnostic guide
       </span>
+
 
       <h1>
         Car Clunks When Turning at Low Speed
       </h1>
 
+
       <p class="lead">
         A clunk while parking or manoeuvring can come from a top mount,
         strut bearing, lower-arm bush, ball joint, track rod, steering rack,
-        subframe, CV joint or another component that moves as steering and
-        suspension loads change.
+        subframe, CV joint or another component that moves as steering,
+        suspension and drivetrain loads change.
       </p>
 
-      <p class="muted">
-        The fastest route to the fault is to establish whether the noise
-        happens while stationary or moving, once or repeatedly, turning left
-        or right, going forward or reversing, and whether a bump, brake input
-        or change of steering direction makes it happen.
-      </p>
+
+      <div class="article-meta">
+
+        <span>
+          📅 Updated 17 August 2026
+        </span>
+
+        <span>
+          🇬🇧 UK Steering Guide
+        </span>
+
+        <span>
+          🛠 Mechanic-Style Diagnosis
+        </span>
+
+        <span>
+          🔊 Steering Noise Series
+        </span>
+
+      </div>
 
 
       <div class="hero-actions">
@@ -1167,39 +1204,132 @@
           class="cta cta-primary"
           href="#quick-answer"
         >
-          Diagnose the Clunk
-        </a>
-
-        <a
-          class="cta cta-secondary"
-          href="#causes"
-        >
-          Compare Causes
+          Quick answer
         </a>
 
         <a
           class="cta cta-ghost"
-          href="diagnostic-app.html"
+          href="#clunk-pattern"
         >
-          Use Diagnostic App
+          Clunk pattern
         </a>
+
+        <a
+          class="cta cta-ghost"
+          href="#diagnosis"
+        >
+          Diagnosis
+        </a>
+
+        <a
+          class="cta cta-ghost"
+          href="#costs"
+        >
+          UK costs
+        </a>
+
+      </div>
+
+
+      <div class="safe-box warning">
+
+        <strong>
+          Important steering safety note
+        </strong>
+
+        <p class="muted">
+          A steering clunk should be diagnosed rather than guessed. If the
+          steering becomes loose, heavy, notchy or unpredictable, if a wheel
+          appears to move abnormally, or if a steering or suspension component
+          may be insecure, arrange professional inspection promptly rather than
+          continuing to reproduce the noise.
+        </p>
 
       </div>
 
     </div>
 
 
-    <div class="hero-image mve-hero-image">
 
-      <img
-        src="car-clunks-when-turning-at-low-speed-hero.png"
-        alt="Motor Vehicle Expert illustration showing a car clunking during a low-speed steering manoeuvre with steering and front suspension diagnostic areas highlighted"
-        width="1600"
-        height="900"
-        fetchpriority="high"
-      />
+    <!-- PREMIUM DIAGNOSTIC VISUAL -->
 
-    </div>
+    <aside
+      class="premium-diagnostic-visual"
+      aria-label="Low-speed turning clunk diagnostic overview"
+    >
+
+      <div class="hero-image">
+
+        <img
+          src="car-clunks-when-turning-at-low-speed-hero.png"
+          alt="Motor Vehicle Expert diagnostic guide showing common causes of a car clunking during low-speed steering including top mounts, ball joints, track rods, steering rack, lower-arm bushes and CV joints"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width="1600"
+          height="900"
+        />
+
+      </div>
+
+
+      <div class="diagnostic-stack">
+
+        <div class="diagnostic-row">
+
+          <span>
+            Clunks while stationary
+          </span>
+
+          <strong class="status amber">
+            Steering / suspension
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            One clunk as steering loads
+          </span>
+
+          <strong class="status blue">
+            Check movement
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            Repeated clicks on tight turn
+          </span>
+
+          <strong class="status amber">
+            Compare CV joint
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            Clunk + steering free play
+          </span>
+
+          <strong class="status red">
+            Inspect promptly
+          </strong>
+
+        </div>
+
+      </div>
+
+    </aside>
+
 
   </div>
 
@@ -1207,210 +1337,60 @@
 
 
 
-<!-- ================================================
-     SAFETY BOX
-================================================= -->
-
-<section>
-
-  <div class="container">
-
-    <div class="safe-box warning">
-
-      <strong>
-        A steering clunk should be diagnosed, not guessed
-      </strong>
-
-      <p class="muted">
-        A single clunk during parking can be caused by movement in a steering,
-        suspension, brake or drivetrain component. If the steering has become
-        loose, heavy, notchy or unpredictable, or a wheel appears to move
-        abnormally, arrange professional inspection promptly rather than
-        continuing to reproduce the noise.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================================================
-     DIAGNOSTIC PATTERN STACK
-================================================= -->
-
-<section>
-
-  <div class="container">
-
-
-    <div class="grid-4">
-
-
-      <article class="mini-card">
-
-        <span class="alt-pill">
-          Pattern 1
-        </span>
-
-        <h2>
-          Clunks While Stationary
-        </h2>
-
-        <p class="muted">
-          If the exact clunk occurs without the car rolling, investigate
-          components that move purely from steering input before assuming a
-          rotating driveshaft or CV-joint fault.
-        </p>
-
-      </article>
-
-
-      <article class="mini-card">
-
-        <span class="alt-pill">
-          Pattern 2
-        </span>
-
-        <h2>
-          One Clunk as Steering Loads Up
-        </h2>
-
-        <p class="muted">
-          A single knock as steering force changes can indicate free play,
-          mounting movement, spring release or a component shifting from one
-          loaded position to another.
-        </p>
-
-      </article>
-
-
-      <article class="mini-card">
-
-        <span class="alt-pill">
-          Pattern 3
-        </span>
-
-        <h2>
-          Repeated Clicks on a Tight Turn
-        </h2>
-
-        <p class="muted">
-          Rhythmic clicking while the vehicle is moving under drive is a
-          different pattern and makes an outer CV joint considerably more
-          relevant than a single suspension clunk.
-        </p>
-
-      </article>
-
-
-      <article class="mini-card">
-
-        <span class="alt-pill">
-          Pattern 4
-        </span>
-
-        <h2>
-          Clunks When Turning Over a Bump
-        </h2>
-
-        <p class="muted">
-          Adding suspension compression to steering load moves top mounts,
-          ball joints, lower-arm bushes, anti-roll-bar components and
-          subframe movement higher on the diagnostic list.
-        </p>
-
-      </article>
-
-
-    </div>
-
-
-    <div class="safe-box tip">
-
-      <strong>
-        Mechanic shortcut: identify what changes immediately before the clunk
-      </strong>
-
-      <p class="muted">
-        Steering angle, wheel rotation, drive direction, brake application and
-        suspension travel are separate diagnostic inputs. If only one of them
-        is required to reproduce the clunk, the possible fault list becomes
-        much smaller.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-
-
-<!-- ================================================
+<!-- =====================================================
      TRUST STRIP
-================================================= -->
+====================================================== -->
 
 <section class="trust-strip">
 
   <div class="container">
 
-    <div class="trust-grid">
+    <p>
+      This guide is written for UK drivers and used-car buyers who hear a clunk
+      while parking, manoeuvring or turning at low speed. It explains how to
+      separate top mounts, strut bearings, lower-arm bushes, ball joints,
+      track rods, steering-rack movement, subframe faults, CV joints, brake
+      hardware and drivetrain-related causes before parts are replaced.
+    </p>
 
 
-      <div class="trust-item">
+    <div class="category-list">
 
-        <strong>
-          UK-Focused
-        </strong>
+      <a href="#quick-answer">
+        Quick Answer
+      </a>
 
-        <span>
-          MOT &amp; repair guidance
-        </span>
+      <a href="#clunk-pattern">
+        Clunk Pattern
+      </a>
 
-      </div>
+      <a href="#causes">
+        Common Causes
+      </a>
 
+      <a href="#diagnosis">
+        Diagnosis
+      </a>
 
-      <div class="trust-item">
+      <a href="#safe-to-drive">
+        Safety
+      </a>
 
-        <strong>
-          Mechanic-Led
-        </strong>
+      <a href="#mot">
+        MOT
+      </a>
 
-        <span>
-          Symptom-first diagnosis
-        </span>
+      <a href="#costs">
+        UK Costs
+      </a>
 
-      </div>
+      <a href="#used-car-risk">
+        Used-Car Risk
+      </a>
 
-
-      <div class="trust-item">
-
-        <strong>
-          Practical
-        </strong>
-
-        <span>
-          Causes, checks &amp; costs
-        </span>
-
-      </div>
-
-
-      <div class="trust-item">
-
-        <strong>
-          Driver Friendly
-        </strong>
-
-        <span>
-          Clear next steps
-        </span>
-
-      </div>
-
+      <a href="#faq">
+        FAQs
+      </a>
 
     </div>
 
@@ -1418,9 +1398,11 @@
 
 </section>
 
-<!-- ==================================================
+
+
+<!-- =====================================================
      ARTICLE LAYOUT
-=================================================== -->
+====================================================== -->
 
 <section>
 
