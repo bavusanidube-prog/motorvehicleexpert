@@ -100,84 +100,261 @@
 
 
   <!-- =====================================================
-       ARTICLE SCHEMA
+       STRUCTURED DATA
+       ARTICLE + WEBPAGE + BREADCRUMB + FAQ
   ====================================================== -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#article",
-    "headline": "Can Tail Lights Fail MOT? UK Rear Light Rules & Tester Checks",
-    "description": "A UK mechanic-style MOT guide explaining when tail lights can fail, including failed bulbs, dim output, flickering, wrong colour, cracked lenses, broken covers, water ingress, LED faults and electrical problems.",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot-hero.png",
-      "width": 1600,
-      "height": 900
-    },
-    "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html",
-    "dateModified": "2026-08-21",
-    "inLanguage": "en-GB",
-    "author": {
-      "@type": "Organization",
-      "name": "Motor Vehicle Expert Editorial Team",
-      "url": "https://motorvehicleexpert.co.uk/about.html"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Motor Vehicle Expert",
-      "url": "https://motorvehicleexpert.co.uk/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://motorvehicleexpert.co.uk/logo.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html"
-    }
-  }
-  </script>
-
-
-  <!-- =====================================================
-       BREADCRUMB SCHEMA
-  ====================================================== -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#breadcrumb",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://motorvehicleexpert.co.uk/"
+        "@type": "Article",
+        "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#article",
+        "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html",
+        "headline": "Can Tail Lights Fail MOT? UK Rear Light Rules & Tester Checks",
+        "description": "A UK mechanic-style MOT guide explaining when tail lights can fail, including failed bulbs, dim output, flickering, wrong colour, cracked lenses, broken covers, water ingress, LED faults and electrical problems.",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#primaryimage",
+          "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot-hero.png",
+          "contentUrl": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot-hero.png",
+          "width": 1600,
+          "height": 900,
+          "caption": "Can tail lights fail MOT guide showing rear position lamp inspection and UK MOT tester checks"
+        },
+        "dateModified": "2026-08-21",
+        "inLanguage": "en-GB",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://motorvehicleexpert.co.uk/#editorial-team",
+          "name": "Motor Vehicle Expert Editorial Team",
+          "url": "https://motorvehicleexpert.co.uk/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://motorvehicleexpert.co.uk/#organization",
+          "name": "Motor Vehicle Expert",
+          "url": "https://motorvehicleexpert.co.uk/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://motorvehicleexpert.co.uk/#logo",
+            "url": "https://motorvehicleexpert.co.uk/logo.png",
+            "contentUrl": "https://motorvehicleexpert.co.uk/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#webpage"
+        },
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#webpage"
+        },
+        "breadcrumb": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#breadcrumb"
+        }
       },
+
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://motorvehicleexpert.co.uk/guides.html"
+        "@type": "WebPage",
+        "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#webpage",
+        "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html",
+        "name": "Can Tail Lights Fail MOT? UK Rear Light Rules & Tester Checks",
+        "description": "A UK mechanic-style MOT guide explaining when tail lights can fail, including failed bulbs, dim output, flickering, wrong colour, cracked lenses, broken covers, water ingress, LED faults and electrical problems.",
+        "inLanguage": "en-GB",
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#primaryimage"
+        },
+        "breadcrumb": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#article"
+        }
       },
+
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Can Tail Lights Fail MOT?",
-        "item": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://motorvehicleexpert.co.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Guides",
+            "item": "https://motorvehicleexpert.co.uk/guides.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Can Tail Lights Fail MOT?",
+            "item": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html"
+          }
+        ]
+      },
+
+      {
+        "@type": "FAQPage",
+        "@id": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#faq-schema",
+        "url": "https://motorvehicleexpert.co.uk/can-tail-light-fail-mot.html#faq",
+        "inLanguage": "en-GB",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Can tail lights fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A required tail light can fail an MOT if it is missing, inoperative, insecure, has a defective lens, shows the wrong colour or does not produce the required light correctly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will one tail light out fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If a required rear position lamp does not operate correctly, it can result in an MOT failure."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What colour should tail lights be for an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Rear position lamps should emit steady red light to the rear. Missing coloured lens material or an unsuitable repair can allow the wrong colour to show."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a dim tail light fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, if the required lamp's visible output is significantly reduced or it is otherwise not performing correctly. Poor earths, corrosion, voltage drop and partial LED failure are common causes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a tail light fail even if it still comes on?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A lamp can illuminate but still have a problem with light output, colour, security, lens condition or intermittent operation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a cracked tail light fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A defective rear-light lens can become an MOT issue, particularly where the damage affects the lamp's condition, colour, output, security or ability to perform its required function."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will a broken tail light cover fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can. Missing or badly damaged cover material can affect lamp condition, emitted colour, security and weather protection."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will water in a tail light fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Water or condensation does not automatically create the same MOT result in every case. It becomes more serious when it causes a defective lens, corrosion, reduced output, electrical failure or another relevant lamp defect."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is condensation inside a tail light an MOT failure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Light temporary misting is different from significant water ingress. Persistent droplets or standing water should be investigated because they can damage the lamp and electrical connections."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a poor earth cause a tail light MOT failure?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A poor earth can make the lamp dim, intermittent or cause other rear-light functions to behave abnormally. If the required lamp no longer operates correctly, the MOT result can be affected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my tail light dim when I press the brake?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This commonly points to a shared-earth or high-resistance connection. The brake-light circuit can interfere with the tail-light circuit when the return path is poor."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why does my indicator make another rear light flash?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A poor shared earth, corroded connector or damaged wiring can allow current to cross-feed through another rear-light circuit."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can LED tail lights fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. LED tail lights still have to perform their required function correctly. Partial LED failure can leave the lamp illuminated but noticeably weaker than intended."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does a partially working LED tail light fail an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It can. The important issue is whether enough of the required lamp has failed for its output or operation to become inadequate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can tape over a cracked tail light pass an MOT?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tape does not automatically make a damaged lamp acceptable. The repair still needs to leave the lamp secure, durable, correctly coloured and capable of providing effective light output."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does a tail light repair cost in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A conventional replacement bulb can cost only a few pounds, while wiring repairs or a complete integrated LED lamp can cost several hundred pounds. Diagnosis should identify the cause before expensive parts are replaced."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I replace the whole tail light if it is faulty?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not automatically. Bulbs, holders, connectors, earth faults and wiring can often be repaired separately. Complete replacement is more likely where the housing, lens or integrated LED electronics are seriously damaged."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I buy a used car with a tail light fault?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "It depends on the cause. A failed bulb can be inexpensive, while standing water, corrosion, partial LED failure, broken mountings or accident damage can indicate a much larger repair."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
-
-
-  <!--
-    FAQPage schema will be inserted only after the final visible
-    FAQ section has been completed and checked for exact parity.
-  -->
 
 </head>
 
