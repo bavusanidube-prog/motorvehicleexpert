@@ -100,85 +100,262 @@
 
 
   <!-- =====================================================
-       ARTICLE SCHEMA
+       STRUCTURED DATA
+       ARTICLE + WEBPAGE + BREADCRUMB + FAQ
   ====================================================== -->
 
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#article",
-    "headline": "Coolant Leak Repair Cost UK: How Much Will It Cost to Fix?",
-    "description": "A practical UK mechanic-style guide explaining coolant leak repair costs, common leak sources, diagnostic checks, repair decisions and when coolant loss makes continued driving unsafe.",
-    "image": {
-      "@type": "ImageObject",
-      "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk-hero.png",
-      "width": 1600,
-      "height": 900
-    },
-    "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html",
-    "datePublished": "2026-05-12",
-    "dateModified": "2026-08-22",
-    "inLanguage": "en-GB",
-    "author": {
-      "@type": "Organization",
-      "name": "Motor Vehicle Expert Editorial Team",
-      "url": "https://motorvehicleexpert.co.uk/about.html"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Motor Vehicle Expert",
-      "url": "https://motorvehicleexpert.co.uk/",
-      "logo": {
-        "@type": "ImageObject",
-        "url": "https://motorvehicleexpert.co.uk/logo.png"
-      }
-    },
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html"
-    }
-  }
-  </script>
-
-
-  <!-- =====================================================
-       BREADCRUMB SCHEMA
-  ====================================================== -->
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#breadcrumb",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://motorvehicleexpert.co.uk/"
+        "@type": "Article",
+        "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#article",
+        "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html",
+        "headline": "Coolant Leak Repair Cost UK: How Much Will It Cost to Fix?",
+        "description": "A practical UK mechanic-style guide explaining coolant leak repair costs, common leak sources, diagnostic checks, repair decisions and when coolant loss makes continued driving unsafe.",
+        "image": {
+          "@type": "ImageObject",
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#primaryimage",
+          "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk-hero.png",
+          "contentUrl": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk-hero.png",
+          "width": 1600,
+          "height": 900,
+          "caption": "Coolant leak repair cost UK guide showing common cooling-system leak sources and repair cost considerations"
+        },
+        "datePublished": "2026-05-12",
+        "dateModified": "2026-08-22",
+        "inLanguage": "en-GB",
+        "author": {
+          "@type": "Organization",
+          "@id": "https://motorvehicleexpert.co.uk/#editorial-team",
+          "name": "Motor Vehicle Expert Editorial Team",
+          "url": "https://motorvehicleexpert.co.uk/about.html"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "@id": "https://motorvehicleexpert.co.uk/#organization",
+          "name": "Motor Vehicle Expert",
+          "url": "https://motorvehicleexpert.co.uk/",
+          "logo": {
+            "@type": "ImageObject",
+            "@id": "https://motorvehicleexpert.co.uk/#logo",
+            "url": "https://motorvehicleexpert.co.uk/logo.png",
+            "contentUrl": "https://motorvehicleexpert.co.uk/logo.png"
+          }
+        },
+        "mainEntityOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#webpage"
+        },
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#webpage"
+        },
+        "breadcrumb": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#breadcrumb"
+        }
       },
+
       {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Repair Costs",
-        "item": "https://motorvehicleexpert.co.uk/car-repair-costs-guide-uk.html"
+        "@type": "WebPage",
+        "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#webpage",
+        "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html",
+        "name": "Coolant Leak Repair Cost UK: How Much Will It Cost to Fix?",
+        "description": "A practical UK mechanic-style guide explaining coolant leak repair costs, common leak sources, diagnostic checks, repair decisions and when coolant loss makes continued driving unsafe.",
+        "inLanguage": "en-GB",
+        "isPartOf": {
+          "@id": "https://motorvehicleexpert.co.uk/#website"
+        },
+        "primaryImageOfPage": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#primaryimage"
+        },
+        "breadcrumb": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#breadcrumb"
+        },
+        "mainEntity": {
+          "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#article"
+        }
       },
+
       {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Coolant Leak Repair Cost UK",
-        "item": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html"
+        "@type": "BreadcrumbList",
+        "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://motorvehicleexpert.co.uk/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Repair Costs",
+            "item": "https://motorvehicleexpert.co.uk/car-repair-costs-guide-uk.html"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Coolant Leak Repair Cost UK",
+            "item": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html"
+          }
+        ]
+      },
+
+      {
+        "@type": "FAQPage",
+        "@id": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#faq-schema",
+        "url": "https://motorvehicleexpert.co.uk/coolant-leak-repair-cost-uk.html#faq",
+        "inLanguage": "en-GB",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a coolant leak repair cost in the UK?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A coolant leak repair can range from under £200 for a simple hose, clip, cap or accessible seal to £1,000 or more for difficult radiator, heater-matrix or internal engine repairs. The real cost depends on the confirmed leak source and labour involved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the cheapest coolant leak repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The cheapest repairs are usually simple hose connections, clips, pressure caps or accessible seals. Costs rise when diagnosis, difficult access or additional cooling-system damage is involved."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the most expensive coolant leak repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Internal engine faults, difficult heater-matrix replacement, cylinder-head damage and major cooling-system repairs are among the most expensive because labour and secondary engine damage can add substantially to the bill."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I drive with a small coolant leak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A short journey may sometimes be possible if the leak is very small, the coolant level is correct and engine temperature remains normal, but the fault can worsen once the system becomes hot and pressurised. Stop if temperature rises, steam appears or coolant begins escaping quickly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why is my car losing coolant but there is no puddle?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Coolant may leak only when hot, evaporate on hot engine parts, collect on an undertray, escape through the pressure cap, leak into the heater system or disappear internally through an engine or exhaust-related fault."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a coolant leak stop on its own?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A leak can appear to stop when the engine cools and system pressure falls, but the underlying fault normally remains and may return the next time the engine reaches operating temperature."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a coolant leak cause engine damage?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. If coolant loss causes the engine to overheat, damage can extend to the head gasket, cylinder head, seals and other engine components. This is why early leak diagnosis is usually much cheaper than continuing to drive."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does a garage find a coolant leak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A garage will normally inspect the cooling system for staining and wet areas, check hoses and components, pressure-test the system and, where necessary, investigate hot-only or internal coolant loss."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What does a cooling-system pressure test show?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A pressure test checks whether the cooling system can hold controlled pressure. Falling pressure can help reveal hose, radiator, housing, water-pump, heater-system or other leaks that may not be obvious when the engine is cold."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a faulty pressure cap cause coolant loss?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A pressure cap that opens too early or does not seal correctly can allow coolant to vent, boil or overflow even when the rest of the cooling system has no obvious external leak."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a water pump leak coolant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A worn water-pump seal can leak around the pump or through a designed weep point. The repair cost depends heavily on pump location and whether timing-drive components must be removed."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a heater matrix leak coolant?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. A heater-matrix leak can lose coolant inside the cabin rather than onto the road and may cause a sweet smell, damp carpets or misted windows. Labour can be expensive if dashboard removal is required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does white smoke mean I have a head gasket problem?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Not automatically. Persistent white exhaust smoke together with coolant loss, overheating, rapid pressurisation or rough running is more concerning, but proper diagnosis is needed before condemning the head gasket."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is coolant leak sealer a permanent repair?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually not. Leak sealer may temporarily reduce some very small leaks, but it does not properly repair split hoses, cracked housings, damaged radiators, failed water-pump seals or serious internal engine faults."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I keep topping up coolant if it keeps dropping?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Repeated top-ups confirm that the cooling system is losing coolant or pressure somewhere. Topping up may restore the level temporarily, but it does not repair the fault."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "When should I stop driving with a coolant leak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Stop driving if the temperature gauge rises towards the red, steam appears, coolant is leaking heavily, the expansion tank becomes empty, the heater suddenly blows cold while the engine is hot or the engine begins running badly."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I buy a used car with a coolant leak?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only after the cause is identified. A proven hose or simple connection leak may be manageable, while unexplained coolant loss, overheating history, bubbling, persistent white smoke or rapid pressurisation can indicate a much larger repair risk."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a coolant leak worth repairing on an older car?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Often yes if the leak is external and the engine is otherwise healthy. For major internal engine damage, compare the confirmed repair cost with the vehicle's condition, value, overheating history and any other significant faults before authorising the work."
+            }
+          }
+        ]
       }
     ]
   }
   </script>
-
-
-  <!--
-    FAQPage schema will be inserted only after the final visible
-    FAQ section has been completed and checked for exact parity.
-  -->
 
 </head>
 
