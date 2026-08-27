@@ -439,11 +439,10 @@
 ========================================================== -->
 
 <header class="topbar">
-
   <div class="container nav">
 
     <a
-      href="index.html"
+      href="/"
       class="brand logo-brand"
       aria-label="Motor Vehicle Expert home"
     >
@@ -451,8 +450,8 @@
         src="logo.png"
         alt="Motor Vehicle Expert Logo"
         class="site-logo"
-        width="64"
-        height="64"
+        width="56"
+        height="56"
       />
 
       <span class="brand-text">
@@ -466,7 +465,7 @@
       aria-label="Primary navigation"
     >
 
-      <a href="index.html">
+      <a href="/">
         Home
       </a>
 
@@ -493,29 +492,16 @@
         Diagnostic App
       </a>
 
-      <a href="contact.html">
+      <a
+        href="contact.html"
+        class="cta cta-secondary"
+      >
         Contact
       </a>
 
     </nav>
 
-
-    <div class="nav-actions">
-
-      <button
-        class="search-toggle"
-        type="button"
-        aria-label="Open site search"
-        aria-controls="mve-global-search"
-        aria-expanded="false"
-      >
-        Search
-      </button>
-
-    </div>
-
   </div>
-
 </header>
 
 
@@ -523,39 +509,24 @@
      GLOBAL SEARCH
 ========================================================== -->
 
-<section
-  class="global-search"
-  id="mve-global-search"
-  aria-label="Site search"
->
-
+<div class="mve-global-search">
   <div class="container">
 
-    <div class="search-panel">
+    <input
+      type="search"
+      id="mve-search"
+      placeholder="🔍 Search Motor Vehicle Expert..."
+      autocomplete="off"
+      aria-label="Search Motor Vehicle Expert"
+    />
 
-      <label for="site-search">
-        Search Motor Vehicle Expert
-      </label>
-
-      <input
-        type="search"
-        id="site-search"
-        name="q"
-        placeholder="Search gearbox symptoms, MOT guides, warning lights..."
-        autocomplete="off"
-      />
-
-      <div
-        id="search-results"
-        class="search-results"
-        aria-live="polite"
-      ></div>
-
-    </div>
+    <div
+      id="mve-search-results"
+      role="listbox"
+    ></div>
 
   </div>
-
-</section>
+</div>
 
 
 <main>
@@ -565,36 +536,52 @@
      PREMIUM HERO — DISC BRAKES STRUCTURE
 ========================================================== -->
 
-<section class="premium-hero">
+<section class="premium-hero automatic-gearbox-replacement-cost-hero">
 
   <div class="container premium-hero-grid">
 
 
     <div class="hero-copy">
 
-      <div class="eyebrow">
-        Automatic Gearbox Guide • UK Repair Costs
-      </div>
+      <span class="eyebrow">
+        UK automatic gearbox replacement cost guide
+      </span>
+
 
       <h1>
         Automatic Gearbox Replacement Cost UK
       </h1>
 
-      <p class="hero-lead">
+
+      <p class="lead">
         Replacing an automatic gearbox can cost from roughly
         <strong>£1,500 for some used-unit installations to £6,000+</strong>
         for complex reconditioned or new transmissions. The final bill depends
-        on the gearbox type, replacement unit, labour, fluid, programming and
-        whether additional components have been damaged.
+        on gearbox type, replacement-unit condition, labour, fluid,
+        programming, adaptation requirements and whether the original failure
+        caused additional damage.
       </p>
 
-      <p class="hero-sub">
-        This UK guide explains the difference between
-        <strong>used, reconditioned and new automatic gearboxes</strong>,
-        what should be included in a fitted quotation, when replacement makes
-        more sense than repair and what to check before spending thousands of
-        pounds.
-      </p>
+
+      <div class="article-meta">
+
+        <span>
+          📅 Updated 27 August 2026
+        </span>
+
+        <span>
+          🇬🇧 UK Gearbox Cost Guide
+        </span>
+
+        <span>
+          🛠 Mechanic-Style Advice
+        </span>
+
+        <span>
+          ⚙️ Automatic Gearbox Series
+        </span>
+
+      </div>
 
 
       <div class="hero-actions">
@@ -603,58 +590,129 @@
           class="cta cta-primary"
           href="#quick-answer"
         >
-          See Replacement Costs
-        </a>
-
-        <a
-          class="cta cta-secondary"
-          href="automatic-gearbox-repair-cost-uk.html"
-        >
-          Compare Repair Costs
+          Quick answer
         </a>
 
         <a
           class="cta cta-ghost"
-          href="diagnostic-app.html"
+          href="#replacement-cost"
         >
-          Diagnose the Problem
+          Replacement costs
+        </a>
+
+        <a
+          class="cta cta-ghost"
+          href="#repair-vs-replace"
+        >
+          Repair vs replace
+        </a>
+
+        <a
+          class="cta cta-ghost"
+          href="#buying"
+        >
+          Used car advice
         </a>
 
       </div>
 
 
-      <div class="hero-meta">
+      <div class="safe-box warning">
 
-        <span>
-          UK Cost Guide
-        </span>
+        <strong>
+          Important gearbox replacement warning
+        </strong>
 
-        <span>
-          Used vs Reconditioned vs New
-        </span>
-
-        <span>
-          Mechanic-Level Guidance
-        </span>
+        <p class="muted">
+          Do not approve complete automatic gearbox replacement purely because
+          the vehicle slips, jerks, delays engagement, shudders or enters limp
+          mode. Low fluid, leaks, electrical faults, sensors, solenoids,
+          valve-body problems, mechatronic faults and torque-converter faults
+          can produce serious symptoms without requiring replacement of the
+          entire transmission.
+        </p>
 
       </div>
 
     </div>
 
 
-    <div class="hero-visual">
+    <aside
+      class="premium-diagnostic-visual"
+      aria-label="Automatic gearbox replacement cost guide overview"
+    >
 
-      <img
-        src="images/automatic-gearbox-replacement-cost-uk-hero.png"
-        alt="Automatic gearbox replacement cost UK guide comparing used, reconditioned and new gearbox replacement options"
-        width="1600"
-        height="900"
-        loading="eager"
-        fetchpriority="high"
-        decoding="async"
-      />
+      <div class="hero-image">
 
-    </div>
+        <img
+          src="images/automatic-gearbox-replacement-cost-uk-hero.png"
+          alt="Automatic gearbox replacement cost UK guide comparing used, reconditioned and new automatic transmission replacement options"
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          width="1600"
+          height="900"
+        />
+
+      </div>
+
+
+      <div class="diagnostic-stack">
+
+        <div class="diagnostic-row">
+
+          <span>
+            Used gearbox
+          </span>
+
+          <strong class="status amber">
+            Lowest upfront cost
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            Reconditioned gearbox
+          </span>
+
+          <strong class="status blue">
+            Compare warranty
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            New gearbox
+          </span>
+
+          <strong class="status red">
+            Highest cost
+          </strong>
+
+        </div>
+
+
+        <div class="diagnostic-row">
+
+          <span>
+            Diagnose first
+          </span>
+
+          <strong class="status green">
+            Avoid unnecessary replacement
+          </strong>
+
+        </div>
+
+      </div>
+
+    </aside>
 
 
   </div>
@@ -668,48 +726,54 @@
 
 <section class="trust-strip">
 
-  <div class="container trust-grid">
+  <div class="container">
 
-    <div class="trust-item">
-
-      <strong>UK-Focused Costs</strong>
-
-      <span>
-        Realistic replacement-cost guidance for UK motorists
-      </span>
-
-    </div>
+    <p>
+      This guide is written for UK motorists who need to understand the real
+      cost of replacing an automatic gearbox. It compares used, reconditioned
+      and new transmission options, labour, fluid, programming, DCT and CVT
+      replacement costs, warranties, repair-versus-replace decisions and the
+      financial risk of buying a car that may need another gearbox.
+    </p>
 
 
-    <div class="trust-item">
+    <div class="category-list">
 
-      <strong>Repair Before Replace</strong>
+      <a href="#quick-answer">
+        Quick Answer
+      </a>
 
-      <span>
-        Diagnose the actual gearbox fault before condemning the unit
-      </span>
+      <a href="#replacement-cost">
+        Replacement Cost
+      </a>
 
-    </div>
+      <a href="#used-gearbox">
+        Used Gearbox
+      </a>
 
+      <a href="#reconditioned-gearbox">
+        Reconditioned
+      </a>
 
-    <div class="trust-item">
+      <a href="#new-gearbox">
+        New Gearbox
+      </a>
 
-      <strong>Whole-Cost Thinking</strong>
+      <a href="#repair-vs-replace">
+        Repair vs Replace
+      </a>
 
-      <span>
-        Unit price, labour, fluid, coding and warranty all matter
-      </span>
+      <a href="#worth-replacing">
+        Worth Replacing?
+      </a>
 
-    </div>
+      <a href="#buying">
+        Used Car Advice
+      </a>
 
-
-    <div class="trust-item">
-
-      <strong>Used-Car Guidance</strong>
-
-      <span>
-        Understand the financial risk before buying a faulty car
-      </span>
+      <a href="#faq">
+        FAQs
+      </a>
 
     </div>
 
@@ -722,7 +786,7 @@
      ARTICLE LAYOUT
 ========================================================== -->
 
-<section class="article-section">
+<section>
 
   <div class="container article-layout">
 
