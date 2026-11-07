@@ -2812,5 +2812,42 @@
   "url": "mot-not-showing-online.html",
   "description": "Find out why an MOT pass or test result is missing online, why the expiry date has not updated, how to correct MOT records and when to contact DVSA.",
   "category": "MOT Guides"
-}
+},
+
+{
+  "title": "Wrong Mileage on MOT History? How to Correct It",
+  "url": "wrong-mileage-on-mot-history.html",
+  "description": "Find out why an MOT mileage reading is incorrect, what evidence you need and how to request a correction to your official MOT history.",
+  "category": "MOT Guides"
+},
+{
+  "title": "Wrong MOT Expiry Date? Why It Happens and How to Fix It",
+  "url": "wrong-mot-expiry-date.html",
+  "description": "Understand why your MOT expiry date may be incorrect, how early MOT renewal affects the date and when to report an error to DVSA.",
+  "category": "MOT Guides"
+},
+{
+  "title": "MOT History Not Showing After Number Plate Change",
+  "url": "mot-history-not-showing-after-number-plate-change.html",
+  "description": "Find out why MOT history may be missing after a private number plate or registration change and how to find older MOT records.",
+  "category": "MOT Guides"
+},
+{
+  "title": "MOT Test Missing From History? What to Do",
+  "url": "mot-test-missing-from-history.html",
+  "description": "Learn why a completed MOT test may not appear online, how to check the official record and what to do if your MOT result is missing.",
+  "category": "MOT Guides"
+},
+{
+  "title": "Fake MOT Certificate Check UK – How to Verify It",
+  "url": "fake-mot-certificate-check-uk.html",
+  "description": "Learn how to check whether an MOT certificate is genuine, verify the official MOT record and report a suspected fake MOT certificate.",
+  "category": "MOT Guides"
+},
+{
+  "title": "Wrong MOT Result Appeal UK – DVSA VT17 Guide",
+  "url": "wrong-mot-result-appeal-uk.html",
+  "description": "Learn how to appeal an incorrect MOT pass or failure using DVSA form VT17, including appeal deadlines, fees, evidence and reinspection rules.",
+  "category": "MOT Guides"
+}  
 ]
